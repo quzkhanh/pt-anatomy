@@ -60,3 +60,32 @@ test('tìm không ra thì báo không tìm thấy', async ({ page }) => {
   await page.getByRole('searchbox', { name: 'Tìm cơ' }).fill('xyzw')
   await expect(page.getByText('Không tìm thấy cơ nào khớp “xyzw”')).toBeVisible()
 })
+
+test('tải model lỗi thì báo lỗi, bấm Thử lại thì tải được', async ({ page }) => {
+  await page.route('**/models/body.glb', (route) => route.abort())
+  await page.goto('/?debug')
+  await expect(page.getByText('Không tải được mô hình. Kiểm tra kết nối rồi thử lại.')).toBeVisible()
+  await page.unroute('**/models/body.glb')
+  await page.getByRole('button', { name: 'Thử lại' }).click()
+  await page.waitForFunction(() => window.__ptDebug !== undefined)
+})
+
+test('máy không có WebGL vẫn tra cứu được bằng danh sách', async ({ page }) => {
+  await page.addInitScript(() => {
+    const original = HTMLCanvasElement.prototype.getContext
+    Object.defineProperty(HTMLCanvasElement.prototype, 'getContext', {
+      value(this: HTMLCanvasElement, type: string, ...rest: unknown[]) {
+        return type.startsWith('webgl') ? null : Reflect.apply(original, this, [type, ...rest])
+      },
+    })
+  })
+  await page.goto('/')
+  await expect(page.getByText('Máy này không hiển thị được 3D.', { exact: false })).toBeVisible()
+  await page.getByRole('button', { name: /Cơ ngực lớn/ }).click()
+  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+})
+
+test('?debug hiện fps và thời gian chạm', async ({ page }) => {
+  await ready(page)
+  await expect(page.getByText(/fps · chạm .* ms · pixelRatio/)).toBeVisible()
+})

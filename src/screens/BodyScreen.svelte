@@ -1,7 +1,10 @@
 <script lang="ts">
   import { onMount } from 'svelte'
   import BottomSheet, { type Snap } from '../components/BottomSheet.svelte'
+  import DebugOverlay from '../components/DebugOverlay.svelte'
+  import LoadState from '../components/LoadState.svelte'
   import MuscleInfo from '../components/MuscleInfo.svelte'
+  import MuscleList from '../components/MuscleList.svelte'
   import SearchBar from '../components/SearchBar.svelte'
   import SideActions from '../components/SideActions.svelte'
   import { isSuperficial, type Selection } from '../lib/content'
@@ -12,12 +15,37 @@
   const HINT_KEY = 'pt-anatomy:hint-seen:v1'
   const debug = new URLSearchParams(location.search).has('debug')
 
-  let canvas: HTMLCanvasElement
+  let canvas = $state<HTMLCanvasElement>()
   let viewer = $state<Viewer | null>(null)
   let selection = $state<Selection | null>(null)
   let snap = $state<Snap>('peek')
   let superficialHidden = $state(false)
   let hintSeen = $state(load(HINT_KEY, false))
+
+  const webgl = (() => {
+    try {
+      return document.createElement('canvas').getContext('webgl2') !== null
+    } catch {
+      return false
+    }
+  })()
+
+  let phase = $state<'loading' | 'ready' | 'error'>('loading')
+  let progress = $state<number | null>(null)
+
+  async function start() {
+    phase = 'loading'
+    progress = null
+    try {
+      const v = await createViewer(canvas!, { onPick: show, onProgress: (p) => (progress = p) })
+      viewer = v
+      phase = 'ready'
+      if (debug) window.__ptDebug = v
+    } catch (error) {
+      console.error(error)
+      phase = 'error'
+    }
+  }
 
   function show(next: Selection | null) {
     selection = next
@@ -45,19 +73,23 @@
   const blurActive = () => (document.activeElement as HTMLElement | null)?.blur()
 
   onMount(() => {
-    createViewer(canvas, { onPick: show, onProgress: () => {} }).then((v) => {
-      viewer = v
-      if (debug) window.__ptDebug = v
-    })
+    if (webgl) start()
     return () => viewer?.dispose()
   })
 </script>
 
-<canvas
-  bind:this={canvas}
-  aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin."
-  onpointerdown={blurActive}
-></canvas>
+{#if webgl}
+  <canvas
+    bind:this={canvas}
+    aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin."
+    onpointerdown={blurActive}
+  ></canvas>
+  {#if phase !== 'ready'}
+    <LoadState {phase} {progress} onRetry={start} />
+  {/if}
+{:else}
+  <MuscleList onSelect={(muscle) => show({ muscle, part: null })} />
+{/if}
 
 <SearchBar onSelect={selectMuscle} />
 
@@ -66,6 +98,10 @@
   {#if !hintSeen}
     <p class="hint" role="status">Chạm vào cơ để xem tên và bài tập</p>
   {/if}
+{/if}
+
+{#if debug && viewer}
+  <DebugOverlay {viewer} />
 {/if}
 
 <BottomSheet open={selection !== null} bind:snap label="Thông tin cơ">
