@@ -1,0 +1,973 @@
+[
+  {"id": "barbell-bench-press", "en": "Barbell bench press", "vi": "Đẩy ngực ngang tạ đòn (bench press)", "equipment": "barbell", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior", "triceps-brachii"],
+    "cues": [
+      "Siết bả vai về sau và xuống trước khi hạ tạ để giữ vững khớp vai.",
+      "Hạ thanh đòn có kiểm soát chạm ngực khoảng ngang núm vú, không nảy tạ khỏi ngực.",
+      "Giữ đầu, vai, mông áp ghế và bàn chân đặt phẳng, ấn chắc xuống sàn suốt hiệp.",
+      "Khi đẩy nặng, luôn có người hỗ trợ (spotter) hoặc đặt thanh chặn an toàn." ],
+    "sources": [
+      {"title": "Wikipedia: Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"},
+      {"title": "ACE Exercise Library: Chest Press (barbell)", "url": "https://www.acefitness.org/resources/everyone/exercise-library/5/chest-press/"} ] },
+  {"id": "incline-barbell-bench-press", "en": "Incline barbell bench press", "vi": "Đẩy ngực dốc lên tạ đòn (incline bench press)", "equipment": "barbell", "status": "draft",
+    "primary": ["pectoralis-major.clavicular", "deltoid.anterior"], "secondary": ["triceps-brachii"],
+    "cues": [
+      "Để ghế khoảng 30° nếu muốn nhấn ngực trên; dốc quá 45° thì vai trước gánh nhiều hơn ngực.",
+      "Siết bả vai về sau và xuống, giữ đầu, vai, mông áp ghế.",
+      "Hạ tạ chạm ngực có kiểm soát rồi đẩy lên đến khi duỗi thẳng tay.",
+      "Khi đẩy nặng, luôn có người hỗ trợ (spotter) hoặc đặt thanh chặn an toàn." ],
+    "sources": [
+      {"title": "Wikipedia: Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"},
+      {"title": "Rodríguez-Ridao et al. 2020, Effect of Five Bench Inclinations on the EMG Activity of the Pectoralis Major, Anterior Deltoid, and Triceps Brachii (IJERPH)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7579505/"} ] },
+  {"id": "decline-barbell-bench-press", "en": "Decline barbell bench press", "vi": "Đẩy ngực dốc xuống tạ đòn (decline bench press)", "equipment": "barbell", "status": "draft",
+    "primary": ["pectoralis-major.sternocostal"], "secondary": ["deltoid.anterior", "triceps-brachii"],
+    "cues": [
+      "Siết bả vai về sau và xuống trước khi hạ tạ.",
+      "Hạ thanh đòn có kiểm soát đến khi chạm ngực rồi đẩy lên đến khi duỗi thẳng tay.",
+      "Móc chân chắc vào đệm giữ chân trước khi nhấc tạ.",
+      "Luôn có người hỗ trợ (spotter): đầu thấp hơn hông nên rất khó tự thoát tạ khi đuối sức." ],
+    "sources": [
+      {"title": "Wikipedia: Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"} ] },
+  {"id": "dumbbell-bench-press", "en": "Dumbbell bench press", "vi": "Đẩy ngực ngang tạ đơn (dumbbell bench press)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior", "triceps-brachii"],
+    "cues": [
+      "Ép bả vai xuống và về sau; đầu, vai, mông áp ghế, chân đặt chắc trên sàn.",
+      "Hạ tạ chậm về giữa ngực, hơi rộng về phía nách, chạm nhẹ không nảy.",
+      "Giữ cổ tay thẳng, không gập hay bẻ ngửa cổ tay.",
+      "Không ưỡn lưng dưới khi đẩy lên." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Chest Press (dumbbell)", "url": "https://www.acefitness.org/resources/everyone/exercise-library/19/chest-press/"},
+      {"title": "Wikipedia: Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"} ] },
+  {"id": "incline-dumbbell-press", "en": "Incline dumbbell press", "vi": "Đẩy ngực dốc lên tạ đơn (incline dumbbell press)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["pectoralis-major.clavicular", "deltoid.anterior"], "secondary": ["triceps-brachii"],
+    "cues": [
+      "Ép bả vai xuống và về sau; giữ đầu, vai, mông áp ghế.",
+      "Hạ tạ chậm về phía ngực trên, khuỷu nằm dưới cổ tay.",
+      "Giữ cổ tay thẳng và không ưỡn lưng dưới khi đẩy.",
+      "Hết hiệp, giữ chặt tạ cho đến khi người hỗ trợ cầm chắc." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Incline Chest Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/25/incline-chest-press/"},
+      {"title": "Wikipedia: Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"} ] },
+  {"id": "dumbbell-fly", "en": "Dumbbell fly", "vi": "Bay ngực tạ đơn (dumbbell fly)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior", "biceps-brachii"],
+    "cues": [
+      "Ép bả vai xuống và về sau; đầu, vai, mông áp ghế suốt bài.",
+      "Giữ khuỷu hơi cong cố định, hạ tạ theo vòng cung rộng đến ngang vai hoặc ngực.",
+      "Giữ cổ tay thẳng và hai tạ song song khi hạ.",
+      "Dùng tạ nhẹ hơn bài đẩy ngực và hạ chậm, có kiểm soát." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Lying Chest Fly", "url": "https://www.acefitness.org/resources/everyone/exercise-library/21/lying-chest-fly/"},
+      {"title": "Solstad et al. 2020, A Comparison of Muscle Activation between Barbell Bench Press and Dumbbell Flyes (J Sports Sci Med)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/"},
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"} ] },
+  {"id": "cable-crossover", "en": "Cable crossover", "vi": "Ép ngực cáp chéo (cable crossover)", "equipment": "cable", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior"],
+    "cues": [
+      "Đặt ròng rọc cao hơn vai một chút, bước lên trước để hai tay dang sang hai bên.",
+      "Giữ khuỷu hơi cong, khép hai tay vào trước thân, dừng 1 giây rồi trả về chậm.",
+      "Nghiêng người ra trước và trụ chân vững để đối trọng với cáp.",
+      "Bắt đầu với mức tạ nhẹ vì bài bay dễ gây chấn thương khớp vai." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Standing Chest Fly", "url": "https://www.acefitness.org/resources/everyone/exercise-library/160/standing-chest-fly/"},
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"} ] },
+  {"id": "push-up", "en": "Push-up", "vi": "Hít đất (push-up)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior", "triceps-brachii", "serratus-anterior", "rectus-abdominis"],
+    "cues": [
+      "Siết bụng, mông và đùi để thân thẳng một đường từ đầu đến gót.",
+      "Không để lưng dưới võng xuống hay hông nhô lên.",
+      "Đặt tay rộng bằng vai, vai nằm thẳng trên bàn tay.",
+      "Biến thể khép khuỷu sát thân: nhấn nhiều hơn vào cơ tam đầu và có thể giảm áp lực lên khớp vai." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Push-up", "url": "https://www.acefitness.org/resources/everyone/exercise-library/41/push-up/"},
+      {"title": "Wikipedia: Push-up", "url": "https://en.wikipedia.org/wiki/Push-up"} ] },
+  {"id": "chest-dip", "en": "Chest dip", "vi": "Dip xà kép nhấn ngực (chest dip)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["pectoralis-major", "triceps-brachii"], "secondary": ["deltoid.anterior"],
+    "cues": [
+      "Bắt đầu chống thẳng tay trên xà, vai nằm trên bàn tay.",
+      "Hạ người đến khi khuỷu gập khoảng 90° rồi đẩy lên lại.",
+      "Nghiêng thân ra trước khi hạ người để lấy độ sâu mà vai không phải duỗi quá mức.",
+      "Người có tiền sử đau hoặc chấn thương vai cần thận trọng; có thể dùng máy dip trợ lực." ],
+    "sources": [
+      {"title": "Wikipedia: Dip (exercise)", "url": "https://en.wikipedia.org/wiki/Dip_(exercise)"},
+      {"title": "McKenzie et al. 2022, Bench, Bar, and Ring Dips: Do Kinematics and Muscle Activity Differ? (IJERPH)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/"} ] },
+  {"id": "machine-chest-press", "en": "Machine chest press", "vi": "Đẩy ngực máy (machine chest press)", "equipment": "machine", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior", "triceps-brachii"],
+    "cues": [
+      "Chỉnh ghế sao cho tay cầm ngang giữa ngực.",
+      "Lưng áp đệm, siết bụng, giữ đường cong tự nhiên của lưng dưới, không ưỡn.",
+      "Ép bả vai xuống và về sau; không để vai tròn ra trước khi đẩy hết tầm.",
+      "Đẩy đến khi gần duỗi thẳng khuỷu nhưng không khóa khớp, rồi trả về chậm." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Seated Chest Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/188/seated-chest-press/"},
+      {"title": "Comparison of Muscle Activity between the Horizontal Bench Press and the Seated Chest Press Exercises Using Several Grips (J Hum Kinet 2023)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10203828/"} ] },
+  {"id": "pec-deck", "en": "Pec deck (machine fly)", "vi": "Ép ngực máy (pec deck)", "equipment": "machine", "status": "draft",
+    "primary": ["pectoralis-major"], "secondary": ["deltoid.anterior"],
+    "cues": [
+      "Giữ góc khuỷu cố định suốt động tác, tay di chuyển theo vòng cung.",
+      "Với máy có đệm, đặt cẳng tay áp vào đệm ngang ngực rồi ép hai đệm vào nhau.",
+      "Bắt đầu với mức tạ nhẹ rồi tăng dần vì bài bay dễ gây chấn thương khớp vai." ],
+    "sources": [
+      {"title": "Wikipedia: Machine fly", "url": "https://en.wikipedia.org/wiki/Machine_fly"},
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"},
+      {"title": "Rocha Júnior et al. 2007, Rev Bras Med Esporte: EMG activity during the bench press and peck deck exercises", "url": "https://www.scielo.br/j/rbme/a/wZB7qVqH98pXGzH9p4kyg5Q/?lang=en"} ] },
+  {"id": "dumbbell-pullover", "en": "Dumbbell pullover", "vi": "Kéo tạ đơn qua đầu (dumbbell pullover)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["pectoralis-major", "latissimus-dorsi"], "secondary": ["triceps-brachii", "teres-major", "pectoralis-minor"],
+    "cues": [
+      "Nằm ngửa trên ghế, giữ tạ phía trên ngực.",
+      "Giữ khuỷu gần thẳng (hơi cong), đưa tạ chậm ra sau qua đầu rồi kéo về vị trí đầu.",
+      "Kiểu tay thẳng thiên về ngực; kiểu gập khuỷu khoảng 90° thiên về lưng trên và cơ tam đầu.",
+      "Chỉ đưa tạ ra sau đầu trong tầm vai thoải mái; không ưỡn lưng dưới để lấy thêm biên độ." ],
+    "sources": [
+      {"title": "Wikipedia: Pullover (exercise)", "url": "https://en.wikipedia.org/wiki/Pullover_(exercise)"},
+      {"title": "ACE Exercise Library: Lying Pullovers", "url": "https://www.acefitness.org/resources/everyone/exercise-library/37/lying-pullovers/"},
+      {"title": "Electromyographic Analysis of Latissimus Dorsi Activation During Common Resistance Training Exercises: A Narrative Review (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13510307/"} ] },
+  {"id": "standing-barbell-overhead-press", "en": "Standing barbell overhead press", "vi": "Đẩy vai đứng tạ đòn (overhead press)", "equipment": "barbell", "status": "draft",
+    "primary": ["deltoid.anterior", "deltoid.middle"], "secondary": ["triceps-brachii", "trapezius.upper"],
+    "cues": [
+      "Để thanh tựa trên phía trước vai, nắm rộng khoảng bằng vai, khuỷu hướng ra trước.",
+      "Siết bụng và mông; không ngả người ra sau hay ưỡn lưng dưới khi đẩy.",
+      "Đẩy thanh thẳng lên qua đầu đến khi duỗi thẳng tay.",
+      "Hạ thanh chậm, có kiểm soát về lại vai." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Standing Shoulder Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/71/standing-shoulder-press/"},
+      {"title": "Padovan et al. 2025, High-Density Surface Electromyography Excitation in Front vs. Back Overhead Press Prime Movers (J Hum Kinet)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/"} ] },
+  {"id": "seated-dumbbell-shoulder-press", "en": "Seated dumbbell shoulder press", "vi": "Đẩy vai tạ đơn ngồi (dumbbell shoulder press)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["deltoid.anterior", "deltoid.middle"], "secondary": ["triceps-brachii", "trapezius.upper"],
+    "cues": [
+      "Ngồi tựa lưng, đầu, vai, mông áp ghế, chân đặt chắc và siết bụng.",
+      "Ép bả vai xuống và về sau, giữ cổ tay thẳng.",
+      "Đẩy tạ lên đến khi duỗi thẳng khuỷu mà không ưỡn lưng dưới.",
+      "Hạ tạ chậm, chủ động kéo xuống thay vì thả rơi theo trọng lực." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Seated Overhead Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/45/seated-overhead-press/"},
+      {"title": "Padovan et al. 2025, High-Density Surface Electromyography Excitation in Front vs. Back Overhead Press Prime Movers (J Hum Kinet)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/"},
+      {"title": "Campos et al. 2020, J Hum Kinet: Different Shoulder Exercises Affect the Activation of Deltoid Portions (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7706677/"} ] },
+  {"id": "dumbbell-lateral-raise", "en": "Dumbbell lateral raise", "vi": "Dang tạ đơn sang bên (lateral raise)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["deltoid.middle"], "secondary": ["trapezius.upper"],
+    "cues": [
+      "Siết bụng, ép vai xuống và về sau, giữ thân thẳng, không ưỡn lưng.",
+      "Nâng tạ sang hai bên, khuỷu và cánh tay đi trước cẳng tay và tạ.",
+      "Dừng khi cánh tay ngang vai, song song với sàn.",
+      "Khi qua khoảng 60–70°, xoay nhẹ tay lên (xoay ngoài) để giảm nguy cơ chèn ép vai." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Lateral Raise", "url": "https://www.acefitness.org/resources/everyone/exercise-library/26/lateral-raise/"},
+      {"title": "Coratella et al. 2020, An Electromyographic Analysis of Lateral Raise Variations and Frontal Raise in Competitive Bodybuilders (IJERPH)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503819/"},
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"} ] },
+  {"id": "cable-lateral-raise", "en": "Cable lateral raise", "vi": "Dang vai với cáp (cable lateral raise)", "equipment": "cable", "status": "draft",
+    "primary": ["deltoid.middle"], "secondary": [],
+    "cues": [
+      "Đứng nghiêng cạnh máy, ròng rọc đặt sát sàn, tay tập ở phía xa máy.",
+      "Giữ vai ở tư thế xoay trung tính; xoay ngoài sẽ chuyển việc sang bó trước.",
+      "Không để khuỷu đi ra sau vai và không dùng hông hay lưng lấy đà.",
+      "Giữ khuỷu hơi cong, không khóa thẳng tay." ],
+    "sources": [
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"} ] },
+  {"id": "dumbbell-front-raise", "en": "Dumbbell front raise", "vi": "Nâng tạ đơn trước mặt (front raise)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["deltoid.anterior", "pectoralis-major.clavicular"], "secondary": [],
+    "cues": [
+      "Siết bụng, ép vai xuống và về sau, đầu thẳng hàng với cột sống.",
+      "Nâng tạ lên trước mặt với khuỷu hơi cong đến khi tay ngang vai.",
+      "Giữ thân thẳng, không ưỡn lưng hay ngả người lấy đà.",
+      "Hạ tạ chậm về vị trí ban đầu." ],
+    "sources": [
+      {"title": "Wikipedia: Front raise", "url": "https://en.wikipedia.org/wiki/Front_raise"},
+      {"title": "ACE Exercise Library: Front Raise", "url": "https://www.acefitness.org/resources/everyone/exercise-library/54/front-raise/"},
+      {"title": "Coratella et al. 2020: EMG analysis of lateral raise variations and frontal raise (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503819/"} ] },
+  {"id": "bent-over-rear-delt-fly", "en": "Bent-over rear delt fly", "vi": "Bay vai sau cúi người (rear delt fly)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["deltoid.posterior"], "secondary": ["infraspinatus", "teres-minor", "rhomboids", "trapezius"],
+    "cues": [
+      "Cúi người cho thân gần song song sàn (hoặc nằm sấp trên ghế), tay buông thẳng xuống.",
+      "Giữ khuỷu hơi cong, dang tay theo vòng cung đến ngang vai.",
+      "Giữ khuỷu hướng ra xa thân và không lắc thân; khép khuỷu về hông sẽ chuyển việc sang cơ lưng rộng.",
+      "Bắt đầu với tạ nhẹ." ],
+    "sources": [
+      {"title": "Wikipedia: Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"},
+      {"title": "Wikipedia: Rear delt raise", "url": "https://en.wikipedia.org/wiki/Rear_delt_raise"} ] },
+  {"id": "reverse-pec-deck", "en": "Reverse pec deck", "vi": "Bay vai sau trên máy (reverse pec deck)", "equipment": "machine", "status": "draft",
+    "primary": ["deltoid.posterior"], "secondary": ["infraspinatus", "teres-minor", "rhomboids", "trapezius"],
+    "cues": [
+      "Trên máy có chức năng này, chỉnh tay đòn sang chế độ bay vai sau.",
+      "Dang tay theo mặt phẳng ngang, khuỷu hơi cong.",
+      "Giữ khuỷu hướng ra xa thân và giữ thân cố định, không giật người.",
+      "Bắt đầu với mức tạ nhẹ." ],
+    "sources": [
+      {"title": "Wikipedia: Machine fly", "url": "https://en.wikipedia.org/wiki/Machine_fly"},
+      {"title": "Wikipedia: Rear delt raise", "url": "https://en.wikipedia.org/wiki/Rear_delt_raise"},
+      {"title": "Campos et al. 2020, J Hum Kinet: Different Shoulder Exercises Affect the Activation of Deltoid Portions (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7706677/"} ] },
+  {"id": "face-pull", "en": "Face pull", "vi": "Kéo cáp về mặt (face pull)", "equipment": "cable", "status": "draft",
+    "primary": ["deltoid.posterior", "infraspinatus", "teres-minor"], "secondary": ["trapezius.middle", "trapezius.lower", "rhomboids", "biceps-brachii"],
+    "cues": [
+      "Dùng máy cáp gắn dây thừng, ròng rọc ngang mặt hoặc cao hơn một chút; kéo dây về phía mặt.",
+      "Mở khuỷu sang hai bên, khuỷu ngang hoặc cao hơn cổ tay trong khi kéo.",
+      "Cuối động tác, xoay vai ra ngoài để hai tay tách về hai bên đầu và khép bả vai.",
+      "Giữ thân đứng yên, không ngả người ra sau để kéo." ],
+    "sources": [
+      {"title": "Wikipedia: Face pull (exercise)", "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)"} ] },
+  {"id": "upright-row", "en": "Upright row", "vi": "Kéo tạ dọc thân (upright row)", "equipment": "barbell", "status": "draft",
+    "primary": ["deltoid.middle", "trapezius.upper"], "secondary": ["biceps-brachii"],
+    "cues": [
+      "Nắm thanh đòn kiểu úp tay, rộng khoảng bằng vai trở lên; nắm rộng giúp cơ delta và cơ thang làm việc nhiều hơn.",
+      "Kéo thanh lên sát thân, khuỷu dẫn đường và luôn cao hơn cổ tay.",
+      "Chỉ kéo đến khoảng ngang ngực; kéo cao hơn làm tăng nguy cơ chèn ép vai.",
+      "Dừng bài ngay khi thấy đau vai." ],
+    "sources": [
+      {"title": "Wikipedia: Upright row", "url": "https://en.wikipedia.org/wiki/Upright_row"},
+      {"title": "McAllister et al. 2013, J Strength Cond Res: Effect of grip width on electromyographic activity during the upright row", "url": "https://digitalcommons.memphis.edu/facpubs/9848"} ] },
+  {"id": "cable-external-rotation", "en": "Cable external rotation", "vi": "Xoay ngoài vai với cáp (external rotation)", "equipment": "cable", "status": "draft",
+    "primary": ["infraspinatus", "teres-minor"], "secondary": ["deltoid.posterior"],
+    "cues": [
+      "Đặt ròng rọc ngang thắt lưng, đứng nghiêng với tay tập ở phía xa máy, kẹp khuỷu sát thân.",
+      "Xoay cẳng tay ra ngoài, khuỷu giữ cố định bên hông.",
+      "Dừng 1 giây ở cuối rồi trả về chậm.",
+      "Giữ chuyển động gọn ở khớp vai, tránh để cơ delta bù trừ thay cho cơ dưới gai." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Rotator Cuff External Rotation", "url": "https://www.acefitness.org/resources/everyone/exercise-library/352/rotator-cuff-external-rotation/"},
+      {"title": "Selective Activation of the Infraspinatus During External Rotation Exercises (Medicina 2025)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857205/"} ] },
+  {"id": "cable-internal-rotation", "en": "Cable internal rotation", "vi": "Xoay trong vai với cáp (internal rotation)", "equipment": "cable", "status": "draft",
+    "primary": ["subscapularis"], "secondary": ["pectoralis-major"],
+    "cues": [
+      "Đặt ròng rọc ngang thắt lưng, đứng nghiêng với bên tập gần máy, kẹp khuỷu sát thân.",
+      "Xoay cẳng tay vào trước bụng, khuỷu giữ sát người.",
+      "Dừng 1 giây rồi trả về chậm." ],
+    "sources": [
+      {"title": "ACE Exercise Library: Rotator Cuff Internal Rotation", "url": "https://www.acefitness.org/resources/everyone/exercise-library/351/rotator-cuff-internal-rotation/"},
+      {"title": "Alizadehkhaiyat et al. 2015, Electromyographic Analysis of Shoulder Girdle Muscles during Common Internal Rotation Exercises (IJSPT)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595918/"} ] },
+  {"id": "pull-up", "en": "Pull-up", "vi": "Hít xà (pull-up)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["latissimus-dorsi"], "secondary": ["biceps-brachii", "brachialis", "teres-major", "trapezius"],
+    "cues": [
+      "Kéo bả vai xuống và về sau trước khi kéo, giữ tư thế đó suốt bài.",
+      "Siết bụng, giữ thân thẳng đứng, không đung đưa lấy đà.",
+      "Kéo đến khi cằm ngang xà, rồi hạ có kiểm soát đến khi duỗi thẳng tay.",
+      "Không nắm quá rộng; tay quá rộng có thể làm tăng nguy cơ chấn thương." ],
+    "sources": [
+      {"title": "Wikipedia – Pull-up", "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)"},
+      {"title": "ACE Exercise Library – Pull-ups", "url": "https://www.acefitness.org/resources/everyone/exercise-library/191/pull-ups/"} ] },
+  {"id": "chin-up", "en": "Chin-up", "vi": "Hít xà tay ngửa (chin-up)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["latissimus-dorsi", "biceps-brachii"], "secondary": ["brachialis", "teres-major", "trapezius"],
+    "cues": [
+      "Nắm xà lòng bàn tay hướng về mặt, nắm trọn (ngón cái vòng qua xà).",
+      "Kéo bả vai xuống và về sau, giữ tư thế đó suốt bài.",
+      "Kéo khuỷu thẳng xuống sàn, khuỷu ở phía trước thân; không đung đưa.",
+      "Kéo đến khi cằm ngang xà, rồi hạ chậm đến khi duỗi thẳng tay." ],
+    "sources": [
+      {"title": "Wikipedia – Pull-up", "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)"},
+      {"title": "ACE Exercise Library – Chin-ups", "url": "https://www.acefitness.org/resources/everyone/exercise-library/190/chin-ups/"} ] },
+  {"id": "lat-pulldown", "en": "Lat pulldown", "vi": "Kéo xô (lat pulldown)", "equipment": "cable", "status": "draft",
+    "primary": ["latissimus-dorsi"], "secondary": ["teres-major", "trapezius.lower", "rhomboids", "biceps-brachii", "brachialis"],
+    "cues": [
+      "Chỉnh đệm đùi ép chặt, siết bụng và không ưỡn thắt lưng.",
+      "Bắt đầu bằng hạ bả vai xuống, rồi kéo thanh về ngực trên, khuỷu hướng xuống sàn.",
+      "Chỉ ngả người ra sau nhẹ (không quá 30°), không ngả thêm khi kéo.",
+      "Không kéo thanh ra sau gáy." ],
+    "sources": [
+      {"title": "Wikipedia – Pull-down (exercise)", "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)"},
+      {"title": "ACE Exercise Library – Seated Lat Pulldown", "url": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/"} ] },
+  {"id": "close-grip-lat-pulldown", "en": "Close-grip (V-bar) lat pulldown", "vi": "Kéo xô tay cầm chữ V (close-grip pulldown)", "equipment": "cable", "status": "draft",
+    "primary": ["latissimus-dorsi"], "secondary": ["teres-major", "trapezius.lower", "rhomboids", "biceps-brachii", "brachialis"],
+    "cues": [
+      "Siết bụng, ngả ra sau nhẹ (không quá 30°) và giữ nguyên góc đó khi kéo.",
+      "Hạ bả vai trước, rồi kéo tay cầm về ngực trên/giữa, khuỷu đi xuống sát hai bên thân.",
+      "Dừng khi khuỷu không còn đi xuống mà bắt đầu ra sau, để tránh dồn tải vào khớp vai.",
+      "Trả tạ lên chậm đến khi duỗi thẳng khuỷu." ],
+    "sources": [
+      {"title": "Wikipedia – Pull-down (exercise)", "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)"},
+      {"title": "ACE Exercise Library – Seated Lat Pulldown", "url": "https://www.acefitness.org/resources/everyone/exercise-library/158/seated-lat-pulldown/"} ] },
+  {"id": "straight-arm-cable-pulldown", "en": "Straight-arm cable pulldown", "vi": "Kéo cáp tay thẳng (straight-arm pulldown)", "equipment": "cable", "status": "draft",
+    "primary": ["latissimus-dorsi"], "secondary": ["triceps-brachii", "deltoid.posterior"],
+    "cues": [
+      "Đặt ròng rọc ở vị trí cao nhất, đứng chân rộng bằng hông, gối hơi chùng, lưng thẳng.",
+      "Giữ tay thẳng suốt động tác, đưa tay xuống đến trước hông.",
+      "Giữ ngực mở và vai hạ xuống, không nhún vai.",
+      "Trả tay lên chậm, có kiểm soát." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Straight-arm Pressdown", "url": "https://www.acefitness.org/resources/everyone/exercise-library/334/straight-arm-pressdown/"},
+      {"title": "Hinge Health – Straight-arm pulldown", "url": "https://www.hingehealth.com/resources/articles/straight-arm-pulldown"} ] },
+  {"id": "barbell-bent-over-row", "en": "Barbell bent-over row", "vi": "Gập người kéo tạ đòn (barbell row)", "equipment": "barbell", "status": "draft",
+    "primary": ["latissimus-dorsi", "trapezius.middle", "rhomboids"], "secondary": ["deltoid.posterior", "teres-major", "erector-spinae", "biceps-brachii", "brachialis"],
+    "cues": [
+      "Gập người ở hông, lưng thẳng, gối hơi chùng; siết bụng để giữ thân cố định.",
+      "Nắm thanh úp tay, kéo thanh về phía bụng.",
+      "Kéo chậm, không giật hay nhấp thân để lấy đà.",
+      "Hạ tạ có kiểm soát đến khi duỗi thẳng tay; bắt đầu với tạ nhẹ để quen tư thế." ],
+    "sources": [
+      {"title": "Wikipedia – Bent-over row", "url": "https://en.wikipedia.org/wiki/Bent-over_row"},
+      {"title": "García-Jaén et al. (2021) EMG responses during the bent-over row: standing vs bench postures, J Phys Educ Sport 21(4):1871–1877", "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf"} ] },
+  {"id": "one-arm-dumbbell-row", "en": "One-arm dumbbell row", "vi": "Kéo tạ đơn một tay (one-arm dumbbell row)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["latissimus-dorsi"], "secondary": ["trapezius", "rhomboids", "deltoid.posterior"],
+    "cues": [
+      "Chống gối và tay cùng bên lên ghế, tay chống thẳng dưới vai, lưng phẳng.",
+      "Siết bụng, kéo bả vai xuống và về sau trước khi kéo.",
+      "Kéo tạ lên, cánh tay sát thân, hướng về hông; không xoay thân.",
+      "Hạ tạ chậm, giữ lưng phẳng và vai không đổ về phía sàn." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Single-arm Row", "url": "https://www.acefitness.org/resources/everyone/exercise-library/126/single-arm-row/"},
+      {"title": "Wikipedia – Bent-over row", "url": "https://en.wikipedia.org/wiki/Bent-over_row"} ] },
+  {"id": "seated-cable-row", "en": "Seated cable row", "vi": "Kéo cáp ngồi (seated cable row)", "equipment": "cable", "status": "draft",
+    "primary": ["latissimus-dorsi", "trapezius.middle", "rhomboids"], "secondary": ["biceps-brachii"],
+    "cues": [
+      "Ngồi chân đặt chắc, gối hơi chùng, lưng thẳng.",
+      "Mở ngực, kéo khuỷu ra sau sát mạng sườn đến khi tay cầm chạm bụng.",
+      "Dừng 1 giây ở cuối rồi duỗi tay về chậm.",
+      "Giữ thân cố định, không ngả người ra sau hay giật lưng để kéo tạ." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Seated Row", "url": "https://www.acefitness.org/resources/everyone/exercise-library/48/seated-row/"},
+      {"title": "Lehman et al. (2004) Variations in muscle activation levels during traditional latissimus dorsi weight training exercises, Dynamic Medicine (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC449729/"} ] },
+  {"id": "t-bar-row", "en": "T-bar row", "vi": "Kéo T-bar (T-bar row)", "equipment": "barbell", "status": "draft",
+    "primary": ["latissimus-dorsi", "rhomboids", "trapezius"], "secondary": ["biceps-brachii"],
+    "cues": [
+      "Giữ lưng thẳng suốt bài, lưng dưới giữ độ cong nhẹ tự nhiên.",
+      "Chân rộng bằng hông, gối hơi chùng, gập hông khoảng 45°.",
+      "Khép khuỷu sát thân, siết hai bả vai lại khi kéo tạ về phía bụng.",
+      "Bắt đầu với tạ rất nhẹ, chỉ tăng khi tư thế đã vững." ],
+    "sources": [
+      {"title": "WebMD – How to Do T-Bar Rows", "url": "https://www.webmd.com/fitness-exercise/how-to-do-t-bar-rows"} ] },
+  {"id": "chest-supported-dumbbell-row", "en": "Chest-supported dumbbell row", "vi": "Kéo tạ đơn tựa ngực ghế dốc (chest-supported row)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["latissimus-dorsi", "trapezius", "rhomboids"], "secondary": ["deltoid.posterior"],
+    "cues": [
+      "Nằm sấp tựa ngực lên ghế dốc khoảng 45°, mỗi tay một tạ đơn.",
+      "Kéo tạ lên đến khi lưng siết hết, hạ xuống đến khi lưng giãn hết.",
+      "Mở khuỷu ngang vai để nhấn delta sau và cơ thang; khép khuỷu sát thân để nhấn cơ lưng rộng.",
+      "Ghế đỡ ngực giúp lưng dưới ít phải gồng giữ hơn so với cúi người kéo đứng." ],
+    "sources": [
+      {"title": "Wikipedia – Bent-over row", "url": "https://en.wikipedia.org/wiki/Bent-over_row"},
+      {"title": "Wikipedia – Row (weight-lifting)", "url": "https://en.wikipedia.org/wiki/Row_(weight-lifting)"},
+      {"title": "García-Jaén et al. (2021) EMG responses during the bent-over row: standing vs bench postures, J Phys Educ Sport 21(4):1871–1877", "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf"} ] },
+  {"id": "inverted-row", "en": "Inverted row", "vi": "Hít xà thấp (inverted row)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["latissimus-dorsi", "trapezius"], "secondary": ["biceps-brachii"],
+    "cues": [
+      "Giữ thân thẳng một đường từ đầu đến gót suốt động tác.",
+      "Kéo ngực lên chạm xà, rồi hạ về có kiểm soát.",
+      "Hạ xà thấp hơn để khó hơn, nâng xà cao để dễ hơn." ],
+    "sources": [
+      {"title": "Wikipedia – Inverted row", "url": "https://en.wikipedia.org/wiki/Inverted_row"} ] },
+  {"id": "barbell-shrug", "en": "Barbell shrug", "vi": "Nhún vai tạ đòn (barbell shrug)", "equipment": "barbell", "status": "draft",
+    "primary": ["trapezius.upper"], "secondary": ["levator-scapulae"],
+    "cues": [
+      "Nắm tạ úp tay rộng bằng vai, gối hơi chùng, lưng thẳng.",
+      "Nhún vai thẳng lên về phía tai, rồi hạ chậm về vị trí đầu.",
+      "Không xoay tròn vai, không gập khuỷu hay đung đưa thân." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Shrug", "url": "https://www.acefitness.org/resources/everyone/exercise-library/72/shrug/"},
+      {"title": "Wikipedia – Shoulder shrug", "url": "https://en.wikipedia.org/wiki/Shoulder_shrug"},
+      {"title": "Kenhub – Trapezius muscle", "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle"} ] },
+  {"id": "dumbbell-shrug", "en": "Dumbbell shrug", "vi": "Nhún vai tạ đơn (dumbbell shrug)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["trapezius.upper"], "secondary": ["levator-scapulae"],
+    "cues": [
+      "Cầm tạ hai bên đùi, lòng bàn tay hướng vào thân, khuỷu duỗi thẳng.",
+      "Siết bụng, giữ thân thẳng và cổ tay thẳng.",
+      "Nhún vai lên rồi hạ chậm; không xoay vai, không gập khuỷu." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Standing Shrug", "url": "https://www.acefitness.org/resources/everyone/exercise-library/75/standing-shrug/"},
+      {"title": "Wikipedia – Shoulder shrug", "url": "https://en.wikipedia.org/wiki/Shoulder_shrug"},
+      {"title": "Kenhub – Trapezius muscle", "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle"} ] },
+  {"id": "45-degree-back-extension", "en": "45° back extension", "vi": "Ưỡn lưng ghế 45° (back extension)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["erector-spinae", "gluteus-maximus", "biceps-femoris.long"], "secondary": [],
+    "cues": [
+      "Giữ lưng thẳng với độ cong tự nhiên suốt động tác.",
+      "Gập ở hông xuống đến khoảng 90° rồi lên lại thẳng người.",
+      "Khoanh tay trước ngực hoặc để tay sau đầu, khuỷu mở sang hai bên.",
+      "Muốn tăng tải thì ôm đĩa tạ trước ngực, bắt đầu với tạ nhẹ." ],
+    "sources": [
+      {"title": "Wikipedia – Hyperextension (exercise)", "url": "https://en.wikipedia.org/wiki/Hyperextension_(exercise)"},
+      {"title": "Andersen et al. (2021) Comparison of muscle activity in three single-joint, hip extension exercises in resistance-trained women, J Sports Sci Med 20:181–187", "url": "https://doi.org/10.52082/jssm.2021.181"} ] },
+  {"id": "superman", "en": "Superman (prone back extension)", "vi": "Superman (nằm sấp nâng tay chân)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["erector-spinae"], "secondary": ["multifidus", "gluteus-maximus"],
+    "cues": [
+      "Giữ đầu trung lập, mắt nhìn xuống; không ngửa đầu hay ưỡn cổ.",
+      "Chỉ nâng tay và chân lên tối đa khoảng 15 cm; không cố ưỡn thắt lưng quá mức.",
+      "Giữ 2–3 giây và vẫn thở đều, rồi hạ xuống.",
+      "Người có chấn thương lưng mạn tính nên hỏi chuyên gia trước khi tập." ],
+    "sources": [
+      {"title": "Healthline – How to Do the Superman Exercise", "url": "https://www.healthline.com/health/fitness/superman-exercise"},
+      {"title": "Superman and bird dog exercise variations: lumbar multifidus thickness (PMC8136566)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136566/"} ] },
+  {"id": "rack-pull", "en": "Rack pull", "vi": "Rack pull (deadlift từ giá)", "equipment": "barbell", "status": "draft",
+    "primary": ["trapezius", "erector-spinae", "gluteus-maximus"], "secondary": ["latissimus-dorsi", "deltoid.posterior", "biceps-femoris.long", "semitendinosus", "semimembranosus"],
+    "cues": [
+      "Đặt thanh trên giá ngay dưới hoặc trên gối.",
+      "Giữ cột sống trung lập, không ưỡn ngửa lưng khi đứng thẳng ở cuối.",
+      "Không giật tạ khỏi giá; siết cơ lưng rộng trước khi kéo.",
+      "Khi trả tạ về giá, cẩn thận không để thanh va vào gối." ],
+    "sources": [
+      {"title": "Healthline – Rack Pull: Benefits, Considerations, and How-To", "url": "https://www.healthline.com/health/fitness/rack-pull"},
+      {"title": "Wikipedia – Deadlift", "url": "https://en.wikipedia.org/wiki/Deadlift"} ] },
+  {"id": "barbell-curl", "en": "Barbell curl", "vi": "Cuốn tạ đòn (barbell curl)", "equipment": "barbell", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Giữ thân thẳng, không đung đưa người lấy đà vì như vậy chuyển tải khỏi cơ nhị đầu.",
+      "Giữ khuỷu cố định sát hai bên thân, không đẩy khuỷu ra trước.",
+      "Tập hết biên độ: gập khuỷu hết mức rồi hạ tạ chậm về vị trí duỗi.",
+      "Không chọn tạ quá nặng làm vỡ kỹ thuật; đây là nguyên nhân hay gặp gây rách gân nhị đầu." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "Marcolin et al. 2018 (PeerJ) – Differences in EMG activity of biceps brachii and brachioradialis while performing three variants of curl", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/"} ] },
+  {"id": "dumbbell-curl", "en": "Dumbbell curl", "vi": "Cuốn tạ đơn (dumbbell curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Giữ thân thẳng, không đung đưa người lấy đà vì như vậy chuyển tải khỏi cơ nhị đầu.",
+      "Giữ khuỷu cố định sát hai bên thân, không đẩy khuỷu ra trước.",
+      "Tập hết biên độ: gập khuỷu hết mức rồi hạ tạ chậm về vị trí duỗi.",
+      "Không chọn tạ quá nặng làm vỡ kỹ thuật; đây là nguyên nhân hay gặp gây rách gân nhị đầu." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "Marcolin et al. 2018 (PeerJ) – Differences in EMG activity of biceps brachii and brachioradialis while performing three variants of curl", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/"} ] },
+  {"id": "hammer-curl", "en": "Hammer curl", "vi": "Cuốn tạ búa (hammer curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["brachioradialis", "brachialis"], "secondary": ["biceps-brachii"],
+    "cues": [
+      "Cầm tạ trung tính, lòng bàn tay hướng vào thân, giữ nguyên tư thế này suốt bài.",
+      "Siết bụng, giữ thân thẳng, không ưỡn lưng dưới và không đẩy khuỷu ra trước.",
+      "Giữ cổ tay thẳng, không nhún vai khi cuốn.",
+      "Hạ tạ chậm đến khi duỗi hết khuỷu." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Hammer Curl", "url": "https://www.acefitness.org/resources/everyone/exercise-library/10/hammer-curl/"},
+      {"title": "Marcolin et al. 2018 (PeerJ) – Differences in EMG activity of biceps brachii and brachioradialis while performing three variants of curl", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/"},
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"} ] },
+  {"id": "preacher-curl", "en": "Preacher curl", "vi": "Cuốn tạ ghế preacher (preacher curl)", "equipment": "barbell", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Chỉnh ghế để mặt sau cánh tay áp sát đệm suốt bài.",
+      "Hạ tạ có kiểm soát đến khi khuỷu gần duỗi hết, không thả rơi tạ ở cuối biên độ.",
+      "Không chọn tạ quá nặng làm vỡ kỹ thuật; đây là nguyên nhân hay gặp gây rách gân nhị đầu." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "ACE – ACE Study Reveals Best Biceps Exercises", "url": "https://www.acefitness.org/continuing-education/prosource/august-2014/4933/ace-study-reveals-best-biceps-exercises/"} ] },
+  {"id": "incline-dumbbell-curl", "en": "Incline dumbbell curl", "vi": "Cuốn tạ đơn ghế dốc (incline dumbbell curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Ngồi ghế dốc khoảng 45 độ.",
+      "Dùng tạ nhẹ hơn so với curl đứng thông thường.",
+      "Giữ khuỷu khép sát thân và cuốn hết biên độ." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "Marcolin et al. 2018 (PeerJ) – Differences in EMG activity of biceps brachii and brachioradialis while performing three variants of curl", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/"} ] },
+  {"id": "concentration-curl", "en": "Concentration curl", "vi": "Cuốn tạ tập trung (concentration curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Tì cánh tay vào đùi để cánh tay không đung đưa.",
+      "Không vung vai ra trước để mượn lực.",
+      "Tập hết biên độ: gập khuỷu hết mức rồi hạ tạ chậm về vị trí duỗi." ],
+    "sources": [
+      {"title": "ACE – ACE Study Reveals Best Biceps Exercises", "url": "https://www.acefitness.org/continuing-education/prosource/august-2014/4933/ace-study-reveals-best-biceps-exercises/"},
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"} ] },
+  {"id": "cable-curl", "en": "Cable curl", "vi": "Cuốn cáp (cable curl)", "equipment": "cable", "status": "draft",
+    "primary": ["biceps-brachii"], "secondary": ["brachialis", "brachioradialis"],
+    "cues": [
+      "Đặt ròng rọc ở vị trí thấp nhất, lùi một bước khỏi máy để có góc kéo thoải mái.",
+      "Giữ khuỷu sát hai bên thân và vai cố định khi cuốn.",
+      "Không vung thân hay đẩy vai ra trước để mượn lực." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "ACE – ACE Study Reveals Best Biceps Exercises", "url": "https://www.acefitness.org/continuing-education/prosource/august-2014/4933/ace-study-reveals-best-biceps-exercises/"} ] },
+  {"id": "reverse-grip-barbell-curl", "en": "Reverse-grip barbell curl", "vi": "Cuốn tạ đòn cầm ngược (reverse curl)", "equipment": "barbell", "status": "draft",
+    "primary": ["brachioradialis"], "secondary": ["biceps-brachii", "brachialis"],
+    "cues": [
+      "Cầm úp (lòng bàn tay hướng xuống), hai tay rộng bằng vai.",
+      "Khép khuỷu sát thân và giữ bả vai cố định để vai không nhúc nhích.",
+      "Dùng tạ nhẹ hơn curl cầm ngửa vì cầm úp làm cơ nhị đầu gập khuỷu yếu hơn." ],
+    "sources": [
+      {"title": "Wikipedia – Biceps curl", "url": "https://en.wikipedia.org/wiki/Biceps_curl"},
+      {"title": "Marcolin et al. 2018 (PeerJ) – Differences in EMG activity of biceps brachii and brachioradialis while performing three variants of curl", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/"} ] },
+  {"id": "close-grip-bench-press", "en": "Close-grip bench press", "vi": "Đẩy ngực tay hẹp (close-grip bench press)", "equipment": "barbell", "status": "draft",
+    "primary": ["triceps-brachii", "pectoralis-major"], "secondary": ["deltoid.anterior"],
+    "cues": [
+      "Cầm thanh đòn với hai tay thẳng hàng với vai, khuỷu hướng về phía chân.",
+      "Hạ thanh xuống ngực với khuỷu khép sát mạng sườn.",
+      "Giữ cánh tay gần thẳng đứng để giảm áp lực lên cổ tay, khuỷu và vai.",
+      "Đạp chân xuống sàn và giữ hông áp vào ghế khi đẩy lên." ],
+    "sources": [
+      {"title": "Wikipedia – Bench press", "url": "https://en.wikipedia.org/wiki/Bench_press"},
+      {"title": "ACE Exercise Library – Close-grip Bench Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/311/close-grip-bench-press/"} ] },
+  {"id": "cable-triceps-pushdown", "en": "Cable triceps pushdown", "vi": "Kéo cáp tay sau (triceps pushdown)", "equipment": "cable", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": [],
+    "cues": [
+      "Giữ khuỷu sát hai bên thân; khuỷu trôi ra trước sẽ mượn cơ lưng và giảm tải cho tam đầu.",
+      "Siết bụng, giữ thân thẳng đứng suốt bài.",
+      "Giữ cổ tay thẳng hàng với cẳng tay.",
+      "Duỗi khuỷu hết nhưng không khóa cứng khớp." ],
+    "sources": [
+      {"title": "Wikipedia – Push-down (exercise)", "url": "https://en.wikipedia.org/wiki/Push-down_(exercise)"},
+      {"title": "ACE Exercise Library – Triceps Pushdowns", "url": "https://www.acefitness.org/resources/everyone/exercise-library/185/triceps-pushdowns/"} ] },
+  {"id": "overhead-dumbbell-triceps-extension", "en": "Overhead dumbbell triceps extension", "vi": "Duỗi tay sau qua đầu với tạ đơn (overhead triceps extension)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": [],
+    "cues": [
+      "Siết bụng, giữ cánh tay thẳng đứng và hai khuỷu rộng bằng vai.",
+      "Chỉ cử động ở khuỷu, không để cánh tay đổ ra sau.",
+      "Hạ tạ sau đầu đến khoảng 90 độ ở khuỷu, tránh chạm vào đầu.",
+      "Duỗi lên nhưng không khóa cứng khuỷu." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Triceps Extension", "url": "https://www.acefitness.org/resources/everyone/exercise-library/74/triceps-extension/"},
+      {"title": "ACE – ACE-sponsored Research: Best Triceps Exercises", "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/"} ] },
+  {"id": "lying-triceps-extension", "en": "Lying triceps extension (skull crusher)", "vi": "Nằm duỗi tay sau (skull crusher)", "equipment": "barbell", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": [],
+    "cues": [
+      "Giữ cánh tay thẳng đứng, chỉ gập ở khuỷu.",
+      "Hạ thanh đòn có kiểm soát xuống ngay trên trán hoặc hơi sau đầu.",
+      "Giữ hai khuỷu rộng bằng vai, không để bè ra ngoài.",
+      "Giữ cổ tay thẳng, không gập hay ngửa cổ tay." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Lying Barbell Triceps Extensions", "url": "https://www.acefitness.org/resources/everyone/exercise-library/36/lying-barbell-triceps-extensions/"},
+      {"title": "Wikipedia – Lying triceps extension", "url": "https://en.wikipedia.org/wiki/Lying_triceps_extension"} ] },
+  {"id": "bench-dip", "en": "Bench dip", "vi": "Chống đẩy ghế tay sau (bench dip)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": ["deltoid.anterior", "pectoralis-major"],
+    "cues": [
+      "Đặt tay hai bên hông trên mép ghế, ngón tay thò qua mép, duỗi thẳng chân ra trước.",
+      "Hạ hông đến khi cánh tay song song sàn, không xuống sâu hơn.",
+      "Đẩy lên bằng tay, không dùng chân.",
+      "Bài này có thể tạo lực quá mức lên khớp vai; bỏ qua nếu vai đau." ],
+    "sources": [
+      {"title": "ACE – ACE-sponsored Research: Best Triceps Exercises", "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/"},
+      {"title": "Wikipedia – Dip (exercise)", "url": "https://en.wikipedia.org/wiki/Dip_(exercise)"} ] },
+  {"id": "diamond-push-up", "en": "Diamond push-up", "vi": "Chống đẩy kim cương (diamond push-up)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": ["pectoralis-major", "deltoid.anterior"],
+    "cues": [
+      "Chụm hai ngón cái và hai ngón trỏ thành hình tam giác dưới ngực.",
+      "Siết bụng, mông, đùi để thân cứng thẳng; không võng lưng dưới, không nhổm hông.",
+      "Giữ đầu thẳng hàng với cột sống, hạ đến khi ngực hoặc cằm chạm sàn.",
+      "Nếu chưa đủ sức, chống gối xuống sàn." ],
+    "sources": [
+      {"title": "ACE – ACE-sponsored Research: Best Triceps Exercises", "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/"},
+      {"title": "Wikipedia – Push-up", "url": "https://en.wikipedia.org/wiki/Push-up"} ] },
+  {"id": "dumbbell-triceps-kickback", "en": "Dumbbell triceps kickback", "vi": "Đá tạ tay sau (triceps kickback)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["triceps-brachii"], "secondary": [],
+    "cues": [
+      "Đứng chân trước chân sau, tay kia chống lên đùi, siết bụng và giữ lưng không võng.",
+      "Giữ cánh tay song song và sát thân, không nâng cánh tay lên khi duỗi.",
+      "Duỗi khuỷu hết rồi hạ về chậm, không xoay thân." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Triceps Kickback", "url": "https://www.acefitness.org/resources/everyone/exercise-library/55/triceps-kickback/"},
+      {"title": "ACE – ACE-sponsored Research: Best Triceps Exercises", "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/"} ] },
+  {"id": "wrist-curl", "en": "Wrist curl", "vi": "Cuốn cổ tay (wrist curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["flexor-carpi-radialis", "flexor-carpi-ulnaris"], "secondary": [],
+    "cues": [
+      "Tì cẳng tay lên ghế, lòng bàn tay hướng lên, cổ tay thò ra ngoài mép.",
+      "Hạ tạ chậm về phía sàn để cổ tay duỗi ra, không nới lỏng tay cầm.",
+      "Không để tạ lăn xuống đầu ngón tay; việc đó tăng nguy cơ chấn thương cổ tay và rơi tạ." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Wrist Curl - Flexion", "url": "https://www.acefitness.org/resources/everyone/exercise-library/30/wrist-curl-flexion/"},
+      {"title": "Wikipedia – Flexor carpi radialis muscle", "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle"},
+      {"title": "Wikipedia – Flexor carpi ulnaris muscle", "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle"} ] },
+  {"id": "reverse-wrist-curl", "en": "Reverse wrist curl", "vi": "Cuốn cổ tay ngược (reverse wrist curl)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["extensor-carpi-radialis-longus", "extensor-carpi-radialis-brevis"], "secondary": [],
+    "cues": [
+      "Tì cẳng tay lên ghế, lòng bàn tay úp xuống, cổ tay thò ra ngoài mép.",
+      "Hạ tạ chậm về phía sàn để cổ tay gập xuống, không nới lỏng tay cầm.",
+      "Giữ cẳng tay cố định, không ngả người tới lui khi nâng tạ." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Wrist Curl - Extension", "url": "https://www.acefitness.org/resources/everyone/exercise-library/29/wrist-curl-extension/"},
+      {"title": "Wikipedia – Extensor carpi radialis longus muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle"},
+      {"title": "Wikipedia – Extensor carpi radialis brevis muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle"} ] },
+  {"id": "crunch", "en": "Crunch", "vi": "Gập bụng (crunch)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["rectus-abdominis"], "secondary": [],
+    "cues": [
+      "Cuộn thân bằng cách kéo lồng ngực về phía khung chậu, chỉ lên đến khi lưng trên rời sàn.",
+      "Giữ bàn chân, xương cụt và lưng dưới luôn chạm sàn.",
+      "Đừng gập quá nhanh: dễ dùng cơ gập hông, làm chậu nghiêng trước và tăng áp lực lên lưng dưới.",
+      "Thả lỏng cổ và vai, chỉ hơi thu cằm về phía ngực." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Crunch", "url": "https://www.acefitness.org/resources/everyone/exercise-library/52/crunch/"},
+      {"title": "Wikipedia – Crunch (exercise)", "url": "https://en.wikipedia.org/wiki/Crunch_(exercise)"} ] },
+  {"id": "reverse-crunch", "en": "Reverse crunch", "vi": "Gập bụng ngược (reverse crunch)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["rectus-abdominis"], "secondary": ["external-oblique", "iliopsoas"],
+    "cues": [
+      "Siết bụng trước, nhấc hai chân lên sao cho gối ở ngay trên hông và gập 90°.",
+      "Cuộn hông và khung chậu về phía lồng ngực, giữ nguyên góc gập gối.",
+      "Hạ cột sống xuống chậm; khi về, giữ gối ngay trên hông, không để gối đi quá ra sau.",
+      "Dang tay sang hai bên, úp lòng bàn tay xuống sàn để giữ thăng bằng." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Reverse Crunch", "url": "https://www.acefitness.org/resources/everyone/exercise-library/76/reverse-crunch/"},
+      {"title": "ACE – ACE-sponsored Study Reveals Best and Worst Abdominal Exercises", "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/"} ] },
+  {"id": "hanging-leg-raise", "en": "Hanging leg raise", "vi": "Treo xà nâng chân (hanging leg raise)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["rectus-abdominis", "iliopsoas"], "secondary": ["external-oblique", "internal-oblique", "quadriceps-femoris.rectus-femoris"],
+    "cues": [
+      "Không đung đưa người để lấy đà.",
+      "Cuộn khung chậu ra sau (nghiêng chậu sau) khi nâng chân để cơ thẳng bụng làm việc.",
+      "Siết bụng để lưng không bị ưỡn và chậu không đổ ra trước.",
+      "Chưa nâng được chân thẳng thì co gối (knee raise) cho dễ hơn." ],
+    "sources": [
+      {"title": "Wikipedia – Leg raise", "url": "https://en.wikipedia.org/wiki/Leg_raise"},
+      {"title": "ACE – ACE-sponsored Study Reveals Best and Worst Abdominal Exercises", "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/"} ] },
+  {"id": "plank", "en": "Plank", "vi": "Plank (chống cẳng tay)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["rectus-abdominis", "external-oblique", "internal-oblique"], "secondary": ["transversus-abdominis", "serratus-anterior", "deltoid", "gluteus-maximus", "quadriceps-femoris"],
+    "cues": [
+      "Đặt khuỷu tay ngay dưới vai, siết bụng để thân cứng như một tấm ván.",
+      "Không để lưng dưới võng, không đẩy hông lên cao, không gập gối.",
+      "Không nhún vai và vẫn thở đều trong lúc giữ.",
+      "Dừng ngay nếu thấy đau lưng dưới." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Front Plank", "url": "https://www.acefitness.org/resources/everyone/exercise-library/32/front-plank/"},
+      {"title": "Wikipedia – Plank (exercise)", "url": "https://en.wikipedia.org/wiki/Plank_(exercise)"},
+      {"title": "Core Muscle Activity During Physical Fitness Exercises: A Systematic Review (Int J Environ Res Public Health, 2020)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/"} ] },
+  {"id": "side-plank", "en": "Side plank", "vi": "Plank nghiêng (side plank)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["external-oblique", "internal-oblique", "gluteus-medius"], "secondary": ["transversus-abdominis", "gluteus-minimus", "gluteus-maximus", "quadriceps-femoris"],
+    "cues": [
+      "Đặt khuỷu tay ngay dưới vai, hai bàn chân chồng lên nhau.",
+      "Siết bụng cho cột sống cứng rồi nâng hông và gối khỏi sàn, đầu thẳng hàng cột sống.",
+      "Giữ thân thẳng một đường từ đầu đến bàn chân, không để hông xệ xuống.",
+      "Muốn khó hơn thì giữ lâu hơn hoặc nâng chân trên lên, không cần cao quá mức song song sàn." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Side Plank with Straight Leg", "url": "https://www.acefitness.org/resources/everyone/exercise-library/101/side-plank-with-straight-leg/"},
+      {"title": "Wikipedia – Plank (exercise)", "url": "https://en.wikipedia.org/wiki/Plank_(exercise)"},
+      {"title": "Core Muscle Activity During Physical Fitness Exercises: A Systematic Review (Int J Environ Res Public Health, 2020)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/"} ] },
+  {"id": "dead-bug", "en": "Dead bug", "vi": "Dead bug (bọ chết)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["transversus-abdominis", "rectus-abdominis"], "secondary": [],
+    "cues": [
+      "Nằm ngửa, gối gập 90° ngay trên hông, tay duỗi thẳng ngay trên vai.",
+      "Siết bụng, giữ lưng ở tư thế trung tính, không để lưng ưỡn khỏi sàn.",
+      "Hạ chậm tay và chân đối bên, chỉ chạm nhẹ sàn rồi đưa về, sau đó đổi bên.",
+      "Thở đều trong suốt bài, vẫn giữ bụng siết." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Supine Dead Bug", "url": "https://www.acefitness.org/resources/everyone/exercise-library/147/supine-dead-bug/"},
+      {"title": "University of Sussex Sport – Dead Bug (exercise card)", "url": "https://www.sussex.ac.uk/sport/documents/dead-bug.pdf"} ] },
+  {"id": "bird-dog", "en": "Bird dog", "vi": "Bird dog (chống tay gối, duỗi tay chân đối bên)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["multifidus", "erector-spinae", "transversus-abdominis"], "secondary": ["internal-oblique"],
+    "cues": [
+      "Tay đặt ngay dưới vai, gối ngay dưới hông; siết bụng giữ cột sống trung tính.",
+      "Duỗi chân và tay đối bên lên gần song song sàn mà hông và vai không bị xoay.",
+      "Chỉ nâng đến độ cao mà lưng dưới chưa bị võng.",
+      "Giữ đầu thẳng hàng cột sống, hạ về chậm rồi đổi bên." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Bird Dog", "url": "https://www.acefitness.org/resources/everyone/exercise-library/14/bird-dog/"},
+      {"title": "Core Muscle Activity During Physical Fitness Exercises: A Systematic Review (Int J Environ Res Public Health, 2020)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/"} ] },
+  {"id": "pallof-press", "en": "Pallof press", "vi": "Pallof press (đẩy cáp chống xoay)", "equipment": "cable", "status": "draft",
+    "primary": ["transversus-abdominis", "external-oblique", "internal-oblique"], "secondary": ["erector-spinae"],
+    "cues": [
+      "Đứng nghiêng so với máy cáp, ròng rọc ngang ngực, chân rộng bằng hông, gối hơi chùng.",
+      "Đẩy tay thẳng ra trước, giữ 2–3 giây rồi thu khuỷu về sát người.",
+      "Không để thân xoay về phía cáp; giữ vai và hông thẳng hàng.",
+      "Không cần tạ nặng: mục tiêu là chống lại lực xoay." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Standing Anti-rotation Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/332/standing-anti-rotation-press/"},
+      {"title": "University of Sussex Sport – Anti Rotations and Pallof Press (exercise card)", "url": "https://www.sussex.ac.uk/sport/documents/anti-rotations-pallof-press.pdf"} ] },
+  {"id": "ab-wheel-rollout", "en": "Ab wheel rollout", "vi": "Lăn bánh xe tập bụng (ab wheel rollout)", "equipment": "other", "status": "draft",
+    "primary": ["rectus-abdominis", "external-oblique"], "secondary": [],
+    "cues": [
+      "Quỳ gối, hai tay đặt lên dụng cụ lăn (bánh xe, hoặc thanh đòn lắp bánh tạ) rộng bằng vai.",
+      "Đẩy hông về trước và giữ lưng thẳng trong lúc lăn ra xa.",
+      "Giữ nguyên tư thế thân, dùng tay kéo dụng cụ về lại phía người.",
+      "Chỉ lăn ra xa đến mức còn giữ được lưng thẳng, không để lưng dưới võng xuống." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Roll Out", "url": "https://www.acefitness.org/resources/everyone/exercise-library/309/roll-out/"},
+      {"title": "Core Muscle Activity During Physical Fitness Exercises: A Systematic Review (Int J Environ Res Public Health, 2020)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/"} ] },
+  {"id": "bicycle-crunch", "en": "Bicycle crunch", "vi": "Gập bụng đạp xe (bicycle crunch)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["rectus-abdominis", "external-oblique"], "secondary": [],
+    "cues": [
+      "Nhấc chân lên cho hông và gối cùng gập 90°; siết bụng, kéo vai ra sau và xuống.",
+      "Co một gối về phía ngực, duỗi chân kia ra nhưng không chạm sàn, xoay thân đưa khuỷu tay đối bên về phía gối.",
+      "Không kéo đầu bằng tay; giữ đầu thẳng hàng với cột sống ngực.",
+      "Ép lưng dưới xuống sàn, xoay từ thân chứ không từ hông, làm chậm và có kiểm soát." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Supine Bicycle Crunches", "url": "https://www.acefitness.org/resources/everyone/exercise-library/241/supine-bicycle-crunches/"},
+      {"title": "ACE – ACE-sponsored Study Reveals Best and Worst Abdominal Exercises", "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/"} ] },
+  {"id": "barbell-hip-thrust", "en": "Barbell hip thrust", "vi": "Đẩy hông với tạ đòn (hip thrust)", "equipment": "barbell", "status": "draft",
+    "primary": ["gluteus-maximus"], "secondary": ["biceps-femoris.long", "semitendinosus", "erector-spinae"],
+    "cues": [
+      "Tựa lưng trên lên mép ghế, đặt thanh đòn ngay trên nếp hông, bàn chân phẳng rộng bằng hông.",
+      "Ấn bàn chân xuống sàn, siết mông đẩy hông lên đến khi hông duỗi hết; không ưỡn lưng dưới.",
+      "Ở điểm cao nhất, gối gập khoảng 90° để mông làm việc nhiều hơn đùi sau.",
+      "Hạ hông xuống chậm, có kiểm soát." ],
+    "sources": [
+      {"title": "Barbell Hip Thrust, Muscular Activation and Performance: A Systematic Review (J Sports Sci Med, 2019)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544005/"},
+      {"title": "ACE Exercise Library – Hip Bridge (barbell)", "url": "https://www.acefitness.org/resources/everyone/exercise-library/318/hip-bridge/"} ] },
+  {"id": "glute-bridge", "en": "Glute bridge", "vi": "Nâng hông (glute bridge)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["gluteus-maximus"], "secondary": [],
+    "cues": [
+      "Nằm ngửa, gối gập, bàn chân đặt phẳng rộng bằng hông.",
+      "Siết nhẹ bụng trước khi nâng và giữ suốt bài để lưng dưới không ưỡn.",
+      "Siết mông đẩy hông lên, đồng thời ấn gót xuống sàn.",
+      "Không cố đẩy hông lên quá cao, vì dễ làm ưỡn lưng dưới." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Glute Bridge", "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/"},
+      {"title": "Examination of Gluteus Maximus Electromyographic Excitation Associated with Dynamic Hip Extension During Body Weight Exercise: A Systematic Review (Int J Sports Phys Ther, 2019)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6350668/"} ] },
+  {"id": "side-lying-hip-abduction", "en": "Side-lying hip abduction", "vi": "Nằm nghiêng dạng chân (side-lying hip abduction)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["gluteus-medius"], "secondary": ["gluteus-maximus"],
+    "cues": [
+      "Nằm nghiêng, hai chân duỗi thẳng, hông và vai xếp thẳng đứng so với sàn.",
+      "Nâng chân trên lên với gối thẳng, mũi gối hướng thẳng ra trước, không xoay lên trần.",
+      "Dừng khi hông bắt đầu nghiêng hoặc thấy căng ở lưng dưới; đừng nâng quá cao.",
+      "Hạ chân xuống chậm, có kiểm soát." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Side-lying Hip Abduction", "url": "https://www.acefitness.org/resources/everyone/exercise-library/38/side-lying-hip-abduction/"},
+      {"title": "Electromyographic analysis of gluteus medius and gluteus maximus during rehabilitation exercises (Int J Sports Phys Ther, 2011)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/"} ] },
+  {"id": "clamshell", "en": "Clamshell", "vi": "Clamshell (nằm nghiêng mở gối)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["gluteus-medius"], "secondary": ["piriformis", "gluteus-maximus"],
+    "cues": [
+      "Nằm nghiêng, hai gối gập, hông gập khoảng 30°, gót thẳng hàng với hông.",
+      "Giữ hai gót chạm nhau, siết mông để mở gối trên lên.",
+      "Giữ khung chậu yên, không xoay hông ra sau để mở gối rộng hơn.",
+      "Tập không dây trước, sau đó mới quấn dây kháng lực nhỏ (mini band) ngay trên gối." ],
+    "sources": [
+      {"title": "University of Sussex Sport – Clams (exercise card)", "url": "https://www.sussex.ac.uk/sport/documents/clams.pdf"},
+      {"title": "Superficial and Deep Gluteal Muscle Activation During Common Therapeutic Exercises: A Muscle Functional MRI Analysis (Sports Health, 2026)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12454362/"},
+      {"title": "Electromyographic analysis of gluteus medius and gluteus maximus during rehabilitation exercises (Int J Sports Phys Ther, 2011)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/"} ] },
+  {"id": "banded-lateral-walk", "en": "Banded lateral walk", "vi": "Bước ngang với dây kháng lực (banded lateral walk)", "equipment": "band", "status": "draft",
+    "primary": ["gluteus-medius"], "secondary": ["gluteus-maximus", "tensor-fasciae-latae"],
+    "cues": [
+      "Đeo dây quanh cổ chân hoặc mũi bàn chân để cơ mông làm việc nhiều hơn.",
+      "Đứng tư thế nửa ngồi xổm: chân rộng bằng vai, gối và hông gập khoảng 30°.",
+      "Bước ngang có kiểm soát và luôn giữ dây căng.",
+      "Giữ thân và khung chậu ổn định, không lắc người theo bước chân." ],
+    "sources": [
+      {"title": "Optimizing Hip Abductor Strengthening for Lower Extremity Rehabilitation: A Narrative Review on the Role of Monster Walk and Lateral Band Walk (J Funct Morphol Kinesiol, 2025)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12372021/"},
+      {"title": "Electromyographic analysis of gluteus medius and gluteus maximus during rehabilitation exercises (Int J Sports Phys Ther, 2011)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/"} ] },
+  {"id": "step-up", "en": "Step-up", "vi": "Bước lên bục (step-up)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["gluteus-maximus", "quadriceps-femoris"], "secondary": ["gluteus-medius"],
+    "cues": [
+      "Đặt cả bàn chân trước lên bục, thân thẳng, gối hướng theo ngón chân thứ hai.",
+      "Không để bàn chân và cổ chân đổ vào trong hay bè ra ngoài.",
+      "Khi bước xuống, dồn trọng lượng vào chân trên bục rồi đưa chân sau xuống trước.",
+      "Giữ vai hạ và kéo ra sau, không nhún vai khi cầm tạ." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Step-up", "url": "https://www.acefitness.org/resources/everyone/exercise-library/28/step-up/"},
+      {"title": "Gluteus Maximus Activation during Common Strength and Hypertrophy Exercises: A Systematic Review (J Sports Sci Med, 2020)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7039033/"},
+      {"title": "Lower Limb Muscles' Activation during Ascending and Descending a Single Step-Up Movement (Int J Environ Res Public Health, 2023)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9914687/"} ] },
+  {"id": "cable-pull-through", "en": "Cable pull-through", "vi": "Kéo cáp qua háng (cable pull-through)", "equipment": "cable", "status": "draft",
+    "primary": ["gluteus-maximus", "biceps-femoris.long", "semitendinosus"], "secondary": ["semimembranosus", "erector-spinae"],
+    "cues": [
+      "Quay lưng về ròng rọc thấp, dây thừng luồn giữa hai chân, chân rộng hơn vai một chút.",
+      "Siết bụng, đẩy hông ra sau với gối hơi chùng.",
+      "Đẩy hông ra trước đến khi đứng thẳng, siết mông; không ưỡn lưng hay ngả người ra sau.",
+      "Không để gối chụm vào hay bè ra, không dồn trọng lượng lệch sang một bên." ],
+    "sources": [
+      {"title": "University of Sussex Sport – Cable Pull Through (exercise card)", "url": "https://www.sussex.ac.uk/sport/documents/cable-pull-throughs.pdf"},
+      {"title": "A Comparison of Muscle Recruitment Across Three Straight-Legged, Hinge-Pattern Resistance Training Exercises (Int J Exerc Sci, 2023)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124728/"} ] },
+  {"id": "single-leg-romanian-deadlift", "en": "Single-leg Romanian deadlift", "vi": "Romanian deadlift một chân (single-leg RDL)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["gluteus-maximus", "biceps-femoris.long", "semitendinosus"], "secondary": ["semimembranosus", "gluteus-medius"],
+    "cues": [
+      "Đứng một chân, gối chân trụ hơi chùng, không khóa cứng.",
+      "Đẩy hông ra sau để gập người, giữ lưng thẳng; chân sau duỗi thẳng ra phía sau.",
+      "Giữ hông ngang, không để hông bên chân nhấc xoay mở lên trần.",
+      "Hạ xuống và đứng lên chậm, có kiểm soát." ],
+    "sources": [
+      {"title": "Electromyographic analysis of gluteus medius and gluteus maximus during rehabilitation exercises (Int J Sports Phys Ther, 2011)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/"},
+      {"title": "Comparison of Lower Limb COP and Muscle Activation During Single-Leg Deadlift Using Elastic and Inelastic Barbells (Sports, 2025)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390621/"},
+      {"title": "ACE Exercise Library – Single-leg Romanian Deadlift", "url": "https://www.acefitness.org/resources/everyone/exercise-library/329/single-leg-romanian-deadlift/"} ] },
+  {"id": "barbell-back-squat", "en": "Barbell back squat", "vi": "Squat gánh tạ đòn (back squat)", "equipment": "barbell", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus", "adductor-magnus"], "secondary": ["soleus", "erector-spinae"],
+    "cues": [
+      "Siết hai bả vai lại và giữ ngực mở để lưng thẳng suốt động tác.",
+      "Ngồi ra sau vào hông, hạ đến khi hông thấp hơn gối nếu vẫn giữ được lưng thẳng.",
+      "Giữ đầu gối cùng hướng mũi chân, không để gối đổ vào trong.",
+      "Giữ cả bàn chân, nhất là gót, áp sàn suốt động tác." ],
+    "sources": [
+      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"},
+      {"title": "ACE Exercise Library – Back Squat", "url": "https://www.acefitness.org/resources/everyone/exercise-library/11/back-squat/"} ] },
+  {"id": "barbell-front-squat", "en": "Barbell front squat", "vi": "Squat tạ đòn trước ngực (front squat)", "equipment": "barbell", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": ["gluteus-medius", "erector-spinae", "trapezius"],
+    "cues": [
+      "Đặt thanh đòn ngang trước vai trên xương đòn, giữ bằng kiểu cầm clean hoặc bắt chéo tay.",
+      "Giữ thân trên thẳng đứng hơn so với back squat.",
+      "Giữ đầu gối cùng hướng mũi chân và gót chân không nhấc khỏi sàn." ],
+    "sources": [
+      {"title": "The Activation of Gluteal, Thigh, and Lower Back Muscles in Different Squat Variations Performed by Competitive Bodybuilders (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7831128/"},
+      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"} ] },
+  {"id": "goblet-squat", "en": "Goblet squat", "vi": "Goblet squat (squat ôm tạ trước ngực)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus", "adductor-magnus"], "secondary": [],
+    "cues": [
+      "Ôm một quả tạ đơn dựng đứng sát trước ngực, khép khuỷu tay sát mạng sườn.",
+      "Đứng hai chân rộng bằng vai, giữ lưng thẳng khi hạ xuống.",
+      "Hạ đến khi hông thấp hơn gối rồi đạp cả hai bàn chân xuống sàn để đứng lên." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Goblet Squat", "url": "https://www.acefitness.org/resources/everyone/exercise-library/362/goblet-squat/"},
+      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"} ] },
+  {"id": "leg-press", "en": "Leg press", "vi": "Đạp đùi máy (leg press)", "equipment": "machine", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": ["biceps-femoris.long", "semitendinosus", "semimembranosus"],
+    "cues": [
+      "Áp sát lưng và xương cùng vào tựa lưng, siết bụng để cột sống không xê dịch.",
+      "Giữ gót chân áp chặt vào bàn đạp suốt động tác.",
+      "Không khóa thẳng gối ở cuối pha đẩy.",
+      "Khi hạ, không để đùi ép vào bụng – ngực và không để mông nhấc khỏi ghế hay lưng dưới cong tròn." ],
+    "sources": [
+      {"title": "Leg press – Wikipedia", "url": "https://en.wikipedia.org/wiki/Leg_press"},
+      {"title": "ACE Exercise Library – Seated Leg Press", "url": "https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/"} ] },
+  {"id": "hack-squat", "en": "Hack squat", "vi": "Hack squat (máy)", "equipment": "machine", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": [],
+    "cues": [
+      "Chỉnh máy cho vừa chiều cao, áp lưng và vai sát đệm suốt động tác.",
+      "Đặt hai bàn chân rộng bằng vai, cả bàn chân áp bàn đạp.",
+      "Giữ đầu gối cùng hướng mũi chân, không để gối đổ vào trong.",
+      "Hạ sâu trong phạm vi còn giữ được lưng và hông áp đệm, không khóa thẳng gối khi đứng lên." ],
+    "sources": [
+      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"} ] },
+  {"id": "walking-lunge", "en": "Walking lunge", "vi": "Chùng chân bước đi (walking lunge)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": ["erector-spinae"],
+    "cues": [
+      "Bước tới, hạ gối chân sau về phía sàn đến khi gối chân trước gập khoảng 90°.",
+      "Giữ đường cong tự nhiên của cột sống suốt động tác.",
+      "Giữ gối chân trước cùng hướng mũi chân, không để gối đổ vào trong." ],
+    "sources": [
+      {"title": "Influence of Trunk Position during Three Lunge Exercises on Muscular Activation in Trained Women (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136561/"},
+      {"title": "Comparative Analysis of Lunge Techniques: Forward, Reverse, Walking Lunge (ISBS Proceedings 2016)", "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6941"} ] },
+  {"id": "reverse-lunge", "en": "Reverse lunge", "vi": "Chùng chân lùi (reverse lunge)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": [],
+    "cues": [
+      "Đứng hai chân rộng bằng hông, bước lùi một chân ra sau.",
+      "Khi chân sau chạm đất, đẩy hông chân trước ra sau và hạ gối chân sau từ từ về phía sàn, giữ ngực hướng lên.",
+      "Đạp bàn chân trước xuống sàn để đứng lên và đưa chân sau về." ],
+    "sources": [
+      {"title": "Comparative Analysis of Lunge Techniques: Forward, Reverse, Walking Lunge (ISBS Proceedings 2016)", "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6941"},
+      {"title": "ACE Exercise Library – Reverse Lunge", "url": "https://www.acefitness.org/resources/everyone/exercise-library/319/reverse-lunge/"} ] },
+  {"id": "bulgarian-split-squat", "en": "Bulgarian split squat", "vi": "Bulgarian split squat (squat tách chân, chân sau gác ghế)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": ["biceps-femoris.long", "semitendinosus", "semimembranosus"],
+    "cues": [
+      "Gác mu bàn chân sau lên ghế cao khoảng ngang gối, chân trước đặt phía trước.",
+      "Giữ lưng thẳng khi hạ gối chân sau về phía sàn.",
+      "Trước khi gối sau chạm sàn, đạp bàn chân trước xuống để đứng lên.",
+      "Nghiêng thân nhẹ về trước nếu muốn tăng tác động lên cơ mông và đùi sau." ],
+    "sources": [
+      {"title": "Effects of rear-foot instability devices on lower-limb muscle activation during the Bulgarian split squat in male football players (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/"},
+      {"title": "ACE Exercise Library – Bulgarian Split Squat", "url": "https://www.acefitness.org/resources/everyone/exercise-library/366/bulgarian-split-squat/"} ] },
+  {"id": "leg-extension", "en": "Leg extension", "vi": "Đá đùi máy (leg extension)", "equipment": "machine", "status": "draft",
+    "primary": ["quadriceps-femoris"], "secondary": [],
+    "cues": [
+      "Chỉnh máy để trục xoay thẳng hàng với khớp gối, lưng áp sát tựa lưng.",
+      "Duỗi gối có kiểm soát đến khi thẳng, không giật hay duỗi quá mức.",
+      "Hạ tạ chậm trở lại." ],
+    "sources": [
+      {"title": "Leg extension – Wikipedia", "url": "https://en.wikipedia.org/wiki/Leg_extension"} ] },
+  {"id": "lying-leg-curl", "en": "Lying leg curl", "vi": "Móc đùi nằm (lying leg curl)", "equipment": "machine", "status": "draft",
+    "primary": ["biceps-femoris", "semitendinosus", "semimembranosus"], "secondary": [],
+    "cues": [
+      "Nằm sấp, chỉnh để khớp gối thẳng hàng với trục xoay của máy, đệm tì ở 1/3 dưới cẳng chân, không tì lên gót.",
+      "Siết bụng và không ưỡn lưng dưới khi kéo đệm về phía mông.",
+      "Dừng ngắn ở đỉnh rồi hạ đệm chậm, có kiểm soát.",
+      "Giảm tạ nếu không giữ được lưng dưới yên." ],
+    "sources": [
+      {"title": "Leg curl – Wikipedia", "url": "https://en.wikipedia.org/wiki/Leg_curl"},
+      {"title": "ACE Exercise Library – Lying Hamstrings Curl", "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/"} ] },
+  {"id": "seated-leg-curl", "en": "Seated leg curl", "vi": "Móc đùi ngồi (seated leg curl)", "equipment": "machine", "status": "draft",
+    "primary": ["semitendinosus", "biceps-femoris", "semimembranosus"], "secondary": [],
+    "cues": [
+      "Ngồi tựa lưng với hông gập khoảng 90°, cố định đùi dưới đệm.",
+      "Gập gối kéo cẳng chân về phía mông có kiểm soát.",
+      "Hạ chậm về đến khi gối gần duỗi thẳng để đi hết biên độ." ],
+    "sources": [
+      {"title": "Greater Hamstrings Muscle Hypertrophy but Similar Damage Protection after Training at Long versus Short Muscle Lengths (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969179/"},
+      {"title": "Leg curl – Wikipedia", "url": "https://en.wikipedia.org/wiki/Leg_curl"} ] },
+  {"id": "romanian-deadlift", "en": "Romanian deadlift", "vi": "Romanian deadlift (RDL)", "equipment": "barbell", "status": "draft",
+    "primary": ["biceps-femoris.long", "semitendinosus", "semimembranosus", "gluteus-maximus"], "secondary": ["erector-spinae"],
+    "cues": [
+      "Bắt đầu từ tư thế đứng cầm tạ, giữ gối hơi chùng suốt động tác.",
+      "Đẩy hông ra sau để gập người, không cúi bằng lưng.",
+      "Giữ lưng phẳng và thanh đòn sát người khi hạ và khi đứng lên." ],
+    "sources": [
+      {"title": "Deadlift – Wikipedia", "url": "https://en.wikipedia.org/wiki/Deadlift"},
+      {"title": "Electromyographic activity in deadlift exercise and its variants. A systematic review (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7046193/"} ] },
+  {"id": "conventional-deadlift", "en": "Conventional deadlift", "vi": "Deadlift truyền thống (conventional deadlift)", "equipment": "barbell", "status": "draft",
+    "primary": ["gluteus-maximus"], "secondary": ["quadriceps-femoris", "biceps-femoris.long", "semitendinosus", "semimembranosus", "adductor-magnus", "erector-spinae"],
+    "cues": [
+      "Đứng hai chân rộng bằng vai, ống chân gần chạm thanh đòn.",
+      "Ưỡn ngực, giữ lưng phẳng trước khi kéo; hít sâu và siết bụng.",
+      "Đạp chân xuống sàn và đẩy hông ra trước để đứng thẳng, không kéo bằng lưng.",
+      "Hạ tạ bằng cách đẩy hông ra sau rồi chùng gối, lưng vẫn thẳng." ],
+    "sources": [
+      {"title": "Deadlift – Wikipedia", "url": "https://en.wikipedia.org/wiki/Deadlift"},
+      {"title": "ACE Exercise Library – Deadlift", "url": "https://www.acefitness.org/resources/everyone/exercise-library/6/deadlift/"} ] },
+  {"id": "sumo-deadlift", "en": "Sumo deadlift", "vi": "Sumo deadlift", "equipment": "barbell", "status": "draft",
+    "primary": ["quadriceps-femoris", "gluteus-maximus"], "secondary": ["adductor-magnus", "erector-spinae"],
+    "cues": [
+      "Đứng chân rộng hơn deadlift thường, mũi chân xoay ra ngoài.",
+      "Cầm thanh đòn với hai tay nằm phía trong hai gối.",
+      "Giữ lưng phẳng, đẩy gối ra theo hướng mũi chân khi kéo.",
+      "Đạp chân xuống sàn và đẩy hông ra trước để đứng thẳng, không kéo bằng lưng." ],
+    "sources": [
+      {"title": "An electromyographic analysis of sumo and conventional style deadlifts (Escamilla et al., 2002) – Scholars@Duke", "url": "https://scholars.duke.edu/publication/670149"},
+      {"title": "Biomechanical analysis of conventional and sumo deadlift (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12148905/"},
+      {"title": "Deadlift – Wikipedia", "url": "https://en.wikipedia.org/wiki/Deadlift"} ] },
+  {"id": "nordic-hamstring-curl", "en": "Nordic hamstring curl", "vi": "Nordic hamstring curl (quỳ hạ người)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["biceps-femoris", "semitendinosus", "semimembranosus"], "secondary": [],
+    "cues": [
+      "Quỳ gối, cố định bàn chân, rồi hạ thân người về trước thật chậm bằng cách duỗi gối.",
+      "Giữ hông duỗi, thân thẳng một đường từ gối đến vai, không gập người ở hông.",
+      "Người mới tập dùng dây kháng lực, đệm kê cao hoặc người hỗ trợ để giảm tải." ],
+    "sources": [
+      {"title": "Nordic hamstring curl – Wikipedia", "url": "https://en.wikipedia.org/wiki/Nordic_hamstring_curl"} ] },
+  {"id": "standing-calf-raise", "en": "Standing calf raise", "vi": "Nhón gót đứng (standing calf raise)", "equipment": "machine", "status": "draft",
+    "primary": ["gastrocnemius", "soleus"], "secondary": ["tibialis-posterior", "fibularis-longus", "fibularis-brevis"],
+    "cues": [
+      "Đứng mũi chân trên bục, để gót thấp hơn mũi chân để giãn hết tầm.",
+      "Giữ gối thẳng (hoặc chỉ hơi chùng) để cơ bụng chân làm việc nhiều hơn.",
+      "Nâng gót cao hết mức, dừng ngắn ở đỉnh rồi hạ gót từ từ." ],
+    "sources": [
+      {"title": "Calf raises – Wikipedia", "url": "https://en.wikipedia.org/wiki/Calf_raise"},
+      {"title": "ACE Exercise Library – Calf Raises", "url": "https://www.acefitness.org/resources/everyone/exercise-library/51/calf-raises/"} ] },
+  {"id": "seated-calf-raise", "en": "Seated calf raise", "vi": "Nhón gót ngồi (seated calf raise)", "equipment": "machine", "status": "draft",
+    "primary": ["soleus"], "secondary": ["gastrocnemius"],
+    "cues": [
+      "Ngồi với gối gập khoảng 90°, đệm tạ đặt trên đùi ngay trên gối.",
+      "Đẩy bằng phần mũi bàn chân để nâng gót lên cao." ],
+    "sources": [
+      {"title": "Calf raises – Wikipedia", "url": "https://en.wikipedia.org/wiki/Calf_raise"} ] },
+  {"id": "tibialis-raise", "en": "Tibialis raise", "vi": "Nâng mũi chân (tibialis raise)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["tibialis-anterior"], "secondary": [],
+    "cues": [
+      "Đứng thẳng cạnh tường hoặc vật vịn chắc chắn.",
+      "Giữ gót chân áp sàn, kéo mũi chân lên về phía người.",
+      "Hạ mũi chân xuống có kiểm soát rồi lặp lại." ],
+    "sources": [
+      {"title": "Physitrack – Standing active dorsi-flexion (\"Toe raises\" Tibialis anterior strengthening)", "url": "https://us.physitrack.com/home-exercise-video/standing-active-dorsi-flexion"} ] },
+  {"id": "machine-hip-adduction", "en": "Machine hip adduction", "vi": "Kẹp đùi máy (hip adduction)", "equipment": "machine", "status": "draft",
+    "primary": ["adductor-magnus", "adductor-longus", "gracilis"], "secondary": ["adductor-brevis", "pectineus"],
+    "cues": [
+      "Ngồi tựa lưng vào đệm, hai gối áp vào mặt ngoài đệm gối, chân đặt lên chỗ để chân.",
+      "Mở đệm ra đến khi thấy căng nhẹ ở đùi trong, không mở rộng hơn.",
+      "Siết đùi kéo hai đệm vào giữa, giữ vài giây, không để hai đệm đập vào nhau.",
+      "Kiểm soát khi để đệm mở ra trở lại." ],
+    "sources": [
+      {"title": "PureGym – How To Do Seated Hip Adduction", "url": "https://puregym.com/exercises/legs/inner-outer-thigh/seated-hip-adduction"},
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+  {"id": "copenhagen-plank", "en": "Copenhagen plank", "vi": "Copenhagen plank (plank nghiêng khép đùi)", "equipment": "bodyweight", "status": "draft",
+    "primary": ["adductor-longus"], "secondary": [],
+    "cues": [
+      "Nằm nghiêng chống cẳng tay, chân trên được người hỗ trợ giữ (hoặc gác lên ghế), chân dưới để tự do.",
+      "Dùng đùi trong của chân trên kéo hông lên, giữ thân thẳng một đường từ đầu đến chân.",
+      "Người mới bắt đầu với ít lần, tăng dần số hiệp và số lần qua các tuần." ],
+    "sources": [
+      {"title": "The Neuromuscular Effects of the Copenhagen Adductor Exercise: A Systematic Review (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/"} ] },
+  {"id": "kettlebell-swing", "en": "Kettlebell swing", "vi": "Swing tạ ấm (kettlebell swing)", "equipment": "kettlebell", "status": "draft",
+    "primary": ["gluteus-maximus", "biceps-femoris.long", "semitendinosus", "semimembranosus"], "secondary": ["latissimus-dorsi"],
+    "cues": [
+      "Gập hông đẩy mông ra sau để đưa tạ xuống giữa hai chân, lưng luôn thẳng.",
+      "Đẩy hông ra trước thật nhanh để tạ bay lên, không gập gối quá nhiều kiểu squat.",
+      "Lực đến từ hông và chân, không dùng vai kéo tạ lên.",
+      "Để tạ lên khoảng ngang ngực rồi kéo về giữa hai chân cho lần tiếp theo." ],
+    "sources": [
+      {"title": "Kettlebell swing – Wikipedia", "url": "https://en.wikipedia.org/wiki/Kettlebell_swing"},
+      {"title": "ACE Exercise Library – Swing", "url": "https://www.acefitness.org/resources/everyone/exercise-library/391/swing/"} ] },
+  {"id": "low-to-high-cable-fly", "en": "Cable fly (low-to-high)", "vi": "Ép ngực cáp từ dưới lên (low-to-high cable fly)", "equipment": "cable", "status": "draft",
+    "primary": ["pectoralis-major.clavicular"], "secondary": ["deltoid.anterior"],
+    "cues": [
+      "Đặt tay cầm ở khoảng giữa gối và hông, đứng chân trước chân sau, thân thẳng đứng.",
+      "Giữ khuỷu hơi cong và cổ tay thẳng, kéo tay lên và vào trong đến khi hai tay gặp nhau ngang mặt.",
+      "Siết bụng, giữ thân thẳng đứng, không ưỡn lưng dưới; ưỡn lưng mới kéo được là tạ quá nặng.",
+      "Hạ tay chậm, không để tay ra sau quá đường ngang nách." ],
+    "sources": [
+      {"title": "ACE Exercise Library – Standing Incline Cable Flyes", "url": "https://www.acefitness.org/resources/everyone/exercise-library/163/standing-incline-cable-flyes/"},
+      {"title": "Wikipedia – Fly (exercise)", "url": "https://en.wikipedia.org/wiki/Fly_(exercise)"},
+      {"title": "Wikipedia – Pectoralis major", "url": "https://en.wikipedia.org/wiki/Pectoralis_major"} ] },
+  {"id": "cable-glute-kickback", "en": "Cable glute kickback", "vi": "Đá mông với cáp (cable kickback)", "equipment": "cable", "status": "draft",
+    "primary": ["gluteus-maximus"], "secondary": [],
+    "cues": [
+      "Đặt ròng rọc ở nấc thấp nhất, quấn đai vào cổ chân, đứng quay mặt vào máy và vịn tay cầm.",
+      "Đưa gót chân ra sau bằng lực cơ mông, giữ thân thẳng đứng suốt bài.",
+      "Dừng khi không đưa chân ra sau thêm được mà không ưỡn lưng dưới, rồi hạ chậm về." ],
+    "sources": [
+      {"title": "ACE – 8 Butt-toning Moves (mục 5: Single-leg cable extension)", "url": "https://www.acefitness.org/resources/pros/expert-articles/6355/8-butt-toning-moves/"},
+      {"title": "NSCA Personal Training Quarterly 10.4 – Program Design Considerations for Optimal Strength and Hypertrophy of the Glute Muscles", "url": "https://www.nsca.com/contentassets/f921c5b3fe4142db964a943d3554b324/ptq-10.4.4-program-design-considerations-for-optimal-strength-hypertophy-glute-mucsles.pdf"} ] },
+  {"id": "seated-machine-hip-abduction", "en": "Seated machine hip abduction", "vi": "Mở đùi máy (hip abduction)", "equipment": "machine", "status": "draft",
+    "primary": ["gluteus-medius", "gluteus-maximus"], "secondary": [],
+    "cues": [
+      "Ngồi thẳng lưng tựa ghế, tay nắm tay cầm hai bên để giữ thăng bằng.",
+      "Đẩy hai đùi ra xa hết tầm có thể, rồi khép về chậm, có kiểm soát.",
+      "Không bật đùi lấy đà; giữ hông và lưng áp ghế suốt bài." ],
+    "sources": [
+      {"title": "NSCA Personal Training Quarterly 10.4 – Program Design Considerations for Optimal Strength and Hypertrophy of the Glute Muscles", "url": "https://www.nsca.com/contentassets/f921c5b3fe4142db964a943d3554b324/ptq-10.4.4-program-design-considerations-for-optimal-strength-hypertophy-glute-mucsles.pdf"},
+      {"title": "Brandt et al. 2013 – Perceived loading and muscle activity during hip strengthening exercises: comparison of elastic resistance and machine exercises (Int J Sports Phys Ther)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3867074/"} ] },
+  {"id": "dumbbell-farmers-walk", "en": "Farmer's walk", "vi": "Xách tạ đi bộ (farmer's walk)", "equipment": "dumbbell", "status": "draft",
+    "primary": ["erector-spinae", "gluteus-medius", "gluteus-maximus"], "secondary": ["latissimus-dorsi", "external-oblique", "quadriceps-femoris.rectus-femoris"],
+    "cues": [
+      "Nhấc và đặt tạ bằng cách gập hông, gối như deadlift, lưng giữ thẳng.",
+      "Nắm chặt tay cầm, hai tay buông thẳng dọc thân, tạ nằm cạnh hông.",
+      "Giữ thân thẳng đứng, vai hơi kéo ra sau, không nghiêng hay vặn người sang bên.",
+      "Bước ngắn, đều, có kiểm soát trên quãng đường hoặc thời gian định trước." ],
+    "sources": [
+      {"title": "NSCA Coach 7.3 – Increase Hip and Trunk Stability with Loaded Carries for Injury Prevention, Rehabilitation, and Performance", "url": "https://www.nsca.com/contentassets/927868f8d4bb45f2ac4429631d558d83/coach-7.3.6-increase-hip-and-trunk-stability-with-loaded-carries-for-injury-prevention-rehabilitation-and-performance.pdf"},
+      {"title": "Hindle et al. 2019 – The Biomechanics and Applications of Strongman Exercises: a Systematic Review (Sports Med Open)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6901656/"} ] }
+]

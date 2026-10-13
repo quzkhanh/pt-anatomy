@@ -1,0 +1,2770 @@
+{
+ "muscles": {
+  "pectoralis-major": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Adducts and medially rotates the upper limb"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "The clavicular head also acts individually to flex the upper limb."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "The clavicular part is close to the deltoid muscle and contributes to flexion, horizontal adduction, and inward rotation of the humerus."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "The sternocostal part is antagonistic to the clavicular part contributing to downward and forward movement of the arm"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "The sternal fibers can also contribute to extension, but not beyond anatomical position."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "barbell bench press, dumbbell bench press, and machine bench press induce high activation of the pectoralis major in the sternocostal region"
+   }
+  ],
+  "pectoralis-minor": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Rotates shoulder anteriorly (throwing motion); assists with inhalation"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Scapula: depresses; ribs: elevates"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
+    "quote": "Its function is to stabilise the scapula by holding it fast in position against the chest wall."
+   }
+  ],
+  "serratus-anterior": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Scapula: protracts; ribs: elevates"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "it is largely responsible for the protraction of the scapula"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "they keep the scapula pressed against the thorax together with the rhomboids"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "The serratus anterior acts in concert with the upper and lower fibers of the trapezius muscle to sustain upward rotation of the scapula"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "Damage to this nerve is the most common cause of winged scapula."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "The inferior part can pull the lower end of the scapula laterally and forward and thus rotates the scapula to make elevation of the arm possible."
+   }
+  ],
+  "deltoid": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "is the major abductor of the arm, but it also facilitates flexing and medial rotation, as well as extension and lateral rotation"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "The anterior fibers assist the pectoralis major to flex the shoulder."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "The anterior deltoid also works in tandem with the subscapularis, pecs and lats to internally (medially) rotate the humerus."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "The intermediate fibers perform basic shoulder abduction when the shoulder is internally rotated"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "The posterior fibers assist the latissimus dorsi to extend the shoulder."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "also work in tandem with the posterior deltoid as external (lateral) rotators"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "the infraspinatus and subscapularis primarily perform this role"
+   }
+  ],
+  "supraspinatus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "the supraspinatus (superior to the spine of the scapula) and the infraspinatus (inferior to the spine of the scapula) abduct the arm"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "The supraspinatus muscle performs abduction of the arm, and pulls the head of the humerus medially towards the glenoid cavity."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "The supraspinatus works in cooperation with the deltoid muscle to perform abduction"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "one of its most frequently damaged components"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "Associated pathologies include acromial impingement"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "a high prevalence of asymptomatic partial and full tears"
+   }
+  ],
+  "infraspinatus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "the infraspinatus (inferior to the spine of the scapula) abduct the arm, and laterally rotate the arm, respectively"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "The infraspinatus is the main external rotator of the shoulder."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "Its synergists are teres minor and the deltoid."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "the main function of the infraspinatus is to externally rotate the humerus and stabilize the shoulder joint"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "they also assist in carrying the arm backward"
+   }
+  ],
+  "teres-minor": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "The long teres minor laterally rotates and extends the arm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "The primary function of the teres minor is to modulate the action of the deltoid, preventing the humeral head from sliding upward"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "as part of the rotator cuff they help hold the humeral head in the glenoid cavity of the scapula"
+   }
+  ],
+  "subscapularis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "The subscapularis originates on the anterior scapula and medially rotates the arm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+    "quote": "The subscapularis medially (internally) rotates the humerus (acting here as a prime mover) and adducts it."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+    "quote": "It is a powerful defense to the front of the shoulder-joint, preventing displacement of the head of the humerus."
+   }
+  ],
+  "teres-major": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "The thick and flat teres major is inferior to the teres minor and extends the arm, and assists in adduction and medial rotation of it."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "assists the latissimus dorsi in drawing the previously raised humerus downwards and backwards"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "This muscle is commonly confused as a rotator cuff muscle, but it is not"
+   }
+  ],
+  "trapezius": [
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "The upper fibres of the trapezius elevates the scapula and rotates it during abduction of the arm."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "The middle fibres retract the scapula and the lower fibres pull the scapula inferiorly."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The trapezius muscle is also responsible for upward rotation of the scapula, along with the serratus anterior muscle."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "When the muscle is acting unilaterally, the descending fibres produce an ipsilateral lateral flexion of the head and neck"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The main function of the trapezius is stabilizing the scapula in its anatomical place"
+   }
+  ],
+  "rhomboids": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "When the rhomboids are contracted, your scapula moves medially, which can pull the shoulder and upper limb posteriorly."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Stabilizes scapula during pectoral girdle movement Scapula Retracts; rotates inferiorly Rhomboid major"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Retracts; rotates inferiorly Rhomboid minor"
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Retracts and rotates the scapula."
+   }
+  ],
+  "levator-scapulae": [
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle",
+    "quote": "The main function of the levator scapulae muscle is to elevate and retract the shoulder girdle at the scapulothoracic joint."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle",
+    "quote": "It often works in combination with other muscles like the rhomboids and pectoralis minor to produce downward rotation of the scapula"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle",
+    "quote": "unilateral contraction of the muscle produces ipsilateral flexion of the neck, while bilateral contraction contributes to extension of the neck"
+   }
+  ],
+  "latissimus-dorsi": [
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Extends, adducts and medially rotates the upper limb."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "It effectively extends the flexed arm It adducts and internally rotates the arm"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "If the arms are fixed above the head, it can act in synergy with pectoralis major to elevate the trunk upwards"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "it is a climbing muscle, rowing muscle, and a swimming muscle."
+   }
+  ],
+  "erector-spinae": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "The erector spinae group forms the majority of the muscle mass of the back and it is the primary extensor of the vertebral column."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "It controls flexion, lateral flexion, and rotation of the vertebral column, and maintains the lumbar curve."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Acts unilaterally to laterally flex the vertebral column. Acts bilaterally to extend the vertebral column and head."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "The erector spinae comprises the iliocostalis (laterally placed) group, the longissimus (intermediately placed) group, and the spinalis (medially placed) group."
+   }
+  ],
+  "multifidus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "The multifidus muscle of the lumbar region helps extend and laterally flex the vertebral column."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "Bilateral contraction of multifidus produces extension of the vertebral column at all levels."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "When the muscles contract unilaterally, they produce ipsilateral lateral flexion and contralateral rotation of the vertebral column."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "multifidus muscle function as extensible ligaments that stabilize the vertebral column."
+   }
+  ],
+  "quadratus-lumborum": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "Bending to the side Vertebral column Lateral flexion Quadratus lumborum"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "A bilateral contraction leads to an extension of the lumbar vertebral column."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "the muscle fixes the 12th rib during movements of the thoracic cage and this way supports expiration"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "the quadratus lumborum contributes to the stabilization and movement of the spine and the pelvis."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "Overuse and strain of the quadratus lumborum are one of the major causes for chronic pain in the lower back."
+   }
+  ],
+  "sternocleidomastoid": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "Individually: rotates head to opposite side; bilaterally: flexion Sternocleidomastoid"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "flexes the cervical vertebral column to the same side (lateral flexion) and rotates the head to the opposite side."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "A bilateral contraction elevates the head by dorsally extending the upper cervical joints."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "At the same time, it flexes the lower cervical column causing an overall bending of the neck towards the chest."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "If the head is fixed, it elevates the sternum and clavicle and, thus, expands the thoracic cavity"
+   }
+  ],
+  "splenius-capitis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "These muscles can extend the head, laterally flex it, and rotate it"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
+    "quote": "Individually: laterally flexes and rotates head to same side; bilaterally: extension Splenius capitis"
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Rotate head to the same side."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "The two splenius muscles can also act together to extend the head and neck."
+   }
+  ],
+  "biceps-brachii": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "The two-headed biceps brachii crosses the shoulder and elbow joints to flex the forearm, also taking part in supinating the forearm"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "flexing the arm at the shoulder joint"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps",
+    "quote": "The biceps brachii also functions as an important flexor of the forearm, particularly when the forearm is supinated."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps",
+    "quote": "The tendon of the long head of the biceps also assists in holding the head of the humerus in the glenoid cavity"
+   }
+  ],
+  "brachialis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Deep to the biceps brachii, the brachialis provides additional power in flexing the forearm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
+    "quote": "with the brachialis being the most powerful flexor of the forearm"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
+    "quote": "Unlike the biceps, the brachialis does not insert on the radius, and does not participate in pronation and supination of the forearm."
+   }
+  ],
+  "coracobrachialis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Finally, the coracobrachialis flexes and adducts the arm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "It is a weak flexor and adductor of the arm at the glenohumeral joint"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "Common causes of injury include chest workouts or activities that require one to press the arm very tight towards the body"
+   }
+  ],
+  "triceps-brachii": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Function: Extension of the arm at the elbow."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "The triceps is an extensor muscle of the elbow joint and an antagonist of the biceps and brachialis muscles."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "the long head also acts on the shoulder joint and is also involved in retroversion and adduction of the arm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "A closer grip shifts emphasis to the triceps in these compounds."
+   }
+  ],
+  "anconeus": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Actions : Extends and stabilises the elbow joint. Abducts the ulna during pronation of the forearm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+    "quote": "Its role in elbow extension is trivial in humans."
+   }
+  ],
+  "brachioradialis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "the brachioradialis can flex the forearm quickly or help lift a load slowly."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "The brachioradialis is a stronger elbow flexor when the forearm is in a midposition between supination and pronation"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "When the forearm is pronated, the brachioradialis tends to supinate as it flexes."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "In a supinated position, it tends to pronate as it flexes."
+   }
+  ],
+  "pronator-teres": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Actions: Pronation of the forearm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "It also weakly flexes the elbow, or assists in flexion at the elbow when there is strong resistance."
+   }
+  ],
+  "flexor-carpi-radialis": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Actions: Flexion and abduction at the wrist."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "wrist curls with dumbbells can also be performed."
+   }
+  ],
+  "palmaris-longus": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Actions: Flexion at the wrist."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "This muscle is absent in about 15% of the population."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "Absence of the palmaris longus does not have an effect on grip strength."
+   }
+  ],
+  "flexor-carpi-ulnaris": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Actions: Flexion and adduction at the wrist."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "A wrist roller can be used and wrist curls with dumbbells can also be performed."
+   }
+  ],
+  "flexor-digitorum-superficialis": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Actions: Flexes the metacarpophalangeal joints and proximal interphalangeal joints at the 4 fingers, and flexes at the wrist."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "The muscle splits into four tendons at the wrist, which travel through the carpal tunnel"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "The flexor digitorum superficialis flexes the hand as well as the digits at the knuckles"
+   }
+  ],
+  "extensor-carpi-radialis-longus": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Actions : Extends and abducts the wrist."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "Reverse wrist curls with dumbbells can be performed."
+   }
+  ],
+  "extensor-carpi-radialis-brevis": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Actions : Extends and abducts the wrist."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "reverse wrist curls with dumbbells can be performed."
+   }
+  ],
+  "extensor-digitorum": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The extensor digitorum is the main extensor of the fingers."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+    "quote": "The extensor digitorum muscle extends the phalanges, then the wrist, and finally the elbow. It tends to separate the fingers as it extends them."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+    "quote": "the extensor digitorum acts principally on the proximal phalanges, acting to extend the metacarpophalangeal joint."
+   }
+  ],
+  "extensor-carpi-ulnaris": [
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Actions : Extension and adduction of wrist."
+   }
+  ],
+  "rectus-abdominis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "Sitting up Vertebral column Flexion Rectus abdominis"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "It is responsible for flexing the lumbar spine, as when doing a crunch."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "the pelvis can be brought towards the rib cage (posterior pelvic tilt) when the rib cage is fixed"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "plays an important role in respiration when forcefully exhaling"
+   }
+  ],
+  "external-oblique": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "It also performs ipsilateral (same side) side-bending and contralateral (opposite side) rotation"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "the right external oblique would side-bend to the right and rotate to the left"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "The external oblique functions to pull the chest downwards and compress the abdominal cavity, which increases the intra-abdominal pressure"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "The internal oblique muscle functions similarly except it rotates ipsilaterally."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "Twisting at waist; also bending to the side"
+   }
+  ],
+  "internal-oblique": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "Secondly, its contraction causes ipsilateral rotation and side-bending."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "when the internal obliques contract they compress the organs of the abdomen, pushing them up into the diaphragm"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "as an accessory muscle of respiration, it acts as an antagonist (opponent) to the diaphragm"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "Twisting at waist; also bending to the side"
+   }
+  ],
+  "transversus-abdominis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "Squeezing abdomen during forceful exhalations, defecation, urination, and childbirth Abdominal cavity Compression Transversus abdominis"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "is arranged transversely around the abdomen, similar to the front of a belt on a pair of pants"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
+    "quote": "the transversus abdominis forms the deepest layer"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "The transverse abdominal helps to compress the ribs and viscera, providing thoracic and pelvic stability."
+   }
+  ],
+  "gluteus-maximus": [
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "It is the main extensor of the thigh, and assists with lateral rotation."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "it is only used when force is required, such as running or climbing"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "The upper fibers act as abductors of the hip joints."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "The lower part of the muscle also acts as an adductor and external rotator of the limb."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "Its most powerful action is to cause the body to regain the erect position after stooping"
+   }
+  ],
+  "gluteus-medius": [
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Abduction and medial rotation of the lower limb. It stabilises the pelvis during locomotion, preventing ‘dropping’ of the pelvis on the contralateral side."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "The anterior part acting alone helps to flex and internally rotate the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "The posterior part acting alone helps to extend and externally rotate the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "The anterior and posterior parts working together abduct the hip and stabilize the pelvis in the coronal plane."
+   }
+  ],
+  "gluteus-minimus": [
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "It is similar in shape and function to the gluteus medius."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "The gluteus medius and gluteus minimus abduct the thigh, when the limb is extended"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "are principally called into action in supporting the body on one limb"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "Their anterior fibers also flex the hip, and by drawing the greater trochanter forward, rotate the thigh inward"
+   }
+  ],
+  "tensor-fasciae-latae": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "It acts as a synergist of the gluteus medius and iliopsoas in flexing and abducting the thigh."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "It also helps stabilize the lateral aspect of the knee by pulling on the iliotibial tract (band), making it taut."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Assists the gluteus medius and minimus in abduction and medial rotation of the lower limb."
+   }
+  ],
+  "piriformis": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "Deep to the gluteus maximus, the piriformis, obturator internus, obturator externus, superior gemellus, inferior gemellus, and quadratus femoris laterally rotate the femur at the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "The piriformis laterally rotates the femur with hip extension and abducts the femur with hip flexion."
+   }
+  ],
+  "iliotibial-tract": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "a longitudinal fibrous reinforcement of the fascia lata"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "It originates at the anterolateral iliac tubercle portion of the external lip of the iliac crest"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "inserts at the lateral condyle of the tibia at Gerdy's tubercle"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "The action of the muscles associated with the ITB (tensor fasciae latae and some fibers of gluteus maximus)"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "It also helps stabilize the lateral aspect of the knee by pulling on the iliotibial tract (band), making it taut."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "The IT band stabilizes the knee both in extension and in partial flexion, and is therefore used constantly during walking and running."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "Iliotibial band syndrome (ITBS or ITBFS, for iliotibial band friction syndrome) is a common thigh injury generally associated with running."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "The onset of iliotibial band syndrome occurs most commonly in cases of overuse."
+   }
+  ],
+  "iliopsoas": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The iliopsoas is the prime mover of hip flexion, and is the strongest of the hip flexors"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The iliopsoas is important for standing, walking, and running."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The psoas major and iliacus make up the iliopsoas group ."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The iliopsoas muscle joins to the femur at the lesser trochanter."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "Since it originates from the lumbar vertebrae and discs and then inserts onto the femur"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "A short and tight iliopsoas often presents as externally rotated legs and feet."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "It can cause pain in the low or mid back, SI joint, hip, groin, thigh, knee, or any combination."
+   }
+  ],
+  "sartorius": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "is the longest muscle in the human body"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "At the hip, it can flex, weakly abduct, and laterally rotate the femur."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "all of its actions are weak, making it a synergist muscle"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "At the knee, it can flex the leg; when the knee is flexed, sartorius medially rotates the leg."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "Sitting cross-legged demonstrates all four actions of the sartorius."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "This versatile muscle flexes the leg at the knee and flexes, abducts, and laterally rotates the leg at the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "The pes anserinus involves the tendons of the gracilis, semitendinosus, and sartorius muscles; these tendons attach onto the anteromedial proximal tibia."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "This condition usually occurs in athletes from overuse and is characterized by pain, swelling and tenderness."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "pes anserine bursitis, an inflammatory condition of the medial portion of the knee"
+   }
+  ],
+  "quadriceps-femoris": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "It is the sole extensor muscle of the knee"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "the quadriceps femoris group , which actually comprises four muscles that extend and stabilize the knee."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "They are crucial in walking, running, jumping and squatting."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "Because the rectus femoris attaches to the ilium, it is also a flexor of the hip."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "which inserts into the patella and continues below it as the patellar ligament . The patellar ligament attaches to the tibial tuberosity."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "The quadriceps, specifically the vastus medialis, play the important role of stabilizing the patella and the knee joint during gait."
+   }
+  ],
+  "biceps-femoris": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "Both heads of the biceps femoris perform knee flexion."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "Since the long head originates in the pelvis it is involved in hip extension."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "as it only causes knee flexion (but not hip extension)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "When the knee is semi-flexed, the biceps femoris in consequence of its oblique direction rotates the leg slightly outward."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The posterior compartment of the thigh includes muscles that flex the leg and extend the thigh."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "Avulsion of the biceps femoris tendon is common in sports that require explosive bending of the knee as seen in sprinting."
+   }
+  ],
+  "semitendinosus": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "It lies posteromedially in the thigh, superficial to the semimembranosus."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "These three muscles work collectively to flex the knee and extend the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "helps to medially rotate the tibia on the femur when the knee is flexed and medially rotate the femur when the hip is extended."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "It counteracts forward bending at the hips as well."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "semitendinosus/gracilis (STG) tendon autografts has been used commonly and successfully for anterior cruciate ligament reconstruction."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "These are the biceps femoris , semitendinosus , and semimembranosus ."
+   }
+  ],
+  "semimembranosus": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "is the most medial of the three hamstring muscles in the thigh."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "It lies posteromedially in the thigh, deep to the semitendinosus muscle. It extends the hip joint and flexes the knee joint."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "the tibia medially rotates on the femur when the knee is flexed. It medially rotates the femur when the hip is extended."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "The muscle can also aid in counteracting the forward bending at the hip joint."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The posterior compartment of the thigh includes muscles that flex the leg and extend the thigh."
+   }
+  ],
+  "adductor-longus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The muscles in the medial compartment of the thigh are responsible for adducting the femur at the hip."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The adductor longus flexes the thigh, whereas the adductor magnus extends it."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "can both medially and laterally rotate the thigh depending on the placement of the foot."
+   },
+   {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/",
+    "quote": "The CAE also produced peak EMG of the adductor longus of 108% on the dominant leg"
+   }
+  ],
+  "adductor-brevis": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "The muscle is primarily known as a hip adductor. It also functions as a hip flexor."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "Whether it acts to rotate the femur laterally or medially is dependent on position."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "used to stabilize left to right movements of the trunk, when standing on both feet, or to balance when standing on a moving surface."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The muscles in the medial compartment of the thigh are responsible for adducting the femur at the hip."
+   }
+  ],
+  "adductor-magnus": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "The adductor magnus is a powerful adductor of the thigh, made especially active when the legs are moved from a wide spread position"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "the ischiocondylar portion (or hamstring portion) is often considered part of the hamstring group of muscles."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "and also acts to extend the hip joint."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   }
+  ],
+  "gracilis": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
+    "quote": "is the most superficial muscle on the medial side of the thigh."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "the strap-like gracilis adducts the thigh in addition to flexing the leg at the knee."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
+    "quote": "The muscle adducts, medially rotates (with hip flexion), laterally rotates, and flexes the hip as above, and also aids in flexion of the knee."
+   }
+  ],
+  "pectineus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The pectineus adducts and flexes the femur at the hip as well."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "The pectineus muscle is the most anterior adductor of the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "is a flat, quadrangular muscle"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The pectineus is located in the femoral triangle"
+   }
+  ],
+  "gastrocnemius": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "It runs from its two heads just above the knee to the heel"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "Its function is plantar flexing the foot at the ankle joint and flexing the leg at the knee joint."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "The gastrocnemius is primarily involved in running, jumping and other \"fast\" movements of leg"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "This exercise is more commonly used for the soleus since the gastrocnemius does not work as much in a bent knee position."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Pushing with the foot with a straighter knee stretches the gastrocnemius more, these movements incorporate it better."
+   }
+  ],
+  "soleus": [
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "Deep to the gastrocnemius is the wide, flat soleus ."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "It runs from just below the knee to the heel"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "The action of the calf muscles, including the soleus, is plantar flexion of the foot"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "The soleus plays an important role in maintaining standing posture; if not for its constant pull, the body would fall forward."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "the soleus is responsible for pumping venous blood back into the heart from the periphery each time it contracts"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "Soleus muscles have more slow muscle fibers than many other muscles."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "The soleus is the most effective muscle for plantar flexion in a bent knee position."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "The gastrocnemius originates on the femur, so bending the leg limits its effective tension."
+   }
+  ],
+  "calcaneal-tendon": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "also known as the calcaneal tendon, is a tendon at the back of the lower leg, and is the thickest in the human body."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "It serves to attach the plantaris, gastrocnemius (calf) and soleus muscles to the calcaneus (heel) bone."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The superficial muscles in the posterior compartment of the leg all insert onto the calcaneal tendon (Achilles tendon), a strong tendon"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "Acting via the Achilles tendon, the gastrocnemius and soleus muscles cause plantar flexion of the foot at the ankle."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "Abnormalities of the Achilles tendon include inflammation (Achilles tendinitis), degeneration, rupture"
+   }
+  ],
+  "tibialis-anterior": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+    "quote": "The muscle acts to dorsiflex and invert the foot. It is the largest dorsiflexor of the foot."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+    "quote": "It functions to stabilize the ankle as the foot hits the ground during the contact phase of walking (eccentric contraction)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+    "quote": "acts later to pull the foot clear of the ground during the swing phase (concentric contraction)."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+    "quote": "The muscle helps maintain the medial longitudinal arch of the foot."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "all contribute to raising the front of the foot when they contract."
+   }
+  ],
+  "tibialis-posterior": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "is the most central of all the leg muscles, and is located in the deep posterior compartment of the leg."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The tibialis posterior muscle is a key muscle for stabilization of the lower leg."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "It also contracts to produce inversion of the foot, and assists in the plantarflexion of the foot at the ankle."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The tibialis posterior has a major role in supporting the medial arch of the foot."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "Dysfunction of the tibialis posterior, including rupture of the tibialis posterior tendon, can lead to flat feet in adults"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "There are four deep muscles in the posterior compartment of the leg as well"
+   }
+  ],
+  "fibularis-longus": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "is a superficial muscle in the lateral compartment of the leg."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The lateral compartment of the leg includes two muscles: the fibularis longus (peroneus longus) and the fibularis brevis (peroneus brevis)."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "tilt the sole away from the midline of the body (eversion) and to extend the foot downward away from the body (plantar flexion)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "The muscle becomes a tendon that wraps around and behind the lateral malleolus of the ankle, then continues under the foot"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "it plays an important role in maintaining the transverse arch of the foot."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "Together, the fibularis muscles help to steady the leg upon the foot, especially in standing on one leg."
+   }
+  ],
+  "fibularis-brevis": [
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "is a muscle that lies underneath the fibularis longus within the lateral compartment of the leg."
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "The lateral compartment of the leg includes two muscles: the fibularis longus (peroneus longus) and the fibularis brevis (peroneus brevis)."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "It acts to tilt the sole of the foot away from the midline of the body (eversion) and to extend the foot downward away from the body at the ankle (plantar flexion)"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "Together, the fibularis muscles help to steady the leg upon the foot, especially in standing on one leg."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "An inversion sprain of the foot may pull the tendon such that it avulses the tuberosity at the base of the fifth metatarsal."
+   }
+  ]
+ },
+ "exercises": {
+  "barbell-bench-press": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii"
+   },
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii"
+   }
+  },
+  "incline-barbell-bench-press": {
+   "pectoralis-major.clavicular": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "this variation emphasizes the anterior deltoids and the upper (clavicular) head of the pectoralis major"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "this variation emphasizes the anterior deltoids and the upper (clavicular) head of the pectoralis major"
+   },
+   "triceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7579505/",
+    "quote": "TB showed similar EMG activities at all bench inclinations."
+   }
+  },
+  "decline-barbell-bench-press": {
+   "pectoralis-major.sternocostal": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "emphasizes the lower portion of the pectoralis major whilst incorporating shoulders and triceps"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii"
+   },
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "emphasizes the lower portion of the pectoralis major whilst incorporating shoulders and triceps"
+   }
+  },
+  "dumbbell-bench-press": {
+   "pectoralis-major": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/19/chest-press/",
+    "quote": "flared out from the body (emphasizes more pectorals)"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii"
+   },
+   "triceps-brachii": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/19/chest-press/",
+    "quote": "Keep the elbows close to your sides (emphasizes more triceps)"
+   }
+  },
+  "incline-dumbbell-press": {
+   "pectoralis-major.clavicular": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "this variation emphasizes the anterior deltoids and the upper (clavicular) head of the pectoralis major"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "this variation emphasizes the anterior deltoids and the upper (clavicular) head of the pectoralis major"
+   },
+   "triceps-brachii": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/25/incline-chest-press/",
+    "quote": "either close to your sides (emphasizes more triceps)"
+   }
+  },
+  "dumbbell-fly": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The chest fly or pectoral fly (abbreviated to pec fly) primarily works the pectoralis major muscles to move the arms horizontally forward."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "If medially (internally) rotated, it is assisted in this by the anterior (front) head of the deltoideus in transverse flexion."
+   },
+   "biceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7675616/",
+    "quote": "The DF, on the other hand, activated the arm flexors (biceps brachii) to a greater extent than the barbell bench press."
+   }
+  },
+  "cable-crossover": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The chest fly or pectoral fly (abbreviated to pec fly) primarily works the pectoralis major muscles to move the arms horizontally forward."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "If medially (internally) rotated, it is assisted in this by the anterior (front) head of the deltoideus in transverse flexion."
+   }
+  },
+  "push-up": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "When pushing and lowering the body during a push-up, the pectoralis major is doing most of the work."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "push-ups exercise the pectoral muscles, triceps, and anterior deltoids"
+   },
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "push-ups exercise the pectoral muscles, triceps, and anterior deltoids"
+   },
+   "serratus-anterior": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "with ancillary benefits to the rest of the deltoids, serratus anterior, coracobrachialis, and the midsection as a whole"
+   },
+   "rectus-abdominis": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "The rectus abdominis and transversus abdominis contract continually while performing push-ups to hold the body off the floor"
+   }
+  },
+  "chest-dip": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Dip_(exercise)",
+    "quote": "Wide shoulder width dips place additional emphasis on the pectoral muscles"
+   },
+   "triceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/",
+    "quote": "it is generally thought to be effective for strengthening the shoulder complex and upper limb muscles, particularly the triceps brachii (TB) and pectoralis major (PM)"
+   },
+   "deltoid.anterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9603242/",
+    "quote": "Potential agonists of shoulder flexion and elbow extension: PM clavicular head, anterior deltoid (AD) and TB lateral head"
+   }
+  },
+  "machine-chest-press": {
+   "pectoralis-major": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10203828/",
+    "quote": "the clavicular portion of the pectoralis major had significantly greater muscle activity in the seated chest press exercise with a neutral grip"
+   },
+   "deltoid.anterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10203828/",
+    "quote": "The muscle activity of the anterior deltoid was not significantly different across any exercise or grip evaluated"
+   },
+   "triceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10203828/",
+    "quote": "This study aims to compare muscle activity in the pectoralis major, anterior deltoid, and triceps brachii"
+   }
+  },
+  "pec-deck": {
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Machine_fly",
+    "quote": "Flyes are used to work the muscles of the upper body, primarily the sternal head of the pectoralis major."
+   },
+   "deltoid.anterior": {
+    "url": "https://www.scielo.br/j/rbme/a/wZB7qVqH98pXGzH9p4kyg5Q/?lang=en",
+    "quote": "During the PD exercise, the PM and DA muscle activities were higher than TB."
+   }
+  },
+  "dumbbell-pullover": {
+   "pectoralis-major": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13510307/",
+    "quote": "the pullover was associated with greater pectoralis major than latissimus dorsi EMG amplitude"
+   },
+   "latissimus-dorsi": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13510307/",
+    "quote": "The pullover is a resistance exercise characterized by its capacity to simultaneously engage the latissimus dorsi and the pectoralis major"
+   },
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Pullover_(exercise)",
+    "quote": "It targets Pectoralis major, Pectoralis minor, Triceps brachii, Lattismus dorsii and Teres major muscle among other muscles of the chest."
+   },
+   "teres-major": {
+    "url": "https://en.wikipedia.org/wiki/Pullover_(exercise)",
+    "quote": "It targets Pectoralis major, Pectoralis minor, Triceps brachii, Lattismus dorsii and Teres major muscle among other muscles of the chest."
+   },
+   "pectoralis-minor": {
+    "url": "https://en.wikipedia.org/wiki/Pullover_(exercise)",
+    "quote": "It targets Pectoralis major, Pectoralis minor, Triceps brachii, Lattismus dorsii and Teres major muscle among other muscles of the chest."
+   }
+  },
+  "standing-barbell-overhead-press": {
+   "deltoid.anterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   },
+   "deltoid.middle": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   },
+   "triceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   },
+   "trapezius.upper": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   }
+  },
+  "seated-dumbbell-shoulder-press": {
+   "deltoid.anterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7706677/",
+    "quote": "For anterior deltoid, the shoulder press (33.3% MVIC) presented a significantly higher level of activation when compared to other exercises."
+   },
+   "deltoid.middle": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7706677/",
+    "quote": "For the medial deltoid, the lateral raise (30.3% MVIC) and shoulder press (27.9% MVIC) presented a significantly higher level of activity than the bench press"
+   },
+   "triceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   },
+   "trapezius.upper": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13551356/",
+    "quote": "use the overhead press (OHP) exercise to stimulate the upper trapezius, triceps brachii, and pectoralis major, anterior, posterior deltoid, and lateral deltoid muscles"
+   }
+  },
+  "dumbbell-lateral-raise": {
+   "deltoid.middle": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "This movement, when the shoulder is kept in neutral rotation, primarily targets the middle head of the deltoid."
+   },
+   "trapezius.upper": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503819/",
+    "quote": "When humerus rotates internally, greater activation of posterior deltoid, triceps brachii, and upper trapezius occurs."
+   }
+  },
+  "cable-lateral-raise": {
+   "deltoid.middle": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "This movement, when the shoulder is kept in neutral rotation, primarily targets the middle head of the deltoid."
+   }
+  },
+  "dumbbell-front-raise": {
+   "deltoid.anterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7503819/",
+    "quote": "Frontal raise mainly activates anterior deltoid and pectoralis major"
+   },
+   "pectoralis-major.clavicular": {
+    "url": "https://en.wikipedia.org/wiki/Front_raise",
+    "quote": "It primarily works the anterior deltoid and the clavicular head of the pectoralis major"
+   }
+  },
+  "bent-over-rear-delt-fly": {
+   "deltoid.posterior": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The inverted fly (also known as a bent-over lateral raise, reverse fly, or rear delt fly) works the posterior deltoid."
+   },
+   "infraspinatus": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "assisted in this transverse extension by the lateral rotators of the rotator cuff: the infraspinatus and teres minor"
+   },
+   "teres-minor": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "assisted in this transverse extension by the lateral rotators of the rotator cuff: the infraspinatus and teres minor"
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The muscles that perform this function are the rhomboids and the trapezius."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The muscles that perform this function are the rhomboids and the trapezius."
+   }
+  },
+  "reverse-pec-deck": {
+   "deltoid.posterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7706677/",
+    "quote": "Regarding the posterior portion of the deltoid, Botton et al. (2013) and Franke et al. (2015) reported higher muscle activation of this muscle portion by the reverse pec deck fly exercise than a seated row or inclined pulldown"
+   },
+   "infraspinatus": {
+    "url": "https://en.wikipedia.org/wiki/Rear_delt_raise",
+    "quote": "Other muscles that aid the posterior deltoid include the two lateral rotators of the rotator cuff: the infraspinatus and teres minor."
+   },
+   "teres-minor": {
+    "url": "https://en.wikipedia.org/wiki/Rear_delt_raise",
+    "quote": "Other muscles that aid the posterior deltoid include the two lateral rotators of the rotator cuff: the infraspinatus and teres minor."
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Rear_delt_raise",
+    "quote": "Muscles that retract the scapulae include the rhomboid muscle and the trapezius muscle."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Rear_delt_raise",
+    "quote": "Muscles that retract the scapulae include the rhomboid muscle and the trapezius muscle."
+   }
+  },
+  "face-pull": {
+   "deltoid.posterior": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "movement of the humerus is performed by a combination of transverse abduction, by the posterior and lateral deltoids"
+   },
+   "infraspinatus": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "external rotation, by the infraspinatus and teres minor"
+   },
+   "teres-minor": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "external rotation, by the infraspinatus and teres minor"
+   },
+   "trapezius.middle": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "the middle and lower fibers of the trapezius and the rhomboids contract to perform retraction of the scapulae"
+   },
+   "trapezius.lower": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "the middle and lower fibers of the trapezius and the rhomboids contract to perform retraction of the scapulae"
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "the middle and lower fibers of the trapezius and the rhomboids contract to perform retraction of the scapulae"
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Face_pull_(exercise)",
+    "quote": "To a lesser extent, the biceps are involved to flex the elbow joint"
+   }
+  },
+  "upright-row": {
+   "deltoid.middle": {
+    "url": "https://en.wikipedia.org/wiki/Upright_row",
+    "quote": "Substitutes include high pulls and shoulder shrugs for upper trapezius development and lateral raises for lateral deltoids."
+   },
+   "trapezius.upper": {
+    "url": "https://en.wikipedia.org/wiki/Upright_row",
+    "quote": "Substitutes include high pulls and shoulder shrugs for upper trapezius development and lateral raises for lateral deltoids."
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Upright_row",
+    "quote": "This is a compound exercise that involves the trapezius, the deltoids and the biceps."
+   }
+  },
+  "cable-external-rotation": {
+   "infraspinatus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857205/",
+    "quote": "Resisted shoulder external rotation (ER) exercises are widely recognized as an effective intervention to strengthen the infraspinatus, the primary external rotator of the shoulder"
+   },
+   "teres-minor": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857205/",
+    "quote": "side-lying ER exercises result in greater activation of the infraspinatus and teres minor compared to standing positions"
+   },
+   "deltoid.posterior": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11857205/",
+    "quote": "The SER position generated higher posterior deltoid activity compared to other positions"
+   }
+  },
+  "cable-internal-rotation": {
+   "subscapularis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595918/",
+    "quote": "EMG studies of IR exercises have mainly focused on the principal internal rotators such as SUBS and pectoralis muscles."
+   },
+   "pectoralis-major": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4595918/",
+    "quote": "EMG studies of IR exercises have mainly focused on the principal internal rotators such as SUBS and pectoralis muscles."
+   }
+  },
+  "pull-up": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "Pull-ups build up several muscles of the upper body, including the latissimus dorsi, trapezius, and biceps brachii."
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "the latissimus dorsi, teres major, and biceps brachii reach peak activity during the middle of the movement"
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "The trapezius, infraspinatus, and brachialis muscles are most active at the beginning of the pull-up"
+   },
+   "teres-major": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "the latissimus dorsi, teres major, and biceps brachii reach peak activity during the middle of the movement"
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "The trapezius, infraspinatus, and brachialis muscles are most active at the beginning of the pull-up"
+   }
+  },
+  "chin-up": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "Pull-ups build up several muscles of the upper body, including the latissimus dorsi, trapezius, and biceps brachii."
+   },
+   "biceps-brachii": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/190/chin-ups/",
+    "quote": "This exercise targets the back and biceps muscles effectively"
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "The trapezius, infraspinatus, and brachialis muscles are most active at the beginning of the pull-up"
+   },
+   "teres-major": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "the latissimus dorsi, teres major, and biceps brachii reach peak activity during the middle of the movement"
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Pull-up_(exercise)",
+    "quote": "The trapezius, infraspinatus, and brachialis muscles are most active at the beginning of the pull-up"
+   }
+  },
+  "lat-pulldown": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "The pull-down exercise is a strength training exercise designed to develop the latissimus dorsi muscle."
+   },
+   "teres-major": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which attach to the scapulae that adduct and extend the arm include the posterior deltoid muscles, the teres major"
+   },
+   "trapezius.lower": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles that attach to and depress the scapulae include the lower trapezius muscle and the pectoralis minor."
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "If the weight is pulled to touch the front of the chest, the rhomboid muscles' work may increase"
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which flex the elbow joint such as the biceps brachii muscle, brachialis muscles and brachioradialis muscle are active"
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which flex the elbow joint such as the biceps brachii muscle, brachialis muscles and brachioradialis muscle are active"
+   }
+  },
+  "close-grip-lat-pulldown": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "with no difference in latissimus dorsi activity between grip widths."
+   },
+   "teres-major": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which attach to the scapulae that adduct and extend the arm include the posterior deltoid muscles, the teres major"
+   },
+   "trapezius.lower": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles that attach to and depress the scapulae include the lower trapezius muscle and the pectoralis minor."
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "If the weight is pulled to touch the front of the chest, the rhomboid muscles' work may increase"
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which flex the elbow joint such as the biceps brachii muscle, brachialis muscles and brachioradialis muscle are active"
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Pull-down_(exercise)",
+    "quote": "Muscles which flex the elbow joint such as the biceps brachii muscle, brachialis muscles and brachioradialis muscle are active"
+   }
+  },
+  "straight-arm-cable-pulldown": {
+   "latissimus-dorsi": {
+    "url": "https://www.hingehealth.com/resources/articles/straight-arm-pulldown",
+    "quote": "It puts your upper back muscles, in particular the latissimus dorsi muscles, through a large range of motion"
+   },
+   "triceps-brachii": {
+    "url": "https://www.hingehealth.com/resources/articles/straight-arm-pulldown",
+    "quote": "During the straight-arm pulldown, the triceps are challenged as you work to keep your arms straight."
+   },
+   "deltoid.posterior": {
+    "url": "https://www.hingehealth.com/resources/articles/straight-arm-pulldown",
+    "quote": "Posterior deltoids, which are located at the back of the shoulders."
+   }
+  },
+  "barbell-bent-over-row": {
+   "latissimus-dorsi": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Specifically, the BOR targets the latissimus dorsi (LD), middle and upper trapezius (MT and UT, respectively), posterior deltoid (PD), teres major, rhomboids,"
+   },
+   "trapezius.middle": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Specifically, the BOR targets the latissimus dorsi (LD), middle and upper trapezius (MT and UT, respectively), posterior deltoid (PD), teres major, rhomboids,"
+   },
+   "rhomboids": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Specifically, the BOR targets the latissimus dorsi (LD), middle and upper trapezius (MT and UT, respectively), posterior deltoid (PD), teres major, rhomboids,"
+   },
+   "deltoid.posterior": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Specifically, the BOR targets the latissimus dorsi (LD), middle and upper trapezius (MT and UT, respectively), posterior deltoid (PD), teres major, rhomboids,"
+   },
+   "teres-major": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Specifically, the BOR targets the latissimus dorsi (LD), middle and upper trapezius (MT and UT, respectively), posterior deltoid (PD), teres major, rhomboids,"
+   },
+   "erector-spinae": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "lumbar and thoracic portions of the erector spinae muscle (LES and TES, respectively), brachial, brachioradial and biceps brachii muscles"
+   },
+   "biceps-brachii": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "lumbar and thoracic portions of the erector spinae muscle (LES and TES, respectively), brachial, brachioradial and biceps brachii muscles"
+   },
+   "brachialis": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "lumbar and thoracic portions of the erector spinae muscle (LES and TES, respectively), brachial, brachioradial and biceps brachii muscles"
+   }
+  },
+  "one-arm-dumbbell-row": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Bent-over_row",
+    "quote": "The latissimus dorsi muscle is best targeted with the elbow close to the torso, bringing it to the hip."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Bent-over_row",
+    "quote": "along with scapular retractors such as the rhomboids and entire trapezius, are better targeted when the elbows are brought outwards."
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Bent-over_row",
+    "quote": "along with scapular retractors such as the rhomboids and entire trapezius, are better targeted when the elbows are brought outwards."
+   },
+   "deltoid.posterior": {
+    "url": "https://en.wikipedia.org/wiki/Bent-over_row",
+    "quote": "The transverse extensors (posterior deltoid muscle fibers and the infraspinatus and teres minor of the rotator cuff)"
+   }
+  },
+  "seated-cable-row": {
+   "latissimus-dorsi": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC449729/",
+    "quote": "The highest latissimus dorsi to biceps ratio of activation occurred during the wide grip pulldown and the seated row."
+   },
+   "trapezius.middle": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC449729/",
+    "quote": "Highest levels of myoelectric activity in the middle trapezius/rhomboid muscle group occurred during the seated row."
+   },
+   "rhomboids": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC449729/",
+    "quote": "Highest levels of myoelectric activity in the middle trapezius/rhomboid muscle group occurred during the seated row."
+   },
+   "biceps-brachii": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC449729/",
+    "quote": "The highest latissimus dorsi to biceps ratio of activation occurred during the wide grip pulldown and the seated row."
+   }
+  },
+  "t-bar-row": {
+   "latissimus-dorsi": {
+    "url": "https://www.webmd.com/fitness-exercise/how-to-do-t-bar-rows",
+    "quote": "T-bar rows specifically focus on your: Latissimus dorsi Rhomboids Trapezius muscles"
+   },
+   "rhomboids": {
+    "url": "https://www.webmd.com/fitness-exercise/how-to-do-t-bar-rows",
+    "quote": "T-bar rows specifically focus on your: Latissimus dorsi Rhomboids Trapezius muscles"
+   },
+   "trapezius": {
+    "url": "https://www.webmd.com/fitness-exercise/how-to-do-t-bar-rows",
+    "quote": "T-bar rows specifically focus on your: Latissimus dorsi Rhomboids Trapezius muscles"
+   },
+   "biceps-brachii": {
+    "url": "https://www.webmd.com/fitness-exercise/how-to-do-t-bar-rows",
+    "quote": "Other affected muscles include your: Abdominal muscles Hamstrings Glutes Biceps Triceps"
+   }
+  },
+  "chest-supported-dumbbell-row": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Bent-over_row",
+    "quote": "The latissimus dorsi muscle is best targeted with the elbow close to the torso, bringing it to the hip."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Row_(weight-lifting)",
+    "quote": "strengthen the muscles that draw the rower's arms toward the body ( latissimus dorsi ) as well as those that retract the scapulae ( trapezius and rhomboids )"
+   },
+   "rhomboids": {
+    "url": "https://en.wikipedia.org/wiki/Row_(weight-lifting)",
+    "quote": "strengthen the muscles that draw the rower's arms toward the body ( latissimus dorsi ) as well as those that retract the scapulae ( trapezius and rhomboids )"
+   },
+   "deltoid.posterior": {
+    "url": "https://efsupit.ro/images/stories/iunie2021/Art%20236.pdf",
+    "quote": "Regarding the B/AD variation, once again the PD was the muscle with the highest %MCIV."
+   }
+  },
+  "inverted-row": {
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Inverted_row",
+    "quote": "It primarily works the muscles of the upper back—the trapezius and latissimus dorsi—as well as the biceps as a secondary muscle group."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Inverted_row",
+    "quote": "It primarily works the muscles of the upper back—the trapezius and latissimus dorsi—as well as the biceps as a secondary muscle group."
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Inverted_row",
+    "quote": "It primarily works the muscles of the upper back—the trapezius and latissimus dorsi—as well as the biceps as a secondary muscle group."
+   }
+  },
+  "barbell-shrug": {
+   "trapezius.upper": {
+    "url": "https://en.wikipedia.org/wiki/Shoulder_shrug",
+    "quote": "the shoulder shrug (usually called simply the shrug) is an exercise used to develop the upper trapezius muscle."
+   },
+   "levator-scapulae": {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The descending (upper) fibers act with the levator scapulae muscle to produce an elevation of the scapula at the scapulothoracic joint."
+   }
+  },
+  "dumbbell-shrug": {
+   "trapezius.upper": {
+    "url": "https://en.wikipedia.org/wiki/Shoulder_shrug",
+    "quote": "the shoulder shrug (usually called simply the shrug) is an exercise used to develop the upper trapezius muscle."
+   },
+   "levator-scapulae": {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The descending (upper) fibers act with the levator scapulae muscle to produce an elevation of the scapula at the scapulothoracic joint."
+   }
+  },
+  "45-degree-back-extension": {
+   "erector-spinae": {
+    "url": "https://en.wikipedia.org/wiki/Hyperextension_(exercise)",
+    "quote": "back extension is an exercise that works the lower back as well as the mid and upper back, specifically the erector spinae muscles."
+   },
+   "gluteus-maximus": {
+    "url": "https://doi.org/10.52082/jssm.2021.181",
+    "quote": "the Romanian deadlift and the Roman chair back extension activated the gluteus maximus more than the seated machine back extension"
+   },
+   "biceps-femoris.long": {
+    "url": "https://doi.org/10.52082/jssm.2021.181",
+    "quote": "The Roman chair was superior in activating the biceps femoris compared to the two other exercises."
+   }
+  },
+  "superman": {
+   "erector-spinae": {
+    "url": "https://www.healthline.com/health/fitness/superman-exercise",
+    "quote": "In particular, the superman exercise targets mostly the erector spinae muscles of your lower back."
+   },
+   "multifidus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136566/",
+    "quote": "It appears that superman-UL is the most effective exercise for a greater contraction thickness of LM."
+   },
+   "gluteus-maximus": {
+    "url": "https://www.healthline.com/health/fitness/superman-exercise",
+    "quote": "In addition to targeting your core, the superman targets your glutes and hamstrings."
+   }
+  },
+  "rack-pull": {
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "rack pulls are performed to strengthen the upper back, posterior deltoids, and trapezius."
+   },
+   "erector-spinae": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "Erector spinae (lower back). The erectors — or paraspinal muscles — are the muscles that surround the spine. They help extend the spine throughout the movement"
+   },
+   "gluteus-maximus": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "The gluteus maximus, medius, and minimus, or glutes, are mainly responsible for the extension of the hip joint."
+   },
+   "latissimus-dorsi": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "The latissimus dorsi, or lats, are the largest of the back muscles. They help maintain back tightness throughout the exercise"
+   },
+   "deltoid.posterior": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "rack pulls are performed to strengthen the upper back, posterior deltoids, and trapezius."
+   },
+   "semitendinosus": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "The hamstrings are responsible for knee flexion and hip extension. They play a major role in the first half of the movement, working with the glutes to lift the barbell off of the rack."
+   },
+   "semimembranosus": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "The hamstrings are responsible for knee flexion and hip extension. They play a major role in the first half of the movement, working with the glutes to lift the barbell off of the rack."
+   },
+   "biceps-femoris.long": {
+    "url": "https://www.healthline.com/health/fitness/rack-pull",
+    "quote": "The hamstrings are responsible for knee flexion and hip extension. They play a major role in the first half of the movement, working with the glutes to lift the barbell off of the rack."
+   }
+  },
+  "barbell-curl": {
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   }
+  },
+  "dumbbell-curl": {
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   }
+  },
+  "hammer-curl": {
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The brachioradialis is at its most effective when the palms are facing inward"
+   },
+   "brachialis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/",
+    "quote": "the incline curls and the hummer curls, pre-stretch the biceps long head and enhance the involvement of the brachialis, respectively."
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps are stronger at elbow flexion when the forearm is supinated (palms turned upward) and weaker when the forearm is pronated."
+   }
+  },
+  "preacher-curl": {
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "curl the barbell towards shoulder until the biceps are fully contracted."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachioradialis": {
+    "url": "https://www.acefitness.org/continuing-education/prosource/august-2014/4933/ace-study-reveals-best-biceps-exercises/",
+    "quote": "The incline curl and preacher curl elicited significantly lower muscle activation of the BR compared to the EZ curl (narrow grip)."
+   }
+  },
+  "incline-dumbbell-curl": {
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "the incline dumbbell curl and the regular biceps curl activated the biceps throughout the entire range of motion."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   }
+  },
+  "concentration-curl": {
+   "biceps-brachii": {
+    "url": "https://www.acefitness.org/continuing-education/prosource/august-2014/4933/ace-study-reveals-best-biceps-exercises/",
+    "quote": "the concentration curl came out on top, eliciting significantly higher muscle activation of the biceps than any other exercise tested"
+   },
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   }
+  },
+  "cable-curl": {
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "Raise the bar toward the shoulder until the biceps are fully tightened, maintaining the elbows at the side of the body and the shoulders fixed."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   },
+   "brachioradialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles."
+   }
+  },
+  "reverse-grip-barbell-curl": {
+   "brachioradialis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6047503/",
+    "quote": "performing barbell curls with a reverse handgrip resulted in an increase in brachioradialis activation"
+   },
+   "biceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "The biceps are stronger at elbow flexion when the forearm is supinated (palms turned upward) and weaker when the forearm is pronated."
+   },
+   "brachialis": {
+    "url": "https://en.wikipedia.org/wiki/Biceps_curl",
+    "quote": "the brachialis is unaffected by forearm rotation."
+   }
+  },
+  "close-grip-bench-press": {
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "A bench press performed with the hands close together. It relies on the triceps to complete the pressing motion."
+   },
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Bench_press",
+    "quote": "the primary muscles involved being the pectoralis major, the anterior deltoids, and the triceps brachii."
+   }
+  },
+  "cable-triceps-pushdown": {
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Push-down_(exercise)",
+    "quote": "A push-down is a strength training exercise used for strengthening the triceps muscles in the back of the arm."
+   }
+  },
+  "overhead-dumbbell-triceps-extension": {
+   "triceps-brachii": {
+    "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/",
+    "quote": "triceps kickbacks, overhead triceps extensions, bar push-downs, rope push-downs, closed-grip bench press and lying barbell triceps extensions."
+   }
+  },
+  "lying-triceps-extension": {
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Lying_triceps_extension",
+    "quote": "It is one of the most stimulating exercises to the entire triceps muscle group in the upper arm"
+   }
+  },
+  "bench-dip": {
+   "triceps-brachii": {
+    "url": "https://www.acefitness.org/certifiednewsarticle/1562/ace-sponsored-research-best-triceps-exercises/",
+    "quote": "You can quickly and effectively tone and strengthen the triceps using triangle push-ups, triceps kickbacks and dips."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Dip_(exercise)",
+    "quote": "Close grip dips primarily train the triceps, with major synergists being the anterior deltoid, the pectoralis muscles, and the rhomboid muscles of the back."
+   },
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Dip_(exercise)",
+    "quote": "Close grip dips primarily train the triceps, with major synergists being the anterior deltoid, the pectoralis muscles, and the rhomboid muscles of the back."
+   }
+  },
+  "diamond-push-up": {
+   "triceps-brachii": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "This technique requires stronger triceps muscles than regular push-ups"
+   },
+   "pectoralis-major": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "push-ups exercise the pectoral muscles, triceps, and anterior deltoids"
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Push-up",
+    "quote": "push-ups exercise the pectoral muscles, triceps, and anterior deltoids"
+   }
+  },
+  "dumbbell-triceps-kickback": {
+   "triceps-brachii": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/55/triceps-kickback/",
+    "quote": "slowly extend (straighten) your elbow by contracting your triceps muscles until your elbow is fully extended."
+   }
+  },
+  "wrist-curl": {
+   "flexor-carpi-radialis": {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "A wrist roller can be used, Zottman Curls, and wrist curls with dumbbells can also be performed."
+   },
+   "flexor-carpi-ulnaris": {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "A wrist roller can be used and wrist curls with dumbbells can also be performed."
+   }
+  },
+  "reverse-wrist-curl": {
+   "extensor-carpi-radialis-longus": {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "Reverse wrist curls with dumbbells can be performed."
+   },
+   "extensor-carpi-radialis-brevis": {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "reverse wrist curls with dumbbells can be performed."
+   }
+  },
+  "crunch": {
+   "rectus-abdominis": {
+    "url": "https://en.wikipedia.org/wiki/Crunch_(exercise)",
+    "quote": "The crunch or curl-up is an abdominal exercise that works the rectus abdominis muscle."
+   }
+  },
+  "reverse-crunch": {
+   "rectus-abdominis": {
+    "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/",
+    "quote": "Each of the 13 exercises were ranked for muscle stimulation in the rectus abdominus",
+    "note": "Reverse crunch xếp hạng 7/13 về kích hoạt cơ thẳng bụng."
+   },
+   "external-oblique": {
+    "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/",
+    "quote": "For strengthening the obliques, the 13 exercise were ranked most to least effective: 1. Captain’s chair 2. Bicycle maneuver 3. Reverse crunch",
+    "note": "Reverse crunch xếp hạng 3/13 về kích hoạt 'obliques'. Nghiên cứu ACE đo bằng điện cực bề mặt; 'obliques' ở đây chỉ gán cho cơ chéo bụng ngoài (lớp nông), không suy ra cơ chéo bụng trong."
+   },
+   "iliopsoas": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/76/reverse-crunch/",
+    "quote": "contract your abdominal, core and hip flexor muscles",
+    "note": "ACE ghi chung 'hip flexor muscles' (nhóm cơ gập hông); cơ thắt lưng chậu là cơ gập hông chính."
+   }
+  },
+  "hanging-leg-raise": {
+   "rectus-abdominis": {
+    "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/",
+    "quote": "For strengthening the rectus abdominus, the 13 exercise were ranked most to least effective: 1. Bicycle maneuver 2. Captain’s chair",
+    "note": "Captain's chair = nâng chân/gối khi treo người trên ghế tì cẳng tay, cùng nhóm 'treo người' với hanging leg raise theo Wikipedia (Leg raise). Wikipedia còn ghi: nghiêng chậu sau khi muốn nhắm cơ thẳng bụng ('It should be going into posterior pelvic tilt if the movement is being done to target the rectus abdominis')."
+   },
+   "iliopsoas": {
+    "url": "https://en.wikipedia.org/wiki/Leg_raise",
+    "quote": "The leg raise is a strength training exercise which targets the iliopsoas (the anterior hip flexors)."
+   },
+   "external-oblique": {
+    "url": "https://en.wikipedia.org/wiki/Leg_raise",
+    "quote": "leg raises are also often used to strengthen the rectus abdominis muscle and the internal and external oblique muscles",
+    "note": "ACE cũng xếp captain's chair hạng 1/13 về kích hoạt 'obliques'."
+   },
+   "internal-oblique": {
+    "url": "https://en.wikipedia.org/wiki/Leg_raise",
+    "quote": "leg raises are also often used to strengthen the rectus abdominis muscle and the internal and external oblique muscles"
+   },
+   "quadriceps-femoris.rectus-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Leg_raise",
+    "quote": "It also allows the rectus femoris muscle to contribute, for both the supine straight leg raise and the hanging straight leg raise versions",
+    "note": "Rõ nhất khi duỗi thẳng gối (đúng tên bài: nâng chân thẳng)."
+   }
+  },
+  "plank": {
+   "rectus-abdominis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "EO, IO, and RA elicited the greatest muscle activation.",
+    "note": "Kết quả nghiên cứu De Blaiser 2016 cho front plank trong bảng của bài tổng quan. Cùng bảng: cơ dựng sống chỉ ~2–7% MVIC (Calatayud 2017, Cortell-Tormo 2017) nên KHÔNG xếp là cơ chính dù Wikipedia ghi vậy."
+   },
+   "transversus-abdominis": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Primary muscles: erector spinae, rectus abdominis (abs), and transverse abdominis.",
+    "note": "Wikipedia xếp chính; ở đây để phụ vì giới hạn 3 cơ chính và cơ ngang bụng không đo được bằng điện cực bề mặt trong các nghiên cứu trên."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "gluteus maximus (glutes), quadriceps (quads), and gastrocnemius"
+   },
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "gluteus maximus (glutes), quadriceps (quads), and gastrocnemius"
+   },
+   "serratus-anterior": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "the anterior, medial, and posterior deltoid muscles (delts), pectorals (pecs), serratus anterior"
+   },
+   "deltoid": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "the anterior, medial, and posterior deltoid muscles (delts), pectorals (pecs), serratus anterior"
+   },
+   "external-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "EO, IO, and RA elicited the greatest muscle activation.",
+    "note": "Kết quả nghiên cứu De Blaiser 2016 cho front plank trong bảng của bài tổng quan. Cùng bảng: cơ dựng sống chỉ ~2–7% MVIC (Calatayud 2017, Cortell-Tormo 2017) nên KHÔNG xếp là cơ chính dù Wikipedia ghi vậy."
+   },
+   "internal-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "EO, IO, and RA elicited the greatest muscle activation.",
+    "note": "Kết quả nghiên cứu De Blaiser 2016 cho front plank trong bảng của bài tổng quan. Cùng bảng: cơ dựng sống chỉ ~2–7% MVIC (Calatayud 2017, Cortell-Tormo 2017) nên KHÔNG xếp là cơ chính dù Wikipedia ghi vậy."
+   }
+  },
+  "side-plank": {
+   "external-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "However, the greatest IO and EO were observed in lateral planks.",
+    "note": "Escamilla 2016: lateral plank cho kích hoạt cơ chéo trong và chéo ngoài cao nhất trong các bài được so sánh. Wikipedia cũng xếp hai cơ chéo vào nhóm chính của side plank."
+   },
+   "internal-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "However, the greatest IO and EO were observed in lateral planks.",
+    "note": "Escamilla 2016: lateral plank cho kích hoạt cơ chéo trong và chéo ngoài cao nhất trong các bài được so sánh. Wikipedia cũng xếp hai cơ chéo vào nhóm chính của side plank."
+   },
+   "transversus-abdominis": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Muscles involved in the side plank include: Primary: transversus abdominis muscle, gluteus medius and gluteus minimus muscles (abductors)",
+    "note": "Wikipedia xếp chính; ở đây để phụ vì giới hạn 3 cơ chính, ưu tiên cơ có số đo EMG riêng cho side plank (hai cơ chéo) và cơ dạng hông chính."
+   },
+   "gluteus-medius": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Muscles involved in the side plank include: Primary: transversus abdominis muscle, gluteus medius and gluteus minimus muscles (abductors)"
+   },
+   "gluteus-minimus": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Muscles involved in the side plank include: Primary: transversus abdominis muscle, gluteus medius and gluteus minimus muscles (abductors)",
+    "note": "Wikipedia xếp chính cùng cơ mông nhỡ; để phụ vì giới hạn 3 cơ chính."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Secondary: gluteus maximus (glutes), quadriceps (quads), and hamstrings."
+   },
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Plank_(exercise)",
+    "quote": "Secondary: gluteus maximus (glutes), quadriceps (quads), and hamstrings."
+   }
+  },
+  "dead-bug": {
+   "transversus-abdominis": {
+    "url": "https://www.sussex.ac.uk/sport/documents/dead-bug.pdf",
+    "quote": "Primary Muscles: rectus abdominus, transverse abdominus"
+   },
+   "rectus-abdominis": {
+    "url": "https://www.sussex.ac.uk/sport/documents/dead-bug.pdf",
+    "quote": "Primary Muscles: rectus abdominus, transverse abdominus"
+   }
+  },
+  "bird-dog": {
+   "multifidus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "Bird dog with the load on hand and leg elicited the greatest MUL and ES activity compared to the rest of the exercises.",
+    "note": "Masaki 2015 so sánh các biến thể bird dog. Bảng cùng bài (Biscarini 2018): bird dog ~26% MVIC cơ nhiều chân, ~22% cơ dựng sống, ~17% cơ chéo trong, ~5% cơ thẳng bụng."
+   },
+   "erector-spinae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "Bird dog with the load on hand and leg elicited the greatest MUL and ES activity compared to the rest of the exercises."
+   },
+   "transversus-abdominis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "this systematic review found that the bird dog elicited greater EMG activity in the TA than in the IO or MUL",
+    "note": "Dữ liệu Pirouzi 2013 tính bằng mV (không chuẩn hóa %MVIC), nên không dùng để xếp cơ ngang bụng đứng đầu."
+   },
+   "internal-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "this systematic review found that the bird dog elicited greater EMG activity in the TA than in the IO or MUL",
+    "note": "Cơ chéo trong có được đo và có hoạt động, thấp hơn cơ ngang bụng."
+   }
+  },
+  "pallof-press": {
+   "transversus-abdominis": {
+    "url": "https://www.sussex.ac.uk/sport/documents/anti-rotations-pallof-press.pdf",
+    "quote": "transverse abdominus, obliques"
+   },
+   "external-oblique": {
+    "url": "https://www.sussex.ac.uk/sport/documents/anti-rotations-pallof-press.pdf",
+    "quote": "transverse abdominus, obliques",
+    "note": "Nguồn ghi chung 'obliques'."
+   },
+   "internal-oblique": {
+    "url": "https://www.sussex.ac.uk/sport/documents/anti-rotations-pallof-press.pdf",
+    "quote": "transverse abdominus, obliques",
+    "note": "Nguồn ghi chung 'obliques'."
+   },
+   "erector-spinae": {
+    "url": "https://www.sussex.ac.uk/sport/documents/anti-rotations-pallof-press.pdf",
+    "quote": "Secondary Muscles: erector spinae, glutes,"
+   }
+  },
+  "ab-wheel-rollout": {
+   "rectus-abdominis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "Suspended front and roll-out plank developed greater RA (even greater activation on the upper RA) and EO activity than the rest of the exercises.",
+    "note": "RA = rectus abdominis, EO = external oblique. Calatayud 2017: stable roll-out plank ~100% MVIC cơ thẳng bụng trên, ~49% cơ chéo ngoài."
+   },
+   "external-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7345922/",
+    "quote": "Suspended front and roll-out plank developed greater RA (even greater activation on the upper RA) and EO activity than the rest of the exercises."
+   }
+  },
+  "bicycle-crunch": {
+   "rectus-abdominis": {
+    "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/",
+    "quote": "For strengthening the rectus abdominus, the 13 exercise were ranked most to least effective: 1. Bicycle maneuver"
+   },
+   "external-oblique": {
+    "url": "https://www.acefitness.org/about-ace/press-room/in-the-news/246/american-council-on-exercise-ace-sponsored-study-reveals-best-and-worst-abdominal-exercises/",
+    "quote": "For strengthening the obliques, the 13 exercise were ranked most to least effective: 1. Captain’s chair 2. Bicycle maneuver",
+    "note": "Nghiên cứu ACE đo bằng điện cực bề mặt; 'obliques' ở đây chỉ gán cho cơ chéo bụng ngoài (lớp nông), không suy ra cơ chéo bụng trong."
+   }
+  },
+  "barbell-hip-thrust": {
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544005/",
+    "quote": "hip extensor muscles (gluteus maximus and biceps femoris) demonstrated greater activation in the BHT compared to the squat"
+   },
+   "semitendinosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544005/",
+    "quote": "the muscle excitation sequence is gluteus maximus, erector spinae, biceps femoris, semitendinosus, vastus lateralis, gluteus medius, vastus medialis and rectus femoris",
+    "note": "Đây là thứ tự khởi phát kích hoạt, không phải mức độ."
+   },
+   "erector-spinae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544005/",
+    "quote": "the muscle excitation sequence is gluteus maximus, erector spinae, biceps femoris, semitendinosus, vastus lateralis, gluteus medius, vastus medialis and rectus femoris",
+    "note": "Đây là thứ tự khởi phát kích hoạt, không phải mức độ."
+   },
+   "biceps-femoris.long": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6544005/",
+    "quote": "hip extensor muscles (gluteus maximus and biceps femoris) demonstrated greater activation in the BHT compared to the squat",
+    "note": "Chỉ đầu dài cơ nhị đầu đùi bắc qua khớp hông. Bài review còn ghi gối gập ~90° làm nhóm đùi sau rơi vào 'insufficiency', nên chúng chỉ là cơ phụ."
+   }
+  },
+  "glute-bridge": {
+   "gluteus-maximus": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/",
+    "quote": "press your hips upwards off the floor into extension by contracting your glutes (butt muscles)",
+    "note": "Bài tổng quan PMC6350668 xếp 'Bridge' (6 nghiên cứu) ở mức kích hoạt cơ mông lớn 21–40% MVIC (trung bình ~23%)."
+   }
+  },
+  "side-lying-hip-abduction": {
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "The top gluteus medius exercises from Distefano's study were sidelying hip abduction (81%MVIC), single-limb squat (64%MVIC), and single limb dead lift (58%MVIC)."
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Side-lying hip abd 39 (6) 81 (1)",
+    "note": "Dòng trong bảng tóm tắt nghiên cứu Distefano: cột 1 = cơ mông lớn %MVIC (hạng), cột 2 = cơ mông nhỡ. Mông lớn 39% so với mông nhỡ 81% nên để phụ."
+   }
+  },
+  "clamshell": {
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Clam with 30 hip flex 34 (10) 40 (10)",
+    "note": "Bảng tóm tắt nghiên cứu Distefano: clamshell gập hông 30° đạt 34% MVIC cơ mông lớn, 40% MVIC cơ mông nhỡ. Thẻ Sussex: 'open your knees by contracting your glute medius'."
+   },
+   "piriformis": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12454362/",
+    "quote": "BRIDGE (13.1%), CLAM (14.5%), and ABD-ER (23.8%) activated the piriformis more than R-CLAM (5.3%).",
+    "note": "MRI chức năng: clamshell kích hoạt cơ hình lê (14,5%) và cơ bịt trong (24,2%) nhiều hơn cơ mông nhỡ (4,5%); cơ bịt trong không có trong app."
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Clam with 30 hip flex 34 (10) 40 (10)",
+    "note": "Mông lớn 34% MVIC, thấp hơn mông nhỡ 40% nên để phụ."
+   }
+  },
+  "banded-lateral-walk": {
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12372021/",
+    "quote": "Lateral and monster walks elicit moderate to high activation of the gluteus medius and maximus"
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Lateral band walk 27 (12) 61 (3)",
+    "note": "Bảng tóm tắt nghiên cứu Distefano: cơ mông lớn 27% MVIC, cơ mông nhỡ 61% MVIC; review PMC12372021 ghi chung 'moderate to high activation of the gluteus medius and maximus'. Mông lớn để phụ."
+   },
+   "tensor-fasciae-latae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12372021/",
+    "quote": "This technique minimizes compensation from the tensor fasciae latae and promotes selective gluteal recruitment.",
+    "note": "Cơ căng mạc đùi là cơ dạng hông hiệp đồng nên có tham gia; review coi phần tham gia này là bù trừ cần hạn chế bằng kỹ thuật đúng."
+   }
+  },
+  "step-up": {
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7039033/",
+    "quote": "The step-up exercise and its variations present the highest levels of GMax activation"
+   },
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7039033/",
+    "quote": "the need to stabilize the knees and hip during the upward and downward movement (the more significant synergistic activity of the gluteus medius)",
+    "note": "Câu này giải thích mức kích hoạt cao của step-up và các biến thể."
+   },
+   "quadriceps-femoris": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9914687/",
+    "quote": "It is also found that the movement pattern of FSU exercise activates RF the most among all the tested muscles.",
+    "note": "FSU = forward step-up; RF = cơ thẳng đùi (một đầu của cơ tứ đầu), đo cùng cơ mông lớn, nhị đầu đùi, bụng chân. Nghiên cứu chỉ đo RF, không đo các cơ rộng."
+   }
+  },
+  "cable-pull-through": {
+   "gluteus-maximus": {
+    "url": "https://www.sussex.ac.uk/sport/documents/cable-pull-throughs.pdf",
+    "quote": "There is an increased demand on the glutes (minimus and maximus), hamstrings, core and trunk.",
+    "note": "Bỏ cơ mông bé: cơ mông bé là cơ dạng/xoay trong, không phải cơ duỗi hông. Nghiên cứu PMC10124728: pull-through ~29% MVIC mông lớn, không khác RDL."
+   },
+   "biceps-femoris.long": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124728/",
+    "quote": "surface electromyography of the longissimus, multifidus, gluteus maximus, semitendinosus, and biceps femoris, muscles that contribute to lumbar/hip extension, was recorded",
+    "note": "Pull-through: nhị đầu đùi ~21%, bán gân ~24% MVIC. Chỉ đầu dài nhị đầu đùi bắc qua khớp hông."
+   },
+   "semitendinosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124728/",
+    "quote": "surface electromyography of the longissimus, multifidus, gluteus maximus, semitendinosus, and biceps femoris, muscles that contribute to lumbar/hip extension, was recorded"
+   },
+   "semimembranosus": {
+    "url": "https://www.sussex.ac.uk/sport/documents/cable-pull-throughs.pdf",
+    "quote": "There is an increased demand on the glutes (minimus and maximus), hamstrings, core and trunk.",
+    "note": "Nguồn ghi chung 'hamstrings'; cơ bán màng không được đo riêng, để phụ vì giới hạn 3 cơ chính."
+   },
+   "erector-spinae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10124728/",
+    "quote": "surface electromyography of the longissimus, multifidus, gluteus maximus, semitendinosus, and biceps femoris, muscles that contribute to lumbar/hip extension, was recorded",
+    "note": "Cơ dài (longissimus, thuộc cơ dựng sống) ~46% MVIC trong pull-through — cao hơn cơ mông lớn — nhưng vai trò là giữ cột sống (cơ ổn định), nên để phụ. Thẻ Sussex xếp vào 'Primary Muscles'."
+   }
+  },
+  "single-leg-romanian-deadlift": {
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Single-limb deadlift 59 (1) 58 (4)",
+    "note": "Bảng tóm tắt nghiên cứu Distefano: cơ mông lớn 59% MVIC (hạng 1), cơ mông nhỡ 58% MVIC. Nguồn PMC12390621 ghi bài 'primarily targets the hamstrings'; ACE xếp vùng đích 'Butt/Hips'."
+   },
+   "semitendinosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390621/",
+    "quote": "EMG activation was significantly higher for the gluteus medius, biceps femoris, semitendinosus, and gastrocnemius",
+    "note": "So sánh tạ đòn đàn hồi với tạ thường."
+   },
+   "semimembranosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390621/",
+    "quote": "As a form of closed kinetic chain exercise, it primarily targets the hamstrings",
+    "note": "Nguồn ghi chung 'hamstrings'; không đo riêng, để phụ vì giới hạn 3 cơ chính."
+   },
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3201064/",
+    "quote": "Single-limb deadlift 59 (1) 58 (4)",
+    "note": "Cơ mông nhỡ 58% MVIC (giữ khung chậu khi đứng một chân)."
+   },
+   "biceps-femoris.long": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12390621/",
+    "quote": "As a form of closed kinetic chain exercise, it primarily targets the hamstrings",
+    "note": "Nguồn ghi chung 'hamstrings'; bài này đo EMG nhị đầu đùi và bán gân. Chỉ đầu dài nhị đầu đùi bắc qua khớp hông."
+   }
+  },
+  "barbell-back-squat": {
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "adductor-magnus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "soleus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "Agonist muscles Quadriceps femoris Vastus lateralis Vastus medialis oblique Gluteus maximus Adductor magnus Soleus"
+   },
+   "erector-spinae": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The squat also isometrically uses the erector spinae and the abdominal muscles, among others."
+   }
+  },
+  "barbell-front-squat": {
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7831128/",
+    "quote": "to avoid a medial collapsing of the knees (i.e., gluteus medius)"
+   },
+   "erector-spinae": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The squat also isometrically uses the erector spinae and the abdominal muscles, among others."
+   },
+   "trapezius": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "In addition to the muscles used in the back squat, the front squat also uses muscles of the upper back such as the trapezius to support the bar."
+   }
+  },
+  "goblet-squat": {
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "adductor-magnus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   }
+  },
+  "leg-press": {
+   "quadriceps-femoris": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/",
+    "quote": "pushing the resistance plate away from your body by contracting your glutes, quadiceps and hamstrings."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Leg_press",
+    "quote": "The leg press works the following muscle groups: Quadriceps Hamstring Gluteus maximus Calves (partially)"
+   },
+   "semitendinosus": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/",
+    "quote": "pushing the resistance plate away from your body by contracting your glutes, quadiceps and hamstrings."
+   },
+   "semimembranosus": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/",
+    "quote": "pushing the resistance plate away from your body by contracting your glutes, quadiceps and hamstrings."
+   },
+   "biceps-femoris.long": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/154/seated-leg-press/",
+    "quote": "pushing the resistance plate away from your body by contracting your glutes, quadiceps and hamstrings."
+   }
+  },
+  "hack-squat": {
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
+    "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   }
+  },
+  "walking-lunge": {
+   "quadriceps-femoris": {
+    "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6941",
+    "quote": "the primary goal of lunge exercise, which is the development of gluteus maximus and quadriceps femoris"
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136561/",
+    "quote": "Higher activation in the gluteus maximus was observed during step-forward and walking lunges conditions"
+   },
+   "erector-spinae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8136561/",
+    "quote": "Higher activation in the erector spinae (%MVIC) were observed"
+   }
+  },
+  "reverse-lunge": {
+   "quadriceps-femoris": {
+    "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6941",
+    "quote": "favorable in achieving the primary goal of lunge exercise, which is the development of gluteus maximus and quadriceps femoris"
+   },
+   "gluteus-maximus": {
+    "url": "https://ojs.ub.uni-konstanz.de/cpa/article/view/6941",
+    "quote": "favorable in achieving the primary goal of lunge exercise, which is the development of gluteus maximus and quadriceps femoris"
+   }
+  },
+  "bulgarian-split-squat": {
+   "quadriceps-femoris": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/",
+    "quote": "the BSS, as performed in this study, is primarily a quadriceps-dominant exercise, with moderate gluteal and limited hamstring recruitment"
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/",
+    "quote": "the BSS, as performed in this study, is primarily a quadriceps-dominant exercise, with moderate gluteal and limited hamstring recruitment"
+   },
+   "semitendinosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/",
+    "quote": "Meanwhile, hamstring activity remained comparatively lower, likely due to the upright trunk posture described above, suggesting a stabilizing role"
+   },
+   "semimembranosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/",
+    "quote": "Meanwhile, hamstring activity remained comparatively lower, likely due to the upright trunk posture described above, suggesting a stabilizing role"
+   },
+   "biceps-femoris.long": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12819420/",
+    "quote": "Meanwhile, hamstring activity remained comparatively lower, likely due to the upright trunk posture described above, suggesting a stabilizing role"
+   }
+  },
+  "leg-extension": {
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Leg_extension",
+    "quote": "is a resistance weight training exercise that targets the quadriceps muscle (m. quadriceps femoris)"
+   }
+  },
+  "lying-leg-curl": {
+   "biceps-femoris": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+    "quote": "Slowly exhale and contract your hamstrings, flexing (bending) the knees"
+   },
+   "semitendinosus": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+    "quote": "Slowly exhale and contract your hamstrings, flexing (bending) the knees"
+   },
+   "semimembranosus": {
+    "url": "https://www.acefitness.org/resources/everyone/exercise-library/153/lying-hamstrings-curl/",
+    "quote": "Slowly exhale and contract your hamstrings, flexing (bending) the knees"
+   }
+  },
+  "seated-leg-curl": {
+   "semitendinosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969179/",
+    "quote": "the seated leg curl appears to induce significant hypertrophy of not only the ST but also the BFL and SM"
+   },
+   "biceps-femoris": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969179/",
+    "quote": "the seated leg curl appears to induce significant hypertrophy of not only the ST but also the BFL and SM"
+   },
+   "semimembranosus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7969179/",
+    "quote": "the seated leg curl appears to induce significant hypertrophy of not only the ST but also the BFL and SM"
+   }
+  },
+  "romanian-deadlift": {
+   "semitendinosus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The emphasis is on keeping the back flat and engaging the hamstrings and glutes to lift the weight as the hips are pushed back."
+   },
+   "semimembranosus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The emphasis is on keeping the back flat and engaging the hamstrings and glutes to lift the weight as the hips are pushed back."
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The emphasis is on keeping the back flat and engaging the hamstrings and glutes to lift the weight as the hips are pushed back."
+   },
+   "erector-spinae": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7046193/",
+    "quote": "the Romanian Deadlift is associated with lower activation for erector spinae than for biceps femoris and semitendinosus."
+   },
+   "biceps-femoris.long": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The emphasis is on keeping the back flat and engaging the hamstrings and glutes to lift the weight as the hips are pushed back."
+   }
+  },
+  "conventional-deadlift": {
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "works the gluteus maximus with further work on the quadriceps femoris, hamstrings, trapezius, lats, and erector spinae."
+   },
+   "quadriceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The quadriceps, hamstrings, adductor magnus, and soleus serve as synergists during the exercise."
+   },
+   "semitendinosus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The quadriceps, hamstrings, adductor magnus, and soleus serve as synergists during the exercise."
+   },
+   "semimembranosus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The quadriceps, hamstrings, adductor magnus, and soleus serve as synergists during the exercise."
+   },
+   "adductor-magnus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The quadriceps, hamstrings, adductor magnus, and soleus serve as synergists during the exercise."
+   },
+   "erector-spinae": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "works the gluteus maximus with further work on the quadriceps femoris, hamstrings, trapezius, lats, and erector spinae."
+   },
+   "biceps-femoris.long": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "The quadriceps, hamstrings, adductor magnus, and soleus serve as synergists during the exercise."
+   }
+  },
+  "sumo-deadlift": {
+   "quadriceps-femoris": {
+    "url": "https://scholars.duke.edu/publication/670149",
+    "quote": "Overall EMG activity from the vastus medialis, vastus lateralis, and tibialis anterior were significantly greater in the sumo deadlift"
+   },
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "works the gluteus maximus with further work on the quadriceps femoris, hamstrings, trapezius, lats, and erector spinae."
+   },
+   "adductor-magnus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12148905/",
+    "quote": "This suggests that the adductor magnus may not have played a primary role in force generation during the lift."
+   },
+   "erector-spinae": {
+    "url": "https://en.wikipedia.org/wiki/Deadlift",
+    "quote": "works the gluteus maximus with further work on the quadriceps femoris, hamstrings, trapezius, lats, and erector spinae."
+   }
+  },
+  "nordic-hamstring-curl": {
+   "biceps-femoris": {
+    "url": "https://en.wikipedia.org/wiki/Nordic_hamstring_curl",
+    "quote": "NHC increases strength of the hamstrings and length of the fascia"
+   },
+   "semitendinosus": {
+    "url": "https://en.wikipedia.org/wiki/Nordic_hamstring_curl",
+    "quote": "NHC increases strength of the hamstrings and length of the fascia"
+   },
+   "semimembranosus": {
+    "url": "https://en.wikipedia.org/wiki/Nordic_hamstring_curl",
+    "quote": "NHC increases strength of the hamstrings and length of the fascia"
+   }
+  },
+  "standing-calf-raise": {
+   "gastrocnemius": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Pushing with the foot with a straighter knee stretches the gastrocnemius more, these movements incorporate it better."
+   },
+   "soleus": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "The soleus still contributes, usually allowing people to lift more weight."
+   },
+   "tibialis-posterior": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Calf raises are a method of exercising the triceps surae (gastrocnemius and soleus), tibialis posterior, and peroneal muscles of the lower leg."
+   },
+   "fibularis-longus": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Calf raises are a method of exercising the triceps surae (gastrocnemius and soleus), tibialis posterior, and peroneal muscles of the lower leg."
+   },
+   "fibularis-brevis": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Calf raises are a method of exercising the triceps surae (gastrocnemius and soleus), tibialis posterior, and peroneal muscles of the lower leg."
+   }
+  },
+  "seated-calf-raise": {
+   "soleus": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "This exercise is more commonly used for the soleus since the gastrocnemius does not work as much in a bent knee position."
+   },
+   "gastrocnemius": {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "This exercise is more commonly used for the soleus since the gastrocnemius does not work as much in a bent knee position."
+   }
+  },
+  "tibialis-raise": {
+   "tibialis-anterior": {
+    "url": "https://us.physitrack.com/home-exercise-video/standing-active-dorsi-flexion",
+    "quote": "Standing active dorsi-flexion (\"Toe raises\" Tibialis anterior strengthening, standing beside chair)"
+   }
+  },
+  "machine-hip-adduction": {
+   "adductor-magnus": {
+    "url": "https://puregym.com/exercises/legs/inner-outer-thigh/seated-hip-adduction",
+    "quote": "The main muscles used in seated hip adduction are the adductor magnus, adductor longus, and gracilis of the inner thighs."
+   },
+   "adductor-longus": {
+    "url": "https://puregym.com/exercises/legs/inner-outer-thigh/seated-hip-adduction",
+    "quote": "The main muscles used in seated hip adduction are the adductor magnus, adductor longus, and gracilis of the inner thighs."
+   },
+   "gracilis": {
+    "url": "https://puregym.com/exercises/legs/inner-outer-thigh/seated-hip-adduction",
+    "quote": "The main muscles used in seated hip adduction are the adductor magnus, adductor longus, and gracilis of the inner thighs."
+   },
+   "adductor-brevis": {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "Along with the adductor longus, adductor brevis, adductor magnus, and pectineus, the strap-like gracilis adducts the thigh"
+   },
+   "pectineus": {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
+    "quote": "Along with the adductor longus, adductor brevis, adductor magnus, and pectineus, the strap-like gracilis adducts the thigh"
+   }
+  },
+  "copenhagen-plank": {
+   "adductor-longus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/",
+    "quote": "The CAE also produced peak EMG of the adductor longus of 108% on the dominant leg, which was higher than other exercises which target the adductor longus."
+   }
+  },
+  "kettlebell-swing": {
+   "gluteus-maximus": {
+    "url": "https://en.wikipedia.org/wiki/Kettlebell_swing",
+    "quote": "a hinge pattern which primarily utilizes the muscles of the posterior chain (hamstrings and glutes)."
+   },
+   "semitendinosus": {
+    "url": "https://en.wikipedia.org/wiki/Kettlebell_swing",
+    "quote": "a hinge pattern which primarily utilizes the muscles of the posterior chain (hamstrings and glutes)."
+   },
+   "semimembranosus": {
+    "url": "https://en.wikipedia.org/wiki/Kettlebell_swing",
+    "quote": "a hinge pattern which primarily utilizes the muscles of the posterior chain (hamstrings and glutes)."
+   },
+   "latissimus-dorsi": {
+    "url": "https://en.wikipedia.org/wiki/Kettlebell_swing",
+    "quote": "This requires an intense contraction of the gluteal, abdominal and latissimus muscles."
+   },
+   "biceps-femoris.long": {
+    "url": "https://en.wikipedia.org/wiki/Kettlebell_swing",
+    "quote": "a hinge pattern which primarily utilizes the muscles of the posterior chain (hamstrings and glutes)."
+   }
+  },
+  "low-to-high-cable-fly": {
+   "pectoralis-major.clavicular": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "The clavicular portion of the pectoralis major is targeted through incline flies, when the arms rise upward as they adduct.",
+    "note": "Câu này trên Wikipedia không kèm trích dẫn, nhưng khớp giải phẫu chuẩn: bài này vừa gập vai (tay đi lên) vừa khép ngang, và trang Pectoralis major ghi 'The clavicular head flexes the humerus' / 'The clavicular part ... contributes to flexion, horizontal adduction'. Cách xếp giống incline press (bó đòn là chính)."
+   },
+   "deltoid.anterior": {
+    "url": "https://en.wikipedia.org/wiki/Fly_(exercise)",
+    "quote": "If medially (internally) rotated, it is assisted in this by the anterior (front) head of the deltoideus in transverse flexion.",
+    "note": "Nói về bài bay ngực nói chung (biến thể từ dưới lên cũng là bay ngực); delta trước còn là cơ gập vai nên chắc chắn tham gia. Giữ ở phụ, giống cable-crossover và dumbbell-fly."
+   }
+  },
+  "cable-glute-kickback": {
+   "gluteus-maximus": {
+    "url": "https://www.acefitness.org/resources/pros/expert-articles/6355/8-butt-toning-moves/",
+    "quote": "Slowly raise the heel by initiating the movement from the glutes and continue to isolate the gluteus maximus until you cannot lift your leg anymore"
+   }
+  },
+  "seated-machine-hip-abduction": {
+   "gluteus-medius": {
+    "url": "https://www.nsca.com/contentassets/f921c5b3fe4142db964a943d3554b324/ptq-10.4.4-program-design-considerations-for-optimal-strength-hypertophy-glute-mucsles.pdf",
+    "quote": "Lateral/rotary glute exercises movements (e.g., lateral band walks, cable chop and lift variations, machine and band seated hip abduction) train the glute medius",
+    "note": "Brandt 2013 đo trực tiếp trên máy dạng hông ngồi: cơ mông nhỡ 53–80% nEMG tùy mức tạ (Bảng 1, cột M)."
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3867074/",
+    "quote": "Gluteus maximus Light 59 67 10 9 35 9 6 6 Moderate 65 65 9 10 46 10 6 6 Heavy 68 69 11 10 41 6 7 8 Near max 73 70",
+    "note": "Bảng 1, cột M (máy dạng hông ngồi, hông gập 80°): cơ mông lớn 67/65/69/70% nEMG ở 4 mức tạ, ngang hoặc cao hơn cơ mông nhỡ (53/61/67/80%). Khi hông gập, thớ trên cơ mông lớn thành cơ dạng; NSCA (cùng bài) cũng ghi động tác mặt phẳng ngang 'will also incorporate some glute maximus muscle fibers'. Vì vậy xếp chính, đứng sau cơ mông nhỡ."
+   }
+  },
+  "dumbbell-farmers-walk": {
+   "erector-spinae": {
+    "url": "https://www.nsca.com/contentassets/927868f8d4bb45f2ac4429631d558d83/coach-7.3.6-increase-hip-and-trunk-stability-with-loaded-carries-for-injury-prevention-rehabilitation-and-performance.pdf",
+    "quote": "During the farmer's walk ... peak activation of the latissimus dorsi, thoracic and lumbar erector spinae happened during the swing phase",
+    "note": "Bảng 3 của Hindle 2019 (số liệu McGill 2009, 3 VĐV strongman): cơ dựng sống thắt lưng 106–144% MVC, phần ngực 78–91% MVC khi farmer's walk."
+   },
+   "gluteus-medius": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6901656/",
+    "quote": "Right gluteus medius 108 ± 66.9",
+    "note": "Dòng Bảng 3, cột Farmer's walk (%MVC, McGill 2009). Bài NSCA (cùng mục) nhấn mạnh vai trò ổn định hông; nghiên cứu Stastny 2015 đo riêng cơ mông nhỡ trong bài này."
+   },
+   "gluteus-maximus": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6901656/",
+    "quote": "Right gluteus maximus 114 ± 70.3",
+    "note": "Dòng Bảng 3, cột Farmer's walk (%MVC, McGill 2009): ngang cơ mông nhỡ (108%) nên cùng xếp chính."
+   },
+   "latissimus-dorsi": {
+    "url": "https://www.nsca.com/contentassets/927868f8d4bb45f2ac4429631d558d83/coach-7.3.6-increase-hip-and-trunk-stability-with-loaded-carries-for-injury-prevention-rehabilitation-and-performance.pdf",
+    "quote": "During the farmer's walk ... peak activation of the latissimus dorsi, thoracic and lumbar erector spinae happened during the swing phase",
+    "note": "Bảng 3 Hindle 2019: cơ lưng rộng 152–169% MVC (cỡ mẫu 3 người, độ lệch lớn). Cơ không tạo chuyển động mà giữ cứng thân/vai khi xách tạ nên để phụ."
+   },
+   "external-oblique": {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6901656/",
+    "quote": "Right external oblique 50.4 ± 17.4",
+    "note": "Dòng Bảng 3, cột Farmer's walk (%MVC): bên phải 50%, bên trái 39%. NSCA (cùng bài): cơ bụng đạt đỉnh ở pha chống chân."
+   },
+   "quadriceps-femoris.rectus-femoris": {
+    "url": "https://www.nsca.com/contentassets/927868f8d4bb45f2ac4429631d558d83/coach-7.3.6-increase-hip-and-trunk-stability-with-loaded-carries-for-injury-prevention-rehabilitation-and-performance.pdf",
+    "quote": "During the farmer's walk, peak muscular activation of the abdominals and rectus femoris occurred during the stance phase",
+    "note": "Bảng 3 Hindle 2019: cơ thẳng đùi 77% MVC khi farmer's walk."
+   }
+  }
+ }
+}

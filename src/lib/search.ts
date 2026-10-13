@@ -12,7 +12,7 @@ function rank(key: string, query: string): number | null {
   return null
 }
 
-export function createSearch<T>(items: T[], keysOf: (item: T) => string[]) {
+export function createSearch<T>(items: T[], keysOf: (item: T) => string[], limit = SEARCH_LIMIT) {
   const index = items.map((item) => ({ item, keys: keysOf(item).map(normalize) }))
   return (query: string): T[] => {
     const q = normalize(query)
@@ -22,6 +22,6 @@ export function createSearch<T>(items: T[], keysOf: (item: T) => string[]) {
       const ranks = keys.map((k) => rank(k, q)).filter((r) => r !== null)
       if (ranks.length) hits.push({ item, rank: Math.min(...ranks) })
     }
-    return hits.sort((a, b) => a.rank - b.rank).slice(0, SEARCH_LIMIT).map((h) => h.item)
+    return hits.sort((a, b) => a.rank - b.rank).slice(0, limit).map((h) => h.item)
   }
 }

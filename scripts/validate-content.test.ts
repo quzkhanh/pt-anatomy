@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Muscle } from '../src/lib/content-types.ts'
-import { glbMuscleObjects, validateMuscles } from './validate-content.ts'
+import type { Exercise, Muscle } from '../src/lib/content-types.ts'
+import { glbMuscleObjects, validateExercises, validateMuscles } from './validate-content.ts'
 
 const muscle = (over: Partial<Muscle> = {}): Muscle => ({
   id: 'deltoid', vi: 'Cơ delta', en: 'Deltoid', region: 'shoulders', superficial: true, status: 'draft',
@@ -8,6 +8,15 @@ const muscle = (over: Partial<Muscle> = {}): Muscle => ({
     { id: 'anterior', vi: 'bó trước', object: 'A' },
     { id: 'middle', vi: 'bó giữa', object: 'B' },
   ],
+  function: 'Dạng cánh tay.',
+  sources: [{ title: 'OpenStax', url: 'https://openstax.org/x' }],
+  ...over,
+})
+
+const exercise = (over: Partial<Exercise> = {}): Exercise => ({
+  id: 'lateral-raise', en: 'Lateral raise', vi: 'Dang tạ đơn', equipment: 'dumbbell',
+  primary: ['deltoid.middle'], secondary: ['deltoid.anterior'], cues: ['Nâng tới ngang vai.'],
+  sources: [{ title: 'ACE', url: 'https://acefitness.org/x' }], status: 'draft',
   ...over,
 })
 
@@ -49,6 +58,33 @@ describe('validateMuscles', () => {
     expect(errors).toContain('deltoid.a: cơ nhiều phần thì phần phải có tên tiếng Việt')
     expect(errors).toContain('deltoid: region không hợp lệ "neckz"')
     expect(errors).toContain('deltoid: status không hợp lệ "done"')
+  })
+})
+
+describe('validateExercises', () => {
+  it('bài hợp lệ thì không có lỗi; hai phần khác nhau của một cơ được ở chính và phụ', () => {
+    expect(validateExercises([exercise()], [muscle()])).toEqual([])
+  })
+
+  it('báo tham chiếu không tồn tại, trùng chính/phụ, primary rỗng, enum sai', () => {
+    const bad = exercise({ equipment: 'rope' as Exercise['equipment'], primary: [], secondary: ['deltoid.x', 'biceps'] })
+    const overlap = exercise({ id: 'b', primary: ['deltoid'], secondary: ['deltoid.anterior'] })
+    const errors = validateExercises([bad, overlap], [muscle()])
+    expect(errors).toContain('lateral-raise: equipment không hợp lệ "rope"')
+    expect(errors).toContain('lateral-raise: primary rỗng')
+    expect(errors).toContain('lateral-raise: tham chiếu cơ không tồn tại "deltoid.x"')
+    expect(errors).toContain('lateral-raise: tham chiếu cơ không tồn tại "biceps"')
+    expect(errors).toContain('b: "deltoid" (chính) và "deltoid.anterior" (phụ) trùng nhau')
+  })
+
+  it('báo trùng id, thiếu nguồn, nguồn không https', () => {
+    const errors = validateExercises(
+      [exercise({ sources: [] }), exercise({ sources: [{ title: 'x', url: 'http://a' }] })],
+      [muscle()],
+    )
+    expect(errors).toContain('trùng id bài tập: lateral-raise')
+    expect(errors).toContain('lateral-raise: thiếu sources')
+    expect(errors).toContain('lateral-raise: nguồn thiếu title hoặc url không phải https "http://a"')
   })
 })
 
