@@ -1,0 +1,29 @@
+{
+  "name": "pt-anatomy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "model:export": "blender -b --disable-autoexec \"${ZANATOMY_BLEND:-$HOME/.cache/pt-anatomy-src/Z-Anatomy/Startup.blend}\" --python-exit-code 1 --python pipeline/export.py -- --muscles pipeline/muscles.txt --out pipeline/out/body-raw.glb",
+    "model:pack": "gltfpack -i pipeline/out/body-raw.glb -o public/models/body.glb -cc -kn -ke",
+    "model": "npm run model:export && npm run model:pack"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.0",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/node": "^24.13.3",
+    "@types/three": "^0.186.0",
+    "gltfpack": "^1.3.0",
+    "svelte": "^5.57.0",
+    "svelte-check": "^4.7.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  }
+}

@@ -1,0 +1,100 @@
+# Z-Anatomy object base names (without .r/.l). One per line, grouped by region.
+
+# Chest
+Clavicular head of pectoralis major muscle
+Sternocostal head of pectoralis major muscle
+Pectoralis minor muscle
+Serratus anterior muscle
+
+# Shoulder & rotator cuff
+Clavicular part of deltoid muscle
+Acromial part of deltoid muscle
+Scapular spinal part of deltoid muscle
+Supraspinatus muscle
+Infraspinatus muscle
+Teres minor muscle
+Subscapularis muscle
+Teres major muscle
+
+# Back
+Descending part of trapezius muscle
+Transverse part of trapezius muscle
+Ascending part of trapezius muscle
+Rhomboid major muscle
+Rhomboid minor muscle
+Levator scapulae
+Latissimus dorsi muscle
+Iliocostalis lumborum muscle
+Iliocostalis thoracis muscle
+Longissimus thoracis muscle
+Spinalis thoracis muscle
+Multifidus lumborum muscle
+Quadratus lumborum muscle
+
+# Neck
+Sternocleidomastoid muscle
+Splenius capitis muscle
+
+# Upper arm
+Long head of biceps brachii
+Short head of biceps brachii
+Brachialis muscle
+Coracobrachialis muscle
+Long head of triceps brachii
+Lateral head of triceps brachii
+Medial head of triceps brachii
+Anconeus muscle
+
+# Forearm
+Brachioradialis muscle
+Superficial head of pronator teres
+Flexor carpi radialis
+Palmaris longus muscle
+Humeral head of flexor carpi ulnaris
+Humero-ulnar head of flexor digitorum superficialis
+Extensor carpi radialis longus
+Extensor carpi radialis brevis
+Extensor digitorum
+Humeral head of extensor carpi ulnaris
+
+# Core
+Rectus abdominis muscle
+External abdominal oblique muscle
+Internal abdominal oblique muscle
+Transversus abdominis muscle
+
+# Hip
+Gluteus maximus muscle
+Gluteus medius muscle
+Gluteus minimus muscle
+Tensor fasciae latae
+Iliotibial tract
+Iliacus muscle
+Psoas major
+Piriformis muscle
+
+# Thigh
+Sartorius muscle
+Rectus femoris muscle
+Vastus lateralis muscle
+Vastus medialis muscle
+Vastus intermedius muscle
+Long head of biceps femoris
+Short head of biceps femoris
+Semitendinosus muscle
+Semimembranosus muscle
+Adductor longus
+Adductor brevis
+Adductor magnus
+Gracilis muscle
+Pectineus muscle
+
+# Lower leg
+Medial head of gastrocnemius
+Lateral head of gastrocnemius
+Soleus muscle
+Calcaneal tendon
+Tibialis anterior muscle
+Tibialis posterior muscle
+Fibularis longus muscle
+Fibularis brevis muscle

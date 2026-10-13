@@ -1,0 +1,54 @@
+node_modules/
+dist/
+pipeline/out/
+*.blend
+*.blend1
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.superpowers/
+
+# 3D model phát hành theo CC BY-SA, phải commit (gitignore toàn cục đang chặn *.glb)
+!public/models/*.glb
+
+# Test artifacts
+test-results/
+playwright-report/
+playwright/.auth/
+
+# Secrets & local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials*.json
+service-account*.json
+secrets.*
+.npmrc
+.claude/settings.local.json
