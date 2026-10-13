@@ -52,3 +52,7 @@ service-account*.json
 secrets.*
 .npmrc
 .claude/settings.local.json
+
+# Tài liệu nội bộ (spec, plan, handoff) không public
+*.md
+docs/
