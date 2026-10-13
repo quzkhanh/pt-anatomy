@@ -9,10 +9,14 @@ are mirror copies of .r, checked by check_mirror_symmetry below).
 """
 import argparse
 import json
+import os
 import sys
 
 import bpy
 from mathutils import Vector
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import anatomy_checks  # noqa: E402
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--content", required=True)
@@ -86,6 +90,9 @@ def fix_swapped_names():
 
 check_mirror_symmetry()
 fix_swapped_names()
+anatomy_errors = anatomy_checks.check(bpy.data.objects)
+if anatomy_errors:
+    fail("anatomy rules failed:\n  " + "\n  ".join(anatomy_errors))
 
 roles = {obj.name: keep_role(obj) for obj in bpy.data.objects}
 found = {n.rpartition(".")[0] for n, r in roles.items() if r == "muscle"}
