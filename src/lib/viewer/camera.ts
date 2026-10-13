@@ -27,7 +27,7 @@ export function createCameraRig(camera: PerspectiveCamera, controls: OrbitContro
   }
 
   return {
-    flip: () => orbitTo(current().theta + Math.PI),
+    flip: () => orbitTo((tween?.to.theta ?? current().theta) + Math.PI),
     faceTowards: (point: Vector3) =>
       orbitTo(Math.atan2(point.x - controls.target.x, point.z - controls.target.z)),
     cancel: () => {

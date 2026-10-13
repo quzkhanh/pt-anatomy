@@ -14,7 +14,6 @@
 
   let { open, snap = $bindable('peek'), label, children }: Props = $props()
 
-  const PEEK_PX = 120
   const HALF_FRACTION = 0.5
   const HIDDEN_EXTRA_PX = 24
   const FLICK_PX_PER_MS = 0.5
@@ -26,10 +25,15 @@
   let dragOffset = $state<number | null>(null)
   let drag = { startY: 0, startOffset: 0, lastY: 0, lastT: 0, velocity: 0, moved: false }
 
+  const peekPx = $derived(
+    viewportHeight &&
+      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sheet-peek')) *
+        parseFloat(getComputedStyle(document.documentElement).fontSize),
+  )
   const offsets = $derived<Record<Snap, number>>({
     full: 0,
     half: Math.max(0, sheetHeight - viewportHeight * HALF_FRACTION),
-    peek: Math.max(0, sheetHeight - PEEK_PX),
+    peek: Math.max(0, sheetHeight - peekPx),
   })
   const offset = $derived(open ? (dragOffset ?? offsets[snap]) : sheetHeight + HIDDEN_EXTRA_PX)
 
@@ -50,6 +54,8 @@
     drag.lastT = e.timeStamp
     dragOffset = Math.min(offsets.peek, Math.max(0, drag.startOffset + dy))
   }
+
+  const onpointercancel = () => (dragOffset = null)
 
   function onpointerup() {
     if (dragOffset === null) return
@@ -82,7 +88,7 @@
     {onpointerdown}
     {onpointermove}
     {onpointerup}
-    onpointercancel={onpointerup}
+    {onpointercancel}
     onclick={(e) => e.detail === 0 && cycle()}
   >
     <span class="handle"></span>
@@ -104,6 +110,7 @@
     background: var(--color-surface);
     border-radius: var(--radius-sheet) var(--radius-sheet) 0 0;
     box-shadow: var(--shadow-sheet);
+    z-index: var(--z-sheet);
     transition: transform var(--duration-ui) var(--ease-ui);
     will-change: transform;
   }

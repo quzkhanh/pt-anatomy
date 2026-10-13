@@ -5,6 +5,8 @@ export interface ThemeColors {
   muscle: Color
   head: Color
   selected: Color
+  sky: Color
+  ground: Color
 }
 
 const cssColor = (name: string) =>
@@ -16,12 +18,12 @@ export function readThemeColors(): ThemeColors {
     muscle: cssColor('--color-muscle'),
     head: cssColor('--color-head'),
     selected: cssColor('--color-selected'),
+    sky: cssColor('--color-light-sky'),
+    ground: cssColor('--color-light-ground'),
   }
 }
 
 export const LIGHTING = {
-  sky: 0xffffff,
-  ground: 0x8a8580,
   hemisphere: 1.6,
   sun: 1.4,
 } as const

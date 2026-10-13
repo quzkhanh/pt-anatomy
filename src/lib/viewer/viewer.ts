@@ -51,10 +51,10 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   const scene = new Scene()
   scene.background = colors.background
   const camera = new PerspectiveCamera(CAMERA.fov, 1, CAMERA.near, CAMERA.far)
-  const sun = new DirectionalLight(LIGHTING.sky, LIGHTING.sun)
+  const sun = new DirectionalLight(colors.sky, LIGHTING.sun)
   sun.position.copy(SUN_POSITION)
   camera.add(sun)
-  scene.add(new HemisphereLight(LIGHTING.sky, LIGHTING.ground, LIGHTING.hemisphere), camera, body.root)
+  scene.add(new HemisphereLight(colors.sky, colors.ground, LIGHTING.hemisphere), camera, body.root)
 
   const materials = createMaterials(colors)
   for (const mesh of body.head) mesh.material = materials.head
@@ -85,10 +85,23 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
 
   const pick = createPicker(camera, canvas, body.muscles, body.head)
   let pickMs = 0
-  const down = new Vector2()
-  const onPointerDown = (e: PointerEvent) => down.set(e.clientX, e.clientY)
+  const downs = new Map<number, Vector2>()
+  let multiTouch = false
+  const onPointerDown = (e: PointerEvent) => {
+    downs.set(e.pointerId, new Vector2(e.clientX, e.clientY))
+    if (downs.size > 1) multiTouch = true
+  }
+  const release = (e: PointerEvent) => {
+    const down = downs.get(e.pointerId)
+    const wasMulti = multiTouch
+    downs.delete(e.pointerId)
+    if (downs.size === 0) multiTouch = false
+    return wasMulti ? undefined : down
+  }
+  const onPointerCancel = (e: PointerEvent) => void release(e)
   const onPointerUp = (e: PointerEvent) => {
-    if (down.distanceTo(new Vector2(e.clientX, e.clientY)) > TAP_SLOP_PX) return
+    const down = release(e)
+    if (!down || down.distanceTo(new Vector2(e.clientX, e.clientY)) > TAP_SLOP_PX) return
     const started = performance.now()
     const hit = pick(e.clientX, e.clientY)
     state.selected = hit?.ref.muscle.id ?? null
@@ -98,6 +111,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   }
   canvas.addEventListener('pointerdown', onPointerDown)
   canvas.addEventListener('pointerup', onPointerUp)
+  canvas.addEventListener('pointercancel', onPointerCancel)
 
   const resize = () => {
     renderer.setSize(canvas.clientWidth, canvas.clientHeight, false)
@@ -170,6 +184,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
       observer.disconnect()
       canvas.removeEventListener('pointerdown', onPointerDown)
       canvas.removeEventListener('pointerup', onPointerUp)
+      canvas.removeEventListener('pointercancel', onPointerCancel)
       controls.dispose()
       renderer.dispose()
     },

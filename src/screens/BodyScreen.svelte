@@ -18,13 +18,16 @@
   let canvas = $state<HTMLCanvasElement>()
   let viewer = $state<Viewer | null>(null)
   let selection = $state<Selection | null>(null)
+  let shown = $state<Selection | null>(null)
   let snap = $state<Snap>('peek')
   let superficialHidden = $state(false)
   let hintSeen = $state(load(HINT_KEY, false))
 
   const webgl = (() => {
     try {
-      return document.createElement('canvas').getContext('webgl2') !== null
+      const gl = document.createElement('canvas').getContext('webgl2')
+      gl?.getExtension('WEBGL_lose_context')?.loseContext()
+      return gl !== null
     } catch {
       return false
     }
@@ -38,6 +41,8 @@
     progress = null
     try {
       const v = await createViewer(canvas!, { onPick: show, onProgress: (p) => (progress = p) })
+      v.setSuperficialHidden(superficialHidden)
+      if (selection) v.select(selection.muscle.id)
       viewer = v
       phase = 'ready'
       if (debug) window.__ptDebug = v
@@ -50,6 +55,7 @@
   function show(next: Selection | null) {
     selection = next
     if (!next) return
+    shown = next
     snap = 'peek'
     if (!hintSeen) {
       hintSeen = true
@@ -64,7 +70,8 @@
 
   function selectMuscle(muscle: Muscle) {
     const deep = muscle.parts.every((part) => !isSuperficial({ muscle, part }))
-    if (deep && !superficialHidden) toggleLayer()
+    const shallow = muscle.parts.every((part) => isSuperficial({ muscle, part }))
+    if ((deep && !superficialHidden) || (shallow && superficialHidden)) toggleLayer()
     viewer?.select(muscle.id)
     viewer?.focus(muscle.id)
     show({ muscle, part: null })
@@ -94,7 +101,9 @@
 <SearchBar onSelect={selectMuscle} />
 
 {#if viewer}
-  <SideActions {superficialHidden} onFlip={() => viewer?.flip()} onToggleLayer={toggleLayer} />
+  {#if selection === null || snap === 'peek'}
+    <SideActions {superficialHidden} onFlip={() => viewer?.flip()} onToggleLayer={toggleLayer} />
+  {/if}
   {#if !hintSeen}
     <p class="hint" role="status">Chạm vào cơ để xem tên và bài tập</p>
   {/if}
@@ -105,8 +114,8 @@
 {/if}
 
 <BottomSheet open={selection !== null} bind:snap label="Thông tin cơ">
-  {#if selection}
-    <MuscleInfo muscle={selection.muscle} part={selection.part} />
+  {#if shown}
+    <MuscleInfo muscle={shown.muscle} part={shown.part} />
   {/if}
 </BottomSheet>
 
@@ -129,7 +138,9 @@
     background: var(--color-text);
     color: var(--color-surface);
     font-size: var(--font-sm);
-    white-space: nowrap;
+    max-width: calc(100% - 2 * var(--space-4));
+    white-space: normal;
+    text-align: center;
     pointer-events: none;
   }
 </style>

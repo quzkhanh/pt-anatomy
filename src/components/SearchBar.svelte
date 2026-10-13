@@ -19,7 +19,7 @@
     if (e.key === 'Escape') {
       query = ''
       input.blur()
-    } else if (e.key === 'Enter' && results[0]) {
+    } else if (e.key === 'Enter' && !e.isComposing && results[0]) {
       choose(results[0])
     }
   }
@@ -59,6 +59,7 @@
     top: calc(var(--space-3) + env(safe-area-inset-top));
     left: var(--space-3);
     right: var(--space-3);
+    z-index: var(--z-search);
   }
   input {
     box-sizing: border-box;

@@ -10,6 +10,8 @@
   --color-head: #d9d3ca;
   --color-selected: #e0482f;
   --color-handle: #c9c4bc;
+  --color-light-sky: #ffffff;
+  --color-light-ground: #8a8580;
   --shadow-float: 0 2px 8px rgb(0 0 0 / 0.12);
   --shadow-sheet: 0 -4px 14px rgb(0 0 0 / 0.1);
   --radius-pill: 999px;
@@ -21,6 +23,10 @@
   --space-4: 1rem;
   --space-6: 1.5rem;
   --tap-min: 44px;
+  --sheet-peek: 7.5rem;
+  --z-actions: 1;
+  --z-sheet: 2;
+  --z-search: 3;
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-md: 1rem;
