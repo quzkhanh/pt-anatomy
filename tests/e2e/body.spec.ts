@@ -95,7 +95,7 @@ test('kéo xoay không chọn cơ', async ({ page }) => {
   const point = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
   await page.mouse.move(point!.x, point!.y)
   await page.mouse.down()
-  await page.mouse.move(point!.x + 80, point!.y, { steps: 8 })
+  await page.mouse.move(point!.x + 20, point!.y, { steps: 4 })
   await page.mouse.up()
   await expect(page.locator(SHEET)).toHaveAttribute('aria-hidden', 'true')
 })
