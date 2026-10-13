@@ -1,34 +1,28 @@
-"""Cut Z-Anatomy down to training muscles + main skeleton, decimate, export GLB.
+"""Cut Z-Anatomy down to the muscles listed in content/muscles.json, decimate, export GLB.
 
 Usage:
   blender -b --disable-autoexec Startup.blend --python-exit-code 1 --python export.py -- \
-      --muscles muscles.txt --out body.glb [--muscle-tris 3000] [--bone-ratio 0.25] [--sides r]
+      --content content/muscles.json --out body.glb [--muscle-tris 3000]
 
---sides r exports only right-side + midline objects; the viewer mirrors them (Z-Anatomy .l meshes
-are mirror copies of .r, see the symmetry report printed below).
+Only right-side (.r) objects are exported; the viewer mirrors them across x=0 (Z-Anatomy .l meshes
+are mirror copies of .r, checked by check_mirror_symmetry below).
 """
 import argparse
+import json
 import sys
 
 import bpy
 from mathutils import Vector
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--muscles", required=True)
+parser.add_argument("--content", required=True)
 parser.add_argument("--out", required=True)
 parser.add_argument("--muscle-tris", type=int, default=3000)
-parser.add_argument("--bone-ratio", type=float, default=0.25)
-parser.add_argument("--sides", default="r", choices=["r", "both"])
 args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:])
 
-SKELETON = "1: Skeletal system"
 MUSCLES = "4: Muscular system"
-BONE_EXCLUDE = ("tooth", "Stapes", "Malleus", "Incus", "Sinus", "cartilage", "Vomer", "Ethmoid")
 
-suffixes = (".r",) if args.sides == "r" else (".r", ".l")
-muscle_names = {
-    line.strip() for line in open(args.muscles) if line.strip() and not line.startswith("#")
-}
+muscle_names = {part["object"] for muscle in json.load(open(args.content)) for part in muscle["parts"]}
 
 
 def top_collection(obj):
@@ -49,14 +43,9 @@ def tri_count(mesh):
 def keep_role(obj):
     if obj.type != "MESH":
         return None
-    root = top_collection(obj)
-    base, dot, side = obj.name.rpartition(".")
-    if root.startswith(MUSCLES) and base in muscle_names and dot + side in suffixes:
+    base, _, side = obj.name.rpartition(".")
+    if side == "r" and base in muscle_names and top_collection(obj).startswith(MUSCLES):
         return "muscle"
-    if root.startswith(SKELETON) and not obj.hide_get() and len(obj.data.polygons):
-        is_midline = obj.name[-2:-1] != "."
-        if (is_midline or obj.name.endswith(suffixes)) and not any(x in obj.name for x in BONE_EXCLUDE):
-            return "bone"
     return None
 
 
@@ -113,12 +102,14 @@ for obj in bpy.data.objects:
 for obj in [o for o in bpy.data.objects if not roles[o.name]]:
     bpy.data.objects.remove(obj, do_unlink=True)
 
+TARGET_TRIS = {"muscle": args.muscle_tris}
+
 depsgraph = bpy.context.evaluated_depsgraph_get()
-stats = {"muscle": [0, 0], "bone": [0, 0]}
+stats = {role: [0, 0] for role in TARGET_TRIS}
 for obj in list(bpy.data.objects):
     role = roles[obj.name]
     src_tris = tri_count(bpy.data.meshes.new_from_object(obj.evaluated_get(depsgraph)))
-    ratio = min(1.0, args.muscle_tris / src_tris) if role == "muscle" else args.bone_ratio
+    ratio = min(1.0, TARGET_TRIS[role] / src_tris)
     if ratio < 1.0:
         mod = obj.modifiers.new("decimate", "DECIMATE")
         mod.ratio = ratio
