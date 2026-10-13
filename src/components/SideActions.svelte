@@ -17,7 +17,7 @@
   .actions {
     position: fixed;
     right: var(--space-3);
-    bottom: calc(var(--sheet-peek) + var(--space-3) + env(safe-area-inset-bottom));
+    bottom: calc(var(--sheet-peek) + var(--space-3) + var(--bottom-ui));
     z-index: var(--z-actions);
     display: flex;
     flex-direction: column;

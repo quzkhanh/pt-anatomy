@@ -2,7 +2,7 @@ import { Box3, DirectionalLight, HemisphereLight, PerspectiveCamera, Scene, Vect
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import type { PartRef } from '../content'
 import { LIGHTING, readThemeColors } from '../theme'
-import { applyHighlight, createMaterials, isMuscleVisible, type HighlightState } from './highlight'
+import { anyVisible, applyHighlight, covers, createMaterials, NO_HIGHLIGHT, type Highlight, type HighlightState } from './highlight'
 import { createCameraRig } from './camera'
 import { buildBoundsTrees, loadBody } from './model'
 import { createPicker } from './picking'
@@ -10,7 +10,7 @@ import { QUALITY, QualityGovernor } from './quality'
 
 const MODEL_URL = `${import.meta.env.BASE_URL}models/body.glb`
 const TAP_SLOP_PX = 6
-const CAMERA = { fov: 35, near: 0.01, far: 20, distance: 1.6, minDistance: 0.25, maxDistance: 2.5 }
+const CAMERA = { fov: 35, near: 0.01, far: 20, distance: 2.1, minDistance: 0.25, maxDistance: 2.5 }
 const SUN_POSITION = new Vector3(1, 2, 3)
 
 export interface ViewerStats {
@@ -21,11 +21,11 @@ export interface ViewerStats {
 }
 
 export interface Viewer {
-  select(muscleId: string | null): void
+  highlight(highlight: Highlight): void
   setSuperficialHidden(hidden: boolean): void
   flip(): void
-  focus(muscleId: string): void
-  screenPoint(muscleId: string): { x: number; y: number } | null
+  focus(refs: string[]): void
+  screenPoint(ref: string): { x: number; y: number } | null
   stats(): ViewerStats
   dispose(): void
 }
@@ -58,7 +58,8 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
 
   const materials = createMaterials(colors)
   for (const mesh of body.head) mesh.material = materials.head
-  const state: HighlightState = { selected: null, superficialHidden: false }
+  for (const mesh of body.filler) mesh.material = materials.muscle
+  const state: HighlightState = { ...NO_HIGHLIGHT, superficialHidden: false }
   applyHighlight(body, materials, state)
 
   const center = body.bounds.getCenter(new Vector3()).setX(0)
@@ -83,7 +84,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     requestRender()
   }
 
-  const pick = createPicker(camera, canvas, body.muscles, body.head)
+  const pick = createPicker(camera, canvas, body.muscles, [...body.head, ...body.filler])
   let pickMs = 0
   const downs = new Map<number, Vector2>()
   let multiTouch = false
@@ -104,7 +105,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     if (!down || down.distanceTo(new Vector2(e.clientX, e.clientY)) > TAP_SLOP_PX) return
     const started = performance.now()
     const hit = pick(e.clientX, e.clientY)
-    state.selected = hit?.ref.muscle.id ?? null
+    Object.assign(state, hit ? { primary: [hit.ref.muscle.id], secondary: [] } : NO_HIGHLIGHT)
     update()
     pickMs = performance.now() - started
     onPick(hit?.ref ?? null)
@@ -148,32 +149,34 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   // Building BVHs takes a few hundred ms on phones; do it after the first frame is on screen.
   requestAnimationFrame(() => setTimeout(() => buildBoundsTrees(body)))
 
-  const centerOf = (muscleId: string) => {
-    const mesh = body.muscles.find((m) => m.ref.muscle.id === muscleId && !m.mirrored)?.mesh
-    return mesh ? new Box3().setFromObject(mesh).getCenter(new Vector3()) : null
+  // Both halves for focus, so a paired muscle is viewed head-on rather than from its right side.
+  const centerOf = (refs: string[], bothSides: boolean) => {
+    const box = new Box3()
+    for (const m of body.muscles) if ((bothSides || !m.mirrored) && covers(refs, m.ref)) box.expandByObject(m.mesh)
+    return box.isEmpty() ? null : box.getCenter(new Vector3())
   }
 
   return {
-    select(muscleId) {
-      state.selected = muscleId
+    highlight({ primary, secondary }) {
+      Object.assign(state, { primary, secondary })
       update()
     },
     setSuperficialHidden(hidden) {
       state.superficialHidden = hidden
       applyHighlight(body, materials, state)
-      if (state.selected && !isMuscleVisible(body, state.selected)) {
-        state.selected = null
+      if (state.primary.length && !anyVisible(body, state.primary)) {
+        Object.assign(state, NO_HIGHLIGHT)
         onPick(null)
       }
       update()
     },
     flip: rig.flip,
-    focus(muscleId) {
-      const point = centerOf(muscleId)
+    focus(refs) {
+      const point = centerOf(refs, true)
       if (point) rig.faceTowards(point)
     },
-    screenPoint(muscleId) {
-      const point = centerOf(muscleId)?.project(camera)
+    screenPoint(ref) {
+      const point = centerOf([ref], false)?.project(camera)
       if (!point) return null
       const rect = canvas.getBoundingClientRect()
       return { x: rect.left + ((point.x + 1) / 2) * rect.width, y: rect.top + ((1 - point.y) / 2) * rect.height }

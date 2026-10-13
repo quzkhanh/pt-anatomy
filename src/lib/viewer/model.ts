@@ -17,6 +17,8 @@ export interface Body {
   root: Group
   muscles: BodyMesh[]
   head: Mesh[]
+  /** Neutral fill between left and right halves; never picked, but blocks picking rays. */
+  filler: Mesh[]
   bounds: Box3
 }
 
@@ -27,7 +29,7 @@ const nodeName = (node: Object3D) => node.userData.name as string
 
 function collect(root: Object3D, mirrored: boolean, body: Body) {
   root.traverse((node) => {
-    const role = node.userData.role as 'muscle' | 'head' | undefined
+    const role = node.userData.role as 'muscle' | 'head' | 'filler' | undefined
     if (!role) return
     // Midline objects exist once in the right half; the mirror keeps paired parts only.
     if (mirrored && !SIDE_SUFFIX.test(nodeName(node))) {
@@ -38,8 +40,8 @@ function collect(root: Object3D, mirrored: boolean, body: Body) {
     node.traverse((child) => {
       if (child instanceof Mesh) meshes.push(child)
     })
-    if (role === 'head') {
-      body.head.push(...meshes)
+    if (role !== 'muscle') {
+      body[role].push(...meshes)
       return
     }
     const object = nodeName(node).replace(SIDE_SUFFIX, '')
@@ -56,7 +58,7 @@ export async function loadBody(url: string, onProgress: (fraction: number | null
   const right = gltf.scene
   const left = right.clone()
   left.scale.x = -1
-  const body: Body = { root: new Group().add(right, left), muscles: [], head: [], bounds: new Box3().setFromObject(right) }
+  const body: Body = { root: new Group().add(right, left), muscles: [], head: [], filler: [], bounds: new Box3().setFromObject(right) }
   collect(right, false, body)
   collect(left, true, body)
   return body
@@ -64,7 +66,7 @@ export async function loadBody(url: string, onProgress: (fraction: number | null
 
 // Mirrored meshes share geometry with the right half, so each BVH is built once.
 export function buildBoundsTrees(body: Body) {
-  for (const mesh of [...body.muscles.map((m) => m.mesh), ...body.head]) {
+  for (const mesh of [...body.muscles.map((m) => m.mesh), ...body.head, ...body.filler]) {
     if (!mesh.geometry.boundsTree) mesh.geometry.computeBoundsTree()
   }
 }

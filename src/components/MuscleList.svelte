@@ -1,5 +1,6 @@
 <script lang="ts">
   import { muscles, REGION_LABELS } from '../lib/content'
+  import CreditsLink from './CreditsLink.svelte'
   import { REGIONS, type Muscle } from '../lib/content-types'
 
   let { onSelect }: { onSelect: (muscle: Muscle) => void } = $props()
@@ -17,6 +18,7 @@
       {/each}
     </ul>
   {/each}
+  <CreditsLink />
 </div>
 
 <style>

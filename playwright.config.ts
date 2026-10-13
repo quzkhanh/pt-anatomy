@@ -7,6 +7,8 @@ export default defineConfig({
   timeout: 60_000,
   use: {
     ...devices['Pixel 7'],
+    // page.route cannot intercept requests a service worker makes; the offline test opts back in.
+    serviceWorkers: 'block',
     baseURL: `http://localhost:${PORT}`,
     launchOptions: { args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] },
   },

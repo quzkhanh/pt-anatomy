@@ -9,6 +9,7 @@
   --color-muscle: #cfc8be;
   --color-head: #d9d3ca;
   --color-selected: #e0482f;
+  --color-secondary: #f2bf3a;
   --color-handle: #c9c4bc;
   --color-light-sky: #ffffff;
   --color-light-ground: #8a8580;
@@ -24,9 +25,14 @@
   --space-6: 1.5rem;
   --tap-min: 44px;
   --sheet-peek: 7.5rem;
+  --tabbar-height: 3.5rem;
+  --bottom-ui: calc(var(--tabbar-height) + env(safe-area-inset-bottom));
   --z-actions: 1;
   --z-sheet: 2;
   --z-search: 3;
+  --z-panel: 4;
+  --z-tabbar: 5;
+  --z-overlay: 6;
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-md: 1rem;
@@ -35,6 +41,10 @@
   --line-body: 1.5;
   --duration-ui: 220ms;
   --ease-ui: cubic-bezier(0.2, 0, 0, 1);
+}
+
+:root.review {
+  --tabbar-height: 6.5rem;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -57,4 +67,8 @@ body {
 button {
   font: inherit;
   color: inherit;
+}
+
+a {
+  color: var(--color-accent);
 }

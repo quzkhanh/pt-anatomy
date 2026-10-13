@@ -49,7 +49,7 @@ test('gợi ý lần đầu biến mất sau lần chạm đầu tiên và khôn
 
 test('tìm cơ sâu thì tự ẩn lớp nông và mở thông tin', async ({ page }) => {
   await ready(page)
-  await page.getByRole('searchbox', { name: 'Tìm cơ' }).fill('nguc be')
+  await page.getByRole('searchbox', { name: 'Tìm cơ hoặc bài tập' }).fill('nguc be')
   await page.getByRole('button', { name: /Cơ ngực bé/ }).click()
   await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Hiện lớp nông' })).toBeVisible()
@@ -57,8 +57,8 @@ test('tìm cơ sâu thì tự ẩn lớp nông và mở thông tin', async ({ pa
 
 test('tìm không ra thì báo không tìm thấy', async ({ page }) => {
   await ready(page)
-  await page.getByRole('searchbox', { name: 'Tìm cơ' }).fill('xyzw')
-  await expect(page.getByText('Không tìm thấy cơ nào khớp “xyzw”')).toBeVisible()
+  await page.getByRole('searchbox', { name: 'Tìm cơ hoặc bài tập' }).fill('xyzw')
+  await expect(page.getByText('Không tìm thấy cơ hay bài tập nào khớp “xyzw”')).toBeVisible()
 })
 
 test('tải model lỗi thì báo lỗi, bấm Thử lại thì tải được', async ({ page }) => {

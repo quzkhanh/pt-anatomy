@@ -1,0 +1,16 @@
+{
+  "name": "PT Anatomy — Tra cứu cơ và bài tập",
+  "short_name": "PT Anatomy",
+  "description": "Mô hình 3D cơ người: chạm vào cơ để xem chức năng và bài tập.",
+  "lang": "vi",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f1efeb",
+  "theme_color": "#f1efeb",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

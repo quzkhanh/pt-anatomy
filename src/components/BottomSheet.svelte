@@ -103,8 +103,8 @@
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
-    height: 88dvh;
+    bottom: var(--bottom-ui);
+    height: calc(88dvh - var(--bottom-ui));
     display: flex;
     flex-direction: column;
     background: var(--color-surface);
@@ -136,7 +136,7 @@
   .content {
     flex: 1;
     overflow: hidden;
-    padding: 0 var(--space-4) calc(var(--space-4) + env(safe-area-inset-bottom));
+    padding: 0 var(--space-4) var(--space-4);
   }
   .scroll {
     overflow-y: auto;

@@ -1,18 +1,21 @@
 <script lang="ts">
-  import { searchMuscles } from '../lib/content'
-  import type { Muscle } from '../lib/content-types'
+  import { openExercise, openMuscle } from '../lib/app-state.svelte'
+  import { searchExercises, searchMuscles } from '../lib/content'
 
-  let { onSelect }: { onSelect: (muscle: Muscle) => void } = $props()
+  const PER_KIND = 5
 
   let input: HTMLInputElement
   let query = $state('')
   let focused = $state(false)
-  const results = $derived(searchMuscles(query))
+  const results = $derived([
+    ...searchMuscles(query).slice(0, PER_KIND).map((m) => ({ key: `m:${m.id}`, vi: m.vi, sub: m.en, lang: 'en', open: () => openMuscle(m) })),
+    ...searchExercises(query).slice(0, PER_KIND).map((e) => ({ key: `e:${e.id}`, vi: e.vi, sub: 'bài tập', lang: 'vi', open: () => openExercise(e) })),
+  ])
 
-  function choose(muscle: Muscle) {
+  function choose(open: () => void) {
     query = ''
     input.blur()
-    onSelect(muscle)
+    open()
   }
 
   function onkeydown(e: KeyboardEvent) {
@@ -20,7 +23,7 @@
       query = ''
       input.blur()
     } else if (e.key === 'Enter' && !e.isComposing && results[0]) {
-      choose(results[0])
+      choose(results[0].open)
     }
   }
 </script>
@@ -30,8 +33,8 @@
     bind:this={input}
     bind:value={query}
     type="search"
-    aria-label="Tìm cơ"
-    placeholder="Tìm cơ, ví dụ: ngực, delta…"
+    aria-label="Tìm cơ hoặc bài tập"
+    placeholder="Tìm cơ hoặc bài tập: ngực, squat…"
     autocomplete="off"
     enterkeyhint="search"
     onfocus={() => (focused = true)}
@@ -40,14 +43,14 @@
   />
   {#if focused && query.trim()}
     <ul class="results">
-      {#each results as muscle (muscle.id)}
+      {#each results as result (result.key)}
         <li>
-          <button onmousedown={(e) => e.preventDefault()} onclick={() => choose(muscle)}>
-            {muscle.vi} <i lang="en">{muscle.en}</i>
+          <button onmousedown={(e) => e.preventDefault()} onclick={() => choose(result.open)}>
+            {result.vi} <i lang={result.lang}>{result.sub}</i>
           </button>
         </li>
       {:else}
-        <li class="empty">Không tìm thấy cơ nào khớp “{query.trim()}”</li>
+        <li class="empty">Không tìm thấy cơ hay bài tập nào khớp “{query.trim()}”</li>
       {/each}
     </ul>
   {/if}
@@ -74,6 +77,8 @@
     font-size: var(--font-md);
   }
   .results {
+    max-height: 60dvh;
+    overflow-y: auto;
     margin: var(--space-2) 0 0;
     padding: var(--space-1) 0;
     list-style: none;

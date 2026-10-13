@@ -5,6 +5,7 @@ export interface ThemeColors {
   muscle: Color
   head: Color
   selected: Color
+  secondary: Color
   sky: Color
   ground: Color
 }
@@ -18,6 +19,7 @@ export function readThemeColors(): ThemeColors {
     muscle: cssColor('--color-muscle'),
     head: cssColor('--color-head'),
     selected: cssColor('--color-selected'),
+    secondary: cssColor('--color-secondary'),
     sky: cssColor('--color-light-sky'),
     ground: cssColor('--color-light-ground'),
   }
