@@ -12,6 +12,7 @@ import json
 import os
 import sys
 
+import bmesh
 import bpy
 from mathutils import Vector
 
@@ -88,6 +89,58 @@ def fix_swapped_names():
             a.name = lower + side
 
 
+HEAD_ROOT = "Regions of head.g"
+HEAD_VOXEL_M = 0.006
+HEAD_SHELL_M = 0.008
+HEAD_SMOOTH_ITERATIONS = 12
+HEAD_TRIS = 4000
+
+
+def descendants(obj):
+    for child in obj.children:
+        yield child
+        yield from descendants(child)
+
+
+# Z-Anatomy has no single skin mesh, only skin patches per region. Fusing the head patches of both
+# sides with a voxel remesh closes the gaps; heavy smoothing removes facial detail (mannequin look).
+# The patches are zero-thickness sheets, so solidify gives them volume before remeshing, and normals
+# are recalculated afterwards because the remesh output can be inside-out (culled by the viewer).
+def build_head():
+    depsgraph = bpy.context.evaluated_depsgraph_get()
+    bm = bmesh.new()
+    for obj in descendants(bpy.data.objects[HEAD_ROOT]):
+        if obj.type != "MESH" or not obj.data.polygons:
+            continue
+        mesh = bpy.data.meshes.new_from_object(obj.evaluated_get(depsgraph))
+        mesh.transform(obj.matrix_world)
+        bm.from_mesh(mesh)
+        bpy.data.meshes.remove(mesh)
+    mesh = bpy.data.meshes.new("Head")
+    bm.to_mesh(mesh)
+    bm.free()
+    head = bpy.data.objects.new("Head", mesh)
+    bpy.context.scene.collection.objects.link(head)
+    solidify = head.modifiers.new("solidify", "SOLIDIFY")
+    solidify.thickness = HEAD_SHELL_M
+    solidify.offset = 0.0
+    remesh = head.modifiers.new("remesh", "REMESH")
+    remesh.mode = "VOXEL"
+    remesh.voxel_size = HEAD_VOXEL_M
+    smooth = head.modifiers.new("smooth", "SMOOTH")
+    smooth.factor = 1.0
+    smooth.iterations = HEAD_SMOOTH_ITERATIONS
+    baked = bpy.data.meshes.new_from_object(head.evaluated_get(bpy.context.evaluated_depsgraph_get()))
+    head.modifiers.clear()
+    bm = bmesh.new()
+    bm.from_mesh(baked)
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    bm.to_mesh(baked)
+    bm.free()
+    head.data = baked
+    return head
+
+
 check_mirror_symmetry()
 fix_swapped_names()
 anatomy_errors = anatomy_checks.check(bpy.data.objects)
@@ -99,6 +152,7 @@ found = {n.rpartition(".")[0] for n, r in roles.items() if r == "muscle"}
 missing = sorted(muscle_names - found)
 if missing:
     fail(f"muscles not found in model: {missing}")
+roles[build_head().name] = "head"
 
 for obj in bpy.data.objects:
     if roles[obj.name] and obj.parent:
@@ -109,7 +163,7 @@ for obj in bpy.data.objects:
 for obj in [o for o in bpy.data.objects if not roles[o.name]]:
     bpy.data.objects.remove(obj, do_unlink=True)
 
-TARGET_TRIS = {"muscle": args.muscle_tris}
+TARGET_TRIS = {"muscle": args.muscle_tris, "head": HEAD_TRIS}
 
 depsgraph = bpy.context.evaluated_depsgraph_get()
 stats = {role: [0, 0] for role in TARGET_TRIS}
