@@ -1,31 +1,25 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { createViewer, type Part } from './lib/viewer/viewer'
+  import type { PartRef } from './lib/content'
+  import { createViewer, type Viewer } from './lib/viewer/viewer'
 
   let canvas: HTMLCanvasElement
-  let selected = $state<Part | null>(null)
-  let status = $state('Đang tải model…')
+  let picked = $state<PartRef | null>(null)
 
   onMount(() => {
-    const started = performance.now()
-    let timer: ReturnType<typeof setInterval>
-    createViewer(canvas, (part) => (selected = part))
-      .then((viewer) => {
-        const loadMs = Math.round(performance.now() - started)
-        timer = setInterval(() => (status = `tải ${loadMs} ms · ${viewer.fps()} fps · ${viewer.triangles()} tam giác`), 1000)
-      })
-      .catch((e) => (status = `Lỗi: ${e.message}`))
-    return () => clearInterval(timer)
+    let viewer: Viewer | undefined
+    createViewer(canvas, { onPick: (ref) => (picked = ref), onProgress: () => {} }).then((v) => {
+      viewer = v
+      if (new URLSearchParams(location.search).has('debug')) window.__ptDebug = v
+    })
+    return () => viewer?.dispose()
   })
 </script>
 
 <canvas bind:this={canvas}></canvas>
-<div class="hud">
-  <p class="status">{status}</p>
-  {#if selected}
-    <p class="name">{selected.name}{selected.side ? ` (${selected.side === 'r' ? 'phải' : 'trái'})` : ''}</p>
-  {/if}
-</div>
+{#if picked}
+  <p class="picked">{picked.muscle.vi} — {picked.muscle.en}</p>
+{/if}
 
 <style>
   canvas {
@@ -35,24 +29,11 @@
     height: 100%;
     touch-action: none;
   }
-  .hud {
+  .picked {
     position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-    color: #fff;
-    background: linear-gradient(transparent, rgb(0 0 0 / 0.7));
-    pointer-events: none;
-  }
-  .status {
+    left: var(--space-4);
+    bottom: var(--space-4);
     margin: 0;
-    font-size: 12px;
-    opacity: 0.7;
-  }
-  .name {
-    margin: 4px 0 0;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: var(--font-lg);
   }
 </style>

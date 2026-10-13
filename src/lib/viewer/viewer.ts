@@ -1,132 +1,168 @@
-import {
-  Box3,
-  Color,
-  DirectionalLight,
-  HemisphereLight,
-  Mesh,
-  MeshStandardMaterial,
-  Object3D,
-  PerspectiveCamera,
-  Raycaster,
-  Scene,
-  Vector2,
-  Vector3,
-  WebGLRenderer,
-} from 'three'
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
+import { Box3, DirectionalLight, HemisphereLight, PerspectiveCamera, Scene, Vector2, Vector3, WebGLRenderer } from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js'
-import { colors } from '../theme'
+import type { PartRef } from '../content'
+import { LIGHTING, readThemeColors } from '../theme'
+import { applyHighlight, createMaterials, isMuscleVisible, type HighlightState } from './highlight'
+import { loadBody } from './model'
+import { createPicker } from './picking'
+import { QUALITY, QualityGovernor } from './quality'
 
-export type Role = 'muscle' | 'bone'
-
-export interface Part {
-  name: string
-  side: 'r' | 'l' | null
-  role: Role
-}
-
+const MODEL_URL = `${import.meta.env.BASE_URL}models/body.glb`
 const TAP_SLOP_PX = 6
+const CAMERA = { fov: 35, near: 0.01, far: 20, distance: 1.6, minDistance: 0.25, maxDistance: 2.5 }
+const SUN_POSITION = new Vector3(1, 2, 3)
 
-const materials: Record<Role | 'selected', MeshStandardMaterial> = {
-  muscle: new MeshStandardMaterial({ color: colors.muscle, roughness: 0.6 }),
-  bone: new MeshStandardMaterial({ color: colors.bone, roughness: 0.8 }),
-  selected: new MeshStandardMaterial({ color: colors.selected, roughness: 0.5 }),
+export interface ViewerStats {
+  fps: number
+  pickMs: number
+  pixelRatio: number
+  readyMs: number
 }
 
-function parsePart(obj: Object3D, mirrored: boolean): Part | null {
-  const role = obj.userData.role as Role | undefined
-  if (!role) return null
-  // GLTFLoader strips '.' from obj.name; the original glTF node name is kept in userData.name.
-  const [, base, side] = (obj.userData.name as string).match(/^(.*?)(?:\.([rl]))?$/)!
-  return { name: base, side: side ? (mirrored ? 'l' : 'r') : null, role }
+export interface Viewer {
+  select(muscleId: string | null): void
+  setSuperficialHidden(hidden: boolean): void
+  flip(): void
+  focus(muscleId: string): void
+  screenPoint(muscleId: string): { x: number; y: number } | null
+  stats(): ViewerStats
+  dispose(): void
 }
 
-export async function createViewer(canvas: HTMLCanvasElement, onSelect: (part: Part | null) => void) {
-  const renderer = new WebGLRenderer({ canvas, antialias: true })
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2))
+interface ViewerOptions {
+  onPick: (ref: PartRef | null) => void
+  onProgress: (fraction: number | null) => void
+}
+
+declare global {
+  interface Window {
+    __ptDebug?: Viewer
+  }
+}
+
+export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgress }: ViewerOptions): Promise<Viewer> {
+  const body = await loadBody(MODEL_URL, onProgress)
+  const colors = readThemeColors()
+  const renderer = new WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' })
+  const governor = new QualityGovernor(Math.min(devicePixelRatio, QUALITY.maxRatio))
+  renderer.setPixelRatio(governor.ratio)
+
   const scene = new Scene()
-  scene.background = new Color(colors.background)
-  const camera = new PerspectiveCamera(35, 1, 0.01, 20)
+  scene.background = colors.background
+  const camera = new PerspectiveCamera(CAMERA.fov, 1, CAMERA.near, CAMERA.far)
+  const sun = new DirectionalLight(LIGHTING.sky, LIGHTING.sun)
+  sun.position.copy(SUN_POSITION)
+  camera.add(sun)
+  scene.add(new HemisphereLight(LIGHTING.sky, LIGHTING.ground, LIGHTING.hemisphere), camera, body.root)
+
+  const materials = createMaterials(colors)
+  for (const mesh of body.head) mesh.material = materials.head
+  const state: HighlightState = { selected: null, superficialHidden: false }
+  applyHighlight(body, materials, state)
+
+  const center = body.bounds.getCenter(new Vector3()).setX(0)
+  const height = body.bounds.getSize(new Vector3()).y
   const controls = new OrbitControls(camera, canvas)
   controls.enableDamping = true
-  scene.add(new HemisphereLight(0xffffff, 0x404040, 1.5))
-  const sun = new DirectionalLight(0xffffff, 1.5)
-  sun.position.set(1, 2, 3)
-  camera.add(sun)
-  scene.add(camera)
+  controls.enablePan = false
+  controls.target.copy(center)
+  controls.minDistance = height * CAMERA.minDistance
+  controls.maxDistance = height * CAMERA.maxDistance
+  camera.position.set(0, center.y, center.z + height * CAMERA.distance)
 
-  const gltf = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(`${import.meta.env.BASE_URL}models/body.glb`)
-  const right = gltf.scene
-  const left = right.clone()
-  left.scale.x = -1
-  // Midline objects (spine, sternum...) are only needed once; the mirror keeps paired parts only.
-  left.traverse((o) => o.userData.role && !/\.[rl]$/.test(o.userData.name) && (o.visible = false))
-  scene.add(right, left)
-
-  const parts = new Map<Mesh, Part>()
-  for (const [root, mirrored] of [[right, false], [left, true]] as const) {
-    root.traverse((o) => {
-      const part = parsePart(o, mirrored)
-      if (!part) return
-      o.traverse((m) => {
-        if (m instanceof Mesh) {
-          m.material = materials[part.role]
-          parts.set(m, part)
-        }
-      })
-    })
+  let needsRender = true
+  const requestRender = () => {
+    needsRender = true
+  }
+  controls.addEventListener('change', requestRender)
+  const update = () => {
+    applyHighlight(body, materials, state)
+    requestRender()
   }
 
-  const box = new Box3().setFromObject(right)
-  const center = box.getCenter(new Vector3())
-  center.x = 0
-  controls.target.copy(center)
-  camera.position.set(0, center.y, box.getSize(new Vector3()).y * 1.6)
-
-  let selected: Part | null = null
-  const raycaster = new Raycaster()
+  const pick = createPicker(camera, canvas, body.muscles, body.head)
+  let pickMs = 0
   const down = new Vector2()
-  canvas.addEventListener('pointerdown', (e) => down.set(e.clientX, e.clientY))
-  canvas.addEventListener('pointerup', (e) => {
+  const onPointerDown = (e: PointerEvent) => down.set(e.clientX, e.clientY)
+  const onPointerUp = (e: PointerEvent) => {
     if (down.distanceTo(new Vector2(e.clientX, e.clientY)) > TAP_SLOP_PX) return
-    const rect = canvas.getBoundingClientRect()
-    raycaster.setFromCamera(
-      new Vector2(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1),
-      camera,
-    )
-    const hit = raycaster.intersectObjects([right, left], true).find((h) => h.object.visible && parts.has(h.object as Mesh))
-    selected = hit ? parts.get(hit.object as Mesh)! : null
-    for (const [mesh, part] of parts) {
-      mesh.material = part === selected ? materials.selected : materials[part.role]
-    }
-    onSelect(selected)
-  })
+    const started = performance.now()
+    const hit = pick(e.clientX, e.clientY)
+    state.selected = hit?.ref.muscle.id ?? null
+    update()
+    pickMs = performance.now() - started
+    onPick(hit?.ref ?? null)
+  }
+  canvas.addEventListener('pointerdown', onPointerDown)
+  canvas.addEventListener('pointerup', onPointerUp)
 
   const resize = () => {
-    const { clientWidth: w, clientHeight: h } = canvas
-    renderer.setSize(w, h, false)
-    camera.aspect = w / h
+    renderer.setSize(canvas.clientWidth, canvas.clientHeight, false)
+    camera.aspect = canvas.clientWidth / canvas.clientHeight
     camera.updateProjectionMatrix()
+    requestRender()
   }
-  new ResizeObserver(resize).observe(canvas)
+  const observer = new ResizeObserver(resize)
+  observer.observe(canvas)
+  resize()
 
-  let frames = 0
   let fps = 0
-  let last = performance.now()
+  let frames = 0
+  let second = performance.now()
   renderer.setAnimationLoop((now) => {
     controls.update()
+    if (!needsRender) return
+    needsRender = false
     renderer.render(scene, camera)
     frames++
-    if (now - last >= 1000) {
+    if (now - second >= 1000) {
       fps = frames
       frames = 0
-      last = now
+      second = now
+    }
+    if (governor.frame(now)) {
+      renderer.setPixelRatio(governor.ratio)
+      needsRender = true
     }
   })
+  renderer.render(scene, camera)
+  const readyMs = performance.now()
+
+  const centerOf = (muscleId: string) => {
+    const mesh = body.muscles.find((m) => m.ref.muscle.id === muscleId && !m.mirrored)?.mesh
+    return mesh ? new Box3().setFromObject(mesh).getCenter(new Vector3()) : null
+  }
 
   return {
-    fps: () => fps,
-    triangles: () => renderer.info.render.triangles,
+    select(muscleId) {
+      state.selected = muscleId
+      update()
+    },
+    setSuperficialHidden(hidden) {
+      state.superficialHidden = hidden
+      applyHighlight(body, materials, state)
+      if (state.selected && !isMuscleVisible(body, state.selected)) {
+        state.selected = null
+        onPick(null)
+      }
+      update()
+    },
+    flip() {},
+    focus() {},
+    screenPoint(muscleId) {
+      const point = centerOf(muscleId)?.project(camera)
+      if (!point) return null
+      const rect = canvas.getBoundingClientRect()
+      return { x: rect.left + ((point.x + 1) / 2) * rect.width, y: rect.top + ((1 - point.y) / 2) * rect.height }
+    },
+    stats: () => ({ fps, pickMs, pixelRatio: governor.ratio, readyMs }),
+    dispose() {
+      renderer.setAnimationLoop(null)
+      observer.disconnect()
+      canvas.removeEventListener('pointerdown', onPointerDown)
+      canvas.removeEventListener('pointerup', onPointerUp)
+      controls.dispose()
+      renderer.dispose()
+    },
   }
 }

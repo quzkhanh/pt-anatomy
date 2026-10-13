@@ -13,9 +13,11 @@
     "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
     "model:export": "blender -b --disable-autoexec \"${ZANATOMY_BLEND:-$HOME/.cache/pt-anatomy-src/Z-Anatomy/Startup.blend}\" --python-exit-code 1 --python pipeline/export.py -- --content content/muscles.json --out pipeline/out/body-raw.glb",
     "model:pack": "gltfpack -i pipeline/out/body-raw.glb -o public/models/body.glb -cc -kn -ke",
-    "model": "npm run model:export && npm run model:pack"
+    "model": "npm run model:export && npm run model:pack",
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.0",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^24.13.3",
