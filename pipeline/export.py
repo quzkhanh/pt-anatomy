@@ -141,6 +141,59 @@ def build_head():
     return head
 
 
+# Without bones the 6 mm gap between left and right front-wall muscles (linea alba, sternum) looks
+# straight through the trunk at the back muscles, so a highlighted erector spinae shows as a stripe
+# down the belly. A thin neutral fin on the midline, kept between the inner surface of the front wall
+# and the back muscles slice by slice, blocks that view without ever reaching the body surface.
+FILLER_FRONT = ("Rectus abdominis muscle", "Sternocostal head of pectoralis major muscle", "Sternocleidomastoid muscle")
+FILLER_BACK = ("Longissimus thoracis muscle", "Spinalis thoracis muscle", "Multifidus lumborum muscle",
+               "Iliocostalis lumborum muscle", "Splenius capitis muscle", "Descending part of trapezius muscle",
+               "Transverse part of trapezius muscle", "Ascending part of trapezius muscle")
+FILLER_OVERLAP_M = 0.004
+FILLER_MAX_HALF_WIDTH_M = 0.02
+FILLER_FRONT_REACH_M = 0.03
+FILLER_BACK_REACH_M = 0.03
+FILLER_SLICE_M = 0.01
+FILLER_MARGIN_M = 0.002
+
+
+def midline_vertices(names, reach):
+    out = []
+    for name in names:
+        obj = bpy.data.objects[name + ".r"]
+        out += [v for v in (obj.matrix_world @ p.co for p in obj.data.vertices) if abs(v.x) < reach]
+    return out
+
+
+def build_midline_filler():
+    front = midline_vertices(FILLER_FRONT, FILLER_FRONT_REACH_M)
+    back = midline_vertices(FILLER_BACK, FILLER_BACK_REACH_M)
+    bm = bmesh.new()
+    z = min(v.z for v in front)
+    top = max(v.z for v in front)
+    while z < top:
+        f = [v for v in front if z <= v.z < z + FILLER_SLICE_M]
+        b = [v.y for v in back if z <= v.z < z + FILLER_SLICE_M]
+        if f and b and min(b) - max(v.y for v in f) > 2 * FILLER_MARGIN_M:
+            # Body faces -Y: the front wall's inner surface is its largest y, the back muscles' front is their smallest.
+            y0, y1 = max(v.y for v in f) + FILLER_MARGIN_M, min(b) - FILLER_MARGIN_M
+            # As wide as this slice's gap plus some overlap; it sits behind the wall, so overlap never shows.
+            half_width = min(FILLER_MAX_HALF_WIDTH_M, min(abs(v.x) for v in f) + FILLER_OVERLAP_M)
+            box = bmesh.ops.create_cube(bm, size=1.0)["verts"]
+            for v in box:
+                v.co = Vector((v.co.x * 2 * half_width,
+                               y0 if v.co.y < 0 else y1,
+                               z if v.co.z < 0 else z + FILLER_SLICE_M))
+        z += FILLER_SLICE_M
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    mesh = bpy.data.meshes.new("Midline filler")
+    bm.to_mesh(mesh)
+    bm.free()
+    filler = bpy.data.objects.new("Midline filler", mesh)
+    bpy.context.scene.collection.objects.link(filler)
+    return filler
+
+
 check_mirror_symmetry()
 fix_swapped_names()
 anatomy_errors = anatomy_checks.check(bpy.data.objects)
@@ -153,6 +206,7 @@ missing = sorted(muscle_names - found)
 if missing:
     fail(f"muscles not found in model: {missing}")
 roles[build_head().name] = "head"
+roles[build_midline_filler().name] = "filler"
 
 for obj in bpy.data.objects:
     if roles[obj.name] and obj.parent:
@@ -163,7 +217,7 @@ for obj in bpy.data.objects:
 for obj in [o for o in bpy.data.objects if not roles[o.name]]:
     bpy.data.objects.remove(obj, do_unlink=True)
 
-TARGET_TRIS = {"muscle": args.muscle_tris, "head": HEAD_TRIS}
+TARGET_TRIS = {"muscle": args.muscle_tris, "head": HEAD_TRIS, "filler": HEAD_TRIS}
 
 depsgraph = bpy.context.evaluated_depsgraph_get()
 stats = {role: [0, 0] for role in TARGET_TRIS}
