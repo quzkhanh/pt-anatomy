@@ -89,3 +89,40 @@ test('?debug hiện fps và thời gian chạm', async ({ page }) => {
   await ready(page)
   await expect(page.getByText(/fps · chạm .* ms · pixelRatio/)).toBeVisible()
 })
+
+test('kéo xoay không chọn cơ', async ({ page }) => {
+  await ready(page)
+  const point = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
+  await page.mouse.move(point!.x, point!.y)
+  await page.mouse.down()
+  await page.mouse.move(point!.x + 80, point!.y, { steps: 8 })
+  await page.mouse.up()
+  await expect(page.locator(SHEET)).toHaveAttribute('aria-hidden', 'true')
+})
+
+test('xoay ngang vẫn chọn đúng', async ({ page }) => {
+  await ready(page)
+  await page.setViewportSize({ width: 915, height: 412 })
+  await page.waitForTimeout(300)
+  await tapMuscle(page, 'pectoralis-major')
+  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+})
+
+test('localStorage bị chặn vẫn chạy', async ({ page }) => {
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'localStorage', { get: () => { throw new DOMException('blocked', 'SecurityError') } })
+  })
+  await ready(page)
+  await tapMuscle(page, 'pectoralis-major')
+  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+})
+
+test('ẩn lớp nông rồi chạm chọn cơ sâu', async ({ page }) => {
+  await ready(page)
+  const point = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
+  await page.getByRole('button', { name: 'Ẩn lớp nông' }).click()
+  await tapMuscle(page, 'pectoralis-minor')
+  await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
+  await page.touchscreen.tap(point!.x, point!.y)
+  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeHidden()
+})
