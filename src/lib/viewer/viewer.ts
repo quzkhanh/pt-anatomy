@@ -3,7 +3,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import type { PartRef } from '../content'
 import { LIGHTING, readThemeColors } from '../theme'
 import { applyHighlight, createMaterials, isMuscleVisible, type HighlightState } from './highlight'
-import { loadBody } from './model'
+import { createCameraRig } from './camera'
+import { buildBoundsTrees, loadBody } from './model'
 import { createPicker } from './picking'
 import { QUALITY, QualityGovernor } from './quality'
 
@@ -75,6 +76,8 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     needsRender = true
   }
   controls.addEventListener('change', requestRender)
+  const rig = createCameraRig(camera, controls, requestRender)
+  controls.addEventListener('start', rig.cancel)
   const update = () => {
     applyHighlight(body, materials, state)
     requestRender()
@@ -110,8 +113,9 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   let frames = 0
   let second = performance.now()
   renderer.setAnimationLoop((now) => {
+    const animating = rig.update(now)
     controls.update()
-    if (!needsRender) return
+    if (!needsRender && !animating) return
     needsRender = false
     renderer.render(scene, camera)
     frames++
@@ -127,6 +131,8 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   })
   renderer.render(scene, camera)
   const readyMs = performance.now()
+  // Building BVHs takes a few hundred ms on phones; do it after the first frame is on screen.
+  requestAnimationFrame(() => setTimeout(() => buildBoundsTrees(body)))
 
   const centerOf = (muscleId: string) => {
     const mesh = body.muscles.find((m) => m.ref.muscle.id === muscleId && !m.mirrored)?.mesh
@@ -147,8 +153,11 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
       }
       update()
     },
-    flip() {},
-    focus() {},
+    flip: rig.flip,
+    focus(muscleId) {
+      const point = centerOf(muscleId)
+      if (point) rig.faceTowards(point)
+    },
     screenPoint(muscleId) {
       const point = centerOf(muscleId)?.project(camera)
       if (!point) return null

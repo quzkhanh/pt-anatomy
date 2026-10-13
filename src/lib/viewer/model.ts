@@ -1,7 +1,11 @@
-import { Box3, Group, Mesh, type Object3D } from 'three'
+import { Box3, BufferGeometry, Group, Mesh, type Object3D } from 'three'
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js'
+import { acceleratedRaycast, computeBoundsTree } from 'three-mesh-bvh'
 import { partByObject, type PartRef } from '../content'
+
+BufferGeometry.prototype.computeBoundsTree = computeBoundsTree
+Mesh.prototype.raycast = acceleratedRaycast
 
 export interface BodyMesh {
   mesh: Mesh
@@ -56,4 +60,11 @@ export async function loadBody(url: string, onProgress: (fraction: number | null
   collect(right, false, body)
   collect(left, true, body)
   return body
+}
+
+// Mirrored meshes share geometry with the right half, so each BVH is built once.
+export function buildBoundsTrees(body: Body) {
+  for (const mesh of [...body.muscles.map((m) => m.mesh), ...body.head]) {
+    if (!mesh.geometry.boundsTree) mesh.geometry.computeBoundsTree()
+  }
 }

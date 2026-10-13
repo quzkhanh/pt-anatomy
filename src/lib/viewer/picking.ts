@@ -7,6 +7,7 @@ const RING_SAMPLES = 8
 
 export function createPicker(camera: Camera, canvas: HTMLCanvasElement, muscles: BodyMesh[], occluders: Mesh[]) {
   const raycaster = new Raycaster()
+  raycaster.firstHitOnly = true
   const ndc = new Vector2()
   const byMesh = new Map<Object3D, BodyMesh>(muscles.map((m) => [m.mesh, m]))
 

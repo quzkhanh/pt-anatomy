@@ -16,3 +16,11 @@ test('chạm vào cơ ngực hiện tên cơ', async ({ page }) => {
   await tapMuscle(page, 'pectoralis-major')
   await expect(page.getByText('Cơ ngực lớn')).toBeVisible()
 })
+
+test('lật ra sau rồi chạm cơ mông', async ({ page }) => {
+  await ready(page)
+  await page.evaluate(() => window.__ptDebug!.flip())
+  await page.waitForTimeout(800)
+  await tapMuscle(page, 'gluteus-maximus')
+  await expect(page.getByText('Cơ mông lớn')).toBeVisible()
+})
