@@ -46,3 +46,17 @@ test('gợi ý lần đầu biến mất sau lần chạm đầu tiên và khôn
   await ready(page)
   await expect(hint).toBeHidden()
 })
+
+test('tìm cơ sâu thì tự ẩn lớp nông và mở thông tin', async ({ page }) => {
+  await ready(page)
+  await page.getByRole('searchbox', { name: 'Tìm cơ' }).fill('nguc be')
+  await page.getByRole('button', { name: /Cơ ngực bé/ }).click()
+  await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
+  await expect(page.getByRole('button', { name: 'Hiện lớp nông' })).toBeVisible()
+})
+
+test('tìm không ra thì báo không tìm thấy', async ({ page }) => {
+  await ready(page)
+  await page.getByRole('searchbox', { name: 'Tìm cơ' }).fill('xyzw')
+  await expect(page.getByText('Không tìm thấy cơ nào khớp “xyzw”')).toBeVisible()
+})

@@ -2,8 +2,10 @@
   import { onMount } from 'svelte'
   import BottomSheet, { type Snap } from '../components/BottomSheet.svelte'
   import MuscleInfo from '../components/MuscleInfo.svelte'
+  import SearchBar from '../components/SearchBar.svelte'
   import SideActions from '../components/SideActions.svelte'
-  import type { Selection } from '../lib/content'
+  import { isSuperficial, type Selection } from '../lib/content'
+  import type { Muscle } from '../lib/content-types'
   import { load, save } from '../lib/storage'
   import { createViewer, type Viewer } from '../lib/viewer/viewer'
 
@@ -32,6 +34,14 @@
     viewer?.setSuperficialHidden(superficialHidden)
   }
 
+  function selectMuscle(muscle: Muscle) {
+    const deep = muscle.parts.every((part) => !isSuperficial({ muscle, part }))
+    if (deep && !superficialHidden) toggleLayer()
+    viewer?.select(muscle.id)
+    viewer?.focus(muscle.id)
+    show({ muscle, part: null })
+  }
+
   const blurActive = () => (document.activeElement as HTMLElement | null)?.blur()
 
   onMount(() => {
@@ -48,6 +58,8 @@
   aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin."
   onpointerdown={blurActive}
 ></canvas>
+
+<SearchBar onSelect={selectMuscle} />
 
 {#if viewer}
   <SideActions {superficialHidden} onFlip={() => viewer?.flip()} onToggleLayer={toggleLayer} />
