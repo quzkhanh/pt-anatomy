@@ -6,6 +6,9 @@ describe('normalizeText', () => {
     const html = '<style>p{}</style><p>The  <em>clavicular</em>&nbsp;head&#8217;s role &amp; it’s “key” – yes</p><script>x()</script>'
     expect(normalizeText(html)).toBe("the clavicular head's role & it's \"key\" - yes")
   })
+  it('bỏ khoảng trắng quanh dấu câu và ngoặc', () => {
+    expect(normalizeText('the <a>subscapularis</a>, and ( <b>x</b> )')).toBe('the subscapularis, and (x)')
+  })
   it('giải entity số thập lục phân', () => {
     expect(normalizeText('a&#x2014;b')).toBe('a-b')
   })

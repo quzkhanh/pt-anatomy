@@ -13,6 +13,8 @@ export const normalizeText = (html: string) =>
     .replace(/[“”″]/g, '"')
     .replace(/[‐-―−]/g, '-')
     .replace(/\s+/g, ' ')
+    .replace(/ ([,.;:!?)\]])/g, '$1')
+    .replace(/([(\[]) /g, '$1')
     .trim()
     .toLowerCase()
 
