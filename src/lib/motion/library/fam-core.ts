@@ -513,7 +513,7 @@ function copenhagenPlank(): Motion {
     }),
   )
   return {
-    keys: [key(0, top, 'Thả hông'), key(0.5, bottom, 'Nâng hông'), key(0.88, top, 'Giữ')],
+    keys: [key(0, top, 'Hạ hông chậm'), key(0.5, bottom, 'Nâng hông'), key(0.88, top, 'Giữ')],
     props: [
       mat([ankle.x * 0.5, 0.1], true),
       { kind: 'block', center: [benchX, benchTop - BENCH.pad / 2, ankle.z], size: [BENCH.length, BENCH.pad, BENCH.width] },

@@ -330,7 +330,7 @@ function kettlebellSwing(): Motion {
   const float = upright(SWING.float)
   const fall = upright(SWING.drop)
   return {
-    keys: [key(0, hike, 'Kéo tạ ra sau'), key(0.25, drive, 'Tạ bay lên'), key(0.45, float, 'Thả tạ rơi'), key(0.7, fall, 'Gập hông')],
+    keys: [key(0, hike, 'Đẩy hông tới'), key(0.25, drive, 'Tạ bay lên'), key(0.45, float, 'Thả tạ rơi'), key(0.7, fall, 'Gập hông')],
     props: [{ kind: 'kettlebell', at: 'grips' }],
     seconds: 2.8,
   }
