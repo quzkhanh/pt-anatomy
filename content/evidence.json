@@ -2485,6 +2485,105 @@
    {
     "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
     "quote": "plays an important role in respiration when forcefully exhaling"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "the larger one is attached to the pubic crest, from the pubic tubercle to the pectineal line",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "the small, medial tendon is attached to the pubic symphysis",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from the crest of the pubis bone.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "insert into the xiphoid process of sternum and costal cartilages of the 5th, 6th and 7th ribs",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "It inserts onto the xiphoid process of the sternum and the costal cartilage of ribs 5-7.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Thoracoabdominal nerves (T7-T11)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "The muscles are innervated by thoraco-abdominal nerves, these are continuations of the T7-T11 intercostal nerves",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "Intercostal nerves (T7-T11), subcostal nerve (T12)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "the pelvis can be brought towards the rib cage (posterior pelvic tilt) when the rib cage is fixed, such as in a leg-hip raise",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "The tendinous intersections and the linea alba give rise to the 'six pack' seen in individuals with a well-developed rectus abdominis.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "A rectus sheath hematoma is an accumulation of blood in the sheath of the rectus abdominis muscle.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "It causes abdominal pain with or without a mass.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "Causes of this include anticoagulation, coughing, pregnancy, abdominal surgery and trauma.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "plays an important role in respiration when forcefully exhaling, as seen after exercise as well as in conditions where exhalation is difficult such as emphysema",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle",
+    "quote": "creating intra-abdominal pressure, such as when exercising or lifting heavy weights",
+    "field": "tips.breathing",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "this muscle compresses the abdominal viscera and increases the intra-abdominal pressure",
+    "field": "tips.breathing",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle",
+    "quote": "low body fat, it is clearly visible beneath the skin forming the 'six pack'.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "external-oblique": [
@@ -2507,6 +2606,94 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
     "quote": "Twisting at waist; also bending to the side"
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from ribs 5-12 and inserts onto the iliac crest and pubic tubercle.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "originates from the external surfaces of ribs 5-12",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from ribs 5-12 and inserts onto the iliac crest and pubic tubercle.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "it inserts to the linea alba, pubic tubercle and anterior half of iliac crest",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "become aponeurotic at approximately the midclavicular line and form the anterior layer of the rectus sheath",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "This aponeurosis formed from fibres from either side of the external oblique decussates at the linea alba.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "it inserts to the linea alba, pubic tubercle and anterior half of iliac crest",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Thoracoabdominal nerves (T7-T11) and subcostal nerve (T12)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "Thoraco-abdominal nerves (T7-11) and subcostal nerve (T12)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "The oblique strain is a common baseball injury, particularly in pitchers.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "In both batters and pitchers it can affect the contralateral (leading) side external oblique, or the trailing internal oblique.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "When contracting bilaterally, the muscle works together with internal abdominal oblique and rectus abdominis to flex the trunk anteriorly",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "increases the tone of abdominal wall and positive intra-abdominal pressure",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle",
+    "quote": "for example forced exhalation, micturition, defecation and labor",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "The external oblique functions to pull the chest downwards and compress the abdominal cavity, which increases the intra-abdominal pressure as in a Valsalva maneuver.",
+    "field": "tips.breathing",
+    "item": 1
    }
   ],
   "internal-oblique": [
@@ -2525,6 +2712,124 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax",
     "quote": "Twisting at waist; also bending to the side"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "the anterior 2/3 of the iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "Lateral fibers: originate from the anterior two-thirds of iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from the inguinal ligament, iliac crest and lumbodorsal fascia.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "beginning in the thoracolumbar fascia of the lower back",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "the lateral half of the inguinal ligament",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "It inserts onto ribs 10-12.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "the muscle's insertions on the inferior borders of the 10th through 12th ribs and the linea alba",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "The fibers then extend into an aponeurosis that contributes to the formation of the rectus sheath and inserts at the linea alba.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "the muscle's insertions on the inferior borders of the 10th through 12th ribs and the linea alba",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "to form the conjoint tendon. This tendon then inserts into the pubic crest and pecten pubis.",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "pectineal line of pubis (via conjoint tendon)",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "Intercostal nerves (T7-T11), subcostal nerve (T12), iliohypogastric nerve (L1), ilioinguinal nerve (L1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "Thoracoabdominal nn. (T7-T11), subcostal n. (T12), iliohypogastric n. (L1) and ilioinguinal n. (L1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "the right internal oblique and the left external oblique contract as the torso flexes and rotates to bring the left shoulder towards the right hip",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "The oblique strain is a common baseball injury, particularly in pitchers.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle",
+    "quote": "In both batters and pitchers it can affect the contralateral (leading) side external oblique, or the trailing internal oblique.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "weakness of the internal abdominal oblique or other abdominal muscles increases the risk for abdominal hernias",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "as an accessory muscle of respiration",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle",
+    "quote": "it acts as an antagonist (opponent) to the diaphragm, helping to reduce the volume of the chest cavity during exhalation",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle",
+    "quote": "causes compression of the intra-abdominal viscera thereby increasing the intra-abdominal pressure. This action is utilized for functions such as forced expiration",
+    "field": "tips.breathing",
+    "item": 1
    }
   ],
   "transversus-abdominis": [
@@ -2543,6 +2848,141 @@
    {
     "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
     "quote": "The transverse abdominal helps to compress the ribs and viscera, providing thoracic and pelvic stability."
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from the inguinal ligament, costal cartilages 7-12, the iliac crest and thoracolumbar fascia.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "Anterior two-thirds of the inner lip of iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "from the anterior three-fourths of the inner lip of the iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Originates from the inguinal ligament, costal cartilages 7-12, the iliac crest and thoracolumbar fascia.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "from the inner surfaces of the cartilages of the lower six ribs",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "Thoracolumbar fascia between the iliac crest and the 12th rib",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "Lateral one-third of the superior surface of the inguinal ligament and the associated iliac fascia",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "It inserts onto the conjoint tendon, xiphoid process, linea alba and the pubic crest.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "Xiphoid process, linea alba, pubic crest and pecten pubis via conjoint tendon",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "The remaining fibers extend into a broad aponeurosis that contributes to the formation of the rectus sheath and inserts on the linea alba.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "the aponeurosis passes horizontally to the middle line, and is inserted into the linea alba",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "join the aponeurotic fibers of internal abdominal oblique to form the conjoint tendon. This tendon then inserts onto the pubic crest and pecten pubis.",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "inserted, together with those of the internal oblique muscle, into the crest of the pubis and pectineal line, forming the inguinal conjoint tendon",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "Intercostal nerves (T7-T11), subcostal nerve (T12), iliohypogastric nerve (L1), ilioinguinal nerve (L1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/",
+    "quote": "Thoracoabdominal nerves (T7-T11), subcostal nerve (T12) and branches of the lumbar plexus.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "innervated by the lower intercostal nerves (thoracoabdominal, nerve roots T7-T11), as well as the iliohypogastric nerve and the ilioinguinal nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "one recent systematic review has found that the baseline dysfunction of TVA cannot predict the clinical outcomes of low back pain",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "These findings have challenged the traditional emphasis of using TVA-targeted intervention to treat low back pain.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "weakness of transversus abdominis or other abdominal muscles increases the risk for abdominal hernias",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "It can contract during the exhalation phase of respiration to force air out of the thorax.",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "also cause compression of the intra-abdominal viscera thereby increasing the intra-abdominal pressure",
+    "field": "tips.breathing",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle",
+    "quote": "facilitating expulsive functions such as forced expiration",
+    "field": "tips.breathing",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle",
+    "quote": "the changes in TVA function or morphology after different nonsurgical treatments are unrelated to the improvement of pain intensity or low back pain related-disability",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "gluteus-maximus": [
@@ -2565,6 +3005,87 @@
    {
     "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
     "quote": "Its most powerful action is to cause the body to regain the erect position after stooping"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Originates from the gluteal (posterior) surface of the ilium, sacrum and coccyx.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle",
+    "quote": "gluteal surface of ilium (behind the posterior gluteal line)",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "from the lower part of the sacrum and the side of the coccyx, the tailbone",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Originates from the gluteal (posterior) surface of the ilium, sacrum and coccyx.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "from the aponeurosis of the erector spinae (lumbodorsal fascia), the sacrotuberous ligament, and the fascia covering the gluteus medius (gluteal aponeurosis)",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle",
+    "quote": "thoracolumbar fascia and gluteal aponeurosis",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle",
+    "quote": "The most superficial three-quarters of the muscle form a tendinous lamina that inserts between the two layers of the fascia lata",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "insert onto the iliotibial tract and gluteal tuberosity of the femur",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle",
+    "quote": "The remaining deep one-quarter of the muscle inserts to the gluteal tuberosity of femur via a broad aponeurosis",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "insert onto the iliotibial tract and gluteal tuberosity of the femur",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle",
+    "quote": "Inferior gluteal nerve (L5, S1, S2)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "Inferior gluteal nerve (L5, S1 and S2 nerve roots)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Innervation : Inferior gluteal nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_maximus",
+    "quote": "A number of exercises focus on the gluteus maximus and other muscles of the upper leg: Hip thrusts Glute bridge Quadruped hip extensions Kettlebell swings",
+    "field": "tips.training",
+    "item": 0
    }
   ],
   "gluteus-medius": [
@@ -2583,6 +3104,81 @@
    {
     "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
     "quote": "The anterior and posterior parts working together abduct the hip and stabilize the pelvis in the coronal plane."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Originates from the gluteal surface of the ilium",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "on the outer surface of the ilium between the iliac crest and the posterior gluteal line above, and the anterior gluteal line below",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "the gluteus medius also originates from its own fascia, the gluteal aponeurosis, that covers its outer surface",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "inserts into the lateral surface of the greater trochanter",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "inserts on the lateral surface of the greater trochanter",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Innervation : Superior gluteal nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "Superior gluteal nerve (L4, L5, S1 nerve roots)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Superior_gluteal_nerve",
+    "quote": "It arises from the posterior divisions of L4, L5 and S1.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "In a positive sign, pelvic drop will occur on the unsupported leg.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trendelenburg%27s_sign",
+    "quote": "Trendelenburg's sign is found in people with weak or paralyzed abductor muscles of the hip, namely gluteus medius and gluteus minimus.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_medius",
+    "quote": "Dysfunction of the gluteus medius or the superior gluteal nerve can potentially be indicated by a positive Trendelenburg's sign.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "If the superior gluteal nerve is damaged, the previously described muscles are paralysed - and the pelvis becomes unsteady.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "The superior gluteal nerve innervates the gluteus medius and the gluteus minimus.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "gluteus-minimus": [
@@ -2601,6 +3197,75 @@
    {
     "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
     "quote": "Their anterior fibers also flex the hip, and by drawing the greater trochanter forward, rotate the thigh inward"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-minimus-muscle",
+    "quote": "originates from the gluteal surface of the ilium, between the anterior and inferior gluteal lines",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "arising from the outer surface of the ilium, between the anterior and inferior gluteal lines, and behind, from the margin of the greater sciatic notch",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-minimus-muscle",
+    "quote": "inserts onto the anterolateral aspect of the greater trochanter",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "inserted into an impression on the anterior border of the greater trochanter",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "and gives an expansion to the capsule of the hip joint",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gluteus-minimus-muscle",
+    "quote": "Superior gluteal nerve (L4-S1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "Superior gluteal nerve (L4, L5, S1 nerve roots)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Innervation : Superior gluteal nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "Paralysis of this muscle or gluteus medius, such as may be caused by the superior gluteal nerve palsy, can lead to difficulty abducting the leg.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "People will compensate for their difficulty walking by adopting a Trendelenburg gait.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trendelenburg_gait",
+    "quote": "It is caused by weakness or ineffective action of the gluteus medius and gluteus minimus muscles.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gluteus_minimus",
+    "quote": "is situated immediately beneath the gluteus medius",
+    "field": "origin",
+    "item": 0
    }
   ],
   "tensor-fasciae-latae": [
@@ -2615,6 +3280,81 @@
    {
     "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
     "quote": "Assists the gluteus medius and minimus in abduction and medial rotation of the lower limb."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "originates from the outer lip of the anterior iliac crest and the anterior superior iliac spine",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle",
+    "quote": "arises from the anterior part of the outer lip of the iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Originates from the anterior iliac crest, attaching to the anterior superior iliac spine (ASIS).",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle",
+    "quote": "inserted between the two layers of the iliotibial tract of the fascia lata about the junction of the middle and upper thirds of the thigh",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/",
+    "quote": "At the junction of the middle and upper thirds of the thigh, it inserts into the anterior aspect of the iliotibial tract.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "Lateral condyle of tibia (via iliotibial tract)",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle",
+    "quote": "The terminal insertion point lies on the lateral condyle of the tibia.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "Superior gluteal nerve (L4-S1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle",
+    "quote": "Superior gluteal nerve (L4, L5, S1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/",
+    "quote": "It is innervated by the superior gluteal nerve, like gluteus medius and minimus",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "It is positioned lateral to the hip joint, immediately beneath the skin",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "Due to its superficial position, this muscle is easily palpated.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle",
+    "quote": "This is usually performed at the area located halfway between the anterior superior iliac spine and the greater trochanter of femur.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "piriformis": [
@@ -2625,6 +3365,118 @@
    {
     "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
     "quote": "The piriformis laterally rotates the femur with hip extension and abducts the femur with hip flexion."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Originates from the anterior surface of the sacrum.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "originates from the anterior (front) surface of the sacrum by three fleshy digitations attached to the second, third, and fourth sacral vertebrae",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/piriformis-muscle",
+    "quote": "arises from the anterior surface of the sacrum, between the sacral foramina",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "It also arises from the superior margin of the greater sciatic notch, the gluteal surface of the ilium (near the posterior inferior iliac spine)",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/piriformis-muscle",
+    "quote": "often attaching to the gluteal surface of the ilium, close to the posterior inferior iliac spine",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/piriformis-muscle",
+    "quote": "It inserts onto the apex of the greater trochanter",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "insert onto the greater trochanter of the femur",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "Innervation : Nerve to piriformis.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "It is innervated by the piriformis nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "Piriformis syndrome occurs when the piriformis irritates the sciatic nerve, which enters the gluteal region beneath the muscle",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "causing pain in the buttocks and referred pain along the sciatic nerve",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_syndrome",
+    "quote": "Piriformis syndrome is a condition which is believed to result from nerve compression at the sciatic nerve by the piriformis muscle.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/piriformis-muscle",
+    "quote": "worsening of pain during sitting and when performing movements which increase tension in the piriformis muscle",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_syndrome",
+    "quote": "External tenderness near the greater sciatic notch Buttock pain Pain on any maneuver that increases piriformis muscle tension Pain aggravated on sitting",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/",
+    "quote": "The sciatic nerve enters the gluteal region directly inferior to the piriformis",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "In around 80% of the population, the sciatic nerve travels below the piriformis muscle.",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_muscle",
+    "quote": "In 17% of people, the piriformis muscle is pierced by parts or all of the sciatic nerve.",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_syndrome",
+    "quote": "Diagnosis is difficult as there is no definitive test.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Piriformis_syndrome",
+    "quote": "Other conditions that may present similarly include a herniated disc.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "iliotibial-tract": [
@@ -2659,6 +3511,96 @@
    {
     "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
     "quote": "The onset of iliotibial band syndrome occurs most commonly in cases of overuse."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "It originates at the anterolateral iliac tubercle portion of the external lip of the iliac crest",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/",
+    "quote": "extending from the iliac tubercle to the lateral tibial condyle",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "inserts at the lateral condyle of the tibia at Gerdy's tubercle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/",
+    "quote": "attaches to the lateral tibial condyle on the anterolateral (Gerdy) tubercle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_band_syndrome",
+    "quote": "including tenderness at the lateral femoral epicondyle, where the iliotibial band passes over the bone",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "Iliotibial band syndrome (ITBS or ITBFS, for iliotibial band friction syndrome) is a common thigh injury generally associated with running.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "The onset of iliotibial band syndrome occurs most commonly in cases of overuse.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_band_syndrome",
+    "quote": "ITB syndrome is most associated with long-distance running, cycling, weight-lifting, and with military training.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_band_syndrome",
+    "quote": "Pain is felt most commonly on the lateral aspect of the knee and is most intensive at 30 degrees of knee flexion.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "The most vulnerable range of knee flexion for this condition is at 30-40 degrees",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "the previously held belief was that the distal portion of the iliotibial band rubbed over a bursa, however this bursa was found not to exist",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "the theory that the iliotibial band needs to stretch has been questioned",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "in cadaveric studies under extreme load, the flexibility of the iliotibial band has been shown to be minimal",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "this is where the ITB crosses the lateral femoral epicondyle",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliotibial_tract",
+    "quote": "Until recent anatomical studies showed differently",
+    "field": "tips.clinical",
+    "item": 2
    }
   ],
   "iliopsoas": [
@@ -2689,6 +3631,110 @@
    {
     "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
     "quote": "It can cause pain in the low or mid back, SI joint, hip, groin, thigh, knee, or any combination."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle",
+    "quote": "the transverse processes of all of the lumbar vertebrae, the anterolateral surfaces of the bodies of T12-L4 vertebrae and the interposed intervertebral discs",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The psoas major originates along the outer surfaces of the vertebral bodies of T12 and L1 – L3 and their associated intervertebral discs.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "The deep part originates from the transverse processes of lumbar vertebrae L1–L5.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The iliacus originates in the iliac fossa of the pelvis.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliacus_muscle",
+    "quote": "arises from the iliac fossa on the interior side of the hip bone",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliacus_muscle",
+    "quote": "and also from the region of the anterior inferior iliac spine (AIIS)",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle",
+    "quote": "The iliopsoas finally converges into a tendon that inserts onto the lesser trochanter of the femur.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "The iliopsoas muscle joins to the femur at the lesser trochanter.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "Psoas can be palpated with active flexion of the hip.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "Care should be taken around the abdominal organs, especially the colon when palpating deeply.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "Iliopsoas muscle is a common site of bleeding in patients who are undergoing blood anticoagulation.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "Innervation of the psoas major is through the anterior rami of L1 to L3 nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle",
+    "quote": "The psoas major is innervated by the anterior rami of the lumbar spinal nerves",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle",
+    "quote": "the iliacus is innervated by the femoral nerve (which is composed of nerves from the anterior rami of L2 – L4)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle",
+    "quote": "femoral nerve (L2-L4)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "when one performs a sit-up that brings the torso (including the lower back) away from the ground and towards the front of the leg",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle",
+    "quote": "to pull the body towards the leg when the leg is fixed",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle",
+    "quote": "bilateral contraction of the psoas major produces a flexion of the trunk at the hip joint",
+    "field": "tips.training",
+    "item": 0
    }
   ],
   "sartorius": [

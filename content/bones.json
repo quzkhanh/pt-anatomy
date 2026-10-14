@@ -384,5 +384,91 @@
       "Distal phalanx of fourth finger of hand",
       "Distal phalanx of fifth finger of hand"
     ]
+  },
+  {
+    "id": "costal-cartilages-5-7",
+    "vi": "Sụn sườn 5–7",
+    "en": "Costal cartilages 5–7",
+    "objects": [
+      "Costal cartilage of fifth rib",
+      "Costal cartilage of sixth rib",
+      "Costal cartilage of seventh rib"
+    ]
+  },
+  {
+    "id": "costal-cartilages-7-12",
+    "vi": "Sụn sườn 7–12",
+    "en": "Costal cartilages 7–12",
+    "objects": [
+      "Costal cartilage of seventh rib",
+      "Costal cartilage of eighth rib",
+      "Costal cartilage of ninth rib",
+      "Costal cartilage of tenth rib"
+    ]
+  },
+  {
+    "id": "ribs-5-12",
+    "vi": "Xương sườn 5–12",
+    "en": "Ribs 5–12",
+    "objects": [
+      "Fifth rib",
+      "Sixth rib",
+      "Seventh rib",
+      "Eighth rib",
+      "Ninth rib",
+      "Tenth rib",
+      "Eleventh rib",
+      "Twelfth rib"
+    ]
+  },
+  {
+    "id": "ribs-10-12",
+    "vi": "Xương sườn 10–12",
+    "en": "Ribs 10–12",
+    "objects": [
+      "Tenth rib",
+      "Eleventh rib",
+      "Twelfth rib"
+    ]
+  },
+  {
+    "id": "vertebra-t12",
+    "vi": "Đốt sống ngực T12",
+    "en": "Vertebra T12",
+    "objects": [
+      "Vertebra T12"
+    ]
+  },
+  {
+    "id": "coccyx",
+    "vi": "Xương cụt",
+    "en": "Coccyx",
+    "objects": [
+      "Coccyx"
+    ]
+  },
+  {
+    "id": "femur",
+    "vi": "Xương đùi",
+    "en": "Femur",
+    "objects": [
+      "Femur"
+    ]
+  },
+  {
+    "id": "tibia",
+    "vi": "Xương chày",
+    "en": "Tibia",
+    "objects": [
+      "Tibia"
+    ]
+  },
+  {
+    "id": "xiphoid-process",
+    "vi": "Mỏm mũi kiếm",
+    "en": "Xiphoid process",
+    "objects": [
+      "Xiphoid process"
+    ]
   }
 ]

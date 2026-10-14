@@ -470,73 +470,173 @@
   {"id": "rectus-abdominis", "vi": "Cơ thẳng bụng", "en": "Rectus abdominis", "region": "core", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Rectus abdominis muscle"} ],
     "function": "Gập cột sống thắt lưng, kéo lồng ngực và khung chậu lại gần nhau như khi gập bụng; khi lồng ngực cố định thì kéo khung chậu nghiêng ra sau. Còn tham gia thở ra gắng sức. Là cơ chính trong các bài gập bụng (crunch).",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mào mu (từ củ mu đến đường lược) và khớp mu"}],
+    "insertion": [{"bones": ["xiphoid-process", "costal-cartilages-5-7"], "vi": "Mỏm mũi kiếm xương ức và sụn sườn 5–7"}],
+    "nerve": "Thần kinh ngực–bụng (T7–T11); có nguồn ghi thêm thần kinh dưới sườn (T12)",
+    "tips": {
+      "training": ["Khi lồng ngực cố định, như khi nâng chân–hông (leg-hip raise), cơ kéo khung chậu về phía lồng ngực (nghiêng khung chậu ra sau)."],
+      "palpation": ["Ở người cơ thẳng bụng phát triển tốt và ít mỡ, các giao thoa gân và đường trắng tạo hình “sáu múi” nhìn thấy được dưới da."],
+      "clinical": ["Tụ máu bao cơ thẳng bụng là máu tụ trong bao cơ, gây đau bụng, có hoặc không có khối; nguyên nhân gồm thuốc chống đông, ho, thai kỳ, phẫu thuật bụng và chấn thương."],
+      "breathing": ["Cơ góp phần vào thở ra gắng sức, ví dụ sau khi tập luyện hoặc ở người thở ra khó như trong khí phế thũng.", "Cùng các cơ bụng khác, cơ ép tạng bụng và tăng áp lực trong ổ bụng, ví dụ khi tập luyện hoặc nâng vật nặng."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"},
-      {"title": "Wikipedia – Rectus abdominis muscle", "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle"} ] },
+      {"title": "Wikipedia – Rectus abdominis muscle", "url": "https://en.wikipedia.org/wiki/Rectus_abdominis_muscle"},
+      {"title": "Kenhub – Rectus abdominis muscle", "url": "https://www.kenhub.com/en/library/anatomy/rectus-abdominis-muscle"},
+      {"title": "TeachMeAnatomy – The Anterolateral Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/"} ] },
   {"id": "external-oblique", "vi": "Cơ chéo bụng ngoài", "en": "External oblique", "region": "core", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "External abdominal oblique muscle"} ],
     "function": "Gập nghiêng thân về cùng bên và xoay thân về phía đối diện (cơ chéo bụng ngoài bên phải xoay thân sang trái). Kéo lồng ngực xuống và ép ổ bụng, làm tăng áp lực trong bụng. Ngược với cơ chéo bụng trong, vốn xoay thân về cùng bên.",
+    "origin": [{"bones": ["ribs-5-12"], "vi": "Mặt ngoài xương sườn 5–12"}],
+    "insertion": [{"bones": ["hip-bone"], "vi": "Nửa trước mào chậu và củ mu"}, {"bones": [], "vi": "Cân của cơ: góp phần tạo lớp trước bao cơ thẳng bụng, hai bên đan chéo nhau và bám vào đường trắng"}],
+    "nerve": "Thần kinh ngực–bụng (T7–T11) và thần kinh dưới sườn (T12)",
+    "tips": {
+      "clinical": ["Căng cơ chéo bụng (oblique strain) là chấn thương hay gặp ở bóng chày, nhất là người ném; ở cả người đánh bóng lẫn người ném, cơ chéo bụng ngoài ở bên dẫn (leading side) có thể bị ảnh hưởng."],
+      "breathing": ["Khi co hai bên, cùng cơ chéo bụng trong và cơ thẳng bụng gập thân ra trước, đồng thời làm tăng trương lực thành bụng và áp lực trong ổ bụng, một phần của các quá trình như thở ra gắng sức, đi tiểu, đại tiện và sinh đẻ.", "Cơ kéo ngực xuống và nén ổ bụng, làm tăng áp lực trong bụng như trong nghiệm pháp Valsalva."]
+    },
     "sources": [
       {"title": "Wikipedia – Abdominal external oblique muscle", "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"},
+      {"title": "TeachMeAnatomy – The Anterolateral Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/"},
+      {"title": "Kenhub – External abdominal oblique muscle", "url": "https://www.kenhub.com/en/library/anatomy/external-abdominal-oblique-muscle"} ] },
   {"id": "internal-oblique", "vi": "Cơ chéo bụng trong", "en": "Internal oblique", "region": "core", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Internal abdominal oblique muscle"} ],
     "function": "Gập nghiêng và xoay thân về cùng bên. Là cơ hô hấp phụ: ép tạng bụng đẩy cơ hoành lên, giúp thở ra.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Hai phần ba trước mào chậu"}, {"bones": [], "vi": "Mạc ngực–thắt lưng và phần ngoài dây chằng bẹn"}],
+    "insertion": [{"bones": ["ribs-10-12"], "vi": "Bờ dưới xương sườn 10–12"}, {"bones": [], "vi": "Đường trắng, qua cân của cơ (cân này góp phần tạo bao cơ thẳng bụng)"}, {"bones": ["hip-bone"], "vi": "Mào mu và đường lược xương mu, qua gân kết hợp (conjoint tendon, hợp với các thớ của cơ ngang bụng)"}],
+    "nerve": "Thần kinh ngực–bụng (T7–T11), thần kinh dưới sườn (T12), thần kinh chậu–hạ vị (L1) và thần kinh chậu–bẹn (L1)",
+    "tips": {
+      "training": ["Khi gập và xoay thân đưa vai trái về phía hông phải, cơ chéo bụng trong bên phải cùng cơ chéo bụng ngoài bên trái co lại."],
+      "clinical": ["Căng cơ chéo bụng (oblique strain) là chấn thương hay gặp ở bóng chày, nhất là người ném; ở cả người đánh bóng lẫn người ném, cơ chéo bụng trong ở bên theo sau (trailing side) có thể bị ảnh hưởng.", "Yếu cơ chéo bụng trong hay các cơ bụng khác làm tăng nguy cơ thoát vị thành bụng."],
+      "breathing": ["Là cơ hô hấp phụ: đối kháng với cơ hoành, co lại giúp giảm thể tích lồng ngực khi thở ra.", "Co hai bên, cơ ép tạng bụng và tăng áp lực trong ổ bụng, được dùng cho các động tác như thở ra gắng sức."]
+    },
     "sources": [
       {"title": "Wikipedia – Abdominal internal oblique muscle", "url": "https://en.wikipedia.org/wiki/Abdominal_internal_oblique_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"},
+      {"title": "Kenhub – Internal abdominal oblique muscle", "url": "https://www.kenhub.com/en/library/anatomy/internal-abdominal-oblique-muscle"},
+      {"title": "TeachMeAnatomy – The Anterolateral Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/"},
+      {"title": "Wikipedia – Abdominal external oblique muscle", "url": "https://en.wikipedia.org/wiki/Abdominal_external_oblique_muscle"} ] },
   {"id": "transversus-abdominis", "vi": "Cơ ngang bụng", "en": "Transversus abdominis", "region": "core", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Transversus abdominis muscle"} ],
     "function": "Thớ cơ chạy ngang quanh bụng như một chiếc đai, co lại để ép ổ bụng khi thở ra gắng sức, rặn và sinh nở. Giúp ổn định lồng ngực và khung chậu; là lớp cơ sâu nhất của thành bụng.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Môi trong mào chậu (phần trước)"}, {"bones": ["costal-cartilages-7-12"], "vi": "Mặt trong sụn sườn 7–12 (sụn của sáu xương sườn dưới)"}, {"bones": [], "vi": "Mạc ngực–thắt lưng và một phần ba ngoài dây chằng bẹn"}],
+    "insertion": [{"bones": ["xiphoid-process"], "vi": "Mỏm mũi kiếm xương ức"}, {"bones": [], "vi": "Đường trắng, qua một cân rộng góp phần tạo bao cơ thẳng bụng"}, {"bones": ["hip-bone"], "vi": "Mào mu và đường lược xương mu, qua gân kết hợp (conjoint tendon, cùng cơ chéo bụng trong)"}],
+    "nerve": "Thần kinh ngực–bụng (T7–T11), thần kinh dưới sườn (T12), thần kinh chậu–hạ vị (L1) và thần kinh chậu–bẹn (L1)",
+    "tips": {
+      "clinical": ["Vai trò của cơ ngang bụng trong đau thắt lưng còn tranh luận: một tổng quan hệ thống cho thấy rối loạn chức năng ban đầu của cơ không dự đoán được kết quả lâm sàng; một tổng quan khác cho thấy thay đổi chức năng hay hình thái cơ sau điều trị không phẫu thuật không liên quan đến mức giảm đau hay giảm hạn chế chức năng. Các phát hiện này thách thức việc nhấn mạnh can thiệp nhắm vào cơ ngang bụng để điều trị đau thắt lưng.", "Yếu cơ ngang bụng hay các cơ bụng khác làm tăng nguy cơ thoát vị thành bụng."],
+      "breathing": ["Cơ có thể co lại trong pha thở ra để đẩy khí ra khỏi lồng ngực.", "Cùng các cơ bụng bên khác, cơ ép tạng bụng và tăng áp lực trong ổ bụng, hỗ trợ các động tác như thở ra gắng sức."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"},
-      {"title": "Wikipedia – Transverse abdominal muscle", "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle"} ] },
+      {"title": "Wikipedia – Transverse abdominal muscle", "url": "https://en.wikipedia.org/wiki/Transverse_abdominal_muscle"},
+      {"title": "TeachMeAnatomy – The Anterolateral Abdominal Wall", "url": "https://teachmeanatomy.info/abdomen/muscles/abdominal-wall/"},
+      {"title": "Kenhub – Transversus abdominis muscle", "url": "https://www.kenhub.com/en/library/anatomy/transversus-abdominis-muscle"} ] },
 
   {"id": "gluteus-maximus", "vi": "Cơ mông lớn", "en": "Gluteus maximus", "region": "glutes", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Gluteus maximus muscle"} ],
     "function": "Cơ duỗi đùi chính tại khớp hông, đồng thời giúp xoay ngoài đùi; thớ trên còn giúp dạng đùi, thớ dưới giúp khép. Hoạt động mạnh khi cần lực như chạy, leo trèo, và mạnh nhất khi đứng thẳng dậy từ tư thế cúi người.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mặt mông (mặt sau) xương cánh chậu, ở sau đường mông sau"}, {"bones": ["sacrum", "coccyx"], "vi": "Phần dưới xương cùng và bờ bên xương cụt"}, {"bones": [], "vi": "Mạc ngực–thắt lưng, dây chằng cùng–ụ ngồi và cân cơ mông (mạc phủ cơ mông nhỡ)"}],
+    "insertion": [{"bones": [], "vi": "Dải chậu chày (qua lá gân của khoảng ba phần tư nông của cơ)"}, {"bones": ["femur"], "vi": "Lồi củ mông xương đùi (các thớ sâu của cơ)"}],
+    "nerve": "Thần kinh mông dưới (L5, S1, S2)",
+    "tips": {
+      "training": ["Một số bài nhắm vào cơ mông lớn (cùng các cơ khác ở đùi): hip thrust, cầu mông (glute bridge), duỗi hông bốn điểm (quadruped), kettlebell swing."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"},
-      {"title": "Wikipedia – Gluteus maximus", "url": "https://en.wikipedia.org/wiki/Gluteus_maximus"} ] },
+      {"title": "Wikipedia – Gluteus maximus", "url": "https://en.wikipedia.org/wiki/Gluteus_maximus"},
+      {"title": "Kenhub – Gluteus maximus muscle", "url": "https://www.kenhub.com/en/library/anatomy/gluteus-maximus-muscle"} ] },
   {"id": "gluteus-medius", "vi": "Cơ mông nhỡ", "en": "Gluteus medius", "region": "glutes", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Gluteus medius muscle"} ],
     "function": "Dạng đùi tại khớp hông và giữ khung chậu thăng bằng khi đứng một chân, không cho khung chậu bên đối diện xệ xuống lúc đi hay chạy. Phần trước giúp gập và xoay trong đùi; phần sau giúp duỗi và xoay ngoài.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mặt ngoài xương cánh chậu, giữa mào chậu và đường mông sau (ở trên) với đường mông trước (ở dưới)"}, {"bones": [], "vi": "Cân cơ mông (mạc riêng phủ mặt ngoài cơ)"}],
+    "insertion": [{"bones": ["femur"], "vi": "Mặt ngoài mấu chuyển lớn xương đùi"}],
+    "nerve": "Thần kinh mông trên (L4–S1)",
+    "tips": {
+      "clinical": ["Dấu hiệu Trendelenburg dương tính: khi đứng một chân, khung chậu sụp xuống ở bên chân không chống đỡ. Dấu này gặp ở người yếu hoặc liệt cơ dạng hông (cơ mông nhỡ và cơ mông bé).", "Tổn thương thần kinh mông trên làm liệt cơ mông nhỡ và cơ mông bé, khung chậu mất vững; rối loạn chức năng cơ mông nhỡ hoặc thần kinh mông trên có thể biểu hiện bằng dấu hiệu Trendelenburg dương tính."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"},
-      {"title": "Wikipedia – Gluteus medius", "url": "https://en.wikipedia.org/wiki/Gluteus_medius"} ] },
+      {"title": "Wikipedia – Gluteus medius", "url": "https://en.wikipedia.org/wiki/Gluteus_medius"},
+      {"title": "Wikipedia – Superior gluteal nerve", "url": "https://en.wikipedia.org/wiki/Superior_gluteal_nerve"},
+      {"title": "Wikipedia – Trendelenburg's sign", "url": "https://en.wikipedia.org/wiki/Trendelenburg%27s_sign"} ] },
   {"id": "gluteus-minimus", "vi": "Cơ mông bé", "en": "Gluteus minimus", "region": "glutes", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Gluteus minimus muscle"} ],
     "function": "Dạng và xoay trong đùi tại khớp hông; cùng cơ mông nhỡ giữ khung chậu thăng bằng khi đứng một chân. Thớ trước còn giúp gập hông.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mặt ngoài xương cánh chậu, giữa đường mông trước và đường mông dưới, và phía sau tới bờ khuyết ngồi lớn (nằm dưới cơ mông nhỡ)"}],
+    "insertion": [{"bones": ["femur"], "vi": "Mặt trước ngoài mấu chuyển lớn xương đùi"}, {"bones": [], "vi": "Một trẽ gân tỏa tới bao khớp hông"}],
+    "nerve": "Thần kinh mông trên (L4–S1)",
+    "tips": {
+      "clinical": ["Liệt cơ mông bé hoặc cơ mông nhỡ (ví dụ do liệt thần kinh mông trên) có thể gây khó dạng chân; người bệnh bù trừ khi đi bằng dáng đi Trendelenburg."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"},
-      {"title": "Wikipedia – Gluteus minimus", "url": "https://en.wikipedia.org/wiki/Gluteus_minimus"} ] },
+      {"title": "Wikipedia – Gluteus minimus", "url": "https://en.wikipedia.org/wiki/Gluteus_minimus"},
+      {"title": "Kenhub – Gluteus minimus muscle", "url": "https://www.kenhub.com/en/library/anatomy/gluteus-minimus-muscle"},
+      {"title": "Wikipedia – Trendelenburg gait", "url": "https://en.wikipedia.org/wiki/Trendelenburg_gait"} ] },
   {"id": "tensor-fasciae-latae", "vi": "Cơ căng mạc đùi", "en": "Tensor fasciae latae", "region": "glutes", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Tensor fasciae latae"} ],
     "function": "Hỗ trợ cơ mông nhỡ và cơ thắt lưng chậu gập và dạng đùi tại khớp hông, đồng thời giúp xoay trong đùi. Kéo căng dải chậu chày, nhờ đó giữ vững mặt ngoài khớp gối.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Môi ngoài phần trước mào chậu và gai chậu trước trên"}],
+    "insertion": [{"bones": [], "vi": "Dải chậu chày: vào giữa hai lá của dải, ở chỗ nối 1/3 giữa và 1/3 trên đùi"}, {"bones": ["tibia"], "vi": "Lồi cầu ngoài xương chày (điểm bám cuối, qua dải chậu chày)"}],
+    "nerve": "Thần kinh mông trên (L4–S1)",
+    "tips": {
+      "palpation": ["Cơ nằm nông, ngay dưới da ở phía ngoài khớp hông nên dễ sờ thấy, thường ở khoảng giữa gai chậu trước trên và mấu chuyển lớn."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"} ] },
+      {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"},
+      {"title": "Kenhub – Tensor fasciae latae muscle", "url": "https://www.kenhub.com/en/library/anatomy/tensor-fasciae-latae-muscle"},
+      {"title": "Wikipedia – Tensor fasciae latae muscle", "url": "https://en.wikipedia.org/wiki/Tensor_fasciae_latae_muscle"},
+      {"title": "TeachMeAnatomy – The Fascia Lata", "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/"} ] },
   {"id": "piriformis", "vi": "Cơ hình lê", "en": "Piriformis", "region": "glutes", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Piriformis muscle"} ],
     "function": "Nằm sâu dưới cơ mông lớn, thuộc nhóm cơ xoay ngoài đùi tại khớp hông. Xoay ngoài đùi khi hông duỗi; khi hông gập thì chuyển sang dạng đùi.",
+    "origin": [{"bones": ["sacrum"], "vi": "Mặt trước xương cùng, ba múi ở mức đốt cùng 2, 3, 4 (giữa các lỗ cùng)"}, {"bones": ["hip-bone"], "vi": "Bờ trên khuyết ngồi lớn và mặt mông xương cánh chậu, gần gai chậu sau dưới"}],
+    "insertion": [{"bones": ["femur"], "vi": "Đỉnh mấu chuyển lớn xương đùi"}],
+    "nerve": "Thần kinh cho cơ hình lê (nerve to piriformis)",
+    "tips": {
+      "clinical": ["Hội chứng cơ hình lê: được cho là do cơ chèn ép hoặc kích thích thần kinh tọa (đi vào vùng mông ngay dưới cơ), gây đau mông và đau lan dọc đường đi của thần kinh tọa.", "Triệu chứng gồm đau mông, ấn đau gần khuyết ngồi lớn, đau tăng khi ngồi hoặc khi làm động tác làm căng cơ hình lê. Chẩn đoán khó vì chưa có xét nghiệm xác định, và thoát vị đĩa đệm có thể biểu hiện tương tự.", "Cơ là mốc vùng mông: thần kinh tọa vào vùng mông ngay dưới cơ. Ở khoảng 80% người thần kinh đi dưới cơ, nhưng ở 17% người cơ bị thần kinh tọa (một phần hoặc toàn bộ) xuyên qua."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "Wikipedia – Piriformis muscle", "url": "https://en.wikipedia.org/wiki/Piriformis_muscle"} ] },
+      {"title": "Wikipedia – Piriformis muscle", "url": "https://en.wikipedia.org/wiki/Piriformis_muscle"},
+      {"title": "TeachMeAnatomy – The Gluteal Muscles", "url": "https://teachmeanatomy.info/lower-limb/muscles/gluteal-region/"},
+      {"title": "Kenhub – Piriformis muscle", "url": "https://www.kenhub.com/en/library/anatomy/piriformis-muscle"},
+      {"title": "Wikipedia – Piriformis syndrome", "url": "https://en.wikipedia.org/wiki/Piriformis_syndrome"} ] },
 
   {"id": "iliotibial-tract", "vi": "Dải chậu chày", "en": "Iliotibial tract", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Iliotibial tract"} ],
     "function": "Không phải cơ mà là một dải mô sợi dày gia cố mạc đùi, chạy từ mào chậu xuống mặt ngoài đầu trên xương chày (củ Gerdy). Cơ căng mạc đùi và một phần cơ mông lớn kéo căng dải này để giữ vững mặt ngoài khớp gối khi đi và chạy. Hội chứng dải chậu chày là chấn thương hay gặp ở người chạy bộ, thường do quá tải.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Củ chậu (phần trước ngoài của môi ngoài mào chậu)"}],
+    "insertion": [{"bones": ["tibia"], "vi": "Lồi cầu ngoài xương chày, ở củ Gerdy"}],
+    "tips": {
+      "palpation": ["Ấn đau ở mỏm trên lồi cầu ngoài xương đùi, nơi dải đi qua xương, là một dấu hiệu khi khám hội chứng dải chậu chày."],
+      "clinical": ["Hội chứng dải chậu chày là chấn thương do quá tải hay gặp, thường gắn với chạy và hay khởi phát do quá tải; liên quan nhiều nhất với chạy đường dài, đạp xe, cử tạ và huấn luyện quân sự.", "Đau thường ở mặt ngoài gối, rõ nhất khi gối gập khoảng 30 độ; vùng gập gối dễ bị nhất là 30–40 độ, nơi dải đi qua mỏm trên lồi cầu ngoài xương đùi.", "Cơ chế còn tranh luận: quan niệm trước đây cho rằng đầu xa của dải cọ qua một túi thanh dịch, nhưng các nghiên cứu giải phẫu gần đây cho thấy túi này không tồn tại; giả thuyết dải cần được kéo giãn cũng bị đặt nghi vấn, vì trong nghiên cứu trên xác dưới tải cực đại, độ linh hoạt của dải rất nhỏ."]
+    },
     "sources": [
       {"title": "Iliotibial tract – Wikipedia", "url": "https://en.wikipedia.org/wiki/Iliotibial_tract"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – The Fascia Lata", "url": "https://teachmeanatomy.info/lower-limb/muscles/fascia-lata/"},
+      {"title": "Wikipedia – Iliotibial band syndrome", "url": "https://en.wikipedia.org/wiki/Iliotibial_band_syndrome"} ] },
   {"id": "iliopsoas", "vi": "Cơ thắt lưng chậu", "en": "Iliopsoas", "region": "legs", "superficial": false, "status": "draft",
     "parts": [
       {"id": "iliacus", "vi": "cơ chậu", "object": "Iliacus muscle"},
       {"id": "psoas-major", "vi": "cơ thắt lưng lớn", "object": "Psoas major"} ],
     "function": "Cơ gấp hông mạnh nhất: kéo đùi ra trước – lên (nâng gối) tại khớp hông, quan trọng khi đứng, đi và chạy. Gồm cơ thắt lưng lớn (bám từ các đốt sống thắt lưng) và cơ chậu, hai cơ hợp lại bám vào mấu chuyển bé xương đùi. Cơ ngắn và căng có thể gây đau lưng dưới, hông hoặc háng.",
+    "origin": [{"bones": ["vertebra-t12", "lumbar-vertebrae"], "vi": "Cơ thắt lưng lớn: mặt bên thân các đốt sống từ T12 xuống thắt lưng (nguồn ghi tới L3 hoặc L4) cùng đĩa gian đốt kế cận, và mỏm ngang các đốt sống thắt lưng"}, {"bones": ["hip-bone"], "vi": "Cơ chậu: hố chậu (mặt trong xương chậu), và vùng gai chậu trước dưới"}],
+    "insertion": [{"bones": ["femur"], "vi": "Mấu chuyển bé xương đùi"}],
+    "nerve": "Cơ thắt lưng lớn: nhánh trước của các dây thần kinh sống thắt lưng L1–L3; cơ chậu: thần kinh đùi (L2–L4)",
+    "tips": {
+      "training": ["Khi chân cố định, nhóm gập hông (gồm cơ thắt lưng chậu) kéo thân về phía chân, như khi gập bụng kiểu sit-up nâng cả lưng dưới khỏi sàn; cơ thắt lưng lớn co hai bên gập thân tại khớp hông."],
+      "palpation": ["Cơ thắt lưng lớn có thể sờ được khi gập hông chủ động; sờ sâu cần thận trọng vì gần các tạng bụng, nhất là đại tràng."],
+      "clinical": ["Cơ thắt lưng chậu là vị trí chảy máu thường gặp ở người đang dùng thuốc chống đông."]
+    },
     "sources": [
       {"title": "Iliopsoas – Wikipedia", "url": "https://en.wikipedia.org/wiki/Iliopsoas_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "Kenhub – Iliopsoas muscle", "url": "https://www.kenhub.com/en/library/anatomy/iliopsoas-muscle"},
+      {"title": "Wikipedia – Psoas major muscle", "url": "https://en.wikipedia.org/wiki/Psoas_major_muscle"},
+      {"title": "Wikipedia – Iliacus muscle", "url": "https://en.wikipedia.org/wiki/Iliacus_muscle"} ] },
   {"id": "sartorius", "vi": "Cơ may", "en": "Sartorius", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Sartorius muscle"} ],
     "function": "Cơ dài nhất cơ thể, bắc qua cả khớp hông và khớp gối: tại hông gấp, dạng nhẹ và xoay ngoài đùi; tại gối gấp cẳng chân, và khi gối đang gập thì xoay trong cẳng chân. Các động tác đều yếu nên chủ yếu là cơ hỗ trợ; tư thế ngồi xếp bằng thể hiện đủ các động tác này. Gân cơ may cùng gân cơ thon và cơ bán gân bám vào mặt trong đầu trên xương chày, nơi có thể viêm túi thanh dịch do quá tải.",
