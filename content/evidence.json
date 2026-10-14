@@ -3773,6 +3773,58 @@
    {
     "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
     "quote": "pes anserine bursitis, an inflammatory condition of the medial portion of the knee"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the anterior superior iliac spine, and attaches to the superior, medial surface of the tibia.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "part of the notch between the anterior superior iliac spine and anterior inferior iliac spine",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "join the tendons of the gracilis and semitendinosus muscles in the pes anserinus, where it inserts into the superomedial surface of the tibia",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the anterior superior iliac spine, and attaches to the superior, medial surface of the tibia.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "the sartorius is innervated by the femoral nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Innervation: Femoral nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "pes anserine bursitis, an inflammatory condition of the medial portion of the knee",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "This condition usually occurs in athletes from overuse and is characterized by pain, swelling and tenderness.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sartorius_muscle",
+    "quote": "The pes anserinus involves the tendons of the gracilis, semitendinosus, and sartorius muscles; these tendons attach onto the anteromedial proximal tibia.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "quadriceps-femoris": [
@@ -3799,6 +3851,94 @@
    {
     "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
     "quote": "The quadriceps, specifically the vastus medialis, play the important role of stabilizing the patella and the knee joint during gait."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "One head originates from the anterior inferior iliac spine and other from the supra-acetabular groove",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "The rectus femoris arises from the anterior inferior iliac spine and from the superior edge of the acetabulum.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the greater trochanter and the lateral lip of linea aspera of the femur.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the anterior and lateral surfaces of the femoral shaft.",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the intertrochanteric line and medial lip of the linea aspera of the femur.",
+    "field": "origin",
+    "item": 3
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "The four muscles collectively insert onto the patella via the quadriceps tendon.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "all four parts of the quadriceps muscle ultimately insert into the tuberosity of the tibia via the patella",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "The patella, in turn, is attached to the tibial tuberosity by the patella ligament.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "The quadriceps femoris is innervated by the femoral nerve, which originates from L2, L3, L4.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "They are collectively innervated by the femoral nerve (L2-L4)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "The quadriceps femoris muscle can be used to test the femoral nerve in cases of suspected nerve palsy.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "This is performed by positioning the patient supine, with the knee slightly flexed.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "The patient is asked to extend the leg (at the knee) against resistance.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "If the femoral nerve is damaged, contraction of the quadriceps femoris will be absent.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle",
+    "quote": "The quadriceps femoris muscle is the most common site of myositis ossificans.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "biceps-femoris": [
@@ -3825,6 +3965,100 @@
    {
     "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
     "quote": "Avulsion of the biceps femoris tendon is common in sports that require explosive bending of the knee as seen in sprinting."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "The long head originates from the ischial tuberosity of the pelvis.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "This is a common tendon origin with the semitendinosus muscle, and from the lower part of the sacrotuberous ligament.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "it is important to highlight that this is a shared tendon with both the semitendinosus muscle and sacrotuberous ligament",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "short head: linea aspera of femur (lateral lip), lateral supracondylar line of femur",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "The short head originates from the linea aspera on posterior surface of the femur.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "the round common tendon that inserts to the lateral aspect of the head of the fibula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Together, the heads form a tendon, which inserts into the head of the fibula.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "there is a second small insertional attachment by a small tendon slip into the lateral condyle of the tibia",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "a few others spread to the adjacent tibial condyle",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Long head innervated by the tibial part of the sciatic nerve, whereas the short head is innervated by the common fibular part of the sciatic nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "the long head receives innervation from it's tibial division, while the short is innervated by the common fibular division",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "When the knee is flexed, the biceps femoris tendon can be easily palpated in the posterolateral aspect of the knee.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "The common tendon of the two heads can be palpated laterally within the popliteal fossa",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "the nerve travels briefly along the medial border of biceps femoris, adhering to the tendon",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle",
+    "quote": "this is an important clinical relation when considering injury or performing surgery procedures in this region",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle",
+    "quote": "the common fibular (peroneal) nerve descends along its medial border",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "semitendinosus": [
@@ -3851,6 +4085,82 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "These are the biceps femoris , semitendinosus , and semimembranosus ."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Originates from the ischial tuberosity of the pelvis and attaches to the medial surface of the tibia.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "by a tendon common to it and the long head of the biceps femoris",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle",
+    "quote": "is inserted into the upper part of the medial surface of the body of the tibia",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle",
+    "quote": "proximal end of tibia below medial condyle (via pes anserinus)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Innervation: Tibial part of the sciatic nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle",
+    "quote": "tibial division of sciatic nerve (L5-S2)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle",
+    "quote": "Its tendon can be palpated when the knee is flexed against resistance",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle",
+    "quote": "as a most lateral and posterior tendon of the superomedial border",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "In rare cases (predominantly adolescents), sudden and forceful contraction of the hamstrings can result in an avulsion fracture of the ischial tuberosity.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Patients with this injury often experience a sudden pain in the posterior thigh, followed by an inability to walk.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Hamstring",
+    "quote": "During sprinting, a hamstring injury may occur from excessive muscle strain during eccentric contraction late in the leg swing phase.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Hamstring",
+    "quote": "The biceps femoris is most commonly injured, followed by semitendinosus.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Hamstring",
+    "quote": "Semimembranosus injury is rare.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "semimembranosus": [
@@ -3873,6 +4183,81 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "The posterior compartment of the thigh includes muscles that flex the leg and extend the thigh."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "originates by a thick tendon from the superolateral aspect of the ischial tuberosity",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "superolateral impression of ischial tuberosity",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Originates from the ischial tuberosity (more superiorly than the origin of the semitendinosus and biceps femoris).",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Attaches to the medial tibial condyle.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "medial condyle of tibia",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "tibial division of sciatic nerve (L5 - S2)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/",
+    "quote": "Innervation: Tibial part of the sciatic nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle",
+    "quote": "The semimembranosus is innervated by the tibial part of the sciatic nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "doing seated or lying leg curls or dumbbell lunges, notice that you are working out semimembranosus",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "semimembranosus tendinopathy is a possible cause of chronic knee pain that often goes undiagnosed as it is poorly understood",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "overuse injuries in cyclists and marathon runners or as a part of age-related degeneration in older individuals",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "Patients may complain of an insidious pain to the posteromedial part of the knee",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle",
+    "quote": "palpation over the insertion of semimembranosus tendon and on internal rotation and flexion at the knee",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "adductor-longus": [
@@ -3891,6 +4276,63 @@
    {
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/",
     "quote": "The CAE also produced peak EMG of the adductor longus of 108% on the dominant leg"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_longus_muscle",
+    "quote": "arises from the body of pubis inferior to pubic crest and lateral to pubic symphysis",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-longus-muscle",
+    "quote": "body of pubis, inferior to pubic crest and lateral to the pubic symphysis",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_longus_muscle",
+    "quote": "it is inserted into the middle third of the medial lip of the linea aspera",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-longus-muscle",
+    "quote": "middle third of linea aspera of femur (medial lip)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Innervation: Obturator nerve (L2-L4).",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-longus-muscle",
+    "quote": "obturator nerve (L2-L4)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_longus_muscle",
+    "quote": "innervated by the anterior division (sometimes the posterior division) of the obturator nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Strain of the adductor muscles is the underlying cause of what is colloquially known as",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "The proximal part of the muscle is most commonly affected, tearing near their bony attachments in the pelvis.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Groin injuries usually occur in sports that require explosive movements or extreme stretching.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "adductor-brevis": [
@@ -3909,6 +4351,40 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "The muscles in the medial compartment of the thigh are responsible for adducting the femur at the hip."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "arises by a narrow origin from the outer surfaces of the body of the pubis and inferior ramus of the pubis",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Originates from the body of pubis and inferior pubic rami.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Attaches to the linea aspera on the posterior surface of the femur (proximal to the adductor longus attachment).",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "to be inserted into the upper part of the linea aspera",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle",
+    "quote": "The adductor brevis is innervated dually by the anterior and posterior branches of the obturator nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Innervation: Obturator nerve (L2-L4).",
+    "field": "nerve"
    }
   ],
   "adductor-magnus": [
@@ -3927,6 +4403,69 @@
    {
     "url": "https://en.wikipedia.org/wiki/Squat_(exercise)",
     "quote": "The primary agonist muscles used during the squat are the quadriceps femoris, the adductor magnus, and the gluteus maximus."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Adductor – Originates from the inferior rami of the pubis and the rami of ischium, attaches to the linea aspera of the femur.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-magnus",
+    "quote": "adductor part: inferior pubic ramus, ischial ramus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Hamstring part – Originates from the ischial tuberosity, attaches to the adductor tubercle and medial supracondylar line of the femur.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "the portion arising from the tuberosity of the ischium is called the ischiocondylar portion",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Adductor – Originates from the inferior rami of the pubis and the rami of ischium, attaches to the linea aspera of the femur.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-magnus",
+    "quote": "adductor part: gluteal tuberosity, linea aspera (medial lip), medial supracondylar line",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Hamstring part – Originates from the ischial tuberosity, attaches to the adductor tubercle and medial supracondylar line of the femur.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "inserted into the adductor tubercle on the medial condyle of the femur",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle",
+    "quote": "the adductor portion is innervated by the posterior division of the obturator nerve while the hamstring portion is innervated by the sciatic nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/adductor-magnus",
+    "quote": "the adductor part is innervated by the posterior division of the obturator nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Hamstring part – Tibial component of the sciatic nerve (L4-S3).",
+    "field": "nerve"
    }
   ],
   "gracilis": [
@@ -3941,6 +4480,64 @@
    {
     "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
     "quote": "The muscle adducts, medially rotates (with hip flexion), laterally rotates, and flexes the hip as above, and also aids in flexion of the knee."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "Originates from the inferior rami of the pubis and the body of the pubis.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "anterior body of pubis, inferior pubic ramus, ischial ramus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "medial surface of proximal tibia (via pes anserinus)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
+    "quote": "inserts into the upper part of the medial surface of the body of the tibia, below the condyle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gracilis_muscle",
+    "quote": "The obturator nerve innervates the gracilis muscle",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/",
+    "quote": "All the medial thigh muscles are innervated by the obturator nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "the patient needs to flex the leg against resistance and rotate it medially",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "This combination evidentiates the location of the gracilis tendon superomedially to the popliteal fossa of the knee.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "It is the most medial and anterior, or upper, tendon of this region.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle",
+    "quote": "The gracilis can be palpated all the way to its origin if the tendon is traced proximally.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "pectineus": [
@@ -3959,6 +4556,52 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "The pectineus is located in the femoral triangle"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Originates from the pectineal line of the pubis bone.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "arises from the pectineal line of the pubis",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "It inserts onto the pectineal line on the posterior aspect of the femur, immediately inferior to the lesser trochanter.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "the pectineal line of the femur which leads from the lesser trochanter to the linea aspera",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/",
+    "quote": "Innervation: Femoral nerve. May also receive a branch from the obturator nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/pectineus-muscle",
+    "quote": "femoral nerve (L2, L3) (obturator nerve (L2, L3))",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "can be injured in isolation, although rarely",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectineus_muscle",
+    "quote": "more commonly the pectineus muscle is injured in association with adductor longus avulsions",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "gastrocnemius": [
@@ -3981,6 +4624,88 @@
    {
     "url": "https://en.wikipedia.org/wiki/Calf_raise",
     "quote": "Pushing with the foot with a straighter knee stretches the gastrocnemius more, these movements incorporate it better."
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "The lateral head originates from the lateral femoral condyle.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "The lateral head originates from the lateral condyle of the femur",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "The medial head originates from the medial femoral condyle.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "the medial head originates from the medial condyle of the femur",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "forms a common tendon with the soleus muscle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "inserts onto the posterior surface of the calcaneus, or heel bone",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/gastrocnemius-muscle",
+    "quote": "posterior surface of the calcaneus via the calcaneal tendon",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "Innervation: Tibial nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "the tibial nerve eventually separates from the sciatic nerve and innervates the gastrocnemius muscle",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "Pushing with the foot with a straighter knee stretches the gastrocnemius more, these movements incorporate it better.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "They are frequently done on a raised surface with the heel lower than the toes to allow a greater stretch on the working muscles.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "A severe ankle dorsiflexion force may result in a medial gastrocnemius strain (MGS) injury of the muscle",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle",
+    "quote": "commonly referred to as a \"torn\" or \"strained\" calf muscle",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle",
+    "quote": "gastrocnemius tear, which is usually a sudden injury caused by quick movements, such as jumping and sprinting",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "soleus": [
@@ -4015,6 +4740,64 @@
    {
     "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
     "quote": "The gastrocnemius originates on the femur, so bending the leg limits its effective tension."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle",
+    "quote": "soleal line, medial border of tibia, head of fibula, posterior border of fibula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "Originates from the soleal line of the tibia and proximal fibula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "The muscle converges with the fibres of the gastrocnemius to form the calcaneal tendon, which inserts onto the calcaneus.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle",
+    "quote": "posterior surface of calcaneus (via calcaneal tendon)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "Innervation: Tibial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Soleus_muscle",
+    "quote": "The soleus is innervated by the tibial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "This lessens the stretch in the gastrocnemius (a knee flexor), so the movement is done to emphasize the soleus.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Calf_raise",
+    "quote": "This exercise is more commonly used for the soleus since the gastrocnemius does not work as much in a bent knee position.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle",
+    "quote": "Injuries occur typically in runners due to fatigue and overtraining.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle",
+    "quote": "Athletes specialized in long-distance and endurance running or walking, which require constant soleus action, are at higher risk of injury.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "calcaneal-tendon": [
@@ -4037,6 +4820,84 @@
    {
     "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
     "quote": "Abnormalities of the Achilles tendon include inflammation (Achilles tendinitis), degeneration, rupture"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "It serves to attach the plantaris, gastrocnemius (calf) and soleus muscles to the calcaneus (heel) bone.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "Distally, the muscle belly converges with the soleus muscle to form the calcaneal tendon.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "It blends with the calcaneal tendon and inserts onto the calcaneus.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "The Achilles tendon connects the gastrocnemius and soleus muscles to the calcaneal tuberosity on the calcaneus (heel bone).",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "finally, the tendon passes over the ankle joint and inserts onto the posterior surface of calcaneus",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "The patient will be unable to plantarflex the foot against resistance",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "Patient lies in the prone position or kneels on the chair with their leg muscles relaxed.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "their feet should be over the edge of the table or chair",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "The examiner then squeezes the calf muscles.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "Normal response to the test is the plantar flexion of the foot.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon",
+    "quote": "The absence of plantar flexion is a positive Thompson's sign and indicates an Achilles tendon rupture.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "It commonly occurs as a result of overuse such as running.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Achilles_tendon",
+    "quote": "The pain is typically worse at the start of exercise and decreases thereafter.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "tibialis-anterior": [
@@ -4059,6 +4920,70 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "all contribute to raising the front of the foot when they contract."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle",
+    "quote": "lateral tibial condyle",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle",
+    "quote": "superior two thirds of the lateral surface of tibia",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle",
+    "quote": "anterior surface of interosseous membrane",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/",
+    "quote": "Originates from the lateral surface of the tibia and attaches to the medial cuneiform and the base of metatarsal I.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/",
+    "quote": "Originates from the lateral surface of the tibia and attaches to the medial cuneiform and the base of metatarsal I.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle",
+    "quote": "medial cuneiform bone, base of metatarsal bone 1",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/",
+    "quote": "Innervation: Deep fibular nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle",
+    "quote": "The tibialis anterior muscle is innervated by the deep fibular nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/",
+    "quote": "Footdrop is a clinical sign that refers to an inability to dorsiflex the foot at the ankle joint",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/",
+    "quote": "It indicates paralysis or weakness of the muscles in the anterior compartment of the leg, and typically occurs as a consequence of damage to the common fibular nerve",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Foot_drop",
+    "quote": "Foot drop can be caused by nerve damage alone or by muscle or spinal cord trauma, abnormal anatomy, toxins, or disease.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "tibialis-posterior": [
@@ -4085,6 +5010,76 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs",
     "quote": "There are four deep muscles in the posterior compartment of the leg as well"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "Originates from the posterior surface and interosseous membrane of the tibia and fibula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-posterior-muscle",
+    "quote": "posterior surface of tibia, posterior surface of fibula and interosseous membrane",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The main portion inserts into the tuberosity of the navicular bone.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/tibialis-posterior-muscle",
+    "quote": "tuberosity of navicular bone",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The smaller portion inserts into the plantar surface of the medial cuneiform",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The plantar portion inserts into the bases of the second, third and fourth metatarsals, the intermediate (second) and lateral (third) cuneiforms and the cuboid.",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The recurrent portion inserts into the sustentaculum tali of the calcaneus.",
+    "field": "insertion",
+    "item": 3
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/",
+    "quote": "They are innervated by the tibial nerve (a branch of the sciatic nerve).",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "The tibialis posterior muscle is supplied by the tibial nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Posterior_tibial_tendon_dysfunction",
+    "quote": "It is a progressive disease that has four stages",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Posterior_tibial_tendon_dysfunction",
+    "quote": "is the most common cause of adult flatfoot",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle",
+    "quote": "It involves inflammation or tearing of the posterior tibial tendon",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "fibularis-longus": [
@@ -4111,6 +5106,63 @@
    {
     "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
     "quote": "Together, the fibularis muscles help to steady the leg upon the foot, especially in standing on one leg."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "arises from the head and upper two-thirds of the lateral, or outward, surface of the fibula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/peroneus-longus-muscle",
+    "quote": "head of fibula, proximal 2/3 of lateral surface of fibula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/",
+    "quote": "The tendon crosses under the foot, and attaches to the bones on the medial side, namely the medial cuneiform and base of metatarsal I.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "the muscle becomes a tendon that wraps around and behind the lateral malleolus of the ankle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "then continues under the foot to attach to the medial cuneiform and first metatarsal",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/",
+    "quote": "Innervation: Superficial fibular (peroneal) nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "which arises from the fifth lumbar and first sacral roots of the spinal cord",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/peroneus-longus-muscle",
+    "quote": "superficial fibular nerve (L5, S1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/",
+    "quote": "it can be located using the fibularis longus as an anatomical landmark",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_longus",
+    "quote": "there is a gap through which the common fibular nerve passes to the front of the leg",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "fibularis-brevis": [
@@ -4133,6 +5185,81 @@
    {
     "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
     "quote": "An inversion sprain of the foot may pull the tendon such that it avulses the tuberosity at the base of the fifth metatarsal."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "arises from the lower two-thirds of the lateral, or outward, surface of the fibula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "distal 2/3 of the lateral surface of fibula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "it inserts into the tuberosity at the base of the fifth metatarsal on its lateral side",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/",
+    "quote": "The tendon then attaches to a tubercle on the 5th metatarsal.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/",
+    "quote": "Innervation: Superficial fibular (peroneal) nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Fibularis_brevis",
+    "quote": "The fibularis brevis is supplied by the superficial fibular (peroneal) nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "superficial fibular nerve (L5, S1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "The location of the fibularis brevis tendon renders it susceptible to injury.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "it is exposed to shear stress while gliding between the lateral malleolus and the tendon of fibularis longus",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "If the foot becomes over-inverted, the excess downward force will be applied to the lateral part of the foot, causing tears or rupture of fibularis brevis tendon.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "These injuries are seen among basketball, tennis and football (NFL) players.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "Microtears in the fibularis brevis tendon can over time result in fibular (peroneal) tendonitis.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle",
+    "quote": "This is often characterized by pain and swelling to the posterolateral part of the ankle and foot.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ]
  },

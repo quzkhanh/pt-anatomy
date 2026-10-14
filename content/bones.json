@@ -470,5 +470,95 @@
     "objects": [
       "Xiphoid process"
     ]
+  },
+  {
+    "id": "fibula",
+    "vi": "Xương mác",
+    "en": "Fibula",
+    "objects": [
+      "Fibula"
+    ]
+  },
+  {
+    "id": "patella",
+    "vi": "Xương bánh chè",
+    "en": "Patella",
+    "objects": [
+      "Patella"
+    ]
+  },
+  {
+    "id": "calcaneus",
+    "vi": "Xương gót",
+    "en": "Calcaneus",
+    "objects": [
+      "Calcaneus"
+    ]
+  },
+  {
+    "id": "navicular",
+    "vi": "Xương ghe",
+    "en": "Navicular bone",
+    "objects": [
+      "Navicular bone"
+    ]
+  },
+  {
+    "id": "medial-cuneiform",
+    "vi": "Xương chêm trong",
+    "en": "Medial cuneiform bone",
+    "objects": [
+      "Medial cuneiform bone"
+    ]
+  },
+  {
+    "id": "intermediate-cuneiform",
+    "vi": "Xương chêm giữa",
+    "en": "Intermediate cuneiform bone",
+    "objects": [
+      "Intermediate cuneiform bone"
+    ]
+  },
+  {
+    "id": "lateral-cuneiform",
+    "vi": "Xương chêm ngoài",
+    "en": "Lateral cuneiform bone",
+    "objects": [
+      "Lateral cuneiform bone"
+    ]
+  },
+  {
+    "id": "cuboid",
+    "vi": "Xương hộp",
+    "en": "Cuboid bone",
+    "objects": [
+      "Cuboid bone"
+    ]
+  },
+  {
+    "id": "first-metatarsal",
+    "vi": "Xương bàn chân I",
+    "en": "First metatarsal bone",
+    "objects": [
+      "First metatarsal bone"
+    ]
+  },
+  {
+    "id": "metatarsals-2-4",
+    "vi": "Xương bàn chân II–IV",
+    "en": "Second to fourth metatarsal bones",
+    "objects": [
+      "Second metatarsal bone",
+      "Third metatarsal bone",
+      "Fourth metatarsal bone"
+    ]
+  },
+  {
+    "id": "fifth-metatarsal",
+    "vi": "Xương bàn chân V",
+    "en": "Fifth metatarsal bone",
+    "objects": [
+      "Fifth metatarsal bone"
+    ]
   }
 ]

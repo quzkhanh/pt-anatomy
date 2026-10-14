@@ -640,9 +640,16 @@
   {"id": "sartorius", "vi": "Cơ may", "en": "Sartorius", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Sartorius muscle"} ],
     "function": "Cơ dài nhất cơ thể, bắc qua cả khớp hông và khớp gối: tại hông gấp, dạng nhẹ và xoay ngoài đùi; tại gối gấp cẳng chân, và khi gối đang gập thì xoay trong cẳng chân. Các động tác đều yếu nên chủ yếu là cơ hỗ trợ; tư thế ngồi xếp bằng thể hiện đủ các động tác này. Gân cơ may cùng gân cơ thon và cơ bán gân bám vào mặt trong đầu trên xương chày, nơi có thể viêm túi thanh dịch do quá tải.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Gai chậu trước trên và một phần khuyết giữa gai chậu trước trên với gai chậu trước dưới"}],
+    "insertion": [{"bones": ["tibia"], "vi": "Phần trên mặt trong xương chày, tại chân ngỗng (pes anserinus) cùng gân cơ thon và cơ bán gân"}],
+    "nerve": "Thần kinh đùi",
+    "tips": {
+      "clinical": ["Viêm túi thanh dịch chân ngỗng (pes anserine bursitis) là tình trạng viêm ở phần trong của gối, thường gặp ở vận động viên do quá tải, biểu hiện đau, sưng và đau khi ấn. Chân ngỗng gồm gân cơ thon, cơ bán gân và cơ may, cùng bám vào phần trước trong đầu trên xương chày."]
+    },
     "sources": [
       {"title": "Sartorius muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Sartorius_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Anterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/"} ] },
   {"id": "quadriceps-femoris", "vi": "Cơ tứ đầu đùi", "en": "Quadriceps femoris", "region": "legs", "superficial": true, "status": "draft",
     "parts": [
       {"id": "rectus-femoris", "vi": "cơ thẳng đùi", "object": "Rectus femoris muscle"},
@@ -650,101 +657,232 @@
       {"id": "vastus-medialis", "vi": "cơ rộng trong", "object": "Vastus medialis muscle"},
       {"id": "vastus-intermedius", "vi": "cơ rộng giữa", "object": "Vastus intermedius muscle", "superficial": false} ],
     "function": "Nhóm bốn cơ là cơ duỗi gối duy nhất, đồng thời giữ vững khớp gối; rất quan trọng khi đi, chạy, nhảy và squat. Cơ thẳng đùi bám lên xương chậu nên còn gấp hông; cả bốn cơ chung một gân bám vào xương bánh chè rồi tiếp tục thành dây chằng bánh chè xuống lồi củ chày. Cơ rộng trong đặc biệt góp phần giữ vững xương bánh chè khi đi.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Cơ thẳng đùi: gai chậu trước dưới và vùng trên ổ cối của xương chậu (nguồn gọi là rãnh trên ổ cối hoặc bờ trên ổ cối)"}, {"bones": ["femur"], "vi": "Cơ rộng ngoài: mấu chuyển lớn và môi ngoài đường ráp xương đùi"}, {"bones": ["femur"], "vi": "Cơ rộng giữa: mặt trước và mặt ngoài thân xương đùi"}, {"bones": ["femur"], "vi": "Cơ rộng trong: đường liên mấu chuyển và môi trong đường ráp xương đùi"}],
+    "insertion": [{"bones": ["patella"], "vi": "Xương bánh chè, qua gân chung của bốn cơ (gân cơ tứ đầu đùi)"}, {"bones": ["tibia"], "vi": "Lồi củ chày, qua xương bánh chè và dây chằng bánh chè (gân bánh chè)"}],
+    "nerve": "Thần kinh đùi (L2–L4)",
+    "tips": {
+      "clinical": ["Cơ tứ đầu đùi dùng để thử thần kinh đùi khi nghi liệt thần kinh đùi: người bệnh nằm ngửa, gối hơi gập, duỗi gối chống lại lực cản; nếu thần kinh đùi tổn thương thì cơ không co.", "Cơ tứ đầu đùi là vị trí thường gặp nhất của viêm cơ cốt hóa (myositis ossificans)."]
+    },
     "sources": [
       {"title": "Quadriceps femoris muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Quadriceps_femoris_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Anterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/"} ] },
   {"id": "biceps-femoris", "vi": "Cơ nhị đầu đùi", "en": "Biceps femoris", "region": "legs", "superficial": true, "status": "draft",
     "parts": [
       {"id": "long", "vi": "đầu dài", "object": "Long head of biceps femoris"},
       {"id": "short", "vi": "đầu ngắn", "object": "Short head of biceps femoris", "superficial": false} ],
     "function": "Cả hai đầu đều gấp gối; đầu dài bám từ xương chậu nên còn duỗi hông, còn đầu ngắn chỉ gấp gối. Khi gối hơi gập, cơ xoay cẳng chân nhẹ ra ngoài. Gân cơ hay bị giật đứt ở các môn cần gập gối bùng nổ như chạy nước rút.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Đầu dài: ụ ngồi, chung gân gốc với cơ bán gân; ngoài ra từ phần dưới dây chằng cùng–ụ ngồi (sacrotuberous)"}, {"bones": ["femur"], "vi": "Đầu ngắn: môi ngoài đường ráp và đường trên lồi cầu ngoài của xương đùi"}],
+    "insertion": [{"bones": ["fibula"], "vi": "Mặt ngoài chỏm xương mác (gân chung của hai đầu)"}, {"bones": ["tibia"], "vi": "Một sợi gân nhỏ bám thêm vào lồi cầu ngoài xương chày"}],
+    "nerve": "Đầu dài do phần chày của thần kinh ngồi; đầu ngắn do phần mác chung của thần kinh ngồi",
+    "tips": {
+      "palpation": ["Khi gối gập, gân cơ nhị đầu đùi dễ sờ thấy ở phía sau ngoài gối."],
+      "clinical": ["Thần kinh mác chung đi dọc bờ trong gân cơ nhị đầu đùi, nên đây là mối liên quan quan trọng khi chấn thương hoặc phẫu thuật vùng này."]
+    },
     "sources": [
       {"title": "Biceps femoris muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Biceps_femoris_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/"},
+      {"title": "Kenhub – Biceps femoris muscle", "url": "https://www.kenhub.com/en/library/anatomy/biceps-femoris-muscle"} ] },
   {"id": "semitendinosus", "vi": "Cơ bán gân", "en": "Semitendinosus", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Semitendinosus muscle"} ],
     "function": "Một trong ba cơ đùi sau (hamstring), nằm nông ở mặt sau trong đùi: duỗi hông và gấp gối. Khi gối gập, cơ xoay trong cẳng chân; khi hông duỗi, cơ xoay trong đùi, đồng thời giúp hãm động tác gập người ở hông. Gân cơ này (cùng gân cơ thon) thường được lấy làm mảnh ghép tái tạo dây chằng chéo trước.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Ụ ngồi, chung gân gốc với đầu dài cơ nhị đầu đùi"}],
+    "insertion": [{"bones": ["tibia"], "vi": "Phần trên mặt trong thân xương chày, qua chân ngỗng (pes anserinus)"}],
+    "nerve": "Phần chày của thần kinh ngồi (L5–S2)",
+    "tips": {
+      "palpation": ["Khi gập gối chống lực cản, gân cơ bán gân sờ được ở bờ trên trong hố khoeo; đây là gân nằm ngoài nhất và sau nhất của bờ này."],
+      "clinical": ["Ở một số ít trường hợp, chủ yếu thanh thiếu niên, các cơ gân kheo (hamstring) co mạnh đột ngột có thể gây gãy bong ụ ngồi; người bệnh thường đau đột ngột ở mặt sau đùi rồi không đi được.", "Khi chạy nước rút, chấn thương cơ gân kheo có thể xảy ra do căng quá mức trong lúc co lệch tâm ở cuối pha đu chân. Trong các cơ đùi sau, cơ nhị đầu đùi tổn thương nhiều nhất, tiếp đến cơ bán gân; cơ bán màng hiếm khi tổn thương."]
+    },
     "sources": [
       {"title": "Semitendinosus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Semitendinosus_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/"},
+      {"title": "Kenhub – Semitendinosus muscle", "url": "https://www.kenhub.com/en/library/anatomy/semitendinosus-muscle"},
+      {"title": "Hamstring – Wikipedia", "url": "https://en.wikipedia.org/wiki/Hamstring"} ] },
   {"id": "semimembranosus", "vi": "Cơ bán màng", "en": "Semimembranosus", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Semimembranosus muscle"} ],
     "function": "Cơ nằm trong cùng của nhóm đùi sau (hamstring), sâu dưới cơ bán gân: duỗi hông và gấp gối. Khi gối gập giúp xoay trong cẳng chân, khi hông duỗi giúp xoay trong đùi, và góp phần hãm động tác gập người ở hông.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Phần trên–ngoài của ụ ngồi, bằng gân dày; cao hơn nguyên ủy của cơ bán gân và cơ nhị đầu đùi"}],
+    "insertion": [{"bones": ["tibia"], "vi": "Lồi cầu trong xương chày"}],
+    "nerve": "Phần chày của thần kinh ngồi (L5–S2)",
+    "tips": {
+      "training": ["Leg curl ngồi hoặc nằm và lunge với tạ đơn có tác động đến cơ bán màng."],
+      "clinical": ["Bệnh lý gân cơ bán màng (semimembranosus tendinopathy) có thể là nguyên nhân gây đau gối mạn tính, thường bị bỏ sót vì ít được hiểu rõ; có thể phát triển do quá tải ở người đạp xe, chạy marathon hoặc do thoái hóa theo tuổi. Người bệnh có thể kêu đau âm ỉ ở phía sau trong gối. Đau có thể tái hiện khi ấn vào chỗ bám của gân và khi xoay trong, gập gối."]
+    },
     "sources": [
       {"title": "Semimembranosus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Semimembranosus_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/hamstrings/"},
+      {"title": "Kenhub – Semimembranosus muscle", "url": "https://www.kenhub.com/en/library/anatomy/semimembranosus-muscle"} ] },
   {"id": "adductor-longus", "vi": "Cơ khép dài", "en": "Adductor longus", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Adductor longus"} ],
     "function": "Khép đùi tại khớp hông là động tác chính; cơ cũng góp phần gấp đùi. Tùy vị trí bàn chân, các cơ khép có thể tham gia xoay trong hoặc xoay ngoài đùi. Bài Copenhagen plank tạo mức kích hoạt cơ khép dài rất cao.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Thân xương mu, dưới mào mu và ngoài khớp mu"}],
+    "insertion": [{"bones": ["femur"], "vi": "Một phần ba giữa môi trong đường ráp xương đùi"}],
+    "nerve": "Thần kinh bịt (L2–L4), thường qua ngành trước (đôi khi ngành sau)",
+    "tips": {
+      "clinical": ["Căng các cơ khép là nguyên nhân của “groin strain” (căng cơ vùng háng); phần gần của cơ thường bị tổn thương nhất, rách gần chỗ bám vào xương chậu. Chấn thương háng thường gặp ở các môn cần động tác bùng nổ hoặc duỗi căng cực độ."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "The Neuromuscular Effects of the Copenhagen Adductor Exercise: A Systematic Review (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/"} ] },
+      {"title": "The Neuromuscular Effects of the Copenhagen Adductor Exercise: A Systematic Review (PMC)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8486394/"},
+      {"title": "TeachMeAnatomy – Muscles in the Medial Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/"},
+      {"title": "Kenhub – Adductor longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-longus-muscle"},
+      {"title": "Adductor longus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Adductor_longus_muscle"} ] },
   {"id": "adductor-brevis", "vi": "Cơ khép ngắn", "en": "Adductor brevis", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Adductor brevis"} ],
     "function": "Chủ yếu khép đùi tại khớp hông, đồng thời hỗ trợ gấp hông; cơ xoay đùi vào trong hay ra ngoài tùy tư thế. Cùng nhóm cơ khép, cơ giúp giữ vững thân người khi dồn trọng tâm sang trái – phải lúc đứng hai chân hoặc giữ thăng bằng trên mặt phẳng di động.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mặt ngoài thân xương mu và ngành dưới xương mu"}],
+    "insertion": [{"bones": ["femur"], "vi": "Phần trên đường ráp xương đùi, gần hơn (phía trên) chỗ bám của cơ khép dài"}],
+    "nerve": "Thần kinh bịt (L2–L4), cả ngành trước lẫn ngành sau",
     "sources": [
       {"title": "Adductor brevis muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Adductor_brevis_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Medial Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/"},
+      {"title": "Kenhub – Adductor brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-brevis-muscle"} ] },
   {"id": "adductor-magnus", "vi": "Cơ khép lớn", "en": "Adductor magnus", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Adductor magnus"} ],
     "function": "Cơ khép đùi mạnh, hoạt động nhiều nhất khi kéo hai chân từ tư thế dang rộng về song song. Phần bám từ ụ ngồi (phần “hamstring”) còn duỗi hông nên thường được xếp chung với nhóm đùi sau. Là một trong các cơ chủ vận chính của squat, cùng cơ tứ đầu đùi và cơ mông lớn.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Phần cơ khép (phần mu–đùi): ngành dưới xương mu và ngành xương ngồi"}, {"bones": ["hip-bone"], "vi": "Phần gân kheo (phần ụ ngồi–lồi cầu): ụ ngồi"}],
+    "insertion": [{"bones": ["femur"], "vi": "Phần cơ khép: đường ráp xương đùi (có nguồn ghi thêm lồi củ mông và đường trên lồi cầu trong)"}, {"bones": ["femur"], "vi": "Phần gân kheo: củ cơ khép (adductor tubercle) ở lồi cầu trong và đường trên lồi cầu trong xương đùi"}],
+    "nerve": "Phần cơ khép do thần kinh bịt (ngành sau); phần gân kheo do phần chày của thần kinh ngồi",
     "sources": [
       {"title": "Adductor magnus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Adductor_magnus_muscle"},
-      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"} ] },
+      {"title": "Squat (exercise) – Wikipedia", "url": "https://en.wikipedia.org/wiki/Squat_(exercise)"},
+      {"title": "TeachMeAnatomy – Muscles in the Medial Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/"},
+      {"title": "Kenhub – Adductor magnus muscle", "url": "https://www.kenhub.com/en/library/anatomy/adductor-magnus"} ] },
   {"id": "gracilis", "vi": "Cơ thon", "en": "Gracilis", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Gracilis muscle"} ],
     "function": "Cơ nông nhất ở mặt trong đùi, dạng dải dẹt bắc qua hông và gối: khép đùi, hỗ trợ gấp hông và gấp gối.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Thân xương mu và ngành dưới xương mu (có nguồn ghi thêm ngành xương ngồi)"}],
+    "insertion": [{"bones": ["tibia"], "vi": "Mặt trong phần trên xương chày, qua chân ngỗng (pes anserinus)"}],
+    "nerve": "Thần kinh bịt",
+    "tips": {
+      "palpation": ["Gập gối chống lực cản kèm xoay trong cẳng chân: gân cơ thon hiện ở phía trên trong hố khoeo, là gân nằm trong nhất và trước nhất của vùng này; lần theo gân lên trên có thể sờ cơ đến tận nguyên ủy."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "Gracilis muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Gracilis_muscle"} ] },
+      {"title": "Gracilis muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Gracilis_muscle"},
+      {"title": "TeachMeAnatomy – Muscles in the Medial Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/medial-compartment/"},
+      {"title": "Kenhub – Gracilis muscle", "url": "https://www.kenhub.com/en/library/anatomy/gracilis-muscle"} ] },
   {"id": "pectineus", "vi": "Cơ lược", "en": "Pectineus", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Pectineus muscle"} ],
     "function": "Cơ dẹt hình tứ giác, nằm trước nhất trong nhóm cơ khép: gấp và khép đùi tại khớp hông. Cơ nằm ở vùng tam giác đùi, nơi có bó mạch – thần kinh đùi đi qua.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Đường lược (pectineal line) của xương mu"}],
+    "insertion": [{"bones": ["femur"], "vi": "Đường lược xương đùi, ở mặt sau xương, bắt đầu ngay dưới mấu chuyển bé và hướng tới đường ráp"}],
+    "nerve": "Thần kinh đùi (L2–L3); đôi khi có thêm nhánh của thần kinh bịt",
+    "tips": {
+      "clinical": ["Cơ lược hiếm khi bị chấn thương đơn độc; thường gặp hơn là tổn thương kèm đứt bong chỗ bám của cơ khép dài."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "Pectineus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Pectineus_muscle"} ] },
+      {"title": "Pectineus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Pectineus_muscle"},
+      {"title": "TeachMeAnatomy – Muscles in the Anterior Compartment of the Thigh", "url": "https://teachmeanatomy.info/lower-limb/muscles/thigh/anterior-compartment/"},
+      {"title": "Kenhub – Pectineus muscle", "url": "https://www.kenhub.com/en/library/anatomy/pectineus-muscle"} ] },
   {"id": "gastrocnemius", "vi": "Cơ bụng chân", "en": "Gastrocnemius", "region": "legs", "superficial": true, "status": "draft",
     "parts": [
       {"id": "medial", "vi": "đầu trong", "object": "Medial head of gastrocnemius"},
       {"id": "lateral", "vi": "đầu ngoài", "object": "Lateral head of gastrocnemius"} ],
     "function": "Cơ nông nhất của bắp chân, hai đầu bám ngay trên gối và tận cùng ở gót: gập gan bàn chân (nhón gót) tại cổ chân và gấp gối. Thiên về động tác nhanh – mạnh như chạy, bật nhảy. Cơ làm việc ít hơn khi gối gập, nên nhón gót đứng gối thẳng tác động vào cơ này tốt hơn nhón gót ngồi.",
+    "origin": [{"bones": ["femur"], "vi": "Đầu ngoài: lồi cầu ngoài xương đùi"}, {"bones": ["femur"], "vi": "Đầu trong: lồi cầu trong xương đùi"}],
+    "insertion": [{"bones": ["calcaneus"], "vi": "Mặt sau xương gót, qua gân gót (chung với cơ dép)"}],
+    "nerve": "Thần kinh chày",
+    "tips": {
+      "training": ["Nhón gót với gối thẳng kéo giãn cơ bụng chân nhiều hơn nên huy động cơ này tốt hơn; khi nhón gót đứng thường đặt đầu bàn chân trên bục để gót hạ thấp hơn mũi chân, tăng độ giãn của các cơ đang làm việc."],
+      "clinical": ["Lực gập mu bàn chân mạnh có thể gây căng cơ bụng chân đầu trong (medial gastrocnemius strain), thường gọi là “rách” hay “căng” cơ bắp chân; chấn thương cơ bụng chân thường đột ngột, do động tác nhanh như bật nhảy và chạy nước rút."]
+    },
     "sources": [
       {"title": "Gastrocnemius muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Gastrocnemius_muscle"},
-      {"title": "Calf raises – Wikipedia", "url": "https://en.wikipedia.org/wiki/Calf_raise"} ] },
+      {"title": "Calf raises – Wikipedia", "url": "https://en.wikipedia.org/wiki/Calf_raise"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/"},
+      {"title": "Kenhub – Gastrocnemius muscle", "url": "https://www.kenhub.com/en/library/anatomy/gastrocnemius-muscle"},
+      {"title": "Kenhub – Soleus muscle", "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle"} ] },
   {"id": "soleus", "vi": "Cơ dép", "en": "Soleus", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Soleus muscle"} ],
     "function": "Cơ rộng, dẹt nằm sâu dưới cơ bụng chân, chạy từ ngay dưới gối xuống gót nên chỉ gập gan bàn chân tại cổ chân, không tham gia gấp gối. Nhiều sợi co chậm, hoạt động liên tục để giữ tư thế đứng và bơm máu tĩnh mạch về tim. Là cơ gập gan bàn chân hiệu quả nhất khi gối gập, nên nhón gót ngồi nhấn vào cơ này.",
+    "origin": [{"bones": ["tibia", "fibula"], "vi": "Đường cơ dép (soleal line) và bờ trong xương chày; chỏm và bờ sau xương mác"}],
+    "insertion": [{"bones": ["calcaneus"], "vi": "Mặt sau xương gót, qua gân gót (hợp với các sợi của cơ bụng chân)"}],
+    "nerve": "Thần kinh chày",
+    "tips": {
+      "training": ["Calf raise với gối gập khoảng 90 độ làm giảm độ giãn của cơ bụng chân (cơ gập gối) nên nhấn vào cơ dép; nhón gót ngồi thường dùng cho cơ dép vì cơ bụng chân làm việc ít hơn khi gối gập."],
+      "clinical": ["Rách cơ dép gặp ở người chạy do mệt mỏi và luyện tập quá sức; vận động viên chạy hoặc đi bộ sức bền, vốn cần cơ dép hoạt động liên tục, có nguy cơ chấn thương cao hơn."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
-      {"title": "Soleus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Soleus_muscle"} ] },
+      {"title": "Soleus muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Soleus_muscle"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/"},
+      {"title": "Kenhub – Soleus muscle", "url": "https://www.kenhub.com/en/library/anatomy/soleus-muscle"},
+      {"title": "Calf raises – Wikipedia", "url": "https://en.wikipedia.org/wiki/Calf_raise"} ] },
   {"id": "calcaneal-tendon", "vi": "Gân gót (gân Achilles)", "en": "Calcaneal tendon", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Calcaneal tendon"} ],
     "function": "Không phải cơ mà là gân dày nhất cơ thể, nối cơ bụng chân, cơ dép (và cơ gan chân) vào xương gót. Gân truyền lực của các cơ này để gập gan bàn chân khi đi, chạy, bật nhảy. Gân có thể bị viêm, thoái hóa hoặc đứt.",
+    "origin": [{"bones": [], "vi": "Gân do cơ bụng chân và cơ dép hợp thành; gân cơ gan chân cũng hòa vào gân"}],
+    "insertion": [{"bones": ["calcaneus"], "vi": "Củ xương gót ở mặt sau xương gót"}],
+    "tips": {
+      "clinical": ["Khi gân gót đứt, người bệnh không gập gan bàn chân được chống lực cản. Nghiệm pháp Thompson: người bệnh nằm sấp, bàn chân thò ra ngoài mép bàn, người khám bóp khối cơ bắp chân; bình thường bàn chân gập gan, nếu không gập gan (Thompson dương tính) thì gợi ý đứt gân gót.", "Viêm hoặc thoái hóa gân gót (Achilles tendinitis/tendinosis) thường do quá tải như chạy bộ; đau thường nặng hơn lúc bắt đầu vận động rồi giảm dần."]
+    },
     "sources": [
       {"title": "Achilles tendon – Wikipedia", "url": "https://en.wikipedia.org/wiki/Achilles_tendon"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/"},
+      {"title": "Kenhub – Achilles tendon", "url": "https://www.kenhub.com/en/library/anatomy/achilles-tendon"} ] },
   {"id": "tibialis-anterior", "vi": "Cơ chày trước", "en": "Tibialis anterior", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Tibialis anterior muscle"} ],
     "function": "Cơ gập mu bàn chân (kéo mũi chân lên) lớn nhất tại cổ chân, đồng thời nghiêng trong bàn chân. Khi đi bộ, cơ co lệch tâm để hãm bàn chân lúc gót chạm đất, rồi kéo mũi chân lên khỏi mặt đất ở pha đu chân; cơ cũng góp phần giữ vòm dọc trong bàn chân.",
+    "origin": [{"bones": ["tibia"], "vi": "Lồi cầu ngoài và hai phần ba trên mặt ngoài xương chày; mặt trước màng gian cốt"}],
+    "insertion": [{"bones": ["medial-cuneiform", "first-metatarsal"], "vi": "Xương chêm trong và nền xương bàn chân I"}],
+    "nerve": "Thần kinh mác sâu",
+    "tips": {
+      "clinical": ["Bàn chân rũ (foot drop) là dấu hiệu lâm sàng chỉ việc không gập mu được bàn chân tại cổ chân; cho thấy liệt hoặc yếu các cơ khoang trước cẳng chân, thường do tổn thương thần kinh mác chung. Nguyên nhân còn có thể là tổn thương cơ hoặc tủy sống, bất thường giải phẫu, độc chất hoặc bệnh."]
+    },
     "sources": [
       {"title": "Tibialis anterior muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Tibialis_anterior_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Anterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/anterior-compartment/"},
+      {"title": "Kenhub – Tibialis anterior muscle", "url": "https://www.kenhub.com/en/library/anatomy/tibialis-anterior-muscle"},
+      {"title": "Foot drop – Wikipedia", "url": "https://en.wikipedia.org/wiki/Foot_drop"} ] },
   {"id": "tibialis-posterior", "vi": "Cơ chày sau", "en": "Tibialis posterior", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Tibialis posterior muscle"} ],
     "function": "Nằm ở khoang sau sâu, chính giữa cẳng chân; là cơ giữ vững chủ chốt của cẳng chân và đóng vai trò lớn trong nâng đỡ vòm dọc trong bàn chân. Cơ nghiêng trong bàn chân và hỗ trợ gập gan bàn chân. Rối loạn chức năng hoặc đứt gân cơ này có thể gây bàn chân bẹt ở người lớn.",
+    "origin": [{"bones": ["tibia", "fibula"], "vi": "Mặt sau xương chày và xương mác, cùng màng gian cốt"}],
+    "insertion": [{"bones": ["navicular"], "vi": "Củ xương ghe (phần chính của gân)"}, {"bones": ["medial-cuneiform"], "vi": "Mặt gan bàn chân của xương chêm trong (phần nhỏ hơn của gân)"}, {"bones": ["intermediate-cuneiform", "lateral-cuneiform", "cuboid", "metatarsals-2-4"], "vi": "Phần gan chân của gân: nền xương bàn chân II–IV, xương chêm giữa, xương chêm ngoài và xương hộp"}, {"bones": ["calcaneus"], "vi": "Phần quặt ngược của gân: mỏm chân đế sên (sustentaculum tali) của xương gót"}],
+    "nerve": "Thần kinh chày",
+    "tips": {
+      "clinical": ["Rối loạn chức năng gân cơ chày sau (posterior tibial tendon dysfunction) là bệnh tiến triển và là nguyên nhân thường gặp nhất gây bàn chân bẹt ở người trưởng thành; viêm hoặc rách gân có thể gây đau, sưng."]
+    },
     "sources": [
       {"title": "Tibialis posterior muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Posterior Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/posterior-compartment/"},
+      {"title": "Kenhub – Tibialis posterior muscle", "url": "https://www.kenhub.com/en/library/anatomy/tibialis-posterior-muscle"},
+      {"title": "Posterior tibial tendon dysfunction – Wikipedia", "url": "https://en.wikipedia.org/wiki/Posterior_tibial_tendon_dysfunction"} ] },
   {"id": "fibularis-longus", "vi": "Cơ mác dài", "en": "Fibularis longus", "region": "legs", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Fibularis longus muscle"} ],
     "function": "Cơ nông nhất ở khoang ngoài cẳng chân: nghiêng ngoài bàn chân (lật gan bàn chân ra ngoài) và gập gan bàn chân tại cổ chân. Gân đi vòng sau mắt cá ngoài rồi băng qua gan bàn chân, nhờ đó góp phần giữ vòm ngang. Cùng cơ mác ngắn, cơ giúp giữ vững cẳng chân trên bàn chân, nhất là khi đứng một chân.",
+    "origin": [{"bones": ["fibula"], "vi": "Chỏm và hai phần ba trên mặt ngoài xương mác"}],
+    "insertion": [{"bones": ["medial-cuneiform", "first-metatarsal"], "vi": "Xương chêm trong và nền xương bàn chân I (gân đi vòng sau mắt cá ngoài rồi băng qua gan bàn chân)"}],
+    "nerve": "Thần kinh mác nông (L5–S1)",
+    "tips": {
+      "clinical": ["Giữa chỗ bám của cơ mác dài vào chỏm và vào thân xương mác có một khe, thần kinh mác chung đi qua khe này ra trước cẳng chân; vì vậy có thể dùng cơ mác dài làm mốc để tìm thần kinh mác chung."]
+    },
     "sources": [
       {"title": "Fibularis longus – Wikipedia", "url": "https://en.wikipedia.org/wiki/Fibularis_longus"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Lateral Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/"},
+      {"title": "Kenhub – Fibularis (peroneus) longus muscle", "url": "https://www.kenhub.com/en/library/anatomy/peroneus-longus-muscle"} ] },
   {"id": "fibularis-brevis", "vi": "Cơ mác ngắn", "en": "Fibularis brevis", "region": "legs", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Fibularis brevis muscle"} ],
     "function": "Nằm dưới cơ mác dài ở khoang ngoài cẳng chân: nghiêng ngoài bàn chân (lật gan bàn chân ra ngoài) và gập gan bàn chân tại cổ chân; cùng cơ mác dài giữ vững cổ chân khi đứng một chân. Khi lật cổ chân vào trong, gân cơ có thể kéo bong mẩu xương ở nền xương đốt bàn chân thứ năm.",
+    "origin": [{"bones": ["fibula"], "vi": "Hai phần ba dưới mặt ngoài thân xương mác"}],
+    "insertion": [{"bones": ["fifth-metatarsal"], "vi": "Lồi củ ở nền xương bàn chân V (phía ngoài)"}],
+    "nerve": "Thần kinh mác nông (L5–S1)",
+    "tips": {
+      "clinical": ["Vị trí của gân cơ mác ngắn khiến gân dễ bị tổn thương: gân chịu lực cắt khi trượt giữa mắt cá ngoài và gân cơ mác dài; khi bàn chân lật trong quá mức, gân có thể rách hoặc đứt. Tổn thương này gặp ở vận động viên bóng rổ, quần vợt, bóng bầu dục Mỹ (NFL). Vi rách gân lâu ngày có thể gây viêm gân cơ mác, đau và sưng ở mặt sau ngoài cổ chân."]
+    },
     "sources": [
       {"title": "Fibularis brevis – Wikipedia", "url": "https://en.wikipedia.org/wiki/Fibularis_brevis"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"} ] }
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.6 Appendicular Muscles of the Pelvic Girdle and Lower Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-6-appendicular-muscles-of-the-pelvic-girdle-and-lower-limbs"},
+      {"title": "TeachMeAnatomy – Muscles in the Lateral Compartment of the Leg", "url": "https://teachmeanatomy.info/lower-limb/muscles/leg/lateral-compartment/"},
+      {"title": "Kenhub – Fibularis brevis muscle", "url": "https://www.kenhub.com/en/library/anatomy/fibularis-brevis-muscle"} ] }
 ]
