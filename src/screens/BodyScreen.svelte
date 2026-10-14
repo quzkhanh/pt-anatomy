@@ -94,13 +94,14 @@
     const highlight = highlightOf(selection)
     v?.highlight(highlight)
     if (!selection) return
-    shown = selection
     // A new muscle starts on its exercises (or its details when it has none) with no filter; coming back
-    // from one of its exercises restores where the list was left.
-    if (selection.kind === 'muscle') {
+    // from one of its exercises restores where the list was left. `apply` also reruns when the viewer
+    // arrives or is lost, which must not wipe the user's choice.
+    if (selection.kind === 'muscle' && selection !== shown) {
       muscleTab = selection.restore?.tab ?? (exerciseCount(selection.muscle.id) ? 'exercises' : 'details')
       equipment = selection.restore?.equipment ?? null
     }
+    shown = selection
     // The low snap, so the highlighted muscles stay in view; the sheet expands on demand. Coming back to
     // a muscle from one of its exercises opens at half, straight onto the list. A wide screen's side
     // panel covers no muscles, so it opens fully.

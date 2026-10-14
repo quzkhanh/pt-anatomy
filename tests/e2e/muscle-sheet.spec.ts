@@ -90,3 +90,19 @@ test('mở bài từ tab Bài tập thì không có nút quay lại cơ', async 
   await expect(page.locator(EX_SHEET)).toHaveAttribute('aria-hidden', 'false')
   await expect(page.locator(EX_SHEET).getByRole('button', { name: /^‹/ })).toHaveCount(0)
 })
+
+test('model tải xong sau khi đã chọn cơ thì không xóa tab và bộ lọc đang chọn', async ({ page }) => {
+  let release!: () => void
+  const held = new Promise<void>((resolve) => (release = resolve))
+  await page.route('**/models/body.glb', async (route) => {
+    await held
+    await route.continue()
+  })
+  await page.goto('/?debug')
+  await openMuscle(page, 'pectoralis-major')
+  await chips(page).getByRole('button', { name: 'Tạ đơn' }).click()
+  release()
+  await page.waitForFunction(() => window.__ptDebug !== undefined)
+  await page.waitForTimeout(300)
+  await expect(chips(page).getByRole('button', { name: 'Tạ đơn' })).toHaveAttribute('aria-pressed', 'true')
+})
