@@ -4,13 +4,13 @@
   import type { Exercise } from '../lib/content-types'
   import FavoriteButton from './FavoriteButton.svelte'
 
-  let { exercise }: { exercise: Exercise } = $props()
+  let { exercise, onOpen = openExercise }: { exercise: Exercise; onOpen?: (exercise: Exercise) => void } = $props()
 
   const primary = $derived(exercise.primary.flatMap((ref) => resolveRef(ref) ?? []).map(refLabel).join(', '))
 </script>
 
 <li>
-  <button class="open" onclick={() => openExercise(exercise)}>
+  <button class="open" onclick={() => onOpen(exercise)}>
     <span class="name">{exercise.vi}</span>
     <span class="meta"><span class="tag">{REGION_LABELS[exerciseRegion(exercise)]}</span>{EQUIPMENT_LABELS[exercise.equipment]} · {primary}</span>
   </button>

@@ -1,5 +1,7 @@
 <script lang="ts">
+  import CreditsLink from '../components/CreditsLink.svelte'
   import ExerciseList from '../components/ExerciseList.svelte'
+  import FilterChips from '../components/FilterChips.svelte'
   import Panel from '../components/Panel.svelte'
   import { exerciseRegion, exercises, REGION_LABELS, searchExercises } from '../lib/content'
   import type { Region } from '../lib/content-types'
@@ -23,13 +25,9 @@
     autocomplete="off"
     enterkeyhint="search"
   />
-  <div class="filters" role="group" aria-label="Lọc theo vùng">
-    <button aria-pressed={region === null} onclick={() => (region = null)}>Tất cả</button>
-    {#each FILTERS as r (r)}
-      <button aria-pressed={region === r} onclick={() => (region = r)}>{REGION_LABELS[r]}</button>
-    {/each}
-  </div>
+  <FilterChips options={FILTERS} value={region} label={(r) => REGION_LABELS[r]} allLabel="Tất cả" ariaLabel="Lọc theo vùng" onSelect={(r) => (region = r)} />
   <ExerciseList exercises={shown} empty="Không có bài tập nào khớp. Thử từ khác hoặc chọn “Tất cả”." />
+  <CreditsLink />
 </Panel>
 
 <style>
@@ -44,27 +42,5 @@
     background: var(--color-surface);
     font: inherit;
     font-size: var(--font-md);
-  }
-  .filters {
-    display: flex;
-    gap: var(--space-2);
-    margin: var(--space-3) calc(-1 * var(--space-4)) var(--space-2);
-    padding: 0 var(--space-4);
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-  .filters button {
-    flex: none;
-    min-height: var(--tap-min);
-    padding: 0 var(--space-4);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-pill);
-    background: var(--color-surface);
-    font-size: var(--font-sm);
-  }
-  .filters [aria-pressed='true'] {
-    border-color: var(--color-text);
-    background: var(--color-text);
-    color: var(--color-surface);
   }
 </style>

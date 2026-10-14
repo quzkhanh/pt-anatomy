@@ -1,21 +1,19 @@
 <script lang="ts">
   import type { Exercise } from '../lib/content-types'
-  import CreditsLink from './CreditsLink.svelte'
   import ExerciseRow from './ExerciseRow.svelte'
 
-  let { exercises, empty }: { exercises: Exercise[]; empty: string } = $props()
+  let { exercises, empty = '', onOpen }: { exercises: Exercise[]; empty?: string; onOpen?: (exercise: Exercise) => void } = $props()
 </script>
 
 {#if exercises.length}
   <ul>
     {#each exercises as exercise (exercise.id)}
-      <ExerciseRow {exercise} />
+      <ExerciseRow {exercise} {onOpen} />
     {/each}
   </ul>
-{:else}
+{:else if empty}
   <p class="empty">{empty}</p>
 {/if}
-<CreditsLink />
 
 <style>
   ul {
