@@ -18,6 +18,10 @@ describe('normalizeText', () => {
   it('bỏ chú thích [n] tách thẻ span', () => {
     expect(normalizeText('a weak<span>[</span>2<span>]</span> flexor')).toBe('a weak flexor')
   })
+  it('giữ ngoặc biên tập [T] và năm [2024]', () => {
+    expect(normalizeText('[T]he muscle')).toBe('[t]he muscle')
+    expect(normalizeText('in [2024] study')).toBe('in [2024] study')
+  })
   it('giữ entity số ngoài khoảng Unicode nguyên văn', () => {
     expect(normalizeText('&#99999999;')).toBe('&#99999999;')
   })

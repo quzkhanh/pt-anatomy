@@ -13,7 +13,7 @@ export const normalizeText = (html: string) =>
     .replace(/[‘’′]/g, "'")
     .replace(/[“”″]/g, '"')
     .replace(/[‐-―−]/g, '-')
-    .replace(/\[\s*(?:\d+|[a-z]|note \d+|citation needed)\s*\]/gi, ' ')
+    .replace(/\[\s*(?:\d{1,3}|[a-z]|note \d{1,3}|citation needed)\s*\]/g, ' ')
     .replace(/\s+/g, ' ')
     .replace(/ ([,.;:!?)\]])/g, '$1')
     .replace(/([(\[]) /g, '$1')
