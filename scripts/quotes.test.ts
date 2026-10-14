@@ -12,6 +12,12 @@ describe('normalizeText', () => {
   it('bỏ comment, noscript', () => {
     expect(normalizeText('a<!-- hidden -->b<noscript>x</noscript>c')).toBe('a b c')
   })
+  it('bỏ chú thích [n] của Wikipedia', () => {
+    expect(normalizeText('It is a weak flexor<sup>[2]</sup> and adductor [citation needed].')).toBe('it is a weak flexor and adductor.')
+  })
+  it('bỏ chú thích [n] tách thẻ span', () => {
+    expect(normalizeText('a weak<span>[</span>2<span>]</span> flexor')).toBe('a weak flexor')
+  })
   it('giữ entity số ngoài khoảng Unicode nguyên văn', () => {
     expect(normalizeText('&#99999999;')).toBe('&#99999999;')
   })
