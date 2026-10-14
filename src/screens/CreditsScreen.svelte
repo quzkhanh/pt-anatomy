@@ -1,12 +1,12 @@
 <script lang="ts">
   import Panel from '../components/Panel.svelte'
   import { app } from '../lib/app-state.svelte'
-  import { exercises, muscles } from '../lib/content'
+  import { breathing, exercises, muscles } from '../lib/content'
   import type { Source } from '../lib/content-types'
 
   const sources = [
     ...new Map(
-      [...muscles, ...exercises].flatMap((item) => item.sources ?? []).map((s): [string, Source] => [s.url, s]),
+      [...muscles, ...exercises, breathing].flatMap((item) => item.sources ?? []).map((s): [string, Source] => [s.url, s]),
     ).values(),
   ].sort((a, b) => a.title.localeCompare(b.title, 'vi'))
 </script>

@@ -1,4 +1,4 @@
-import { EQUIPMENT, REGIONS, STATUSES, TIP_KINDS, type Bone, type Exercise, type Muscle, type Quote, type Source, type TipKind } from '../src/lib/content-types.ts'
+import { EQUIPMENT, REGIONS, STATUSES, TIP_KINDS, type Bone, type BreathingGuide, type Exercise, type Muscle, type Quote, type Source, type TipKind } from '../src/lib/content-types.ts'
 import { refsOverlap, splitRef } from '../src/lib/refs.ts'
 
 const GLB_MAGIC = 0x46546c67
@@ -141,4 +141,15 @@ export function validateEvidence(muscles: Muscle[], evidence: Record<string, Quo
     }
   }
   return errors
+}
+
+export function validateBreathing(g: BreathingGuide, quotes: Quote[]): string[] {
+  const has = (field: string, item?: number) => quotes.some((q) => q.field === field && q.item === item && q.quote.trim())
+  return [
+    ...(g.points.length ? [] : ['breathing: points rỗng']),
+    ...g.points.flatMap((p, i) => (has('points', i) && p.trim() ? [] : [`breathing: points[${i}] chưa có câu trích`])),
+    ...(has('phases') ? [] : ['breathing: quy tắc pha (phases) chưa có câu trích']),
+    ...validateSources('breathing', g.sources),
+    ...(STATUSES.includes(g.status) ? [] : [`breathing: status không hợp lệ "${g.status}"`]),
+  ]
 }

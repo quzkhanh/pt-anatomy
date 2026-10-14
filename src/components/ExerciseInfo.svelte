@@ -1,6 +1,7 @@
 <script lang="ts">
   import { videoSearchUrl } from '../lib/content'
   import type { Exercise } from '../lib/content-types'
+  import BreathingNote from './BreathingNote.svelte'
   import MotionPlayer from './MotionPlayer.svelte'
   import RefGroup from './RefGroup.svelte'
   import SourceList from './SourceList.svelte'
@@ -18,6 +19,7 @@
     <li>{cue}</li>
   {/each}
 </ul>
+<BreathingNote />
 <a class="video" href={videoSearchUrl(exercise)} target="_blank" rel="noopener">Tìm video hướng dẫn trên YouTube ↗</a>
 <SourceList sources={exercise.sources} />
 

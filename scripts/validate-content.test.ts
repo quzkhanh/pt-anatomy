@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Bone, Exercise, Muscle, Quote } from '../src/lib/content-types.ts'
-import { glbMuscleObjects, validateDetails, validateEvidence, validateExercises, validateMuscles } from './validate-content.ts'
+import type { Bone, BreathingGuide, Exercise, Muscle, Quote } from '../src/lib/content-types.ts'
+import { glbMuscleObjects, validateBreathing, validateDetails, validateEvidence, validateExercises, validateMuscles } from './validate-content.ts'
 
 const muscle = (over: Partial<Muscle> = {}): Muscle => ({
   id: 'deltoid', vi: 'Cơ delta', en: 'Deltoid', region: 'shoulders', superficial: true, status: 'draft',
@@ -173,4 +173,17 @@ describe('validateEvidence', () => {
       'deltoid: nerve chưa có câu trích trong evidence.json',
     ])
   })
+})
+
+describe('validateBreathing', () => {
+  const url = 'https://nsca.com/x'
+  const guide: BreathingGuide = { points: ['Ý một.'], sources: [{ title: 'NSCA', url }], status: 'draft' }
+  const quotes = [{ url, quote: 'q', field: 'points', item: 0 }, { url, quote: 'q', field: 'phases' }]
+  it('đủ thì không lỗi', () => expect(validateBreathing(guide, quotes)).toEqual([]))
+  it('thiếu câu trích cho ý và cho quy tắc pha', () =>
+    expect(validateBreathing({ ...guide, points: ['Ý một.', 'Ý hai.'] }, quotes.slice(0, 1))).toEqual([
+      'breathing: points[1] chưa có câu trích',
+      'breathing: quy tắc pha (phases) chưa có câu trích',
+    ]))
+  it('points rỗng', () => expect(validateBreathing({ ...guide, points: [] }, quotes)).toContain('breathing: points rỗng'))
 })

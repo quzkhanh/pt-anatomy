@@ -60,6 +60,12 @@ export interface Muscle {
   status: Status
 }
 
+export interface BreathingGuide {
+  points: string[]
+  sources: Source[]
+  status: Status
+}
+
 /** `primary`/`secondary` hold muscle refs: "<muscle-id>" or "<muscle-id>.<part-id>". */
 export interface Exercise {
   id: string

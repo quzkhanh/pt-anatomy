@@ -6862,5 +6862,42 @@
     "note": "Bảng 3 Hindle 2019: cơ thẳng đùi 77% MVC khi farmer's walk."
    }
   }
- }
+ },
+ "breathing": [
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
+   "quote": "subjects can be instructed to exhale and inhale during the concentric and eccentric phases, respectively",
+   "field": "phases"
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
+   "quote": "subjects can be instructed to exhale and inhale during the concentric and eccentric phases, respectively",
+   "field": "points",
+   "item": 0
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5046965/",
+   "quote": "participants were instructed to maintain a neutral position of the spine and pelvis, and to breathe normally during testing",
+   "field": "points",
+   "item": 1
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12801646/",
+   "quote": "The Valsalva technique increases intra-thoracic pressure, providing core stabilization but potentially influencing cardiovascular responses.",
+   "field": "points",
+   "item": 2
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
+   "quote": "Valsalva maneuver during RT can lead to an elevation in intra-thoracic pressure and subsequently affect BP.",
+   "field": "points",
+   "item": 2
+  },
+  {
+   "url": "https://en.wikipedia.org/wiki/Valsalva_maneuver",
+   "quote": "caution is necessary for patients with preexisting coronary artery disease, valvular heart disease, or congenital heart defects",
+   "field": "points",
+   "item": 3
+  }
+ ]
 }

@@ -30,6 +30,16 @@ test('tab Bài tập: lọc theo vùng, mở bài thì về Cơ thể và hiện
   await expect(sheet.getByRole('link', { name: /YouTube/ })).toHaveAttribute('href', /youtube\.com\/results/)
 })
 
+test('bài ngực: nhãn pha có hơi thở, có mục Cách thở', async ({ page }) => {
+  await ready(page)
+  await tab(page, 'Bài tập').click()
+  await page.getByRole('searchbox', { name: 'Tìm bài tập' }).fill(bench.en)
+  await page.getByRole('button', { name: named(bench.vi) }).click()
+  await page.locator(SHEET).getByRole('button', { name: 'Mở rộng' }).click()
+  await expect(page.locator(SHEET).locator('figcaption.phase')).toHaveText(/· (thở ra|hít vào)$/, { timeout: 5000 })
+  await expect(page.locator(SHEET).getByRole('heading', { name: 'Cách thở' })).toBeVisible()
+})
+
 test('bấm tên cơ trong bài tập thì xem cơ đó, cơ có danh sách bài tập', async ({ page }) => {
   await ready(page)
   await tab(page, 'Bài tập').click()

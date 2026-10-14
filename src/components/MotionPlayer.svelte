@@ -2,6 +2,7 @@
   import { onMount } from 'svelte'
   import { refLabel, resolveRef } from '../lib/content'
   import type { Exercise } from '../lib/content-types'
+  import { phaseLabel } from '../lib/motion/breath'
   import { MOTIONS } from '../lib/motion/library'
   import { unshownRefs } from '../lib/motion/mannequin'
   import { createMotionPlayer, VIEWS, type MotionPlayer, type View } from '../lib/motion/player'
@@ -96,7 +97,7 @@
       </span>
     </div>
     <canvas bind:this={canvas} data-no-sheet-drag aria-label="Ma-nơ-canh 3D làm động tác {exercise.vi}. Kéo để xoay."></canvas>
-    {#if phase}<figcaption class="phase">{phase}</figcaption>{/if}
+    {#if phase}<figcaption class="phase">{phaseLabel(phase)}</figcaption>{/if}
   </figure>
   {#if deep.length}
     <p class="deep">Cơ sâu, không vẽ trên ma-nơ-canh (xem trên mô hình): {deep.join(', ')}</p>

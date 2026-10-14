@@ -1,13 +1,15 @@
 import bonesJson from '../../content/bones.json'
+import breathingJson from '../../content/breathing.json'
 import exercisesJson from '../../content/exercises.json'
 import musclesJson from '../../content/muscles.json'
-import type { Attachment, Bone, Equipment, Exercise, Muscle, MusclePart, Region, TipKind } from './content-types'
+import type { Attachment, Bone, BreathingGuide, Equipment, Exercise, Muscle, MusclePart, Region, TipKind } from './content-types'
 import { EQUIPMENT } from './content-types'
 import { splitRef } from './refs'
 import { createSearch } from './search'
 
 export const muscles = musclesJson as Muscle[]
 export const exercises = exercisesJson as Exercise[]
+export const breathing = breathingJson as BreathingGuide
 
 const boneById = new Map((bonesJson as Bone[]).map((b) => [b.id, b]))
 export const boneNames = (a: Attachment) => a.bones.map((id) => boneById.get(id)?.vi ?? id)
