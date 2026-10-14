@@ -15,7 +15,10 @@
     "model:export": "blender -b --disable-autoexec \"${ZANATOMY_BLEND:-$HOME/.cache/pt-anatomy-src/Z-Anatomy/Startup.blend}\" --python-exit-code 1 --python pipeline/export.py -- --content content/muscles.json --out pipeline/out/body-raw.glb",
     "model:pack": "gltfpack -i pipeline/out/body-raw.glb -o public/models/body.glb -cc -kn -ke",
     "model": "npm run model:export && npm run model:pack",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "model:bones:export": "blender -b --disable-autoexec \"${ZANATOMY_BLEND:-$HOME/.cache/pt-anatomy-src/Z-Anatomy/Startup.blend}\" --python-exit-code 1 --python pipeline/export.py -- --content content/muscles.json --skeleton content/skeleton.json --out pipeline/out/bones-raw.glb",
+    "model:bones:pack": "gltfpack -i pipeline/out/bones-raw.glb -o public/models/bones.glb -cc -kn -ke",
+    "model:bones": "npm run model:bones:export && npm run model:bones:pack"
   },
   "devDependencies": {
     "@playwright/test": "^1.64.0",

@@ -1,8 +1,10 @@
 """Cut Z-Anatomy down to the muscles listed in content/muscles.json, decimate, export GLB.
+With --skeleton, export the bones listed in content/skeleton.json instead (bones.glb, loaded on demand).
 
 Usage:
   blender -b --disable-autoexec Startup.blend --python-exit-code 1 --python export.py -- \
       --content content/muscles.json --out body.glb [--muscle-tris 3000]
+  ... --python export.py -- --content content/muscles.json --skeleton content/skeleton.json --out bones.glb
 
 Only right-side (.r) objects are exported; the viewer mirrors them across x=0 (Z-Anatomy .l meshes
 are mirror copies of .r, checked by check_mirror_symmetry below).
@@ -10,6 +12,7 @@ are mirror copies of .r, checked by check_mirror_symmetry below).
 import argparse
 import json
 import os
+import re
 import sys
 
 import bmesh
@@ -23,11 +26,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--content", required=True)
 parser.add_argument("--out", required=True)
 parser.add_argument("--muscle-tris", type=int, default=3000)
+parser.add_argument("--skeleton")
+parser.add_argument("--bone-ratio", type=float, default=0.25)
+# Small bones (phalanges, carpals) turn into blocks below this; the ratio alone would cut them to ~50 tris.
+parser.add_argument("--bone-min-tris", type=int, default=400)
 args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:])
 
 MUSCLES = "4: Muscular system"
+SKELETON = "1: Skeletal system"
+SIDE = re.compile(r"\.([a-z])$")
 
 muscle_names = {part["object"] for muscle in json.load(open(args.content)) for part in muscle["parts"]}
+bone_names = {bone["object"] for bone in json.load(open(args.skeleton))} if args.skeleton else set()
 
 
 def top_collection(obj):
@@ -47,6 +57,13 @@ def tri_count(mesh):
 
 def keep_role(obj):
     if obj.type != "MESH":
+        return None
+    if args.skeleton:
+        # Midline bones (vertebrae, sternum, sacrum) have no side suffix and exist once.
+        side = SIDE.search(obj.name)
+        base = obj.name[: side.start()] if side else obj.name
+        if (not side or side[1] == "r") and base in bone_names and top_collection(obj) == SKELETON:
+            return "bone"
         return None
     base, _, side = obj.name.rpartition(".")
     if side == "r" and base in muscle_names and top_collection(obj).startswith(MUSCLES):
@@ -201,12 +218,18 @@ if anatomy_errors:
     fail("anatomy rules failed:\n  " + "\n  ".join(anatomy_errors))
 
 roles = {obj.name: keep_role(obj) for obj in bpy.data.objects}
-found = {n.rpartition(".")[0] for n, r in roles.items() if r == "muscle"}
-missing = sorted(muscle_names - found)
-if missing:
-    fail(f"muscles not found in model: {missing}")
-roles[build_head().name] = "head"
-roles[build_midline_filler().name] = "filler"
+if args.skeleton:
+    found = {SIDE.sub("", n) for n, r in roles.items() if r == "bone"}
+    missing = sorted(bone_names - found)
+    if missing:
+        fail(f"bones not found in model: {missing}")
+else:
+    found = {n.rpartition(".")[0] for n, r in roles.items() if r == "muscle"}
+    missing = sorted(muscle_names - found)
+    if missing:
+        fail(f"muscles not found in model: {missing}")
+    roles[build_head().name] = "head"
+    roles[build_midline_filler().name] = "filler"
 
 for obj in bpy.data.objects:
     if roles[obj.name] and obj.parent:
@@ -219,12 +242,19 @@ for obj in [o for o in bpy.data.objects if not roles[o.name]]:
 
 TARGET_TRIS = {"muscle": args.muscle_tris, "head": HEAD_TRIS, "filler": HEAD_TRIS}
 
+
+def keep_ratio(role, src_tris):
+    if role == "bone":
+        return min(1.0, max(args.bone_ratio, args.bone_min_tris / src_tris))
+    return min(1.0, TARGET_TRIS[role] / src_tris)
+
+
 depsgraph = bpy.context.evaluated_depsgraph_get()
-stats = {role: [0, 0] for role in TARGET_TRIS}
+stats = {role: [0, 0] for role in [*TARGET_TRIS, "bone"]}
 for obj in list(bpy.data.objects):
     role = roles[obj.name]
     src_tris = tri_count(bpy.data.meshes.new_from_object(obj.evaluated_get(depsgraph)))
-    ratio = min(1.0, TARGET_TRIS[role] / src_tris)
+    ratio = keep_ratio(role, src_tris)
     if ratio < 1.0:
         mod = obj.modifiers.new("decimate", "DECIMATE")
         mod.ratio = ratio
@@ -238,7 +268,8 @@ for obj in list(bpy.data.objects):
     stats[role][1] += tri_count(obj.data)
 
 for role, (count, tris) in stats.items():
-    print(f"STAT {role}: {count} objects, {tris} tris")
+    if count:
+        print(f"STAT {role}: {count} objects, {tris} tris")
 
 bpy.ops.export_scene.gltf(
     filepath=args.out,

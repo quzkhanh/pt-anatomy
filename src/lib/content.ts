@@ -2,7 +2,8 @@ import bonesJson from '../../content/bones.json'
 import breathingJson from '../../content/breathing.json'
 import exercisesJson from '../../content/exercises.json'
 import musclesJson from '../../content/muscles.json'
-import type { Attachment, Bone, BreathingGuide, Equipment, Exercise, Muscle, MusclePart, Region, TipKind } from './content-types'
+import skeletonJson from '../../content/skeleton.json'
+import type { Attachment, Bone, BreathingGuide, SkeletonBone, Equipment, Exercise, Muscle, MusclePart, Region, TipKind } from './content-types'
 import { EQUIPMENT } from './content-types'
 import { splitRef } from './refs'
 import { createSearch } from './search'
@@ -13,6 +14,34 @@ export const breathing = breathingJson as BreathingGuide
 
 const boneById = new Map((bonesJson as Bone[]).map((b) => [b.id, b]))
 export const boneNames = (a: Attachment) => a.bones.map((id) => boneById.get(id)?.vi ?? id)
+const attachmentObjects = (a: Attachment) => a.bones.flatMap((id) => boneById.get(id)?.objects ?? [])
+
+const skeleton = skeletonJson as SkeletonBone[]
+const skeletonByObject = new Map(skeleton.map((b) => [b.object, b]))
+export const skeletonBone = (object: string) => skeletonByObject.get(object)
+
+/** The bones.glb meshes a muscle attaches to (skull bones are not in bones.glb and simply match nothing). */
+export const attachedObjects = (m: Muscle) => [
+  ...new Set([...(m.origin ?? []), ...(m.insertion ?? [])].flatMap(attachmentObjects)),
+]
+
+export interface BoneAttachment {
+  muscle: Muscle
+  /** Landmarks on this bone, one per attachment that names it. */
+  landmarks: string[]
+}
+
+/** Muscles attached to one mesh. bones.json groups overlap (ribs 1–8 and ribs 3–5 share the 4th rib),
+ * so a mesh collects every attachment whose group contains it. */
+export function attachmentsOn(object: string): { origin: BoneAttachment[]; insertion: BoneAttachment[] } {
+  const on = (list: Attachment[] = []) => list.filter((a) => attachmentObjects(a).includes(object)).map((a) => a.vi)
+  const collect = (field: 'origin' | 'insertion') =>
+    muscles.flatMap((muscle) => {
+      const landmarks = on(muscle[field])
+      return landmarks.length ? [{ muscle, landmarks }] : []
+    })
+  return { origin: collect('origin'), insertion: collect('insertion') }
+}
 
 export const TIP_LABELS: Record<TipKind, string> = {
   training: 'Tập luyện',

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { Bone, BreathingGuide, Exercise, Muscle, Quote } from '../src/lib/content-types.ts'
-import { glbMuscleObjects, validateBreathing, validateDetails, validateEvidence, validateExercises, validateMuscles } from './validate-content.ts'
+import { glbObjects, validateBreathing, validateDetails, validateEvidence, validateExercises, validateMuscles, validateSkeleton } from './validate-content.ts'
 
 const muscle = (over: Partial<Muscle> = {}): Muscle => ({
   id: 'deltoid', vi: 'Cơ delta', en: 'Deltoid', region: 'shoulders', superficial: true, status: 'draft',
@@ -88,14 +88,32 @@ describe('validateExercises', () => {
   })
 })
 
-describe('glbMuscleObjects', () => {
-  it('lấy tên node role=muscle, bỏ hậu tố .r/.l, bỏ node khác role', () => {
+describe('glbObjects', () => {
+  it('lấy tên node đúng role, bỏ hậu tố .r/.l, bỏ node khác role', () => {
     const glb = fakeGlb({ nodes: [
       { name: 'Soleus muscle.r', extras: { role: 'muscle' } },
+      { name: 'Femur.r', extras: { role: 'bone' } },
       { name: 'Head', extras: { role: 'head' } },
       { name: 'Camera' },
     ] })
-    expect(glbMuscleObjects(glb)).toEqual(new Set(['Soleus muscle']))
+    expect(glbObjects(glb, 'muscle')).toEqual(new Set(['Soleus muscle']))
+    expect(glbObjects(glb, 'bone')).toEqual(new Set(['Femur']))
+  })
+})
+
+describe('validateSkeleton', () => {
+  const femur = { object: 'Femur', vi: 'Xương đùi' }
+  it('hợp lệ khi khớp đúng bones.glb', () => {
+    expect(validateSkeleton([femur], new Set(['Femur']))).toEqual([])
+  })
+  it('báo trùng, thiếu tên, thiếu trong GLB và mesh GLB chưa có tên', () => {
+    const errors = validateSkeleton([femur, femur, { object: 'Tibia', vi: ' ' }], new Set(['Femur', 'Patella']))
+    expect(errors).toEqual([
+      'skeleton.json trùng object "Femur"',
+      'skeleton.json: "Tibia" thiếu tên vi',
+      'skeleton.json: "Tibia" không có trong bones.glb (chạy npm run model:bones)',
+      'bones.glb có "Patella" nhưng skeleton.json không có tên',
+    ])
   })
 })
 

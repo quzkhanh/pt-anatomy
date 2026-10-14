@@ -36,6 +36,12 @@ export interface Bone {
   objects: string[]
 }
 
+/** One mesh of bones.glb: `object` is its Z-Anatomy name without the side suffix (shown as the English name). */
+export interface SkeletonBone {
+  object: string
+  vi: string
+}
+
 /** A verbatim sentence from a source; `field`/`item` say which claim it backs (none = `function`). */
 export interface Quote {
   url: string

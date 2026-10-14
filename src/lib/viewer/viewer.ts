@@ -1,14 +1,16 @@
-import { Box3, DirectionalLight, HemisphereLight, PerspectiveCamera, Scene, Vector2, Vector3, WebGLRenderer } from 'three'
+import { Box3, DirectionalLight, type Object3D, HemisphereLight, PerspectiveCamera, Scene, Vector2, Vector3, WebGLRenderer } from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import type { PartRef } from '../content'
+import type { SkeletonBone } from '../content-types'
 import { LIGHTING, readThemeColors } from '../theme'
-import { anyVisible, applyHighlight, covers, createMaterials, NO_HIGHLIGHT, type Highlight, type HighlightState } from './highlight'
+import { anyVisible, applyHighlight, covers, createMaterials, NO_HIGHLIGHT, type HighlightState, type SceneHighlight } from './highlight'
 import { createCameraRig } from './camera'
-import { buildBoundsTrees, loadBody } from './model'
+import { buildBoundsTrees, loadBody, loadBones, type BodyMesh, type BoneMesh } from './model'
 import { createPicker } from './picking'
 import { QUALITY, QualityGovernor } from './quality'
 
 const MODEL_URL = `${import.meta.env.BASE_URL}models/body.glb`
+const BONES_URL = `${import.meta.env.BASE_URL}models/bones.glb`
 const TAP_SLOP_PX = 6
 const CAMERA = { fov: 35, near: 0.01, far: 20, distance: 2.1, minDistance: 0.25, maxDistance: 2.5 }
 const SUN_POSITION = new Vector3(2, 3, 1.5)
@@ -20,19 +22,24 @@ export interface ViewerStats {
   readyMs: number
 }
 
+export type PickHit = { kind: 'muscle'; ref: PartRef } | { kind: 'bone'; bone: SkeletonBone }
+
 export interface Viewer {
-  highlight(highlight: Highlight): void
+  highlight(highlight: SceneHighlight): void
   setSuperficialHidden(hidden: boolean): void
+  /** Shows bones instead of muscles; bones.glb is fetched the first time. Rejects when that fails. */
+  setSkeleton(on: boolean): Promise<void>
   flip(): void
   turn(radians: number): void
   focus(refs: string[]): void
   screenPoint(ref: string): { x: number; y: number } | null
+  boneScreenPoint(object: string): { x: number; y: number } | null
   stats(): ViewerStats
   dispose(): void
 }
 
 interface ViewerOptions {
-  onPick: (ref: PartRef | null) => void
+  onPick: (hit: PickHit | null) => void
   onProgress: (fraction: number | null) => void
   /** The browser dropped the WebGL context (too many contexts, GPU reset): the viewer is dead. */
   onContextLost: () => void
@@ -64,8 +71,10 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   const materials = createMaterials(colors)
   for (const mesh of body.head) mesh.material = materials.head
   for (const mesh of body.filler) mesh.material = materials.muscle
-  const state: HighlightState = { ...NO_HIGHLIGHT, superficialHidden: false }
-  applyHighlight(body, materials, state)
+  const state: HighlightState = { ...NO_HIGHLIGHT, superficialHidden: false, skeleton: false }
+  let bones: BoneMesh[] = []
+  let bonesLoading: Promise<void> | null = null
+  applyHighlight(body, bones, materials, state)
 
   const center = body.bounds.getCenter(new Vector3()).setX(0)
   const height = body.bounds.getSize(new Vector3()).y
@@ -86,11 +95,25 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   controls.addEventListener('start', rig.cancel)
   controls.addEventListener('start', onGesture)
   const update = () => {
-    applyHighlight(body, materials, state)
+    applyHighlight(body, bones, materials, state)
     requestRender()
   }
 
-  const pick = createPicker(camera, canvas, body.muscles, [...body.head, ...body.filler])
+  const pick = createPicker(camera, canvas)
+  const muscleByMesh = new Map<Object3D, BodyMesh>(body.muscles.map((m) => [m.mesh, m]))
+  const boneByMesh = new Map<Object3D, BoneMesh>()
+  const pickTargets = () => [
+    ...body.muscles.filter((m) => m.mesh.visible).map((m) => m.mesh),
+    ...body.head,
+    ...(state.skeleton ? bones.map((b) => b.mesh) : body.filler),
+  ]
+  const pickHit = (x: number, y: number): PickHit | null => {
+    const object = pick(x, y, pickTargets(), (o) => muscleByMesh.has(o) || boneByMesh.has(o))
+    const muscle = object && muscleByMesh.get(object)
+    if (muscle) return { kind: 'muscle', ref: muscle.ref }
+    const bone = object && boneByMesh.get(object)
+    return bone ? { kind: 'bone', bone: bone.bone } : null
+  }
   let pickMs = 0
   const downs = new Map<number, Vector2>()
   let multiTouch = false
@@ -110,11 +133,9 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     const down = release(e)
     if (!down || down.distanceTo(new Vector2(e.clientX, e.clientY)) > TAP_SLOP_PX) return
     const started = performance.now()
-    const hit = pick(e.clientX, e.clientY)
-    Object.assign(state, hit ? { primary: [hit.ref.muscle.id], secondary: [] } : NO_HIGHLIGHT)
-    update()
+    const hit = pickHit(e.clientX, e.clientY)
     pickMs = performance.now() - started
-    onPick(hit?.ref ?? null)
+    onPick(hit)
   }
   const onLost = (e: Event) => {
     e.preventDefault()
@@ -159,7 +180,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   renderer.render(scene, camera)
   const readyMs = performance.now()
   // Building BVHs takes a few hundred ms on phones; do it after the first frame is on screen.
-  requestAnimationFrame(() => setTimeout(() => buildBoundsTrees(body)))
+  requestAnimationFrame(() => setTimeout(() => buildBoundsTrees([...body.muscles.map((m) => m.mesh), ...body.head, ...body.filler])))
 
   // Both halves for focus, so a paired muscle is viewed head-on rather than from its right side.
   const centerOf = (refs: string[], bothSides: boolean) => {
@@ -168,14 +189,40 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     return box.isEmpty() ? null : box.getCenter(new Vector3())
   }
 
+  async function ensureBones() {
+    bonesLoading ??= loadBones(BONES_URL)
+      .then((loaded) => {
+        for (const b of loaded.bones) boneByMesh.set(b.mesh, b)
+        buildBoundsTrees(loaded.bones.map((b) => b.mesh))
+        bones = loaded.bones
+        scene.add(loaded.root)
+      })
+      .catch((error) => {
+        bonesLoading = null
+        throw error
+      })
+    await bonesLoading
+  }
+
+  const toScreen = (world: Vector3) => {
+    const point = world.clone().project(camera)
+    const rect = canvas.getBoundingClientRect()
+    return { x: rect.left + ((point.x + 1) / 2) * rect.width, y: rect.top + ((1 - point.y) / 2) * rect.height }
+  }
+
   return {
-    highlight({ primary, secondary }) {
-      Object.assign(state, { primary, secondary })
+    highlight(highlight) {
+      Object.assign(state, highlight)
+      update()
+    },
+    async setSkeleton(on) {
+      if (on) await ensureBones()
+      state.skeleton = on
       update()
     },
     setSuperficialHidden(hidden) {
       state.superficialHidden = hidden
-      applyHighlight(body, materials, state)
+      applyHighlight(body, bones, materials, state)
       if (state.primary.length && !anyVisible(body, state.primary)) {
         Object.assign(state, NO_HIGHLIGHT)
         onPick(null)
@@ -189,10 +236,12 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
       if (point) rig.faceTowards(point)
     },
     screenPoint(ref) {
-      const point = centerOf([ref], false)?.project(camera)
-      if (!point) return null
-      const rect = canvas.getBoundingClientRect()
-      return { x: rect.left + ((point.x + 1) / 2) * rect.width, y: rect.top + ((1 - point.y) / 2) * rect.height }
+      const point = centerOf([ref], false)
+      return point && toScreen(point)
+    },
+    boneScreenPoint(object) {
+      const bone = bones.find((b) => b.bone.object === object && b.mesh.visible)
+      return bone ? toScreen(new Box3().setFromObject(bone.mesh).getCenter(new Vector3())) : null
     },
     stats: () => ({ fps, pickMs, pixelRatio: governor.ratio, readyMs }),
     dispose() {

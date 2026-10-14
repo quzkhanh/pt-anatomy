@@ -1,4 +1,5 @@
-import type { Equipment, Exercise, Muscle, MusclePart } from './content-types'
+import type { Equipment, Exercise, Muscle, MusclePart, SkeletonBone } from './content-types'
+import type { PickHit } from './viewer/viewer'
 
 export type Tab = 'body' | 'exercises' | 'favorites'
 export type MuscleTab = 'exercises' | 'details' | 'tips'
@@ -15,6 +16,7 @@ export interface MuscleOrigin {
 export type Selection =
   | { kind: 'muscle'; muscle: Muscle; part: MusclePart | null; navigate: boolean; restore?: Omit<MuscleOrigin, 'muscle'> }
   | { kind: 'exercise'; exercise: Exercise; navigate: boolean; from?: MuscleOrigin }
+  | { kind: 'bone'; bone: SkeletonBone; navigate: false }
 
 export const app = $state<{ tab: Tab; selection: Selection | null; credits: boolean }>({
   tab: 'body',
@@ -34,4 +36,12 @@ export function openExercise(exercise: Exercise, from?: MuscleOrigin) {
 
 export function backToMuscle({ muscle, tab, equipment }: MuscleOrigin) {
   app.selection = { kind: 'muscle', muscle, part: null, navigate: false, restore: { tab, equipment } }
+}
+
+/** A tap on the model selects what it hit, or clears the selection on a miss. */
+export function selectPicked(hit: PickHit | null) {
+  app.selection =
+    hit?.kind === 'muscle'
+      ? { kind: 'muscle', muscle: hit.ref.muscle, part: hit.ref.part, navigate: false }
+      : hit && { kind: 'bone', bone: hit.bone, navigate: false }
 }

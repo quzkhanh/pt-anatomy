@@ -1,6 +1,9 @@
 <script lang="ts">
+  import type { SkeletonState } from '../lib/skeleton-mode.svelte'
+
   interface Props {
     superficialHidden: boolean
+    skeleton: SkeletonState
     /** Height of the open sheet's top, so the buttons sit just above it. */
     lift: number
     /** The wide-screen side panel is open: sit to its left. */
@@ -8,15 +11,29 @@
     onFlip: () => void
     onTurn: () => void
     onToggleLayer: () => void
+    onToggleSkeleton: () => void
   }
 
-  let { superficialHidden, lift, besidePanel, onFlip, onTurn, onToggleLayer }: Props = $props()
+  let { superficialHidden, skeleton, lift, besidePanel, onFlip, onTurn, onToggleLayer, onToggleSkeleton }: Props = $props()
+
+  const SKELETON_LABELS: Record<SkeletonState, string> = {
+    off: 'Hiện xương',
+    loading: 'Đang tải xương…',
+    on: 'Ẩn xương',
+    error: 'Tải xương lỗi · Thử lại',
+  }
 </script>
 
 <div class="actions" class:beside={besidePanel} style:--lift="{lift}px">
   <button onclick={onTurn}>Xoay 90°</button>
   <button onclick={onFlip}>Trước / Sau</button>
-  <button onclick={onToggleLayer}>{superficialHidden ? 'Hiện lớp nông' : 'Ẩn lớp nông'}</button>
+  <!-- Skeleton mode hides every muscle but the selected ones, so the layer switch would do nothing there. -->
+  {#if skeleton !== 'on'}
+    <button onclick={onToggleLayer}>{superficialHidden ? 'Hiện lớp nông' : 'Ẩn lớp nông'}</button>
+  {/if}
+  <button onclick={onToggleSkeleton} disabled={skeleton === 'loading'} aria-pressed={skeleton === 'on'}>
+    {SKELETON_LABELS[skeleton]}
+  </button>
 </div>
 
 <style>

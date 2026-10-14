@@ -1,25 +1,22 @@
 <script lang="ts">
   import { onMount, tick, untrack } from 'svelte'
-  import BottomSheet from '../components/BottomSheet.svelte'
   import DebugOverlay from '../components/DebugOverlay.svelte'
-  import ExerciseHeader from '../components/ExerciseHeader.svelte'
   import GestureHint from '../components/GestureHint.svelte'
-  import ExerciseInfo from '../components/ExerciseInfo.svelte'
   import LoadState from '../components/LoadState.svelte'
-  import MuscleHeader from '../components/MuscleHeader.svelte'
-  import MuscleInfo from '../components/MuscleInfo.svelte'
   import MuscleList from '../components/MuscleList.svelte'
   import SearchBar from '../components/SearchBar.svelte'
+  import SelectionSheet from '../components/SelectionSheet.svelte'
   import SideActions from '../components/SideActions.svelte'
-  import { app, backToMuscle, openMuscle, type MuscleTab, type Selection } from '../lib/app-state.svelte'
-  import { exerciseCount, type PartRef } from '../lib/content'
+  import { app, openMuscle, selectPicked, type MuscleTab, type Selection } from '../lib/app-state.svelte'
+  import { exerciseCount } from '../lib/content'
   import type { Equipment } from '../lib/content-types'
   import { highlightOf, layerFor } from '../lib/highlight-of'
   import { layout } from '../lib/layout.svelte'
   import type { Snap } from '../lib/sheet'
   import { load, save } from '../lib/storage'
   import { hasWebGL } from '../lib/webgl'
-  import { createViewer, type Viewer } from '../lib/viewer/viewer'
+  import { restoreSkeleton, skeleton, toggleSkeleton } from '../lib/skeleton-mode.svelte'
+  import { createViewer, type PickHit, type Viewer } from '../lib/viewer/viewer'
 
   const HINT_KEY = 'pt-anatomy:hint-seen:v1'
   const TURN_RADIANS = Math.PI / 2
@@ -56,6 +53,7 @@
     try {
       const v = await createViewer(canvas!, { onPick, onProgress: (p) => (progress = p), onContextLost, onGesture: dismissHint })
       v.setSuperficialHidden(superficialHidden)
+      await restoreSkeleton(v)
       viewer = v
       phase = 'ready'
       if (debug) window.__ptDebug = v
@@ -72,9 +70,9 @@
     phase = 'error'
   }
 
-  function onPick(ref: PartRef | null) {
-    app.selection = ref && { kind: 'muscle', muscle: ref.muscle, part: ref.part, navigate: false }
-    if (ref) dismissHint()
+  function onPick(hit: PickHit | null) {
+    selectPicked(hit)
+    if (hit) dismissHint()
   }
 
   // The hint teaches both gestures, so the first tap on a muscle or the first rotation retires it.
@@ -134,7 +132,7 @@
 <div class="screen" style:visibility={hidden ? 'hidden' : null} inert={hidden}>
   {#if webgl}
     {#key canvasKey}
-      <canvas bind:this={canvas} aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin." onpointerdown={blurActive}></canvas>
+      <canvas bind:this={canvas} aria-label="Mô hình 3D cơ thể. Chạm vào cơ hoặc xương để xem thông tin." onpointerdown={blurActive}></canvas>
     {/key}
     {#if phase !== 'ready'}
       <LoadState
@@ -154,11 +152,13 @@
     {#if app.selection === null || snap === 'peek' || layout.wide}
       <SideActions
         {superficialHidden}
+        skeleton={skeleton.state}
         lift={app.selection && !layout.wide ? sheetTop : 0}
         besidePanel={app.selection !== null && layout.wide}
         onFlip={() => viewer?.flip()}
         onTurn={() => viewer?.turn(-TURN_RADIANS)}
         onToggleLayer={() => setLayer(!superficialHidden)}
+        onToggleSkeleton={() => viewer && toggleSkeleton(viewer)}
       />
     {/if}
     {#if showHint && !hintSeen && app.selection === null}
@@ -170,41 +170,14 @@
     <DebugOverlay {viewer} />
   {/if}
 
-  <BottomSheet
-    open={app.selection !== null}
+  <SelectionSheet
+    {shown}
     bind:snap
     bind:peekHeight={sheetTop}
-    label={shown?.kind === 'exercise' ? 'Thông tin bài tập' : 'Thông tin cơ'}
-    contentKey={shown?.kind === 'exercise' ? `e:${shown.exercise.id}` : shown ? `m:${shown.muscle.id}` : ''}
-    onClose={() => (app.selection = null)}
-  >
-    {#snippet header()}
-      {#if shown?.kind === 'muscle'}
-        <MuscleHeader
-          muscle={shown.muscle}
-          part={shown.part}
-          onShowExercises={snap === 'peek'
-            ? () => {
-                muscleTab = 'exercises'
-                snap = 'half'
-              }
-            : undefined}
-        />
-      {:else if shown?.kind === 'exercise'}
-        {@const from = shown.from}
-        <ExerciseHeader
-          exercise={shown.exercise}
-          back={from && { label: from.muscle.vi, go: () => backToMuscle(from) }}
-          onShowMotion={snap === 'peek' ? () => (snap = 'half') : undefined}
-        />
-      {/if}
-    {/snippet}
-    {#if shown?.kind === 'muscle'}
-      <MuscleInfo muscle={shown.muscle} bind:tab={muscleTab} bind:equipment />
-    {:else if shown?.kind === 'exercise'}
-      <ExerciseInfo exercise={shown.exercise} motionActive={!hidden && app.selection !== null && snap !== 'peek'} />
-    {/if}
-  </BottomSheet>
+    bind:muscleTab
+    bind:equipment
+    motionActive={!hidden && app.selection !== null && snap !== 'peek'}
+  />
 </div>
 
 <style>

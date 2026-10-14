@@ -2,7 +2,7 @@ import type { Color } from 'three'
 import { isSuperficial, type PartRef } from '../content'
 import { refCovers } from '../refs'
 import { LIGHTING, type ThemeColors } from '../theme'
-import type { Body } from './model'
+import type { Body, BoneMesh } from './model'
 import { rimMaterial } from './material'
 
 export interface Highlight {
@@ -10,11 +10,20 @@ export interface Highlight {
   secondary: string[]
 }
 
-export interface HighlightState extends Highlight {
-  superficialHidden: boolean
+/** What the body viewer shows: muscles plus, in skeleton mode, bones by bones.glb object name. */
+export interface SceneHighlight extends Highlight {
+  /** The tapped bone. */
+  selectedBones: string[]
+  /** Where the selected muscle attaches. */
+  attachedBones: string[]
 }
 
-export const NO_HIGHLIGHT: Highlight = { primary: [], secondary: [] }
+export interface HighlightState extends SceneHighlight {
+  superficialHidden: boolean
+  skeleton: boolean
+}
+
+export const NO_HIGHLIGHT: SceneHighlight = { primary: [], secondary: [], selectedBones: [], attachedBones: [] }
 
 export type Materials = ReturnType<typeof createMaterials>
 
@@ -25,19 +34,28 @@ export function createMaterials(colors: ThemeColors) {
     primary: matte(colors.selected),
     secondary: matte(colors.secondary),
     head: matte(colors.head),
+    bone: matte(colors.bone),
   }
 }
 
 export const covers = (refs: string[], { muscle, part }: PartRef) => refs.some((r) => refCovers(r, muscle.id, part.id))
 
-export function applyHighlight(body: Body, materials: Materials, state: HighlightState) {
+/** Skeleton mode shows the bones and only the highlighted muscles, wherever their layer is. */
+export function applyHighlight(body: Body, bones: BoneMesh[], materials: Materials, state: HighlightState) {
   for (const { mesh, ref } of body.muscles) {
-    mesh.material = covers(state.primary, ref)
+    const primary = covers(state.primary, ref)
+    const secondary = !primary && covers(state.secondary, ref)
+    mesh.material = primary ? materials.primary : secondary ? materials.secondary : materials.muscle
+    mesh.visible = state.skeleton ? primary || secondary : !(state.superficialHidden && isSuperficial(ref))
+  }
+  for (const mesh of body.filler) mesh.visible = !state.skeleton
+  for (const { mesh, bone } of bones) {
+    mesh.visible = state.skeleton
+    mesh.material = state.selectedBones.includes(bone.object)
       ? materials.primary
-      : covers(state.secondary, ref)
+      : state.attachedBones.includes(bone.object)
         ? materials.secondary
-        : materials.muscle
-    mesh.visible = !(state.superficialHidden && isSuperficial(ref))
+        : materials.bone
   }
 }
 

@@ -1,0 +1,462 @@
+[
+  {
+    "object": "Atlas (C1)",
+    "vi": "Đốt đội (C1)"
+  },
+  {
+    "object": "Axis (C2)",
+    "vi": "Đốt trục (C2)"
+  },
+  {
+    "object": "Body of sternum",
+    "vi": "Thân xương ức"
+  },
+  {
+    "object": "Calcaneus",
+    "vi": "Xương gót"
+  },
+  {
+    "object": "Capitate bone",
+    "vi": "Xương cả"
+  },
+  {
+    "object": "Clavicle",
+    "vi": "Xương đòn"
+  },
+  {
+    "object": "Coccyx",
+    "vi": "Xương cụt"
+  },
+  {
+    "object": "Costal cartilage of eighth rib",
+    "vi": "Sụn sườn 8"
+  },
+  {
+    "object": "Costal cartilage of fifth rib",
+    "vi": "Sụn sườn 5"
+  },
+  {
+    "object": "Costal cartilage of first rib",
+    "vi": "Sụn sườn 1"
+  },
+  {
+    "object": "Costal cartilage of fourth rib",
+    "vi": "Sụn sườn 4"
+  },
+  {
+    "object": "Costal cartilage of ninth rib",
+    "vi": "Sụn sườn 9"
+  },
+  {
+    "object": "Costal cartilage of second rib",
+    "vi": "Sụn sườn 2"
+  },
+  {
+    "object": "Costal cartilage of seventh rib",
+    "vi": "Sụn sườn 7"
+  },
+  {
+    "object": "Costal cartilage of sixth rib",
+    "vi": "Sụn sườn 6"
+  },
+  {
+    "object": "Costal cartilage of tenth rib",
+    "vi": "Sụn sườn 10"
+  },
+  {
+    "object": "Costal cartilage of third rib",
+    "vi": "Sụn sườn 3"
+  },
+  {
+    "object": "Cuboid bone",
+    "vi": "Xương hộp"
+  },
+  {
+    "object": "Distal phalanx of fifth finger of foot",
+    "vi": "Đốt xa ngón chân út"
+  },
+  {
+    "object": "Distal phalanx of fifth finger of hand",
+    "vi": "Đốt xa ngón út"
+  },
+  {
+    "object": "Distal phalanx of first finger of foot",
+    "vi": "Đốt xa ngón chân cái"
+  },
+  {
+    "object": "Distal phalanx of first finger of hand",
+    "vi": "Đốt xa ngón cái"
+  },
+  {
+    "object": "Distal phalanx of fourth finger of foot",
+    "vi": "Đốt xa ngón chân thứ tư"
+  },
+  {
+    "object": "Distal phalanx of fourth finger of hand",
+    "vi": "Đốt xa ngón nhẫn"
+  },
+  {
+    "object": "Distal phalanx of second finger of foot",
+    "vi": "Đốt xa ngón chân thứ hai"
+  },
+  {
+    "object": "Distal phalanx of second finger of hand",
+    "vi": "Đốt xa ngón trỏ"
+  },
+  {
+    "object": "Distal phalanx of third finger of foot",
+    "vi": "Đốt xa ngón chân thứ ba"
+  },
+  {
+    "object": "Distal phalanx of third finger of hand",
+    "vi": "Đốt xa ngón giữa"
+  },
+  {
+    "object": "Eighth rib",
+    "vi": "Xương sườn 8"
+  },
+  {
+    "object": "Eleventh rib",
+    "vi": "Xương sườn 11"
+  },
+  {
+    "object": "Femur",
+    "vi": "Xương đùi"
+  },
+  {
+    "object": "Fibula",
+    "vi": "Xương mác"
+  },
+  {
+    "object": "Fifth metacarpal bone",
+    "vi": "Xương bàn tay V"
+  },
+  {
+    "object": "Fifth metatarsal bone",
+    "vi": "Xương bàn chân V"
+  },
+  {
+    "object": "Fifth rib",
+    "vi": "Xương sườn 5"
+  },
+  {
+    "object": "First metacarpal bone",
+    "vi": "Xương bàn tay I"
+  },
+  {
+    "object": "First metatarsal bone",
+    "vi": "Xương bàn chân I"
+  },
+  {
+    "object": "First rib",
+    "vi": "Xương sườn 1"
+  },
+  {
+    "object": "Fourth metacarpal bone",
+    "vi": "Xương bàn tay IV"
+  },
+  {
+    "object": "Fourth metatarsal bone",
+    "vi": "Xương bàn chân IV"
+  },
+  {
+    "object": "Fourth rib",
+    "vi": "Xương sườn 4"
+  },
+  {
+    "object": "Hamate bone",
+    "vi": "Xương móc"
+  },
+  {
+    "object": "Hip bone",
+    "vi": "Xương chậu"
+  },
+  {
+    "object": "Humerus",
+    "vi": "Xương cánh tay"
+  },
+  {
+    "object": "Intermediate cuneiform bone",
+    "vi": "Xương chêm giữa"
+  },
+  {
+    "object": "Lateral cuneiform bone",
+    "vi": "Xương chêm ngoài"
+  },
+  {
+    "object": "Lunate bone",
+    "vi": "Xương nguyệt"
+  },
+  {
+    "object": "Manubrium of sternum",
+    "vi": "Cán xương ức"
+  },
+  {
+    "object": "Medial cuneiform bone",
+    "vi": "Xương chêm trong"
+  },
+  {
+    "object": "Middle phalanx of fifth finger of foot",
+    "vi": "Đốt giữa ngón chân út"
+  },
+  {
+    "object": "Middle phalanx of fifth finger of hand",
+    "vi": "Đốt giữa ngón út"
+  },
+  {
+    "object": "Middle phalanx of fourth finger of foot",
+    "vi": "Đốt giữa ngón chân thứ tư"
+  },
+  {
+    "object": "Middle phalanx of fourth finger of hand",
+    "vi": "Đốt giữa ngón nhẫn"
+  },
+  {
+    "object": "Middle phalanx of second finger of foot",
+    "vi": "Đốt giữa ngón chân thứ hai"
+  },
+  {
+    "object": "Middle phalanx of second finger of hand",
+    "vi": "Đốt giữa ngón trỏ"
+  },
+  {
+    "object": "Middle phalanx of third finger of foot",
+    "vi": "Đốt giữa ngón chân thứ ba"
+  },
+  {
+    "object": "Middle phalanx of third finger of hand",
+    "vi": "Đốt giữa ngón giữa"
+  },
+  {
+    "object": "Navicular bone",
+    "vi": "Xương ghe"
+  },
+  {
+    "object": "Ninth rib",
+    "vi": "Xương sườn 9"
+  },
+  {
+    "object": "Patella",
+    "vi": "Xương bánh chè"
+  },
+  {
+    "object": "Pisiform bone",
+    "vi": "Xương đậu"
+  },
+  {
+    "object": "Proximal phalanx of fifth finger of foot",
+    "vi": "Đốt gần ngón chân út"
+  },
+  {
+    "object": "Proximal phalanx of fifth finger of hand",
+    "vi": "Đốt gần ngón út"
+  },
+  {
+    "object": "Proximal phalanx of first finger of foot",
+    "vi": "Đốt gần ngón chân cái"
+  },
+  {
+    "object": "Proximal phalanx of first finger of hand",
+    "vi": "Đốt gần ngón cái"
+  },
+  {
+    "object": "Proximal phalanx of fourth finger of foot",
+    "vi": "Đốt gần ngón chân thứ tư"
+  },
+  {
+    "object": "Proximal phalanx of fourth finger of hand",
+    "vi": "Đốt gần ngón nhẫn"
+  },
+  {
+    "object": "Proximal phalanx of second finger of foot",
+    "vi": "Đốt gần ngón chân thứ hai"
+  },
+  {
+    "object": "Proximal phalanx of second finger of hand",
+    "vi": "Đốt gần ngón trỏ"
+  },
+  {
+    "object": "Proximal phalanx of third finger of foot",
+    "vi": "Đốt gần ngón chân thứ ba"
+  },
+  {
+    "object": "Proximal phalanx of third finger of hand",
+    "vi": "Đốt gần ngón giữa"
+  },
+  {
+    "object": "Radius",
+    "vi": "Xương quay"
+  },
+  {
+    "object": "Sacrum",
+    "vi": "Xương cùng"
+  },
+  {
+    "object": "Scaphoid bone",
+    "vi": "Xương thuyền"
+  },
+  {
+    "object": "Scapula",
+    "vi": "Xương vai"
+  },
+  {
+    "object": "Second metacarpal bone",
+    "vi": "Xương bàn tay II"
+  },
+  {
+    "object": "Second metatarsal bone",
+    "vi": "Xương bàn chân II"
+  },
+  {
+    "object": "Second rib",
+    "vi": "Xương sườn 2"
+  },
+  {
+    "object": "Sesamoid bones of foot",
+    "vi": "Xương vừng bàn chân"
+  },
+  {
+    "object": "Seventh rib",
+    "vi": "Xương sườn 7"
+  },
+  {
+    "object": "Sixth rib",
+    "vi": "Xương sườn 6"
+  },
+  {
+    "object": "Talus",
+    "vi": "Xương sên"
+  },
+  {
+    "object": "Tenth rib",
+    "vi": "Xương sườn 10"
+  },
+  {
+    "object": "Third metacarpal bone",
+    "vi": "Xương bàn tay III"
+  },
+  {
+    "object": "Third metatarsal bone",
+    "vi": "Xương bàn chân III"
+  },
+  {
+    "object": "Third rib",
+    "vi": "Xương sườn 3"
+  },
+  {
+    "object": "Tibia",
+    "vi": "Xương chày"
+  },
+  {
+    "object": "Trapezium bone",
+    "vi": "Xương thang"
+  },
+  {
+    "object": "Trapezoid bone",
+    "vi": "Xương thê"
+  },
+  {
+    "object": "Triquetrum bone",
+    "vi": "Xương tháp"
+  },
+  {
+    "object": "Twelfth rib",
+    "vi": "Xương sườn 12"
+  },
+  {
+    "object": "Ulna",
+    "vi": "Xương trụ"
+  },
+  {
+    "object": "Vertebra C3",
+    "vi": "Đốt sống cổ C3"
+  },
+  {
+    "object": "Vertebra C4",
+    "vi": "Đốt sống cổ C4"
+  },
+  {
+    "object": "Vertebra C5",
+    "vi": "Đốt sống cổ C5"
+  },
+  {
+    "object": "Vertebra C6",
+    "vi": "Đốt sống cổ C6"
+  },
+  {
+    "object": "Vertebra C7",
+    "vi": "Đốt sống cổ C7"
+  },
+  {
+    "object": "Vertebra L1",
+    "vi": "Đốt sống thắt lưng L1"
+  },
+  {
+    "object": "Vertebra L2",
+    "vi": "Đốt sống thắt lưng L2"
+  },
+  {
+    "object": "Vertebra L3",
+    "vi": "Đốt sống thắt lưng L3"
+  },
+  {
+    "object": "Vertebra L4",
+    "vi": "Đốt sống thắt lưng L4"
+  },
+  {
+    "object": "Vertebra L5",
+    "vi": "Đốt sống thắt lưng L5"
+  },
+  {
+    "object": "Vertebra T1",
+    "vi": "Đốt sống ngực T1"
+  },
+  {
+    "object": "Vertebra T10",
+    "vi": "Đốt sống ngực T10"
+  },
+  {
+    "object": "Vertebra T11",
+    "vi": "Đốt sống ngực T11"
+  },
+  {
+    "object": "Vertebra T12",
+    "vi": "Đốt sống ngực T12"
+  },
+  {
+    "object": "Vertebra T2",
+    "vi": "Đốt sống ngực T2"
+  },
+  {
+    "object": "Vertebra T3",
+    "vi": "Đốt sống ngực T3"
+  },
+  {
+    "object": "Vertebra T4",
+    "vi": "Đốt sống ngực T4"
+  },
+  {
+    "object": "Vertebra T5",
+    "vi": "Đốt sống ngực T5"
+  },
+  {
+    "object": "Vertebra T6",
+    "vi": "Đốt sống ngực T6"
+  },
+  {
+    "object": "Vertebra T7",
+    "vi": "Đốt sống ngực T7"
+  },
+  {
+    "object": "Vertebra T8",
+    "vi": "Đốt sống ngực T8"
+  },
+  {
+    "object": "Vertebra T9",
+    "vi": "Đốt sống ngực T9"
+  },
+  {
+    "object": "Xiphoid process",
+    "vi": "Mỏm mũi kiếm"
+  }
+]

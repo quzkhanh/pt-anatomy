@@ -1,4 +1,4 @@
-import { EQUIPMENT, REGIONS, STATUSES, TIP_KINDS, type Bone, type BreathingGuide, type Exercise, type Muscle, type Quote, type Source, type TipKind } from '../src/lib/content-types.ts'
+import { EQUIPMENT, REGIONS, STATUSES, TIP_KINDS, type Bone, type BreathingGuide, type Exercise, type Muscle, type Quote, type SkeletonBone, type Source, type TipKind } from '../src/lib/content-types.ts'
 import { refsOverlap, splitRef } from '../src/lib/refs.ts'
 
 const GLB_MAGIC = 0x46546c67
@@ -6,14 +6,28 @@ const GLB_HEADER_BYTES = 12
 const CHUNK_HEADER_BYTES = 8
 const SIDE_SUFFIX = /\.[rl]$/
 
-export function glbMuscleObjects(glb: Uint8Array): Set<string> {
+export function glbObjects(glb: Uint8Array, role: 'muscle' | 'bone'): Set<string> {
   const view = new DataView(glb.buffer, glb.byteOffset, glb.byteLength)
-  if (view.getUint32(0, true) !== GLB_MAGIC) throw new Error('body.glb không phải file GLB')
+  if (view.getUint32(0, true) !== GLB_MAGIC) throw new Error('file không phải GLB')
   const jsonStart = GLB_HEADER_BYTES + CHUNK_HEADER_BYTES
   const jsonLength = view.getUint32(GLB_HEADER_BYTES, true)
   const gltf = JSON.parse(new TextDecoder().decode(glb.subarray(jsonStart, jsonStart + jsonLength)))
   const nodes: { name?: string; extras?: { role?: string } }[] = gltf.nodes ?? []
-  return new Set(nodes.filter((n) => n.extras?.role === 'muscle').map((n) => n.name!.replace(SIDE_SUFFIX, '')))
+  return new Set(nodes.filter((n) => n.extras?.role === role).map((n) => n.name!.replace(SIDE_SUFFIX, '')))
+}
+
+/** content/skeleton.json names every mesh of bones.glb, once. */
+export function validateSkeleton(skeleton: SkeletonBone[], glbObjects: Set<string>): string[] {
+  const errors: string[] = []
+  const seen = new Set<string>()
+  for (const b of skeleton) {
+    if (seen.has(b.object)) errors.push(`skeleton.json trùng object "${b.object}"`)
+    seen.add(b.object)
+    if (!b.vi.trim()) errors.push(`skeleton.json: "${b.object}" thiếu tên vi`)
+    if (!glbObjects.has(b.object)) errors.push(`skeleton.json: "${b.object}" không có trong bones.glb (chạy npm run model:bones)`)
+  }
+  for (const o of glbObjects) if (!seen.has(o)) errors.push(`bones.glb có "${o}" nhưng skeleton.json không có tên`)
+  return errors
 }
 
 export function validateMuscles(muscles: Muscle[], glbObjects: Set<string>): string[] {

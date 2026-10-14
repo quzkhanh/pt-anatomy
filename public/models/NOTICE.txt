@@ -1,12 +1,14 @@
-body.glb — 3D muscle model used by PT Anatomy
+body.glb, bones.glb — 3D muscle and bone models used by PT Anatomy
 
 Derived from Z-Anatomy (https://github.com/Z-Anatomy/Models-of-human-anatomy),
 which is based on BodyParts3D (The Database Center for Life Science, https://lifesciencedb.jp/bp3d/).
 Changes: selected muscles only, right side only, decimated, added a smoothed head mesh built
 from the Z-Anatomy head skin regions, added a thin neutral midline filler between the left and
 right front-wall muscles, fixed swapped trapezius part names.
+bones.glb: bones below the skull only (no skull, teeth, ear ossicles, laryngeal or nasal
+cartilage), right side and midline only, decimated.
 
 License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 https://creativecommons.org/licenses/by-sa/4.0/
 
-This license applies to body.glb only. The application source code is not covered by it.
+This license applies to body.glb and bones.glb only. The application source code is not covered by it.

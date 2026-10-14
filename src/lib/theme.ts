@@ -4,6 +4,7 @@ export interface ThemeColors {
   background: Color
   muscle: Color
   head: Color
+  bone: Color
   selected: Color
   secondary: Color
   rim: Color
@@ -24,6 +25,7 @@ export function readThemeColors(): ThemeColors {
     background: cssColor('--color-bg'),
     muscle: cssColor('--color-muscle'),
     head: cssColor('--color-head'),
+    bone: cssColor('--color-bone'),
     selected: cssColor('--color-selected'),
     secondary: cssColor('--color-secondary'),
     rim: cssColor('--color-rim'),

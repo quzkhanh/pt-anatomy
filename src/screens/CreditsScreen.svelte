@@ -14,13 +14,13 @@
 <Panel title="Nguồn & giấy phép" onClose={() => (app.credits = false)}>
   <h2>Mô hình 3D</h2>
   <p>
-    Mô hình cơ lấy từ <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noopener">Z-Anatomy</a>,
+    Mô hình cơ và xương lấy từ <a href="https://github.com/Z-Anatomy/Models-of-human-anatomy" target="_blank" rel="noopener">Z-Anatomy</a>,
     dựa trên <a href="https://lifesciencedb.jp/bp3d/" target="_blank" rel="noopener">BodyParts3D</a> (The Database Center for
     Life Science). Bản trong app đã lọc cơ, chỉ giữ nửa phải, giảm đa giác, thêm đầu trơn, thêm tấm che mỏng ở
-    đường giữa thân và sửa tên hai phần cơ thang bị đặt ngược.
+    đường giữa thân và sửa tên hai phần cơ thang bị đặt ngược. Mô hình xương bỏ sọ, răng và sụn thanh quản.
   </p>
   <p>
-    File <code>body.glb</code> phát hành theo giấy phép
+    Hai file <code>body.glb</code> và <code>bones.glb</code> phát hành theo giấy phép
     <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Giấy phép này
     chỉ áp dụng cho mô hình, không áp dụng cho mã nguồn và nội dung chữ của app.
   </p>
