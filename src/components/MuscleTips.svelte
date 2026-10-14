@@ -11,7 +11,7 @@
 {#each groups as { kind, tips } (kind)}
   <h3>{TIP_LABELS[kind]}</h3>
   <ul>
-    {#each tips as tip (tip)}
+    {#each tips as tip, i (i)}
       <li>{tip}</li>
     {/each}
   </ul>
@@ -22,9 +22,6 @@
   h3 {
     margin: var(--space-4) 0 var(--space-1);
     font-size: var(--font-sm);
-  }
-  h3:first-child {
-    margin-top: var(--space-2);
   }
   ul {
     margin: 0;

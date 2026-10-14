@@ -6,7 +6,10 @@
   let { muscle }: { muscle: Muscle } = $props()
 </script>
 
-<p class="text">{muscle.function}</p>
+{#if muscle.function}
+  <h3>Chức năng</h3>
+  <p class="text">{muscle.function}</p>
+{/if}
 {#if muscle.origin}<AttachmentList label="Nguyên ủy" attachments={muscle.origin} />{/if}
 {#if muscle.insertion}<AttachmentList label="Bám tận" attachments={muscle.insertion} />{/if}
 {#if muscle.nerve}

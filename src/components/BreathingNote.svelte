@@ -4,7 +4,7 @@
 
 <h3>Cách thở</h3>
 <ul>
-  {#each breathing.points as point (point)}
+  {#each breathing.points as point, i (i)}
     <li>{point}</li>
   {/each}
 </ul>
