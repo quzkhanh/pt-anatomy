@@ -265,95 +265,207 @@
       {"id": "long", "vi": "đầu dài", "object": "Long head of biceps brachii"},
       {"id": "short", "vi": "đầu ngắn", "object": "Short head of biceps brachii"} ],
     "function": "Gập khuỷu và ngửa cẳng tay (xoay lòng bàn tay lên); còn hỗ trợ đưa cánh tay ra trước tại khớp vai. Gập khuỷu mạnh nhất khi cẳng tay đang ngửa. Gân đầu dài còn giúp giữ chỏm xương cánh tay trong ổ khớp vai.",
+    "origin": [{"bones": ["scapula"], "vi": "Lồi củ trên ổ chảo xương vai (đầu dài)"}, {"bones": ["scapula"], "vi": "Mỏm quạ xương vai (đầu ngắn)"}],
+    "insertion": [{"bones": ["radius"], "vi": "Lồi củ quay; ngoài ra qua cân cơ nhị đầu (bicipital aponeurosis) tỏa vào mạc cẳng tay"}],
+    "nerve": "Thần kinh cơ bì (C5–C6; có nguồn ghi C5–C7)",
+    "tips": {
+      "training": ["Khi cẳng tay sấp, cơ cánh tay và cơ cánh tay quay gập khuỷu là chính, cơ nhị đầu góp rất ít."],
+      "palpation": ["Gân bám tận của cơ dễ nhìn thấy và sờ được ở nếp khuỷu."],
+      "clinical": ["Gân đầu dài thuộc nhóm gân hay bị đứt; khi đứt, gập khuỷu sẽ thấy khối phồng ở bụng cơ (dấu hiệu Popeye).", "Người bệnh thường không thấy yếu nhiều ở chi trên khi đứt gân đầu dài, vì cơ cánh tay (gập khuỷu) và cơ ngửa (ngửa cẳng tay) vẫn hoạt động."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia – Biceps", "url": "https://en.wikipedia.org/wiki/Biceps"} ] },
+      {"title": "Wikipedia – Biceps", "url": "https://en.wikipedia.org/wiki/Biceps"},
+      {"title": "TeachMeAnatomy – The Muscles of the Upper Arm", "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/"},
+      {"title": "Kenhub – Biceps brachii muscle", "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle"} ] },
   {"id": "brachialis", "vi": "Cơ cánh tay", "en": "Brachialis", "region": "arms", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Brachialis muscle"} ],
     "function": "Gập khuỷu, và là cơ gập khuỷu mạnh nhất, nằm sâu dưới cơ nhị đầu cánh tay. Không bám vào xương quay nên không tham gia sấp hay ngửa cẳng tay.",
+    "origin": [{"bones": ["humerus"], "vi": "Nửa dưới mặt trước xương cánh tay (mặt trước trong và mặt trước ngoài thân xương)"}],
+    "insertion": [{"bones": ["ulna"], "vi": "Lồi củ xương trụ và mặt trước mỏm vẹt xương trụ"}],
+    "nerve": "Thần kinh cơ bì, kèm các nhánh của thần kinh quay",
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia – Brachialis muscle", "url": "https://en.wikipedia.org/wiki/Brachialis_muscle"} ] },
+      {"title": "Wikipedia – Brachialis muscle", "url": "https://en.wikipedia.org/wiki/Brachialis_muscle"},
+      {"title": "TeachMeAnatomy – The Muscles of the Upper Arm", "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/"} ] },
   {"id": "coracobrachialis", "vi": "Cơ quạ cánh tay", "en": "Coracobrachialis", "region": "arms", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Coracobrachialis muscle"} ],
     "function": "Gập (đưa ra trước) và khép cánh tay tại khớp vai, nhưng lực yếu. Hay bị chấn thương khi tập ngực hoặc làm các động tác ép chặt tay vào thân (như tập vòng treo).",
+    "origin": [{"bones": ["scapula"], "vi": "Mỏm quạ xương vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Giữa mặt trong thân xương cánh tay, ngang mức lồi củ delta"}],
+    "nerve": "Thần kinh cơ bì (C5–C7)",
+    "tips": {
+      "clinical": ["Dùng quá mức có thể làm cơ cứng; nguyên nhân thường gặp là tập ngực hoặc các động tác ép tay sát thân, ví dụ vòng treo trong thể dục dụng cụ.", "Ở trường hợp nặng, thần kinh cơ bì có thể bị kẹt: rối loạn cảm giác da mặt quay của cẳng tay và yếu gập khuỷu."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia – Coracobrachialis muscle", "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle"} ] },
+      {"title": "Wikipedia – Coracobrachialis muscle", "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle"},
+      {"title": "TeachMeAnatomy – The Muscles of the Upper Arm", "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/"} ] },
   {"id": "triceps-brachii", "vi": "Cơ tam đầu cánh tay", "en": "Triceps brachii", "region": "arms", "superficial": true, "status": "draft",
     "parts": [
       {"id": "long", "vi": "đầu dài", "object": "Long head of triceps brachii"},
       {"id": "lateral", "vi": "đầu ngoài", "object": "Lateral head of triceps brachii"},
       {"id": "medial", "vi": "đầu trong", "object": "Medial head of triceps brachii", "superficial": false} ],
     "function": "Duỗi khuỷu, là cơ đối vận của cơ nhị đầu cánh tay và cơ cánh tay. Đầu dài bám vào xương vai nên còn tham gia đưa cánh tay ra sau và khép cánh tay tại khớp vai. Trong các bài đẩy (chống đẩy, đẩy ngực, dip), cầm tay hẹp sẽ dồn trọng tâm vào tam đầu.",
+    "origin": [{"bones": ["scapula"], "vi": "Lồi củ dưới ổ chảo xương vai (đầu dài)"}, {"bones": ["humerus"], "vi": "Xương cánh tay, phía trên rãnh thần kinh quay (đầu ngoài)"}, {"bones": ["humerus"], "vi": "Xương cánh tay, phía dưới rãnh thần kinh quay (đầu trong)"}],
+    "insertion": [{"bones": ["ulna"], "vi": "Mỏm khuỷu xương trụ (ba đầu hợp thành một gân chung)"}],
+    "nerve": "Thần kinh quay; ở một số người đầu dài do thần kinh nách chi phối",
+    "tips": {
+      "training": ["Bài cô lập: cable push-down, lying triceps extension và duỗi tay ra sau lưng.", "Bài đẩy ghép: chống đẩy, JM press, đẩy ngực và các biến thể, đẩy vai kiểu quân đội, dip."],
+      "palpation": ["Đầu dài sờ được như một gờ nổi song song và phía trong bờ sau cơ delta khi duỗi khuỷu."],
+      "clinical": ["Viêm gân tam đầu có thể xảy ra khi cơ bị quá tải, thường biểu hiện bằng đau mạn tính ở mặt sau khuỷu và tăng lên khi duỗi khuỷu chủ động.", "Phản xạ gân cơ tam đầu dùng để kiểm tra thần kinh của tay, thử rễ C6–C7, chủ yếu C7."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – The Muscles of the Upper Arm", "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/"},
-      {"title": "Wikipedia – Triceps", "url": "https://en.wikipedia.org/wiki/Triceps"} ] },
+      {"title": "Wikipedia – Triceps", "url": "https://en.wikipedia.org/wiki/Triceps"},
+      {"title": "Kenhub – Triceps brachii muscle", "url": "https://www.kenhub.com/en/library/anatomy/triceps-brachii-muscle"} ] },
   {"id": "anconeus", "vi": "Cơ khuỷu", "en": "Anconeus", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Anconeus muscle"} ],
     "function": "Hỗ trợ cơ tam đầu cánh tay duỗi khuỷu (vai trò rất nhỏ) và giữ vững khớp khuỷu. Còn dạng xương trụ khi sấp cẳng tay.",
+    "origin": [{"bones": ["humerus"], "vi": "Mặt sau mỏm trên lồi cầu ngoài xương cánh tay"}],
+    "insertion": [{"bones": ["ulna"], "vi": "Mặt ngoài mỏm khuỷu và khoảng một phần tư trên mặt sau xương trụ"}],
+    "nerve": "Một nhánh của thần kinh quay",
+    "tips": {
+      "palpation": ["Dễ sờ thấy ngay phía ngoài mỏm khuỷu xương trụ."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"},
       {"title": "Wikipedia – Anconeus muscle", "url": "https://en.wikipedia.org/wiki/Anconeus_muscle"} ] },
   {"id": "brachioradialis", "vi": "Cơ cánh tay quay", "en": "Brachioradialis", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Brachioradialis muscle"} ],
     "function": "Gập khuỷu, mạnh nhất khi cẳng tay ở tư thế trung gian (giữa sấp và ngửa), có thể gập nhanh hoặc nâng tải chậm. Khi gập, nó kéo cẳng tay về tư thế trung gian: đang sấp thì ngửa ra, đang ngửa thì sấp vào.",
+    "origin": [{"bones": ["humerus"], "vi": "Phần gần của mào trên lồi cầu ngoài xương cánh tay"}],
+    "insertion": [{"bones": ["radius"], "vi": "Mặt ngoài đầu xa xương quay, ở nền mỏm trâm quay (ngay phía trên mỏm trâm)"}],
+    "nerve": "Thần kinh quay",
+    "tips": {
+      "training": ["Cơ tạo ít mômen gập khuỷu hơn cơ cánh tay và cơ nhị đầu; cơ hiệu quả chủ yếu khi hai cơ kia đã gập khuỷu một phần.", "Khi cẳng tay sấp, cơ cánh tay quay hoạt động nhiều hơn lúc gập khuỷu vì cơ nhị đầu ở thế bất lợi về cơ học."],
+      "palpation": ["Thấy rõ nhất khi cẳng tay ở nửa sấp và gập khuỷu chống lực cản."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia – Brachioradialis", "url": "https://en.wikipedia.org/wiki/Brachioradialis"} ] },
+      {"title": "Wikipedia – Brachioradialis", "url": "https://en.wikipedia.org/wiki/Brachioradialis"},
+      {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"} ] },
   {"id": "pronator-teres", "vi": "Cơ sấp tròn", "en": "Pronator teres", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Superficial head of pronator teres"} ],
     "function": "Sấp cẳng tay (xoay lòng bàn tay xuống/ra sau). Còn gập khuỷu yếu, chủ yếu hỗ trợ khi lực cản lớn.",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu trong và mào trên lồi cầu trong xương cánh tay (đầu cánh tay)"}, {"bones": ["ulna"], "vi": "Mỏm vẹt xương trụ (đầu trụ)"}],
+    "insertion": [{"bones": ["radius"], "vi": "Giữa mặt ngoài thân xương quay"}],
+    "nerve": "Thần kinh giữa (C6–C7)",
+    "tips": {
+      "clinical": ["Hội chứng cơ sấp tròn: thần kinh giữa bị chèn ép, thường giữa hai đầu cơ sấp tròn; người bệnh tê theo vùng thần kinh giữa khi sấp–ngửa cẳng tay lặp lại (không phải khi gập–duỗi khuỷu) và mỏi sớm cơ cẳng tay khi vận động gắng sức lặp lại, nhất là động tác sấp.", "Golfer's elbow (đau mỏm trên lồi cầu trong) là bệnh lý điểm bám (tendinosis/enthesopathy) của gân gập chung và chỗ bám cơ sấp tròn ở mặt trong khuỷu."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Anterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"},
-      {"title": "Wikipedia – Pronator teres muscle", "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle"} ] },
+      {"title": "Wikipedia – Pronator teres muscle", "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle"},
+      {"title": "Kenhub – Pronator teres muscle", "url": "https://www.kenhub.com/en/library/anatomy/pronator-teres-muscle"},
+      {"title": "Wikipedia – Golfer's elbow", "url": "https://en.wikipedia.org/wiki/Golfer%27s_elbow"} ] },
   {"id": "flexor-carpi-radialis", "vi": "Cơ gấp cổ tay quay", "en": "Flexor carpi radialis", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Flexor carpi radialis"} ],
     "function": "Gập cổ tay và nghiêng bàn tay về phía ngón cái (dạng cổ tay). Tập được bằng bài cuốn cổ tay (wrist curl).",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu trong xương cánh tay (gân gập chung)"}],
+    "insertion": [{"bones": ["second-metacarpal", "third-metacarpal"], "vi": "Nền xương bàn tay II (chủ yếu), có chẽ nhỏ tới nền xương bàn tay III"}],
+    "nerve": "Thần kinh giữa (C6–C7)",
+    "tips": {
+      "training": ["Tăng sức bằng các bài chống lại động tác gập cổ tay của cơ, ví dụ wrist curl với tạ đơn."],
+      "palpation": ["Khi gập cổ tay, gân hiện rõ ở mặt trước cẳng tay ngay trên cổ tay; đó là gân ngoài cùng, gần ngón cái."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Anterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"},
       {"title": "Wikipedia – Flexor carpi radialis muscle", "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle"} ] },
   {"id": "palmaris-longus", "vi": "Cơ gan tay dài", "en": "Palmaris longus", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Palmaris longus muscle"} ],
     "function": "Gập cổ tay. Cơ này không có ở khoảng 15% dân số, và việc thiếu nó không ảnh hưởng đến lực nắm.",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu trong xương cánh tay (gân gập chung)"}],
+    "insertion": [{"bones": [], "vi": "Mạc giữ gân gấp (phần giữa) và cân gan tay"}],
+    "nerve": "Thần kinh giữa",
+    "tips": {
+      "palpation": ["Chạm đầu ngón cái vào đầu ngón nhẫn rồi gập cổ tay; nếu có cơ, gân nhỏ nằm giữa gân cơ gấp cổ tay quay và gân cơ gấp cổ tay trụ, thấy được ở giữa mặt trước cổ tay."],
+      "clinical": ["Gân cơ gan tay dài hay được lấy làm mảnh ghép gân cho vùng cổ tay nhờ độ dài và đường kính của gân; lấy gân này không gây biến dạng chức năng."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Anterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"},
       {"title": "Wikipedia – Palmaris longus muscle", "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle"} ] },
   {"id": "flexor-carpi-ulnaris", "vi": "Cơ gấp cổ tay trụ", "en": "Flexor carpi ulnaris", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Humeral head of flexor carpi ulnaris"} ],
     "function": "Gập cổ tay và nghiêng bàn tay về phía ngón út (khép cổ tay). Tập được bằng bài cuốn cổ tay (wrist curl).",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu trong xương cánh tay (đầu cánh tay)"}, {"bones": ["ulna"], "vi": "Bờ trong mỏm khuỷu và hai phần ba trên bờ sau xương trụ, qua một cân (đầu trụ)"}],
+    "insertion": [{"bones": ["pisiform", "hamate", "fifth-metacarpal"], "vi": "Xương đậu, móc xương móc và nền xương bàn tay V"}],
+    "nerve": "Thần kinh trụ (C8–T1)",
+    "tips": {
+      "training": ["Tăng sức bằng các bài chống lại động tác gập cổ tay của cơ, ví dụ wrist curl với tạ đơn."],
+      "palpation": ["Gân thấy được ở mặt trước phần xa cẳng tay, ngay trên cổ tay; đó là gân trong cùng (gần ngón út) trong ba gân ở vị trí này."],
+      "clinical": ["Thần kinh trụ bị cân nối hai đầu cơ gấp cổ tay trụ chèn ép có thể gây hội chứng ống khuỷu."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Anterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"},
       {"title": "Wikipedia – Flexor carpi ulnaris muscle", "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle"} ] },
   {"id": "flexor-digitorum-superficialis", "vi": "Cơ gấp các ngón nông", "en": "Flexor digitorum superficialis", "region": "arms", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Humero-ulnar head of flexor digitorum superficialis"} ],
     "function": "Gập bốn ngón tay (trừ ngón cái) tại khớp bàn–ngón và khớp liên đốt gần, đồng thời góp phần gập cổ tay. Gân của nó chạy qua ống cổ tay.",
+    "origin": [{"bones": ["humerus", "ulna"], "vi": "Đầu cánh tay–trụ: mỏm trên lồi cầu trong xương cánh tay và xương trụ (một phần xuất phát từ dây chằng bên trụ của khuỷu)"}, {"bones": ["radius"], "vi": "Đầu quay: xương quay"}],
+    "insertion": [{"bones": ["middle-phalanges-2-5"], "vi": "Nền đốt giữa của bốn ngón tay (II–V), qua bốn gân đi trong ống cổ tay"}],
+    "nerve": "Thần kinh giữa (C7–T1)",
+    "tips": {
+      "clinical": ["Cách kiểm tra cơ: gập một ngón ở khớp liên đốt gần chống lực cản, ba ngón còn lại giữ duỗi hết để loại trừ cơ gấp các ngón sâu.", "Thần kinh giữa và động mạch trụ đi giữa hai đầu của cơ, nên cơ là mốc giải phẫu ở cẳng tay.", "Cơ khá thường vắng ở ngón út, có thể gây khó khăn khi chẩn đoán chấn thương ngón này."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Anterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/"},
-      {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"} ] },
+      {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
+      {"title": "Wikipedia – Flexor digitorum superficialis muscle", "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle"} ] },
   {"id": "extensor-carpi-radialis-longus", "vi": "Cơ duỗi cổ tay quay dài", "en": "Extensor carpi radialis longus", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Extensor carpi radialis longus"} ],
     "function": "Duỗi cổ tay và nghiêng bàn tay về phía ngón cái (dạng cổ tay). Tập được bằng bài cuốn cổ tay ngược (reverse wrist curl).",
+    "origin": [{"bones": ["humerus"], "vi": "Mào trên lồi cầu ngoài xương cánh tay"}],
+    "insertion": [{"bones": ["second-metacarpal"], "vi": "Mặt lưng nền xương bàn tay II"}],
+    "nerve": "Thần kinh quay (rễ C6–C7)",
+    "tips": {
+      "training": ["Tăng sức bằng các bài chống lại động tác duỗi cổ tay của cơ, ví dụ reverse wrist curl với tạ đơn."],
+      "clinical": ["Tổn thương thần kinh quay ở trên khuỷu (ví dụ gãy thân xương cánh tay ở rãnh thần kinh quay) làm liệt các cơ khoang duỗi cẳng tay, gây bàn tay rủ (wrist drop): cổ tay và các ngón không duỗi được ở khớp bàn–ngón, cổ tay còn hơi gập do các cơ gập đối kháng."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"},
-      {"title": "Wikipedia – Extensor carpi radialis longus muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle"} ] },
+      {"title": "Wikipedia – Extensor carpi radialis longus muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle"},
+      {"title": "Wikipedia – Wrist drop", "url": "https://en.wikipedia.org/wiki/Wrist_drop"} ] },
   {"id": "extensor-carpi-radialis-brevis", "vi": "Cơ duỗi cổ tay quay ngắn", "en": "Extensor carpi radialis brevis", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Extensor carpi radialis brevis"} ],
     "function": "Duỗi cổ tay và nghiêng bàn tay về phía ngón cái (dạng cổ tay). Tập được bằng bài cuốn cổ tay ngược (reverse wrist curl).",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu ngoài xương cánh tay (gân duỗi chung)"}],
+    "insertion": [{"bones": ["third-metacarpal"], "vi": "Mặt lưng nền xương bàn tay III"}],
+    "nerve": "Một nhánh của thần kinh quay",
+    "tips": {
+      "training": ["Tăng sức bằng các bài chống lại động tác duỗi cổ tay của cơ, ví dụ reverse wrist curl với tạ đơn."],
+      "clinical": ["Tennis elbow (khuỷu tay quần vợt) là bệnh lý điểm bám gân (enthesopathy) tại nguyên ủy của cơ này ở mỏm trên lồi cầu ngoài; nguyên nhân chính xác chưa rõ, nhiều khả năng do quá tải gân khi dùng lặp lại các cơ duỗi; đau tăng khi duỗi cổ tay, như khi nắm đồ vật."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"},
-      {"title": "Wikipedia – Extensor carpi radialis brevis muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle"} ] },
+      {"title": "Wikipedia – Extensor carpi radialis brevis muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle"},
+      {"title": "Wikipedia – Tennis elbow", "url": "https://en.wikipedia.org/wiki/Tennis_elbow"} ] },
   {"id": "extensor-digitorum", "vi": "Cơ duỗi các ngón", "en": "Extensor digitorum", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Extensor digitorum"} ],
     "function": "Cơ duỗi chính của bốn ngón tay, tác động chủ yếu ở khớp bàn–ngón; sau đó góp phần duỗi cổ tay. Khi duỗi, nó có xu hướng xòe các ngón ra.",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu ngoài xương cánh tay (gân duỗi chung)"}],
+    "insertion": [{"bones": ["middle-phalanges-2-5", "distal-phalanges-2-5"], "vi": "Đốt giữa và đốt xa của bốn ngón II–V, qua cân duỗi (mũ duỗi, extensor expansion) của từng ngón"}],
+    "nerve": "Thần kinh gian cốt sau (nhánh sâu của thần kinh quay)",
+    "tips": {
+      "clinical": ["Cách kiểm tra cơ: cẳng tay sấp, duỗi các ngón chống lực cản.", "Tổn thương thần kinh quay ở trên khuỷu (ví dụ gãy thân xương cánh tay ở rãnh thần kinh quay) làm liệt các cơ khoang duỗi cẳng tay, gây bàn tay rủ (wrist drop): cổ tay và các ngón không duỗi được ở khớp bàn–ngón, cổ tay còn hơi gập do các cơ gập đối kháng."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"},
-      {"title": "Wikipedia – Extensor digitorum muscle", "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle"} ] },
+      {"title": "Wikipedia – Extensor digitorum muscle", "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle"},
+      {"title": "Wikipedia – Wrist drop", "url": "https://en.wikipedia.org/wiki/Wrist_drop"} ] },
   {"id": "extensor-carpi-ulnaris", "vi": "Cơ duỗi cổ tay trụ", "en": "Extensor carpi ulnaris", "region": "arms", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Humeral head of extensor carpi ulnaris"} ],
     "function": "Duỗi cổ tay và nghiêng bàn tay về phía ngón út (khép cổ tay).",
+    "origin": [{"bones": ["humerus"], "vi": "Mỏm trên lồi cầu ngoài xương cánh tay (đầu cánh tay)"}, {"bones": ["ulna"], "vi": "Bờ sau xương trụ (đầu trụ)"}],
+    "insertion": [{"bones": ["fifth-metacarpal"], "vi": "Nền xương bàn tay V"}],
+    "nerve": "Thần kinh gian cốt sau (C7–C8), nhánh sâu của thần kinh quay",
+    "tips": {
+      "clinical": ["Tổn thương thần kinh quay ở trên khuỷu (ví dụ gãy thân xương cánh tay ở rãnh thần kinh quay) làm liệt các cơ khoang duỗi cẳng tay, gây bàn tay rủ (wrist drop): cổ tay và các ngón không duỗi được ở khớp bàn–ngón, cổ tay còn hơi gập do các cơ gập đối kháng."]
+    },
     "sources": [
-      {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"} ] },
+      {"title": "TeachMeAnatomy – Muscles of the Posterior Forearm", "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/"},
+      {"title": "Wikipedia – Extensor carpi ulnaris muscle", "url": "https://en.wikipedia.org/wiki/Extensor_carpi_ulnaris_muscle"},
+      {"title": "Wikipedia – Wrist drop", "url": "https://en.wikipedia.org/wiki/Wrist_drop"} ] },
 
   {"id": "rectus-abdominis", "vi": "Cơ thẳng bụng", "en": "Rectus abdominis", "region": "core", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Rectus abdominis muscle"} ],

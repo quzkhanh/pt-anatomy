@@ -1397,6 +1397,70 @@
    {
     "url": "https://en.wikipedia.org/wiki/Biceps",
     "quote": "The tendon of the long head of the biceps also assists in holding the head of the humerus in the glenoid cavity"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Long head originates from the supraglenoid tubercle of the scapula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "the short head originates from the coracoid process of the scapula",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Both heads insert distally into the radial tuberosity and the fascia of the forearm via the bicipital aponeurosis.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle",
+    "quote": "The biceps brachii muscle is supplied by the musculocutaneous nerve (C5-C6), a branch of the brachial plexus.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps",
+    "quote": "Fibers of the fifth, sixth and seventh cervical nerves make up the components of the musculocutaneous nerve which supply the biceps.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Biceps",
+    "quote": "When the forearm is in pronation (the palm faces the ground), the brachialis, brachioradialis, and supinator function to flex the forearm, with minimal contribution from the biceps brachii.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle",
+    "quote": "its insertion tendon can be easily seen and palpated at the crook of the arm",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "the long head of the biceps brachii is one of the more common tendons to rupture",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "a bulge where the muscle belly is, called the 'Popeye Sign'",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/biceps-brachii-muscle",
+    "quote": "In severe cases the tendon can even tear apart completely",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "The patient would not notice much weakness in the upper limb due to the action of the brachialis and supinator muscles.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "brachialis": [
@@ -1411,6 +1475,35 @@
    {
     "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
     "quote": "Unlike the biceps, the brachialis does not insert on the radius, and does not participate in pronation and supination of the forearm."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
+    "quote": "originates from the anterior surface of the distal half of the humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Originates from the medial and lateral surfaces of the humeral shaft",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "inserts into the ulnar tuberosity, just distal to the elbow joint",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachialis_muscle",
+    "quote": "the rough depression on the anterior surface of the coronoid process of the ulna",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Musculocutaneous nerve, with contributions from the radial nerve.",
+    "field": "nerve"
    }
   ],
   "coracobrachialis": [
@@ -1425,6 +1518,58 @@
    {
     "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
     "quote": "Common causes of injury include chest workouts or activities that require one to press the arm very tight towards the body"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Originates from the coracoid process of the scapula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "attaches the medial side of the humeral shaft, at the level of the deltoid tubercle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "it inserts onto the middle of the medial aspect of the body of the humerus",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "It is innervated by the musculocutaneous nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "Musculocutaneous nerve (C5, C6, and C7)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "The overuse of the coracobrachialis can lead to stiffening of the muscle.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "Common causes of injury include chest workouts or activities that require one to press the arm very tight towards the body",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "In more severe cases, the musculocutaneous nerve can get trapped",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Coracobrachialis_muscle",
+    "quote": "causing disturbances in sensation to the skin on the radial part of the forearm and weakened flexion of the elbow",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "triceps-brachii": [
@@ -1443,6 +1588,88 @@
    {
     "url": "https://en.wikipedia.org/wiki/Triceps",
     "quote": "A closer grip shifts emphasis to the triceps in these compounds."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Long head originates from the infraglenoid tubercle of the scapula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Lateral head originates from the humerus (superior to the radial groove).",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Medial head originates from the humerus (inferior to the radial groove).",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "Distally, the heads converge into one tendon which inserts onto the olecranon of the ulna.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "All three heads of the triceps brachii are classically believed to be innervated by the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "In some individuals, the long head of the triceps brachii is innervated by the axillary nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "Isolation movements include cable push-downs, lying triceps extensions, and arm extensions behind the back.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "Examples of compound pressing movements include the push up, the JM press, the bench press and its variants, the military press and dips",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/triceps-brachii-muscle",
+    "quote": "The long head of triceps can be palpated as an elevation parallel and medial to the posterior border of the deltoid muscle when the elbow is extended.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "Triceps tendinitis can occur when the muscles are overloaded.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "It typically takes the form of chronic posterior elbow pain and it worsens with active extension.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "The triceps reflex, elicited by hitting the triceps, is often used to test the function of the nerves of the arm.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Triceps",
+    "quote": "This tests spinal nerves C6 and C7, predominantly C7.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/upper-arm/",
+    "quote": "A tap on the triceps tendon tests spinal segment C7.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "anconeus": [
@@ -1453,6 +1680,35 @@
    {
     "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
     "quote": "Its role in elbow extension is trivial in humans."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+    "quote": "from the posterior surface of the lateral epicondyle of the humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+    "quote": "inserts distally on the upper fourth of the posterior surface of the ulna and the lateral aspect of the olecranon",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "attaches to the posterior and lateral part of the olecranon",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+    "quote": "Anconeus is innervated by a branch of the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Anconeus_muscle",
+    "quote": "The anconeus muscle can easily be palpated just lateral to the olecranon process of the ulna.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "brachioradialis": [
@@ -1471,6 +1727,53 @@
    {
     "url": "https://en.wikipedia.org/wiki/Brachioradialis",
     "quote": "In a supinated position, it tends to pronate as it flexes."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Originates from the proximal aspect of the lateral supracondylar ridge of humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "attaches to the distal end of the radius, just before the radial styloid process",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "It inserts distally on the radius, at the base of its styloid process.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "the brachioradialis is a posterior compartment muscle and consequently is innervated by the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "does not generate as much joint torque as the brachialis or the biceps",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "It is effective mainly when those muscles have already partially flexed at the elbow.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Brachioradialis",
+    "quote": "When pronated, the brachioradialis is more active during elbow flexion since the biceps brachii is in a mechanical disadvantage.",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The muscle is most visible when the forearm is half pronated, and flexing at the elbow against resistance.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "pronator-teres": [
@@ -1481,6 +1784,71 @@
    {
     "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
     "quote": "It also weakly flexes the elbow, or assists in flexion at the elbow when there is strong resistance."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "It has two origins, one from the medial epicondyle, and the other from the coronoid process of the ulna.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "arises from the medial supracondylar ridge immediately superior to the medial epicondyle of the humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "It has two origins, one from the medial epicondyle, and the other from the coronoid process of the ulna.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "It attaches laterally to the mid-shaft of the radius.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "a rough impression at the middle of the lateral surface of the body of the radius",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "The pronator teres is innervated by the median nerve and nerve roots C6 and C7.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/pronator-teres-muscle",
+    "quote": "Pronator teres syndrome is a neuropathy caused by the compression of median nerve at the proximal aspect of the forearm.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/pronator-teres-muscle",
+    "quote": "Median nerve is usually compressed between two heads of pronator teres muscle.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "numbness in median nerve distribution with repetitive pronation/supination of the forearm, not flexion and extension of the elbow",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pronator_teres_muscle",
+    "quote": "Early fatigue of the forearm muscles is seen with repetitive stressful motion, especially pronation",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Golfer%27s_elbow",
+    "quote": "is tendinosis (or more precisely enthesopathy) of the medial common flexor tendon and pronator teres muscle attachment on the inside of the elbow",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "flexor-carpi-radialis": [
@@ -1491,6 +1859,53 @@
    {
     "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
     "quote": "wrist curls with dumbbells can also be performed."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "originates from the medial epicondyle of the humerus as part of the common flexor tendon",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "attaches to the base of metacarpals II and III",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "inserts on the anterior aspect of the base of the metacarpal of the index finger (second metacarpal), and has small slips to both the metacarpal of the middle finger (third metacarpal)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "innervated by the median nerve, specifically by axons from cervical nerve roots C6 and C7",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "The muscle, like all flexors of the forearm, can be strengthened by exercises that resist its flexion.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "wrist curls with dumbbells can also be performed",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "The tendon of the flexor carpi radialis is visible on the anterior surface of the forearm, just proximal to the wrist, when the wrist is flexed.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_radialis_muscle",
+    "quote": "It is the tendon seen most lateral, closest to the thumb.",
+    "field": "tips.palpation",
+    "item": 0
    }
   ],
   "palmaris-longus": [
@@ -1505,6 +1920,65 @@
    {
     "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
     "quote": "Absence of the palmaris longus does not have an effect on grip strength."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "It arises mainly from the medial epicondyle of the humerus via the common flexor tendon",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "Originates from the medial epicondyle of the humerus.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "It attaches to the flexor retinaculum and palmar aponeurosis of the hand.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "inserts onto the central part of the flexor retinaculum and lower part of the palmar aponeurosis",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "The palmaris longus is innervated by the median nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "visible as a small tendon located between the flexor carpi radialis and the flexor carpi ulnaris",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "The palmaris longus muscle can be observed by touching the pads of the fourth finger and thumb and flexing the wrist.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "The tendon, if present, will be visible in the midline of the anterior wrist.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "the most popular for use in tendon grafts for the wrist due to the length and diameter of the palmaris longus tendon",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Palmaris_longus_muscle",
+    "quote": "it can be used without producing any functional deformities",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "flexor-carpi-ulnaris": [
@@ -1515,6 +1989,65 @@
    {
     "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
     "quote": "A wrist roller can be used and wrist curls with dumbbells can also be performed."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "The humeral head originates from the medial epicondyle of the humerus with the other superficial flexors",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "the ulnar head originates from the olecranon of the ulna",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "The ulnar head originates from the medial margin of the olecranon of the ulna and the upper two-thirds of the dorsal border of the ulna by an aponeurosis.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "attaches to the pisiform bone, hook of hamate, and base of the 5th metacarpal",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "The flexor carpi ulnaris is innervated by the ulnar nerve. The corresponding spinal nerves are C8 and T1.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "The muscle, like all flexors of the forearm, can be strengthened by exercises that resist its flexion.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "wrist curls with dumbbells can also be performed",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "The tendon of flexor carpi ulnaris can be seen on the anterior surface of the distal forearm.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "The tendon of the flexor carpi ulnaris is the most medial (closest to the little finger) of these.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_carpi_ulnaris_muscle",
+    "quote": "Ulnar entrapment by the aponeurosis of the two heads of the flexor carpi ulnaris muscle may cause cubital tunnel syndrome",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "flexor-digitorum-superficialis": [
@@ -1529,6 +2062,89 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
     "quote": "The flexor digitorum superficialis flexes the hand as well as the digits at the knuckles"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "The ulnar collateral ligament of elbow joint gives its origin to part of this muscle.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "one originates from the medial epicondyle of the humerus, the other from the radius",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "The muscle has two classically described heads - the humeroulnar and radial",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "as well as parts of the radius and ulna",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "one originates from the medial epicondyle of the humerus, the other from the radius",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "The muscle has two classically described heads - the humeroulnar and radial",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "attach to the base of the middle phalanx of the four digits",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "The tendons attach to the anterior margins on the bases of the intermediate phalanges of the four fingers.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "is innervated by the median nerve (C7, C8, T1)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "one finger is flexed at the proximal interphalangeal joint against resistance, while the remaining three fingers are held fully extended",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "(to inactivate flexor digitorum profundus)",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/anterior-forearm/",
+    "quote": "the median nerve and ulnar artery pass between its two heads",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "It is relatively common for the flexor digitorum superficialis to be missing from the little finger",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Flexor_digitorum_superficialis_muscle",
+    "quote": "which can cause problems when diagnosing a little finger injury",
+    "field": "tips.clinical",
+    "item": 2
    }
   ],
   "extensor-carpi-radialis-longus": [
@@ -1539,6 +2155,82 @@
    {
     "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
     "quote": "Reverse wrist curls with dumbbells can be performed."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "It originates from the lateral supracondylar ridge of the humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The ECRL originates from the lateral supracondylar ridge of the humerus",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "It is inserted into the dorsal surface of the base of the metacarpal of the index finger (second metacarpal)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "is a wrist extensor that is innervated by the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "from spinal roots C6 and C7",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "The muscle, like all extensors of the forearm, can be strengthened by exercise that resist its extension.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_longus_muscle",
+    "quote": "Reverse wrist curls with dumbbells can be performed.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Wrist drop is a sign of radial nerve injury that has occurred proximal to the elbow.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Radial groove of the humerus – can be injured via a humeral shaft fracture.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The radial nerve innervates all muscles in the extensor compartment of the forearm.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "In the event of a radial nerve lesion, these muscles are paralysed.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "Wrist drop is a medical condition in which the wrist and the fingers cannot extend at the metacarpophalangeal joints.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "The wrist remains partially flexed due to an opposing action of flexor muscles of the forearm.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "extensor-carpi-radialis-brevis": [
@@ -1549,6 +2241,65 @@
    {
     "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
     "quote": "reverse wrist curls with dumbbells can be performed."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "It arises from the lateral epicondyle of the humerus, by the common extensor tendon",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "while the ECRB originates from the lateral epicondyle",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "inserts into the dorsal/posterior surface of the base of the metacarpal of the long finger (third metacarpal)",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "ECR brevis is supplied by a branch of the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "The muscle, like all extensors of the forearm, can be strengthened by exercise that resist its extension",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_radialis_brevis_muscle",
+    "quote": "reverse wrist curls with dumbbells can be performed",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tennis_elbow",
+    "quote": "is an enthesopathy (attachment point disease) of the origin of the extensor carpi radialis brevis on the lateral epicondyle",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tennis_elbow",
+    "quote": "It likely involves tendinosis, an overuse injury of the local tendon.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Tennis_elbow",
+    "quote": "The pain is worsened by activities that involve wrist extension, such as gripping objects.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "It is caused by repeated use of the superficial extensor muscles, which strains their common tendinous attachment to the lateral epicondyle.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "extensor-digitorum": [
@@ -1563,12 +2314,159 @@
    {
     "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
     "quote": "the extensor digitorum acts principally on the proximal phalanges, acting to extend the metacarpophalangeal joint."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+    "quote": "The extensor digitorum muscle arises from the lateral epicondyle of the humerus, by the common extensor tendon",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Originates from the lateral epicondyle.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+    "quote": "Extensor expansion of middle and distal phalanges of the 2nd, 3rd, 4th, and 5th fingers",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "inserts into the extensor hood of each finger",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_digitorum_muscle",
+    "quote": "Extensor digitorum is innervated by the posterior interosseous nerve, which is a branch of the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Radial nerve (deep branch)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "To test the function of the muscle, the forearm is pronated, and the fingers extended against resistance.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Wrist drop is a sign of radial nerve injury that has occurred proximal to the elbow.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Radial groove of the humerus – can be injured via a humeral shaft fracture.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The radial nerve innervates all muscles in the extensor compartment of the forearm.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "In the event of a radial nerve lesion, these muscles are paralysed.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "Wrist drop is a medical condition in which the wrist and the fingers cannot extend at the metacarpophalangeal joints.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "The wrist remains partially flexed due to an opposing action of flexor muscles of the forearm.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "extensor-carpi-ulnaris": [
    {
     "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
     "quote": "Actions : Extension and adduction of wrist."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Originates from the lateral epicondyle of the humerus, and posterior border of the ulna",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Originates from the lateral epicondyle of the humerus, and posterior border of the ulna",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_ulnaris_muscle",
+    "quote": "It originates from the lateral epicondyle of the humerus and the posterior border of the ulna",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "It attaches to the base of fifth metacarpal.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_ulnaris_muscle",
+    "quote": "to insert at the base of the 5th metacarpal",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Extensor_carpi_ulnaris_muscle",
+    "quote": "is innervated by the posterior interosseous nerve (C7 and C8), the continuation of the deep branch of the radial nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Wrist drop is a sign of radial nerve injury that has occurred proximal to the elbow.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "Radial groove of the humerus – can be injured via a humeral shaft fracture.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "The radial nerve innervates all muscles in the extensor compartment of the forearm.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/posterior-forearm/",
+    "quote": "In the event of a radial nerve lesion, these muscles are paralysed.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "Wrist drop is a medical condition in which the wrist and the fingers cannot extend at the metacarpophalangeal joints.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Wrist_drop",
+    "quote": "The wrist remains partially flexed due to an opposing action of flexor muscles of the forearm.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "rectus-abdominis": [

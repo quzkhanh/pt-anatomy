@@ -306,5 +306,83 @@
     "objects": [
       "Manubrium of sternum"
     ]
+  },
+  {
+    "id": "radius",
+    "vi": "Xương quay",
+    "en": "Radius",
+    "objects": [
+      "Radius"
+    ]
+  },
+  {
+    "id": "ulna",
+    "vi": "Xương trụ",
+    "en": "Ulna",
+    "objects": [
+      "Ulna"
+    ]
+  },
+  {
+    "id": "pisiform",
+    "vi": "Xương đậu",
+    "en": "Pisiform bone",
+    "objects": [
+      "Pisiform bone"
+    ]
+  },
+  {
+    "id": "hamate",
+    "vi": "Xương móc",
+    "en": "Hamate bone",
+    "objects": [
+      "Hamate bone"
+    ]
+  },
+  {
+    "id": "second-metacarpal",
+    "vi": "Xương bàn tay II",
+    "en": "Second metacarpal bone",
+    "objects": [
+      "Second metacarpal bone"
+    ]
+  },
+  {
+    "id": "third-metacarpal",
+    "vi": "Xương bàn tay III",
+    "en": "Third metacarpal bone",
+    "objects": [
+      "Third metacarpal bone"
+    ]
+  },
+  {
+    "id": "fifth-metacarpal",
+    "vi": "Xương bàn tay V",
+    "en": "Fifth metacarpal bone",
+    "objects": [
+      "Fifth metacarpal bone"
+    ]
+  },
+  {
+    "id": "middle-phalanges-2-5",
+    "vi": "Đốt giữa ngón II–V",
+    "en": "Middle phalanges of fingers II–V",
+    "objects": [
+      "Middle phalanx of second finger of hand",
+      "Middle phalanx of third finger of hand",
+      "Middle phalanx of fourth finger of hand",
+      "Middle phalanx of fifth finger of hand"
+    ]
+  },
+  {
+    "id": "distal-phalanges-2-5",
+    "vi": "Đốt xa ngón II–V",
+    "en": "Distal phalanges of fingers II–V",
+    "objects": [
+      "Distal phalanx of second finger of hand",
+      "Distal phalanx of third finger of hand",
+      "Distal phalanx of fourth finger of hand",
+      "Distal phalanx of fifth finger of hand"
+    ]
   }
 ]
