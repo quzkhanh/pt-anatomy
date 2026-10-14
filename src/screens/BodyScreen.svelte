@@ -11,8 +11,9 @@
   import MuscleList from '../components/MuscleList.svelte'
   import SearchBar from '../components/SearchBar.svelte'
   import SideActions from '../components/SideActions.svelte'
-  import { app, openMuscle, type Selection } from '../lib/app-state.svelte'
-  import type { PartRef } from '../lib/content'
+  import { app, openMuscle, type MuscleTab, type Selection } from '../lib/app-state.svelte'
+  import { exerciseCount, type PartRef } from '../lib/content'
+  import type { Equipment } from '../lib/content-types'
   import { highlightOf, layerFor } from '../lib/highlight-of'
   import { layout } from '../lib/layout.svelte'
   import type { Snap } from '../lib/sheet'
@@ -32,6 +33,8 @@
   let snap = $state<Snap>('peek')
   let sheetTop = $state(0)
   let superficialHidden = $state(false)
+  let muscleTab = $state<MuscleTab>('exercises')
+  let equipment = $state<Equipment | null>(null)
   let hintSeen = $state(load(HINT_KEY, false))
 
   const webgl = hasWebGL()
@@ -92,6 +95,12 @@
     v?.highlight(highlight)
     if (!selection) return
     shown = selection
+    // A new muscle starts on its exercises (or its details when it has none) with no filter; coming back
+    // from one of its exercises restores where the list was left.
+    if (selection.kind === 'muscle') {
+      muscleTab = selection.restore?.tab ?? (exerciseCount(selection.muscle.id) ? 'exercises' : 'details')
+      equipment = selection.restore?.equipment ?? null
+    }
     // Always the low snap, so the highlighted muscles stay in view; the sheet expands on demand.
     // A wide screen's side panel covers no muscles, so it opens fully.
     snap = layout.wide ? 'full' : 'peek'
@@ -175,7 +184,7 @@
       {/if}
     {/snippet}
     {#if shown?.kind === 'muscle'}
-      <MuscleInfo muscle={shown.muscle} />
+      <MuscleInfo muscle={shown.muscle} bind:tab={muscleTab} bind:equipment />
     {:else if shown?.kind === 'exercise'}
       <ExerciseInfo exercise={shown.exercise} motionActive={!hidden && app.selection !== null && snap !== 'peek'} />
     {/if}

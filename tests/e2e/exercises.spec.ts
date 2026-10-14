@@ -39,7 +39,7 @@ test('bấm tên cơ trong bài tập thì xem cơ đó, cơ có danh sách bài
   await page.locator(SHEET).getByRole('button', { name: 'Cơ ngực lớn' }).click()
   const muscleSheet = page.locator(MUSCLE_SHEET)
   await expect(muscleSheet.getByText('Bài tập chính cho cơ này')).toBeVisible()
-  await expect(muscleSheet.getByRole('button', { name: bench.vi })).toBeVisible()
+  await expect(muscleSheet.getByRole('button', { name: named(bench.vi) })).toBeVisible()
 })
 
 test('bài tập có cơ chính nằm sâu thì tự ẩn lớp nông', async ({ page }) => {
@@ -79,7 +79,7 @@ test('?review: duyệt Đúng thì sang mục tiếp và lưu kết quả', asyn
   await ready(page, '/?review&debug')
   const bar = page.getByRole('navigation', { name: 'Duyệt nội dung' })
   await expect(bar.getByText(/^Cơ 1\//)).toBeVisible()
-  await expect(page.locator(MUSCLE_SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(page.locator(MUSCLE_SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
   await bar.getByRole('button', { name: 'Đúng' }).click()
   await expect(bar.getByText(/^Cơ 2\//)).toBeVisible()
   await expect(bar.getByText(/Đã duyệt 1\//)).toBeVisible()

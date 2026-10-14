@@ -18,7 +18,7 @@ test('chạm vào cơ ngực mở sheet thông tin cơ', async ({ page }) => {
   await tapMuscle(page, 'pectoralis-major')
   const sheet = page.locator(SHEET)
   await expect(sheet).toHaveAttribute('aria-hidden', 'false')
-  await expect(sheet.getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(sheet.getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
   await expect(sheet.getByText(/đang chạm: bó (đòn|ức sườn)/)).toBeVisible()
 })
 
@@ -50,7 +50,7 @@ test('nút Trước / Sau lật model', async ({ page }) => {
   await page.getByRole('button', { name: 'Trước / Sau' }).click()
   await page.waitForTimeout(800)
   await tapMuscle(page, 'gluteus-maximus')
-  await expect(page.locator(SHEET).getByText('Cơ mông lớn')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ mông lớn/ })).toBeVisible()
 })
 
 test('gợi ý lần đầu biến mất sau lần chạm đầu tiên và không hiện lại', async ({ page }) => {
@@ -67,7 +67,7 @@ test('tìm cơ sâu thì tự ẩn lớp nông và mở thông tin', async ({ pa
   await ready(page)
   await page.getByRole('searchbox', { name: 'Tìm cơ hoặc bài tập' }).fill('nguc be')
   await page.getByRole('button', { name: /Cơ ngực bé/ }).click()
-  await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực bé/ })).toBeVisible()
   await expect(page.getByRole('button', { name: 'Hiện lớp nông' })).toBeVisible()
 })
 
@@ -98,7 +98,7 @@ test('máy không có WebGL vẫn tra cứu được bằng danh sách', async (
   await page.goto('/')
   await expect(page.getByText('Máy này không hiển thị được 3D.', { exact: false })).toBeVisible()
   await page.getByRole('button', { name: /Cơ ngực lớn/ }).click()
-  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
 })
 
 test('?debug hiện fps và thời gian chạm', async ({ page }) => {
@@ -121,7 +121,7 @@ test('xoay ngang vẫn chọn đúng', async ({ page }) => {
   await page.setViewportSize({ width: 915, height: 412 })
   await page.waitForTimeout(300)
   await tapMuscle(page, 'pectoralis-major')
-  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
 })
 
 test('localStorage bị chặn vẫn chạy', async ({ page }) => {
@@ -130,7 +130,7 @@ test('localStorage bị chặn vẫn chạy', async ({ page }) => {
   })
   await ready(page)
   await tapMuscle(page, 'pectoralis-major')
-  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
 })
 
 test('ẩn lớp nông rồi chạm chọn cơ sâu', async ({ page }) => {
@@ -138,9 +138,9 @@ test('ẩn lớp nông rồi chạm chọn cơ sâu', async ({ page }) => {
   const point = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
   await page.getByRole('button', { name: 'Ẩn lớp nông' }).click()
   await tapMuscle(page, 'pectoralis-minor')
-  await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực bé/ })).toBeVisible()
   await page.touchscreen.tap(point!.x, point!.y)
-  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeHidden()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeHidden()
 })
 
 test('mất WebGL context thì báo và Thử lại mở lại được mô hình', async ({ page }) => {
@@ -154,5 +154,5 @@ test('mất WebGL context thì báo và Thử lại mở lại được mô hìn
   await page.getByRole('button', { name: 'Thử lại' }).click()
   await page.waitForFunction(() => window.__ptDebug !== undefined)
   await tapMuscle(page, 'pectoralis-major')
-  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
+  await expect(page.locator(SHEET).getByRole('heading', { level: 2, name: /^Cơ ngực lớn/ })).toBeVisible()
 })
