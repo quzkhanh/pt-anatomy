@@ -35,7 +35,7 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Gập xuống': 'in',
   'Hạ bả vai': null,
   'Hạ chân chậm': 'in',
-  'Hạ chân phải': 'in',
+  'Hạ chân phải': null,
   'Hạ chân': 'in',
   'Hạ gót': 'in',
   'Hạ gối': 'in',
