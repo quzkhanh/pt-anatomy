@@ -43,7 +43,7 @@ test('cơ ngực lớn: tab Giải phẫu có nguyên ủy, bám tận, thần k
   for (const name of ['Nguyên ủy', 'Bám tận', 'Thần kinh chi phối']) {
     await expect(page.locator(SHEET).getByRole('heading', { name })).toBeVisible()
   }
-  await expect(page.locator(`${SHEET} strong`, { hasText: 'Xương cánh tay' })).toBeVisible()
+  await expect(page.locator(`${SHEET} h3:text-is("Bám tận") + ul strong`, { hasText: 'Xương cánh tay' }).first()).toBeVisible()
   await tabs(page).getByRole('button', { name: 'Mẹo PT' }).click()
   await expect(page.locator(SHEET).getByRole('heading', { name: 'Tập luyện' })).toBeVisible()
 })
@@ -70,10 +70,16 @@ test('gân gót không có bài: mở thẳng tab Giải phẫu, tab Bài tập 
   await openMuscle(page, 'calcaneal-tendon')
   await expect(tabs(page).getByRole('button', { name: 'Giải phẫu' })).toHaveAttribute('aria-pressed', 'true')
   await expect(page.locator(SHEET).getByText(/^Nguồn/)).toBeVisible()
-  await expect(tabs(page).getByRole('button', { name: 'Mẹo PT' })).toHaveCount(0)
-  await expect(page.locator(SHEET).getByRole('heading', { name: 'Nguyên ủy' })).toHaveCount(0)
   await tabs(page).getByRole('button', { name: 'Bài tập' }).click()
   await expect(page.locator(SHEET).getByText('Chưa có bài tập có nguồn cho cơ này.')).toBeVisible()
+})
+
+test('cơ chưa có mẹo PT thì không có tab Mẹo PT', async ({ page }) => {
+  const id = muscles.find((m) => !('tips' in m))!.id
+  await ready(page)
+  await openMuscle(page, id)
+  await expect(tabs(page).getByRole('button', { name: 'Giải phẫu' })).toBeVisible()
+  await expect(tabs(page).getByRole('button', { name: 'Mẹo PT' })).toHaveCount(0)
 })
 
 const EX_SHEET = 'section[aria-label="Thông tin bài tập"]'
