@@ -5,11 +5,18 @@
   import FavoriteButton from './FavoriteButton.svelte'
 
   /** `onShowMotion` is given while the sheet is collapsed: it opens the sheet to the motion player. */
-  let { exercise, onShowMotion }: { exercise: Exercise; onShowMotion?: () => void } = $props()
+  let {
+    exercise,
+    onShowMotion,
+    back,
+  }: { exercise: Exercise; onShowMotion?: () => void; back?: { label: string; go: () => void } } = $props()
 
   const primary = $derived(exercise.primary.flatMap((ref) => resolveRef(ref) ?? []).map(refLabel).join(', '))
 </script>
 
+{#if back}
+  <button class="back" onclick={back.go}>‹ {back.label}</button>
+{/if}
 <div class="row">
   <h2>{exercise.vi}</h2>
   <FavoriteButton id={exercise.id} name={exercise.vi} />
@@ -19,7 +26,7 @@
   {#if exercise.status === 'draft'}<DraftBadge />{/if}
 </p>
 {#if onShowMotion}
-  <button class="show" onclick={onShowMotion}>▶ Xem động tác</button>
+  <button class="sheet-action" onclick={onShowMotion}>▶ Xem động tác</button>
 {/if}
 
 <style>
@@ -40,16 +47,13 @@
     font-size: var(--font-sm);
     color: var(--color-text-muted);
   }
-  .show {
+  .back {
     min-height: var(--tap-min);
-    margin-top: var(--space-2);
-    padding: 0 var(--space-4);
+    padding: 0;
     border: 0;
-    border-radius: var(--radius-pill);
-    background: var(--color-text);
-    color: var(--color-surface);
+    background: none;
     font-size: var(--font-sm);
-    font-weight: 600;
+    color: var(--color-accent);
   }
   .dot {
     display: inline-block;

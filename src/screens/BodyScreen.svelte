@@ -11,7 +11,7 @@
   import MuscleList from '../components/MuscleList.svelte'
   import SearchBar from '../components/SearchBar.svelte'
   import SideActions from '../components/SideActions.svelte'
-  import { app, openMuscle, type MuscleTab, type Selection } from '../lib/app-state.svelte'
+  import { app, backToMuscle, openMuscle, type MuscleTab, type Selection } from '../lib/app-state.svelte'
   import { exerciseCount, type PartRef } from '../lib/content'
   import type { Equipment } from '../lib/content-types'
   import { highlightOf, layerFor } from '../lib/highlight-of'
@@ -101,9 +101,10 @@
       muscleTab = selection.restore?.tab ?? (exerciseCount(selection.muscle.id) ? 'exercises' : 'details')
       equipment = selection.restore?.equipment ?? null
     }
-    // Always the low snap, so the highlighted muscles stay in view; the sheet expands on demand.
-    // A wide screen's side panel covers no muscles, so it opens fully.
-    snap = layout.wide ? 'full' : 'peek'
+    // The low snap, so the highlighted muscles stay in view; the sheet expands on demand. Coming back to
+    // a muscle from one of its exercises opens at half, straight onto the list. A wide screen's side
+    // panel covers no muscles, so it opens fully.
+    snap = layout.wide ? 'full' : selection.kind === 'muscle' && selection.restore ? 'half' : 'peek'
     if (!selection.navigate) return
     const layer = layerFor(highlight.primary)
     if (layer) setLayer(layer === 'deep')
@@ -178,9 +179,23 @@
   >
     {#snippet header()}
       {#if shown?.kind === 'muscle'}
-        <MuscleHeader muscle={shown.muscle} part={shown.part} />
+        <MuscleHeader
+          muscle={shown.muscle}
+          part={shown.part}
+          onShowExercises={snap === 'peek'
+            ? () => {
+                muscleTab = 'exercises'
+                snap = 'half'
+              }
+            : undefined}
+        />
       {:else if shown?.kind === 'exercise'}
-        <ExerciseHeader exercise={shown.exercise} onShowMotion={snap === 'peek' ? () => (snap = 'half') : undefined} />
+        {@const from = shown.from}
+        <ExerciseHeader
+          exercise={shown.exercise}
+          back={from && { label: from.muscle.vi, go: () => backToMuscle(from) }}
+          onShowMotion={snap === 'peek' ? () => (snap = 'half') : undefined}
+        />
       {/if}
     {/snippet}
     {#if shown?.kind === 'muscle'}

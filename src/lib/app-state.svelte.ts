@@ -31,3 +31,7 @@ export function openExercise(exercise: Exercise, from?: MuscleOrigin) {
   app.selection = { kind: 'exercise', exercise, navigate: true, from }
   app.tab = 'body'
 }
+
+export function backToMuscle({ muscle, tab, equipment }: MuscleOrigin) {
+  app.selection = { kind: 'muscle', muscle, part: null, navigate: false, restore: { tab, equipment } }
+}

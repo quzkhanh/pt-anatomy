@@ -82,3 +82,15 @@ button {
 a {
   color: var(--color-accent);
 }
+
+.sheet-action {
+  min-height: var(--tap-min);
+  margin-top: var(--space-2);
+  padding: 0 var(--space-4);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: var(--color-text);
+  color: var(--color-surface);
+  font-size: var(--font-sm);
+  font-weight: 600;
+}

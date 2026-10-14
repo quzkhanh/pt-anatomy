@@ -3,7 +3,7 @@
   import type { Muscle, MusclePart } from '../lib/content-types'
   import DraftBadge from './DraftBadge.svelte'
 
-  let { muscle, part }: { muscle: Muscle; part: MusclePart | null } = $props()
+  let { muscle, part, onShowExercises }: { muscle: Muscle; part: MusclePart | null; onShowExercises?: () => void } = $props()
 
   const partLabel = $derived(muscle.parts.length > 1 ? part?.vi : undefined)
   const count = $derived(exerciseCount(muscle.id))
@@ -14,6 +14,9 @@
   {REGION_LABELS[muscle.region]}{#if partLabel}{` · đang chạm: ${partLabel}`}{/if}{#if count}{` · ${count} bài tập`}{/if}
   {#if muscle.status === 'draft'}<DraftBadge />{/if}
 </p>
+{#if onShowExercises && count}
+  <button class="sheet-action" onclick={onShowExercises}>Xem {count} bài tập</button>
+{/if}
 
 <style>
   h2 {
