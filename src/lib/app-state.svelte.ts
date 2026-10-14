@@ -1,7 +1,7 @@
 import type { Equipment, Exercise, Muscle, MusclePart } from './content-types'
 
 export type Tab = 'body' | 'exercises' | 'favorites'
-export type MuscleTab = 'exercises' | 'details'
+export type MuscleTab = 'exercises' | 'details' | 'tips'
 
 /** Where in a muscle's sheet an exercise was opened, so the exercise header can lead back there. */
 export interface MuscleOrigin {

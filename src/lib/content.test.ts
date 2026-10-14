@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { equipmentIn, exerciseById, exerciseCount, exercises, exercisesFor, isSuperficial, muscleById, partByObject } from './content'
+import { boneNames, equipmentIn, exerciseById, exerciseCount, exercises, exercisesFor, isSuperficial, muscleById, partByObject } from './content'
 
 describe('content', () => {
   it('tra được phần cơ từ tên object Z-Anatomy', () => {
@@ -27,5 +27,11 @@ describe('content', () => {
     expect(exerciseCount('pectoralis-major')).toBe(new Set([...primary, ...secondary]).size)
     expect(exerciseCount('calcaneal-tendon')).toBe(0)
     expect(exerciseById(primary[0].id)).toBe(primary[0])
+  })
+})
+
+describe('boneNames', () => {
+  it('tra tên tiếng Việt theo thứ tự, id lạ thì giữ id', () => {
+    expect(boneNames({ bones: ['không-có'], vi: 'x' })).toEqual(['không-có'])
   })
 })

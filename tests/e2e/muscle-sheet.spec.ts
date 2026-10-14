@@ -53,11 +53,13 @@ test('răng cưa trước: chỉ có nhóm hỗ trợ, một loại dụng cụ 
   await expect(chips(page)).toHaveCount(0)
 })
 
-test('gân gót không có bài: mở thẳng tab Thông tin, tab Bài tập báo chưa có', async ({ page }) => {
+test('gân gót không có bài: mở thẳng tab Giải phẫu, tab Bài tập báo chưa có', async ({ page }) => {
   await ready(page)
   await openMuscle(page, 'calcaneal-tendon')
-  await expect(tabs(page).getByRole('button', { name: 'Thông tin' })).toHaveAttribute('aria-pressed', 'true')
+  await expect(tabs(page).getByRole('button', { name: 'Giải phẫu' })).toHaveAttribute('aria-pressed', 'true')
   await expect(page.locator(SHEET).getByText(/^Nguồn/)).toBeVisible()
+  await expect(tabs(page).getByRole('button', { name: 'Mẹo PT' })).toHaveCount(0)
+  await expect(page.locator(SHEET).getByRole('heading', { name: 'Nguyên ủy' })).toHaveCount(0)
   await tabs(page).getByRole('button', { name: 'Bài tập' }).click()
   await expect(page.locator(SHEET).getByText('Chưa có bài tập có nguồn cho cơ này.')).toBeVisible()
 })
@@ -69,7 +71,7 @@ const countFor = (id: string) =>
 test('Xem n bài tập → lọc → mở bài → ‹ quay lại đúng tab và bộ lọc', async ({ page }) => {
   await ready(page)
   await openMuscle(page, 'pectoralis-major')
-  await tabs(page).getByRole('button', { name: 'Thông tin' }).click()
+  await tabs(page).getByRole('button', { name: 'Giải phẫu' }).click()
   // Back to peek, where the header offers the exercises: it must switch away from the details tab.
   await page.locator(SHEET).getByRole('button', { name: 'Thu gọn' }).click()
   await page.locator(SHEET).getByRole('button', { name: `Xem ${countFor('pectoralis-major')} bài tập` }).click()
