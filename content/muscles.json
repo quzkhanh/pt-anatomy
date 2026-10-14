@@ -8,7 +8,7 @@
     "insertion": [{"bones": ["humerus"], "vi": "Mép ngoài rãnh gian củ (rãnh nhị đầu) xương cánh tay; cả hai bó cùng bám vào đây"}],
     "nerve": "Thần kinh ngực ngoài và thần kinh ngực trong",
     "tips": {
-      "training": ["Bài có khép ngang và duỗi khuỷu như bench press tạ đòn, tạ đơn, máy kích hoạt mạnh phần ức sườn.", "Cả bài đa khớp (đẩy ngực) lẫn bài đơn khớp (ép ngực, fly) đều làm phì đại cơ ngực lớn."],
+      "training": ["Bài có khép ngang và duỗi khuỷu như bench press tạ đòn, tạ đơn, máy kích hoạt mạnh phần ức sườn.", "Cả bài đa khớp lẫn bài đơn khớp đều làm phì đại cơ ngực lớn."],
       "clinical": ["Rách cơ ngực lớn thường ở chỗ nối cơ–gân, do co cơ ly tâm (eccentric) mạnh, điển hình khi đẩy ngực (bench press).", "Rách bán phần mức độ nặng hoặc rách toàn bộ bề dày thường được ưu tiên phẫu thuật khâu nếu cần giữ chức năng, nhất là ở vận động viên.", "Rách cơ ngực lớn gây đau nhói đột ngột ở thành ngực và vai, bầm tím và mất lực."]
     },
     "sources": [
@@ -625,7 +625,7 @@
     "function": "Cơ gấp hông mạnh nhất: kéo đùi ra trước – lên (nâng gối) tại khớp hông, quan trọng khi đứng, đi và chạy. Gồm cơ thắt lưng lớn (bám từ các đốt sống thắt lưng) và cơ chậu, hai cơ hợp lại bám vào mấu chuyển bé xương đùi. Cơ ngắn và căng có thể gây đau lưng dưới, hông hoặc háng.",
     "origin": [{"bones": ["vertebra-t12", "lumbar-vertebrae"], "vi": "Cơ thắt lưng lớn: mặt bên thân các đốt sống từ T12 xuống thắt lưng (nguồn ghi tới L3 hoặc L4) cùng đĩa gian đốt kế cận, và mỏm ngang các đốt sống thắt lưng"}, {"bones": ["hip-bone"], "vi": "Cơ chậu: hố chậu (mặt trong xương chậu), và vùng gai chậu trước dưới"}],
     "insertion": [{"bones": ["femur"], "vi": "Mấu chuyển bé xương đùi"}],
-    "nerve": "Cơ thắt lưng lớn: nhánh trước của các dây thần kinh sống thắt lưng L1–L3; cơ chậu: thần kinh đùi (L2–L4)",
+    "nerve": "Cơ thắt lưng lớn: nhánh trước của các dây thần kinh sống thắt lưng; cơ chậu: thần kinh đùi (L2–L4)",
     "tips": {
       "training": ["Khi chân cố định, nhóm gập hông (gồm cơ thắt lưng chậu) kéo thân về phía chân, như khi gập bụng kiểu sit-up nâng cả lưng dưới khỏi sàn; cơ thắt lưng lớn co hai bên gập thân tại khớp hông."],
       "palpation": ["Cơ thắt lưng lớn có thể sờ được khi gập hông chủ động; sờ sâu cần thận trọng vì gần các tạng bụng, nhất là đại tràng."],
@@ -849,7 +849,7 @@
     "insertion": [{"bones": ["navicular"], "vi": "Củ xương ghe (phần chính của gân)"}, {"bones": ["medial-cuneiform"], "vi": "Mặt gan bàn chân của xương chêm trong (phần nhỏ hơn của gân)"}, {"bones": ["intermediate-cuneiform", "lateral-cuneiform", "cuboid", "metatarsals-2-4"], "vi": "Phần gan chân của gân: nền xương bàn chân II–IV, xương chêm giữa, xương chêm ngoài và xương hộp"}, {"bones": ["calcaneus"], "vi": "Phần quặt ngược của gân: mỏm chân đế sên (sustentaculum tali) của xương gót"}],
     "nerve": "Thần kinh chày",
     "tips": {
-      "clinical": ["Rối loạn chức năng gân cơ chày sau (posterior tibial tendon dysfunction) là bệnh tiến triển và là nguyên nhân thường gặp nhất gây bàn chân bẹt ở người trưởng thành; viêm hoặc rách gân có thể gây đau, sưng."]
+      "clinical": ["Rối loạn chức năng gân cơ chày sau (posterior tibial tendon dysfunction) là bệnh tiến triển và là nguyên nhân thường gặp nhất gây bàn chân bẹt ở người trưởng thành; bệnh gồm viêm hoặc rách gân cơ chày sau."]
     },
     "sources": [
       {"title": "Tibialis posterior muscle – Wikipedia", "url": "https://en.wikipedia.org/wiki/Tibialis_posterior_muscle"},
