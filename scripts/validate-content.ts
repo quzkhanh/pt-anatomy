@@ -87,7 +87,7 @@ export function validateDetails(muscles: Muscle[], bones: Bone[]): string[] {
   for (const b of bones) {
     if (boneIds.has(b.id)) errors.push(`trùng id xương: ${b.id}`)
     boneIds.add(b.id)
-    if (!b.vi || !b.en) errors.push(`xương ${b.id}: thiếu tên vi hoặc en`)
+    if (!b.vi.trim() || !b.en.trim()) errors.push(`xương ${b.id}: thiếu tên vi hoặc en`)
     if (!b.objects.length) errors.push(`xương ${b.id}: objects rỗng`)
   }
   const used = new Set<string>()
@@ -109,6 +109,7 @@ export function validateDetails(muscles: Muscle[], bones: Bone[]): string[] {
       if (!TIP_KINDS.includes(kind as TipKind)) errors.push(`${m.id}: nhóm mẹo không hợp lệ "${kind}"`)
       else if (!tips?.length) errors.push(`${m.id}: tips.${kind} rỗng`)
       else if (tips.some((t) => !t.trim())) errors.push(`${m.id}: tips.${kind} có ý rỗng`)
+      else if (new Set(tips).size !== tips.length) errors.push(`${m.id}: tips.${kind} trùng ý`)
     }
   }
   for (const id of boneIds) if (!used.has(id)) errors.push(`xương ${id} không được cơ nào nhắc`)
@@ -126,20 +127,45 @@ function claims(m: Muscle): { field: string; item?: number }[] {
   ]
 }
 
+/**
+ * Quotes whose `field`/`item` point at no claim, so a typo or a deleted/reordered item cannot leave evidence misattributed.
+ * `lists`: array fields and their length; `scalars`: fields without `item`, and whether the claim exists.
+ */
+function misaddressed(owner: string, quotes: Quote[], lists: Record<string, number>, scalars: Map<string | undefined, boolean>): string[] {
+  return quotes.flatMap(({ field, item }) => {
+    if (scalars.has(field)) {
+      if (item !== undefined) return [`${owner}: câu trích ${field ?? 'function'} không được có item`]
+      return scalars.get(field) ? [] : [`${owner}: câu trích ${field} trỏ tới ý không có`]
+    }
+    if (field === undefined || !Object.hasOwn(lists, field)) return [`${owner}: câu trích có field không hợp lệ "${field}"`]
+    if (item === undefined) return [`${owner}: câu trích ${field} thiếu item`]
+    return Number.isInteger(item) && item >= 0 && item < lists[field] ? [] : [`${owner}: câu trích ${field}[${item}] trỏ tới ý không có`]
+  })
+}
+
 export function validateEvidence(muscles: Muscle[], evidence: Record<string, Quote[]>): string[] {
   const errors: string[] = []
   for (const m of muscles) {
-    const quotes = (evidence[m.id] ?? []).filter((q) => q.quote.trim())
+    const all = evidence[m.id] ?? []
+    const quotes = all.filter((q) => q.quote.trim())
     for (const { field, item } of claims(m)) {
       if (!quotes.some((q) => q.field === field && q.item === item)) {
         errors.push(`${m.id}: ${field}${item === undefined ? '' : `[${item}]`} chưa có câu trích trong evidence.json`)
       }
     }
+    const lists = {
+      origin: m.origin?.length ?? 0,
+      insertion: m.insertion?.length ?? 0,
+      ...Object.fromEntries(TIP_KINDS.map((kind) => [`tips.${kind}`, m.tips?.[kind]?.length ?? 0])),
+    }
+    errors.push(...misaddressed(m.id, all, lists, new Map([[undefined, true], ['nerve', !!m.nerve]])))
     const urls = new Set((m.sources ?? []).map((s) => s.url))
     for (const url of new Set(quotes.map((q) => q.url))) {
       if (!urls.has(url)) errors.push(`${m.id}: câu trích dùng nguồn không có trong sources "${url}"`)
     }
   }
+  const ids = new Set(muscles.map((m) => m.id))
+  for (const id of Object.keys(evidence)) if (!ids.has(id)) errors.push(`evidence.json: không có cơ "${id}"`)
   return errors
 }
 
@@ -147,8 +173,13 @@ export function validateBreathing(g: BreathingGuide, quotes: Quote[]): string[] 
   const has = (field: string, item?: number) => quotes.some((q) => q.field === field && q.item === item && q.quote.trim())
   return [
     ...(g.points.length ? [] : ['breathing: points rỗng']),
-    ...g.points.flatMap((p, i) => (has('points', i) && p.trim() ? [] : [`breathing: points[${i}] chưa có câu trích`])),
+    ...g.points.flatMap((p, i) => {
+      if (!p.trim()) return [`breathing: points[${i}] ý rỗng`]
+      return has('points', i) ? [] : [`breathing: points[${i}] chưa có câu trích`]
+    }),
+    ...(new Set(g.points).size === g.points.length ? [] : ['breathing: points trùng ý']),
     ...(has('phases') ? [] : ['breathing: quy tắc pha (phases) chưa có câu trích']),
+    ...misaddressed('breathing', quotes, { points: g.points.length }, new Map([['phases', true]])),
     ...validateSources('breathing', g.sources),
     ...[...new Set(quotes.map((q) => q.url))]
       .filter((url) => !g.sources.some((s) => s.url === url))

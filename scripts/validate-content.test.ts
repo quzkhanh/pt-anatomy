@@ -137,6 +137,14 @@ describe('validateDetails', () => {
       'deltoid: nhóm mẹo không hợp lệ "diet"',
     ])
   })
+  it('trùng ý trong một nhóm mẹo', () => {
+    expect(validateDetails([detailed({ tips: { training: ['Ý một.', 'Ý một.'], clinical: ['Ý một.'] } })], [humerus])).toEqual([
+      'deltoid: tips.training trùng ý',
+    ])
+  })
+  it('tên xương chỉ có khoảng trắng', () => {
+    expect(validateDetails([detailed()], [{ ...humerus, vi: ' ', en: 'Humerus' }])).toEqual(['xương humerus: thiếu tên vi hoặc en'])
+  })
   it('tips là object rỗng', () => {
     expect(validateDetails([detailed({ tips: {} })], [humerus])).toEqual(['deltoid: tips rỗng'])
   })
@@ -168,6 +176,31 @@ describe('validateEvidence', () => {
       'deltoid: câu trích dùng nguồn không có trong sources "https://khac.org"',
     ])
   })
+  it('câu trích có field lạ, thiếu item, item ngoài khoảng, nerve có item, function có item', () => {
+    const bad = [
+      ...full,
+      q('tips.trainng', 0),
+      q('insertion'),
+      q('insertion', 1),
+      q('tips.clinical', 0),
+      q('nerve', 0),
+      q(undefined, 0),
+    ]
+    expect(validateEvidence([detailed()], { deltoid: bad })).toEqual([
+      'deltoid: câu trích có field không hợp lệ "tips.trainng"',
+      'deltoid: câu trích insertion thiếu item',
+      'deltoid: câu trích insertion[1] trỏ tới ý không có',
+      'deltoid: câu trích tips.clinical[0] trỏ tới ý không có',
+      'deltoid: câu trích nerve không được có item',
+      'deltoid: câu trích function không được có item',
+    ])
+  })
+  it('câu trích nerve khi cơ không có nerve', () => {
+    expect(validateEvidence([detailed({ nerve: undefined })], { deltoid: full })).toEqual(['deltoid: câu trích nerve trỏ tới ý không có'])
+  })
+  it('khóa evidence không phải id cơ', () => {
+    expect(validateEvidence([detailed()], { deltoid: full, deltoidd: [q()] })).toEqual(['evidence.json: không có cơ "deltoidd"'])
+  })
   it('câu trích rỗng không tính', () => {
     expect(validateEvidence([detailed()], { deltoid: [...full.slice(0, 2), { url, quote: ' ', field: 'nerve' }, ...full.slice(3)] })).toEqual([
       'deltoid: nerve chưa có câu trích trong evidence.json',
@@ -188,6 +221,28 @@ describe('validateBreathing', () => {
   it('câu trích dùng nguồn không có trong sources', () =>
     expect(validateBreathing(guide, [...quotes, { url: 'https://other.com/y', quote: 'q', field: 'points', item: 0 }])).toEqual([
       'breathing: câu trích dùng nguồn không có trong sources "https://other.com/y"',
+    ]))
+  it('ý rỗng và trùng ý', () =>
+    expect(validateBreathing({ ...guide, points: ['Ý một.', ' ', 'Ý một.'] }, [...quotes, { url, quote: 'q', field: 'points', item: 1 }, { url, quote: 'q', field: 'points', item: 2 }])).toEqual([
+      'breathing: points[1] ý rỗng',
+      'breathing: points trùng ý',
+    ]))
+  it('câu trích có field lạ, item ngoài khoảng, thiếu item, phases có item', () =>
+    expect(
+      validateBreathing(guide, [
+        ...quotes,
+        { url, quote: 'q', field: 'point', item: 0 },
+        { url, quote: 'q', field: 'points', item: 3 },
+        { url, quote: 'q', field: 'points' },
+        { url, quote: 'q', field: 'phases', item: 0 },
+        { url, quote: 'q' },
+      ]),
+    ).toEqual([
+      'breathing: câu trích có field không hợp lệ "point"',
+      'breathing: câu trích points[3] trỏ tới ý không có',
+      'breathing: câu trích points thiếu item',
+      'breathing: câu trích phases không được có item',
+      'breathing: câu trích có field không hợp lệ "undefined"',
     ]))
   it('points rỗng', () => expect(validateBreathing({ ...guide, points: [] }, quotes)).toContain('breathing: points rỗng'))
 })
