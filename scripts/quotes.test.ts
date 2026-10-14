@@ -22,6 +22,9 @@ describe('normalizeText', () => {
     expect(normalizeText('[T]he muscle')).toBe('[t]he muscle')
     expect(normalizeText('in [2024] study')).toBe('in [2024] study')
   })
+  it('bỏ khoảng trắng quanh dấu gạch chéo', () => {
+    expect(normalizeText('semitendinosus/ <a>gracilis</a> tendon')).toBe('semitendinosus/gracilis tendon')
+  })
   it('giữ entity số ngoài khoảng Unicode nguyên văn', () => {
     expect(normalizeText('&#99999999;')).toBe('&#99999999;')
   })

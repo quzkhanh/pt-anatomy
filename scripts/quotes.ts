@@ -17,6 +17,7 @@ export const normalizeText = (html: string) =>
     .replace(/\s+/g, ' ')
     .replace(/ ([,.;:!?)\]])/g, '$1')
     .replace(/([(\[]) /g, '$1')
+    .replace(/ ?\/ ?/g, '/')
     .trim()
     .toLowerCase()
 
