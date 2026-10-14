@@ -1,6 +1,7 @@
 import exercisesJson from '../../content/exercises.json'
 import musclesJson from '../../content/muscles.json'
 import type { Equipment, Exercise, Muscle, MusclePart, Region } from './content-types'
+import { EQUIPMENT } from './content-types'
 import { splitRef } from './refs'
 import { createSearch } from './search'
 
@@ -47,6 +48,13 @@ export function exercisesFor(muscleId: string) {
     primary: exercises.filter((e) => uses(e.primary)),
     secondary: exercises.filter((e) => uses(e.secondary)),
   }
+}
+
+export const equipmentIn = (list: Exercise[]): Equipment[] => EQUIPMENT.filter((eq) => list.some((e) => e.equipment === eq))
+
+export function exerciseCount(muscleId: string) {
+  const { primary, secondary } = exercisesFor(muscleId)
+  return new Set([...primary, ...secondary]).size
 }
 
 export const REGION_LABELS: Record<Region, string> = {

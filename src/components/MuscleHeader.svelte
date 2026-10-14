@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { exercisesFor, REGION_LABELS } from '../lib/content'
+  import { exerciseCount, REGION_LABELS } from '../lib/content'
   import type { Muscle, MusclePart } from '../lib/content-types'
   import DraftBadge from './DraftBadge.svelte'
 
   let { muscle, part }: { muscle: Muscle; part: MusclePart | null } = $props()
 
   const partLabel = $derived(muscle.parts.length > 1 ? part?.vi : undefined)
-  const count = $derived(new Set(Object.values(exercisesFor(muscle.id)).flat()).size)
+  const count = $derived(exerciseCount(muscle.id))
 </script>
 
 <h2>{muscle.vi} <i lang="en">{muscle.en}</i></h2>

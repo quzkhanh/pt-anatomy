@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { isSuperficial, muscleById, partByObject } from './content'
+import { equipmentIn, exerciseById, exerciseCount, exercises, exercisesFor, isSuperficial, muscleById, partByObject } from './content'
 
 describe('content', () => {
   it('tra được phần cơ từ tên object Z-Anatomy', () => {
@@ -13,5 +13,19 @@ describe('content', () => {
     const part = (id: string) => ({ muscle: quads, part: quads.parts.find((p) => p.id === id)! })
     expect(isSuperficial(part('rectus-femoris'))).toBe(true)
     expect(isSuperficial(part('vastus-intermedius'))).toBe(false)
+  })
+
+  it('equipmentIn liệt kê dụng cụ theo thứ tự EQUIPMENT, không trùng', () => {
+    const pick = (equipment: string) => exercises.find((e) => e.equipment === equipment)!
+    const list = [pick('machine'), pick('barbell'), pick('machine'), pick('dumbbell')]
+    expect(equipmentIn(list)).toEqual(['barbell', 'dumbbell', 'machine'])
+    expect(equipmentIn([])).toEqual([])
+  })
+
+  it('exerciseCount đếm mỗi bài một lần dù cơ ở cả nhóm chính và phụ', () => {
+    const { primary, secondary } = exercisesFor('pectoralis-major')
+    expect(exerciseCount('pectoralis-major')).toBe(new Set([...primary, ...secondary]).size)
+    expect(exerciseCount('calcaneal-tendon')).toBe(0)
+    expect(exerciseById(primary[0].id)).toBe(primary[0])
   })
 })
