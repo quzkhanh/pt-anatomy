@@ -133,29 +133,61 @@
       {"id": "middle", "vi": "phần giữa (phần ngang)", "object": "Transverse part of trapezius muscle"},
       {"id": "lower", "vi": "phần dưới (phần lên)", "object": "Ascending part of trapezius muscle"} ],
     "function": "Nâng, kéo vào trong và hạ xương bả vai; cùng cơ răng trước xoay bả vai lên trên để đưa tay qua đầu. Phần trên nâng vai (nhún vai) và nghiêng đầu – cổ cùng bên, phần giữa kéo bả vai vào về phía cột sống, phần dưới kéo bả vai xuống. Vai trò chính là giữ vững và điều khiển xương bả vai khi tay cử động.",
+    "origin": [{"bones": ["occipital-bone"], "vi": "Đường gáy trên (1/3 trong), lồi chẩm ngoài của xương chẩm và dây chằng gáy (phần trên)"}, {"bones": ["vertebra-c7", "thoracic-vertebrae"], "vi": "Mỏm gai các đốt sống từ C7 đến T12"}],
+    "insertion": [{"bones": ["clavicle"], "vi": "Bờ sau 1/3 ngoài xương đòn (phần trên)"}, {"bones": ["scapula"], "vi": "Bờ trong mỏm cùng vai và mép trên gai vai (phần giữa); củ ở đầu trong gai vai (phần dưới)"}],
+    "nerve": "Vận động: thần kinh phụ (dây sọ XI). Nhánh trước C3–C4 (đám rối cổ) mang sợi cảm giác bản thể; một số nguồn cho là có cả sợi vận động",
+    "tips": {
+      "training": ["Phần trên được rèn bằng động tác nâng vai: nhún vai (shrug) và các biến thể của clean, nhất là hang clean.", "Phần giữa phát triển khi kéo hai xương vai lại gần nhau.", "Phần dưới phát triển khi kéo xương vai xuống, hai tay gần như thẳng và cứng."],
+      "clinical": ["Muốn kiểm tra thần kinh phụ, bảo người bệnh nhún vai chống lại lực cản để đánh giá cơ thang.", "Nguyên nhân thường gặp nhất gây tổn thương thần kinh phụ là do thủ thuật y khoa (iatrogenic), ví dụ sinh thiết hạch cổ hoặc đặt catheter tĩnh mạch cảnh trong.", "Liệt cơ thang do tổn thương thần kinh phụ: khó dạng tay, vai xệ, kèm đau vai và cổ."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"},
-      {"title": "Kenhub – Trapezius muscle", "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle"} ] },
+      {"title": "Kenhub – Trapezius muscle", "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle"},
+      {"title": "Wikipedia – Trapezius", "url": "https://en.wikipedia.org/wiki/Trapezius"} ] },
   {"id": "rhomboids", "vi": "Cơ trám", "en": "Rhomboids", "region": "back", "superficial": false, "status": "draft",
     "parts": [
       {"id": "major", "vi": "cơ trám lớn", "object": "Rhomboid major muscle"},
       {"id": "minor", "vi": "cơ trám bé", "object": "Rhomboid minor muscle"} ],
     "function": "Kéo xương bả vai vào trong về phía cột sống (khép bả vai) và xoay bả vai xuống dưới, qua đó kéo vai ra sau. Cơ trám lớn và cơ trám bé có cùng chức năng, giúp giữ vững bả vai khi tay cử động.",
+    "origin": [{"bones": ["thoracic-vertebrae-2-5"], "vi": "Mỏm gai T2–T5 (cơ trám lớn)"}, {"bones": ["vertebra-c7", "vertebra-t1"], "vi": "Mỏm gai C7–T1 (cơ trám bé)"}],
+    "insertion": [{"bones": ["scapula"], "vi": "Bờ trong xương vai, từ gốc gai vai tới góc dưới (cơ trám lớn)"}, {"bones": ["scapula"], "vi": "Bờ trong xương vai, một vùng nhỏ ngang mức gai vai (cơ trám bé)"}],
+    "nerve": "Thần kinh vai lưng (chủ yếu từ rễ C5; có nguồn ghi C4–C5)",
+    "tips": {
+      "clinical": ["Tư thế xấu làm xương vai bị đưa ra trước (protracted), thường gây đau lưng trên, nhất là dọc bờ trong xương vai.", "Tăng sức các cơ khép xương vai (kéo xương vai về phía cột sống), như cơ trám, có thể giúp giảm đau và cải thiện tư thế thân trên."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"} ] },
+      {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"},
+      {"title": "Wikipedia – Rhomboid major muscle", "url": "https://en.wikipedia.org/wiki/Rhomboid_major_muscle"},
+      {"title": "Wikipedia – Rhomboid minor muscle", "url": "https://en.wikipedia.org/wiki/Rhomboid_minor_muscle"},
+      {"title": "Kenhub – Rhomboid muscles", "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles"} ] },
   {"id": "levator-scapulae", "vi": "Cơ nâng vai", "en": "Levator scapulae", "region": "back", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Levator scapulae"} ],
     "function": "Nâng và kéo xương bả vai vào trong, phối hợp với cơ trám để xoay bả vai xuống dưới. Ở cổ, co một bên làm nghiêng cổ cùng bên, co hai bên góp phần duỗi cổ.",
+    "origin": [{"bones": ["cervical-vertebrae-1-4"], "vi": "Củ sau mỏm ngang các đốt sống cổ C1–C4"}],
+    "insertion": [{"bones": ["scapula"], "vi": "Phần trên bờ trong xương vai"}],
+    "nerve": "Các nhánh thần kinh cổ C3–C4 và thường cả thần kinh vai lưng",
+    "tips": {
+      "clinical": ["Cơ nâng vai dễ cứng và đau mạn do tư thế xấu hằng ngày; nguyên nhân thường gặp là đeo túi nặng trên vai, thường xuyên nâng vai khi ngồi bàn, và nằm nghiêng không kê đầu đúng cách."]
+    },
     "sources": [
       {"title": "Kenhub – Levator scapulae", "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle"},
       {"title": "Wikipedia – Levator scapulae muscle", "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle"} ] },
   {"id": "latissimus-dorsi", "vi": "Cơ lưng rộng", "en": "Latissimus dorsi", "region": "back", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Latissimus dorsi muscle"} ],
     "function": "Duỗi, khép và xoay trong cánh tay tại khớp vai – tức kéo cánh tay từ trên cao xuống và ra sau. Khi tay cố định trên cao, cơ cùng cơ ngực lớn kéo thân người lên; vì vậy đây là cơ chủ lực của các động tác leo, chèo và bơi.",
+    "origin": [{"bones": ["thoracic-vertebrae-7-12"], "vi": "Mỏm gai T7–T12 và mạc ngực–thắt lưng"}, {"bones": ["hip-bone"], "vi": "Mào chậu (1/3 sau)"}, {"bones": ["ribs-9-12"], "vi": "Xương sườn 9–12"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Đáy rãnh gian củ xương cánh tay, giữa chỗ bám của cơ ngực lớn và cơ tròn lớn"}],
+    "nerve": "Thần kinh ngực lưng (C6–C8)",
+    "tips": {
+      "training": ["Kéo thẳng đứng: lat pulldown, pull-up (kể cả chin-up).", "Duỗi vai khi tay thẳng: straight-arm lat pulldown và pull-over.", "Các động tác kéo ngang như chèo (row) huy động nhiều cả cơ lưng rộng lẫn cơ thang."],
+      "clinical": ["Cơ lưng rộng căng cứng được ghi nhận là yếu tố góp phần gây đau vai mạn và đau lưng mạn.", "Chấn thương cơ lưng rộng hiếm gặp trong thể thao, nhưng xảy ra nhiều hơn ở vận động viên ném bóng chày (pitcher)."],
+      "breathing": ["Cơ hô hấp phụ, hỗ trợ cả hít vào sâu lẫn thở ra (nâng hoặc hạ xương sườn)."]
+    },
     "sources": [
       {"title": "Kenhub – Latissimus dorsi", "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle"},
-      {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"} ] },
+      {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"},
+      {"title": "Wikipedia – Latissimus dorsi muscle", "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle"} ] },
   {"id": "erector-spinae", "vi": "Cơ dựng sống", "en": "Erector spinae", "region": "back", "superficial": false, "status": "draft",
     "parts": [
       {"id": "iliocostalis-lumborum", "vi": "cơ chậu sườn thắt lưng", "object": "Iliocostalis lumborum muscle"},
@@ -163,35 +195,71 @@
       {"id": "longissimus-thoracis", "vi": "cơ dài ngực", "object": "Longissimus thoracis muscle"},
       {"id": "spinalis-thoracis", "vi": "cơ gai ngực", "object": "Spinalis thoracis muscle"} ],
     "function": "Là cơ duỗi chính của cột sống: co hai bên thì duỗi cột sống và đầu, co một bên thì nghiêng thân sang cùng bên. Cơ còn kiểm soát động tác cúi, nghiêng, xoay thân và giữ đường cong thắt lưng. Gồm ba cột cùng chức năng: cơ chậu sườn (ngoài), cơ dài (giữa) và cơ gai (trong).",
+    "origin": [{"bones": ["thoracic-vertebrae-11-12", "lumbar-vertebrae"], "vi": "Các đốt sống ngực dưới và thắt lưng (mỏm gai T11–T12 và các mỏm gai thắt lưng)"}, {"bones": ["sacrum"], "vi": "Xương cùng"}, {"bones": ["hip-bone"], "vi": "Phần sau mào chậu"}],
+    "insertion": [{"bones": ["ribs-1-12", "cervical-vertebrae-4-6"], "vi": "Góc các xương sườn và củ sau mỏm ngang C4–C6 (cột chậu sườn)"}, {"bones": ["thoracic-vertebrae", "cervical-vertebrae-2-7", "temporal-bone"], "vi": "Các xương sườn dưới, mỏm ngang C2–T12 và mỏm chũm (cột dài)"}, {"bones": ["axis", "thoracic-vertebrae-1-8", "occipital-bone"], "vi": "Mỏm gai C2, T1–T8 và xương chẩm (cột gai)"}],
+    "nerve": "Các nhánh sau (posterior rami) của thần kinh sống",
+    "tips": {
+      "training": ["Các bài thường dùng để tăng sức cơ dựng sống (cho mục đích trị liệu hoặc thể thao): bent-over row, deadlift, hyperextension, good-morning.", "Khi nhắm trực tiếp vào cơ dựng sống, cần chú ý tránh chấn thương lưng dưới.", "Tập các cơ mông cũng có thể có lợi cho sức khỏe lưng dưới."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.3 Axial Muscles of the Head, Neck, and Back", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"},
-      {"title": "TeachMeAnatomy – The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic/"} ] },
+      {"title": "TeachMeAnatomy – The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic/"},
+      {"title": "Wikipedia – Erector spinae muscles", "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles"} ] },
   {"id": "multifidus", "vi": "Cơ nhiều chân", "en": "Multifidus", "region": "back", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Multifidus lumborum muscle"} ],
     "function": "Co hai bên thì duỗi cột sống; co một bên thì nghiêng cột sống cùng bên và xoay sang bên đối diện. Vai trò nổi bật là giữ vững các đốt sống, giúp ổn định cột sống.",
+    "origin": [{"bones": ["sacrum", "hip-bone"], "vi": "Xương cùng, gai chậu sau và gốc gân chung của cơ dựng sống"}, {"bones": ["lumbar-vertebrae"], "vi": "Mỏm vú (mamillary) của các đốt sống thắt lưng"}, {"bones": ["thoracic-vertebrae"], "vi": "Mỏm ngang tất cả các đốt sống ngực"}, {"bones": ["cervical-vertebrae-4-7"], "vi": "Mỏm khớp C4–C7"}],
+    "insertion": [{"bones": ["cervical-vertebrae-2-7", "thoracic-vertebrae", "lumbar-vertebrae"], "vi": "Mỏm gai các đốt sống phía trên, lên tới đốt trục (C2); mỗi bó bắc qua khoảng 2–4 đốt (có nguồn ghi tới 5)"}],
+    "nerve": "Nhánh trong của nhánh sau thần kinh sống",
+    "tips": {
+      "clinical": ["Rối loạn chức năng cơ nhiều chân vùng thắt lưng liên quan chặt với đau thắt lưng.", "Rối loạn này thường vẫn còn dù cơn đau đã hết, có thể góp phần giải thích vì sao đau thắt lưng hay tái phát."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.3 Axial Muscles of the Head, Neck, and Back", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"},
-      {"title": "Kenhub – Multifidus", "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle"} ] },
+      {"title": "Kenhub – Multifidus", "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle"},
+      {"title": "Wikipedia – Multifidus muscle", "url": "https://en.wikipedia.org/wiki/Multifidus_muscle"},
+      {"title": "TeachMeAnatomy – The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic/"} ] },
   {"id": "quadratus-lumborum", "vi": "Cơ vuông thắt lưng", "en": "Quadratus lumborum", "region": "back", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Quadratus lumborum muscle"} ],
     "function": "Co một bên làm nghiêng thân sang cùng bên; co hai bên duỗi cột sống thắt lưng. Cơ còn giữ cố định xương sườn 12 để hỗ trợ thở ra và góp phần ổn định cột sống – khung chậu. Quá tải hoặc căng cơ này có thể góp phần gây đau thắt lưng mạn tính.",
+    "origin": [{"bones": ["hip-bone"], "vi": "Mào chậu (và dây chằng chậu–thắt lưng)"}],
+    "insertion": [{"bones": ["rib-12"], "vi": "Bờ dưới xương sườn 12"}, {"bones": ["lumbar-vertebrae"], "vi": "Mỏm ngang các đốt sống thắt lưng L1–L4"}],
+    "nerve": "Thần kinh dưới sườn (T12) và các nhánh trước của thần kinh sống L1–L4",
+    "tips": {
+      "clinical": ["Cơ vuông thắt lưng có thể là nguồn gây đau lưng khi bị dùng quá mức, hoặc đi kèm vẹo cột sống hay cơ mông yếu.", "Một nguyên nhân điển hình: thói quen ngồi bàn với lưng ghế ngả làm các cơ lưng nội tại yếu dần; cơ vuông thắt lưng phải bù trừ nên bị căng cứng và đau."],
+      "breathing": ["Cố định xương sườn 12 khi lồng ngực cử động, nhờ đó hỗ trợ thở ra (cơ hô hấp phụ của thì thở ra).", "Cơ cũng cố định xương sườn 12 và hỗ trợ cơ hoành khi hít vào."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.4 Axial Muscles of the Abdominal Wall and Thorax", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-4-axial-muscles-of-the-abdominal-wall-and-thorax"},
-      {"title": "Kenhub – Quadratus lumborum", "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle"} ] },
-
+      {"title": "Kenhub – Quadratus lumborum", "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle"},
+      {"title": "Wikipedia – Quadratus lumborum muscle", "url": "https://en.wikipedia.org/wiki/Quadratus_lumborum_muscle"} ] },
   {"id": "sternocleidomastoid", "vi": "Cơ ức đòn chũm", "en": "Sternocleidomastoid", "region": "neck", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Sternocleidomastoid muscle"} ],
     "function": "Co một bên làm nghiêng cổ sang cùng bên và xoay mặt sang bên đối diện. Co hai bên làm gập phần cổ dưới, kéo cổ cúi về phía ngực, trong khi các khớp cổ trên hơi ngửa ra sau. Khi đầu cố định, cơ nâng xương ức và xương đòn, hỗ trợ hít vào.",
+    "origin": [{"bones": ["manubrium"], "vi": "Cán xương ức (đầu ức)"}, {"bones": ["clavicle"], "vi": "1/3 trong xương đòn (đầu đòn)"}],
+    "insertion": [{"bones": ["temporal-bone"], "vi": "Mặt ngoài mỏm chũm xương thái dương"}, {"bones": ["occipital-bone"], "vi": "Nửa ngoài đường gáy trên xương chẩm"}],
+    "nerve": "Vận động: thần kinh phụ (dây sọ XI). Các nhánh đám rối cổ (C2–C3) chủ yếu mang cảm giác, gồm cảm giác bản thể",
+    "tips": {
+      "palpation": ["Cơ nằm rất nông nên dễ nhìn và dễ sờ thấy."],
+      "clinical": ["Bệnh lý cơ ức đòn chũm gây vẹo cổ: đầu nghiêng về bên cơ bệnh và mặt xoay sang bên lành.", "Tổn thương thần kinh phụ có thể gây liệt một phần cơ ức đòn chũm, kèm teo cơ và đường viền cổ không cân xứng."],
+      "breathing": ["Khi đầu được cố định, cơ nâng xương ức và xương đòn nên mở rộng lồng ngực: là cơ hô hấp phụ của thì hít vào."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.3 Axial Muscles of the Head, Neck, and Back", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"},
-      {"title": "Kenhub – Sternocleidomastoid muscle", "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle"} ] },
+      {"title": "Kenhub – Sternocleidomastoid muscle", "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle"},
+      {"title": "TeachMeAnatomy – The Superficial Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/superficial/"},
+      {"title": "Wikipedia – Sternocleidomastoid muscle", "url": "https://en.wikipedia.org/wiki/Sternocleidomastoid_muscle"} ] },
   {"id": "splenius-capitis", "vi": "Cơ gối đầu", "en": "Splenius capitis", "region": "neck", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Splenius capitis muscle"} ],
     "function": "Co hai bên thì duỗi (ngửa) đầu và cổ; co một bên thì nghiêng đầu và xoay đầu về cùng bên.",
+    "origin": [{"bones": ["vertebra-c7", "thoracic-vertebrae-1-3"], "vi": "Nửa dưới dây chằng gáy và mỏm gai C7 đến T3 (có nguồn ghi tới T4)"}],
+    "insertion": [{"bones": ["temporal-bone"], "vi": "Mỏm chũm xương thái dương"}, {"bones": ["occipital-bone"], "vi": "Mặt nhám xương chẩm, ngay dưới 1/3 ngoài đường gáy trên"}],
+    "nerve": "Nhánh sau của các dây thần kinh sống cổ",
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e – 11.3 Axial Muscles of the Head, Neck, and Back", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back"},
-      {"title": "TeachMeAnatomy – The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic/"} ] },
-
+      {"title": "TeachMeAnatomy – The Intrinsic Back Muscles", "url": "https://teachmeanatomy.info/back/muscles/intrinsic/"},
+      {"title": "Wikipedia – Splenius capitis muscle", "url": "https://en.wikipedia.org/wiki/Splenius_capitis_muscle"},
+      {"title": "Kenhub – Splenius capitis muscle", "url": "https://www.kenhub.com/en/library/anatomy/splenius-capitis-muscle"} ] },
   {"id": "biceps-brachii", "vi": "Cơ nhị đầu cánh tay", "en": "Biceps brachii", "region": "arms", "superficial": true, "status": "draft",
     "parts": [
       {"id": "long", "vi": "đầu dài", "object": "Long head of biceps brachii"},

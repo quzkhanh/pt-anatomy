@@ -647,6 +647,122 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
     "quote": "The main function of the trapezius is stabilizing the scapula in its anatomical place"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The superior fibers attach on the medial third of the superior nuchal line, the external occipital protuberance of the occipital bone and the nuchal ligament",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Originates from the skull, ligamentum nuchae and the spinous processes of C7-T12.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The superior fibers insert on the posterior border of the lateral third of the clavicle",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "The fibres attach to the clavicle, acromion and the scapula spine.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The middle fibers insert onto the medial margin of the acromion of the scapula, as well as the superior crest of the scapular spine",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Motor innervation is from the accessory nerve. It also receives proprioceptor fibres from C3 and C4 spinal nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "motor innervation to the trapezius is conveyed by the accessory nerve (CN XI)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "The upper portion of the trapezius can be developed by elevating the shoulders.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "Common exercises for this movement are any version of the clean, particularly the hang clean, and the shoulder shrug.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "Middle fibers are developed by pulling shoulder blades together.",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "The lower part can be developed by drawing the shoulder blades downward while keeping the arms almost straight and stiff.",
+    "field": "tips.training",
+    "item": 2
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "To test the accessory nerve, trapezius function can be assessed. This can be done by asking the patient to shrug his/her shoulders.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "The most common cause of accessory nerve damage is iatrogenic (i.e. due to a medical procedure).",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "operations such as cervical lymph node biopsy or cannulation of the internal jugular vein can cause trauma to the nerve.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "Trapezius palsy, due to damage of the spinal accessory nerve, is characterized by difficulty with arm adduction and abduction",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Trapezius",
+    "quote": "associated with a drooping shoulder, and shoulder and neck pain",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "The inferior fibers insert via an aponeurosis on a tubercule at the lateral apex of the medial end of the scapular spine.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "motor innervation to the trapezius is conveyed by the accessory nerve (CN XI) as well as the anterior rami of the C3 and C4 spinal nerves",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "which also contain proprioceptive/sensory fibers from the muscle",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/trapezius-muscle",
+    "quote": "assessing their ability to elevate or 'shrug' the shoulder against resistance",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "rhomboids": [
@@ -665,6 +781,63 @@
    {
     "url": "https://teachmeanatomy.info/back/muscles/superficial/",
     "quote": "Retracts and rotates the scapula."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Rhomboid Major Attachments: Originates from the spinous processes of T2-T5 vertebrae.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Rhomboid Minor Attachments: Originates from the spinous processes of C7-T1 vertebrae.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles",
+    "quote": "insert into the medial border of scapula, between the inferior angle and root of the spine of scapula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rhomboid_minor_muscle",
+    "quote": "inserts onto a small area of the medial border of the scapula at the level of the scapular spine",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rhomboid_major_muscle",
+    "quote": "innervated by the ventral primary ramus via the dorsal scapular nerve (C5)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Rhomboid_minor_muscle",
+    "quote": "innervated by the dorsal scapular nerve (a branch of the brachial plexus), with most of its fibers derived from the C5 nerve root",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles",
+    "quote": "One is that the shoulders, and specifically the scapulae, tend to become protracted. This will often lead to pain in the upper back",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles",
+    "quote": "especially along the medial border of the scapulae",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles",
+    "quote": "strengthening muscles responsible for scapular retraction, such as the rhomboids, will help relieve the pain and improve upper body posture",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/rhomboid-muscles",
+    "quote": "Both rhomboid muscles are innervated by the dorsal scapular nerve (C4-C5), a branch of the brachial plexus",
+    "field": "nerve"
    }
   ],
   "levator-scapulae": [
@@ -679,6 +852,35 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle",
     "quote": "unilateral contraction of the muscle produces ipsilateral flexion of the neck, while bilateral contraction contributes to extension of the neck"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle",
+    "quote": "originates from the posterior tubercles of the transverse processes of cervical vertebrae C1-4",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle",
+    "quote": "it inserts onto the upper portion of the medial border of the scapula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Levator_scapulae_muscle",
+    "quote": "innervated by the cervical nerves C3-C4, and frequently also by the dorsal scapular nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle",
+    "quote": "prone to stiffening and chronic pain due to false posture in everyday life",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/levator-scapulae-muscle",
+    "quote": "Common causes include carrying heavy shoulder bags, permanent lifting of the shoulders while sitting at a desk and sleeping on one side of the body without proper head support.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "latissimus-dorsi": [
@@ -697,6 +899,89 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
     "quote": "it is a climbing muscle, rowing muscle, and a swimming muscle."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "originating from the spinous processes of the 7th to 12th thoracic vertebrae and the thoracolumbar fascia",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "Iliac part: starting from the iliac crest",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "having origins from the 9th to 12th ribs",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "All fibers together attach to the floor of the intertubercular sulcus of the humerus between the pectoralis major and teres major.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "innervated by the sixth, seventh, and eighth cervical nerves through the thoracodorsal (long subscapular) nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "Vertical pulling movements such as pull-downs and pull-ups (including chin-ups)",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "Shoulder extension movements with straight arms such as straight-arm lat pulldowns and pull-overs",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "horizontal pulling motions such as rows recruit both latissimus dorsi and trapezius heavily",
+    "field": "tips.training",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "Tight latissimus dorsi has been shown to be a contributor to chronic shoulder pain and chronic back pain.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "Injuries to the latissimus dorsi are a rare occurrence in sports.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "occur disproportionately in baseball pitchers",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Latissimus_dorsi_muscle",
+    "quote": "It originates from the spinous processes of the six lower thoracic vertebrae",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "Iliac part: Posterior third of crest of ilium",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/latissimus-dorsi-muscle",
+    "quote": "it is an accessory respiratory muscle assisting with both deep inspiration and expiration by elevating or depressing the ribs, respectively",
+    "field": "tips.breathing",
+    "item": 0
    }
   ],
   "erector-spinae": [
@@ -715,6 +1000,83 @@
    {
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-3-axial-muscles-of-the-head-neck-and-back",
     "quote": "The erector spinae comprises the iliocostalis (laterally placed) group, the longissimus (intermediately placed) group, and the spinalis (medially placed) group."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "a common tendinous origin, which arises from: Lower thoracic and lumbar vertebrae Sacrum. Posterior aspect of iliac crest.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "a common tendinous origin, which arises from: Lower thoracic and lumbar vertebrae Sacrum. Posterior aspect of iliac crest.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "a common tendinous origin, which arises from: Lower thoracic and lumbar vertebrae Sacrum. Posterior aspect of iliac crest.",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "spinous processes of the lumbar, and the eleventh and twelfth thoracic vertebrae and the supraspinous ligament",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Arises from the common tendinous origin, and attaches to the costal angle of the ribs and the cervical transverse processes.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "attaches to the lower ribs, the transverse processes of C2 - T12, and the mastoid process of the skull.",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "attaches to the spinous processes of C2, T1-T8 and the occipital bone of the skull.",
+    "field": "insertion",
+    "item": 2
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Innervation: Posterior rami of the spinal nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "Below are examples of exercises by which the erector spinae can be strengthened for therapeutic or athletic purposes.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "Exercises include, but are not limited to: Bent-over row Deadlift Hyperextension Good-morning",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "Care should be taken to avoid injury to the lower back when targeting spinal erectors directly.",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "Additionally, exercises of the glutes may also be beneficial to lower back health.",
+    "field": "tips.training",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Erector_spinae_muscles",
+    "quote": "iliocostalis cervicis which runs from the first 6 ribs to the posterior tubercle of the transverse process of C6-C4",
+    "field": "insertion",
+    "item": 0
    }
   ],
   "multifidus": [
@@ -733,6 +1095,76 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
     "quote": "multifidus muscle function as extensible ligaments that stabilize the vertebral column."
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "arises from the sacrum, posterior iliac spine, common tendinous origin of the erector spinae",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "mamillary processes of lumbar vertebrae, transverse processes of T1-T3 and articular processes of C4-C7",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "mamillary processes of lumbar vertebrae, transverse processes of T1-T3 and articular processes of C4-C7",
+    "field": "origin",
+    "item": 3
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "The fibres ascend 2-4 vertebral segments, attaching to the vertebral spinous processes.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Innervation: Posterior rami of the spinal nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Multifidus_muscle",
+    "quote": "Dysfunction in the lumbar multifidus muscles is strongly associated with low back pain.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Multifidus_muscle",
+    "quote": "The dysfunction frequently persists even after the pain has disappeared. Such persistence may help explain the high recurrence rates of low back pain.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Multifidus_muscle",
+    "quote": "in the thoracic region: from all the transverse processes",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "Thoracic multifidus originate from the transverse processes of the thoracic vertebrae.",
+    "field": "origin",
+    "item": 2
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "insert variably on the spinous processes of the vertebrae 2 - 5 levels above their origin",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Multifidus_muscle",
+    "quote": "from the sacrum to the axis",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/multifidus-muscle",
+    "quote": "innervated by the medial branches of posterior rami of spinal nerves",
+    "field": "nerve"
    }
   ],
   "quadratus-lumborum": [
@@ -755,6 +1187,65 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
     "quote": "Overuse and strain of the quadratus lumborum are one of the major causes for chronic pain in the lower back."
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "Quadratus lumborum originates from the iliolumbar ligament and iliac crest.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "attaching to the inferior border of 12th rib and the transverse processes of the 1st to 4th lumbar vertebrae",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "attaching to the inferior border of 12th rib and the transverse processes of the 1st to 4th lumbar vertebrae",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "innervated by the subcostal nerve (T12) and anterior rami of spinal nerves L1-L4",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "One typical cause is the habit of sitting at the desk using a reclined seat, which releases the intrinsic back muscles and weakens them in the long term.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "The weak back muscles must now be compensated by the quadratus lumborum leading to painful tension and stiffening of the muscle.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "the muscle fixes the 12th rib during movements of the thoracic cage and this way supports expiration (accessory muscle of expiration)",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadratus_lumborum_muscle",
+    "quote": "The quadratus lumborum assists the diaphragm in inhalation",
+    "field": "tips.breathing",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Quadratus_lumborum_muscle",
+    "quote": "The quadratus lumborum muscles can be the source of back pain when overused, or in association with scoliosis or weak gluteal muscles.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/quadratus-lumborum-muscle",
+    "quote": "Bilateral contraction - fixes Ribs 12 during inspiration",
+    "field": "tips.breathing",
+    "item": 1
    }
   ],
   "sternocleidomastoid": [
@@ -777,6 +1268,70 @@
    {
     "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
     "quote": "If the head is fixed, it elevates the sternum and clavicle and, thus, expands the thoracic cavity"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "The sternal head originates from the manubrium of sternum",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "the clavicular head from the medial third of the clavicle",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "insert on the lateral surface of the mastoid process of the temporal bone",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "the lateral half of the superior nuchal line of the occipital bone",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "innervated by the accessory nerve (cranial nerve XI) and direct branches of the cervical plexus (C2-C3)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "The muscle lies very superficially so that it is both easily visible and palpable.",
+    "field": "tips.palpation",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "During pathological changes of the sternocleidomastoid the clinical picture of the wryneck occurs",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "bending of the head to the affected muscle and rotation to the healthy side",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/superficial/",
+    "quote": "Other clinical features of accessory nerve damage include muscle wasting, partial paralysis of the sternocleidomastoid, and an asymmetrical neckline.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/sternocleidomastoid-muscle",
+    "quote": "it elevates the sternum and clavicle and, thus, expands the thoracic cavity (inspiratory breathing muscle)",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Sternocleidomastoid_muscle",
+    "quote": "It supplies only motor fibres. The cervical plexus supplies sensation, including proprioception, from the ventral primary rami of C2 and C3.",
+    "field": "nerve"
    }
   ],
   "splenius-capitis": [
@@ -795,6 +1350,35 @@
    {
     "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
     "quote": "The two splenius muscles can also act together to extend the head and neck."
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Splenius_capitis_muscle",
+    "quote": "into the mastoid process of the temporal bone",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Splenius_capitis_muscle",
+    "quote": "into the rough surface on the occipital bone just below the lateral third of the superior nuchal line",
+    "field": "insertion",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Splenius_capitis_muscle",
+    "quote": "innervated by the posterior ramus of spinal nerves C3 and C4",
+    "field": "nerve"
+   },
+   {
+    "url": "https://www.kenhub.com/en/library/anatomy/splenius-capitis-muscle",
+    "quote": "arises from the lower half of the nuchal ligament and spinous processes of the seventh cervical to the third thoracic vertebrae (C7-T3)",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/back/muscles/intrinsic/",
+    "quote": "Originates from the lower aspect of the ligamentum nuchae, and the spinous processes of C7 - T3/4 vertebrae.",
+    "field": "origin",
+    "item": 0
    }
   ],
   "biceps-brachii": [

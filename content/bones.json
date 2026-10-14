@@ -70,5 +70,241 @@
       "Seventh rib",
       "Eighth rib"
     ]
+  },
+  {
+    "id": "vertebra-c7",
+    "vi": "Đốt sống cổ C7",
+    "en": "Vertebra C7",
+    "objects": [
+      "Vertebra C7"
+    ]
+  },
+  {
+    "id": "vertebra-t1",
+    "vi": "Đốt sống ngực T1",
+    "en": "Vertebra T1",
+    "objects": [
+      "Vertebra T1"
+    ]
+  },
+  {
+    "id": "axis",
+    "vi": "Đốt trục (C2)",
+    "en": "Axis (C2)",
+    "objects": [
+      "Axis (C2)"
+    ]
+  },
+  {
+    "id": "cervical-vertebrae-1-4",
+    "vi": "Đốt sống cổ C1–C4",
+    "en": "Cervical vertebrae C1–C4",
+    "objects": [
+      "Atlas (C1)",
+      "Axis (C2)",
+      "Vertebra C3",
+      "Vertebra C4"
+    ]
+  },
+  {
+    "id": "cervical-vertebrae-2-7",
+    "vi": "Đốt sống cổ C2–C7",
+    "en": "Cervical vertebrae C2–C7",
+    "objects": [
+      "Axis (C2)",
+      "Vertebra C3",
+      "Vertebra C4",
+      "Vertebra C5",
+      "Vertebra C6",
+      "Vertebra C7"
+    ]
+  },
+  {
+    "id": "cervical-vertebrae-4-7",
+    "vi": "Đốt sống cổ C4–C7",
+    "en": "Cervical vertebrae C4–C7",
+    "objects": [
+      "Vertebra C4",
+      "Vertebra C5",
+      "Vertebra C6",
+      "Vertebra C7"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae-1-3",
+    "vi": "Đốt sống ngực T1–T3",
+    "en": "Thoracic vertebrae T1–T3",
+    "objects": [
+      "Vertebra T1",
+      "Vertebra T2",
+      "Vertebra T3"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae-1-8",
+    "vi": "Đốt sống ngực T1–T8",
+    "en": "Thoracic vertebrae T1–T8",
+    "objects": [
+      "Vertebra T1",
+      "Vertebra T2",
+      "Vertebra T3",
+      "Vertebra T4",
+      "Vertebra T5",
+      "Vertebra T6",
+      "Vertebra T7",
+      "Vertebra T8"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae-2-5",
+    "vi": "Đốt sống ngực T2–T5",
+    "en": "Thoracic vertebrae T2–T5",
+    "objects": [
+      "Vertebra T2",
+      "Vertebra T3",
+      "Vertebra T4",
+      "Vertebra T5"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae-7-12",
+    "vi": "Đốt sống ngực T7–T12",
+    "en": "Thoracic vertebrae T7–T12",
+    "objects": [
+      "Vertebra T7",
+      "Vertebra T8",
+      "Vertebra T9",
+      "Vertebra T10",
+      "Vertebra T11",
+      "Vertebra T12"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae-11-12",
+    "vi": "Đốt sống ngực T11–T12",
+    "en": "Thoracic vertebrae T11–T12",
+    "objects": [
+      "Vertebra T11",
+      "Vertebra T12"
+    ]
+  },
+  {
+    "id": "thoracic-vertebrae",
+    "vi": "Đốt sống ngực T1–T12",
+    "en": "Thoracic vertebrae T1–T12",
+    "objects": [
+      "Vertebra T1",
+      "Vertebra T2",
+      "Vertebra T3",
+      "Vertebra T4",
+      "Vertebra T5",
+      "Vertebra T6",
+      "Vertebra T7",
+      "Vertebra T8",
+      "Vertebra T9",
+      "Vertebra T10",
+      "Vertebra T11",
+      "Vertebra T12"
+    ]
+  },
+  {
+    "id": "lumbar-vertebrae",
+    "vi": "Đốt sống thắt lưng",
+    "en": "Lumbar vertebrae",
+    "objects": [
+      "Vertebra L1",
+      "Vertebra L2",
+      "Vertebra L3",
+      "Vertebra L4",
+      "Vertebra L5"
+    ]
+  },
+  {
+    "id": "sacrum",
+    "vi": "Xương cùng",
+    "en": "Sacrum",
+    "objects": [
+      "Sacrum"
+    ]
+  },
+  {
+    "id": "hip-bone",
+    "vi": "Xương chậu",
+    "en": "Hip bone",
+    "objects": [
+      "Hip bone"
+    ]
+  },
+  {
+    "id": "occipital-bone",
+    "vi": "Xương chẩm",
+    "en": "Occipital bone",
+    "objects": [
+      "Occipital bone"
+    ]
+  },
+  {
+    "id": "temporal-bone",
+    "vi": "Xương thái dương",
+    "en": "Temporal bone",
+    "objects": [
+      "Temporal bone"
+    ]
+  },
+  {
+    "id": "ribs-1-12",
+    "vi": "Xương sườn 1–12",
+    "en": "Ribs 1–12",
+    "objects": [
+      "First rib",
+      "Second rib",
+      "Third rib",
+      "Fourth rib",
+      "Fifth rib",
+      "Sixth rib",
+      "Seventh rib",
+      "Eighth rib",
+      "Ninth rib",
+      "Tenth rib",
+      "Eleventh rib",
+      "Twelfth rib"
+    ]
+  },
+  {
+    "id": "ribs-9-12",
+    "vi": "Xương sườn 9–12",
+    "en": "Ribs 9–12",
+    "objects": [
+      "Ninth rib",
+      "Tenth rib",
+      "Eleventh rib",
+      "Twelfth rib"
+    ]
+  },
+  {
+    "id": "rib-12",
+    "vi": "Xương sườn 12",
+    "en": "Twelfth rib",
+    "objects": [
+      "Twelfth rib"
+    ]
+  },
+  {
+    "id": "cervical-vertebrae-4-6",
+    "vi": "Đốt sống cổ C4–C6",
+    "en": "Cervical vertebrae C4–C6",
+    "objects": [
+      "Vertebra C4",
+      "Vertebra C5",
+      "Vertebra C6"
+    ]
+  },
+  {
+    "id": "manubrium",
+    "vi": "Cán xương ức",
+    "en": "Manubrium of sternum",
+    "objects": [
+      "Manubrium of sternum"
+    ]
   }
 ]
