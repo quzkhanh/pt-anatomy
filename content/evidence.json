@@ -24,6 +24,71 @@
    {
     "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
     "quote": "barbell bench press, dumbbell bench press, and machine bench press induce high activation of the pectoralis major in the sternocostal region"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "originates from the anterior surface of the medial clavicle",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "originates from the anterior surface of the sternum, the superior six costal cartilages and the aponeurosis of the external oblique muscle",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "The distal attachment of both heads is onto the intertubercular sulcus of the humerus.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "it inserts onto the lateral lip of the bicipital groove",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Lateral and medial pectoral nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "Exercises that include horizontal adduction and elbow extensions",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "the barbell bench press, dumbbell bench press, and machine bench press induce high activation of the pectoralis major in the sternocostal region",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "Both multi-joint and single-joint exercises induce pectoralis major hypertrophy.",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "Most lesions are located at the musculotendinous junction and result from violent, eccentric contraction of the muscle, such as during bench press.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "warrant surgical repair as the preferred treatment if function is to be preserved, particularly in the athletic population",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_major",
+    "quote": "The injury is characterized by sudden and acute pain in the chest wall and shoulder area, bruising and loss of strength of the muscle.",
+    "field": "tips.clinical",
+    "item": 2
    }
   ],
   "pectoralis-minor": [
@@ -38,6 +103,52 @@
    {
     "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
     "quote": "Its function is to stabilise the scapula by holding it fast in position against the chest wall."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Originates from the 3rd-5th ribs",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
+    "quote": "upper margins and outer surfaces of the 3rd, 4th, and 5th ribs near their costal cartilages",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "inserts into the coracoid process of the scapula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
+    "quote": "medial border and upper surface of the coracoid process of the scapula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Medial pectoral nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Pectoralis_minor",
+    "quote": "The muscle receives motor innervation from the medial pectoral nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Rotates shoulder anteriorly (throwing motion); assists with inhalation",
+    "field": "tips.breathing",
+    "item": 0
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Scapula: depresses; ribs: elevates",
+    "field": "tips.breathing",
+    "item": 0
    }
   ],
   "serratus-anterior": [
@@ -64,6 +175,76 @@
    {
     "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
     "quote": "The inferior part can pull the lower end of the scapula laterally and forward and thus rotates the scapula to make elevation of the arm possible."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "several strips, which originate from the lateral aspects of ribs 1-8",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs",
+    "quote": "Muscle slips from certain ribs (1–8 or 1–9)",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "attach to the costal (rib facing) surface of the medial border of the scapula",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Long thoracic nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "The serratus anterior is innervated by the long thoracic nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "The serratus anterior acts in concert with the upper and lower fibers of the trapezius muscle to sustain upward rotation of the scapula",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "sustain upward rotation of the scapula, which allows for overhead lifting",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "the scapula is no longer held against the ribcage",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "The long thoracic nerve that supplies the serratus anterior muscle is vulnerable during certain types of surgery",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "during lymph node clearance from the axilla for breast cancer",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/",
+    "quote": "Long thoracic nerve palsy is thought to most commonly occur from traction injuries",
+    "field": "tips.clinical",
+    "item": 2
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle",
+    "quote": "all three parts can lift the ribs when the shoulder girdle is fixed, and thus assist in respiration.",
+    "field": "tips.breathing",
+    "item": 0
    }
   ],
   "deltoid": [
@@ -94,6 +275,53 @@
    {
     "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
     "quote": "the infraspinatus and subscapularis primarily perform this role"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the lateral third of the clavicle, the acromion and the spine of the scapula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the lateral third of the clavicle, the acromion and the spine of the scapula.",
+    "field": "origin",
+    "item": 1
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "It attaches to the deltoid tuberosity on the lateral aspect of the humerus.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Axillary nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "The intermediate fibers perform basic shoulder abduction when the shoulder is internally rotated, and perform shoulder transverse abduction when the shoulder is externally rotated.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "They are not utilized significantly during strict transverse extension (shoulder internally rotated) such as in rowing movements, which use the posterior fibers.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "An important function of the deltoid in humans is preventing the dislocation of the humeral head when a person carries heavy loads.",
+    "field": "tips.training",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Deltoid_muscle",
+    "quote": "Deltoid muscle tears are unusual and frequently related to traumatic shoulder dislocation or massive rotator cuff tears.",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "supraspinatus": [
@@ -120,6 +348,58 @@
    {
     "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
     "quote": "a high prevalence of asymptomatic partial and full tears"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the supraspinous fossa of the scapula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "attaches to the greater tubercle of the humerus",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Suprascapular nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "The supraspinatus muscle is innervated by suprascapular nerve (C5-6)",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "The supraspinatus works in cooperation with the deltoid muscle to perform abduction",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle",
+    "quote": "Beyond 15 degrees, the deltoid muscle becomes increasingly more effective at abducting the arm and becomes the main propagator of this action.",
+    "field": "tips.training",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "The muscle most commonly affected is the supraspinatus.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "During abduction, it ‘rubs’ against the coraco-acromial arch.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Conservative treatment of rotator cuff tendonitis involves rest, analgesia, and physiotherapy.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "infraspinatus": [
@@ -142,6 +422,40 @@
    {
     "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
     "quote": "they also assist in carrying the arm backward"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the infraspinous fossa of the scapula",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "attaches to the greater tubercle of the humerus",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Suprascapular nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "The suprascapular nerve innervates the supraspinatus and infraspinatus muscles.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "The trapezoidal insertion of the infraspinatus onto the humerus is much larger than the equivalent insertion of the supraspinatus",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle",
+    "quote": "the infraspinatus is involved in rotator cuff tears about as frequently as the supraspinatus",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "teres-minor": [
@@ -156,6 +470,46 @@
    {
     "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
     "quote": "as part of the rotator cuff they help hold the humeral head in the glenoid cavity of the scapula"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the posterior surface of the scapula, adjacent to its lateral border.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "inserted into the lowest of the three impressions on the greater tubercle of the humerus",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Axillary nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "The teres minor is innervated by the axillary nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "A quadrangular space syndrome causes excessive and or chronically compression of the structures which pass through this anatomical tunnel.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "The axillary nerve and the posterior humeral circumflex artery pass through the space.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle",
+    "quote": "Selective atrophy of the teres minor muscle has been seen and pulled together directly with compression of the corresponding axillary nerve branch",
+    "field": "tips.clinical",
+    "item": 0
    }
   ],
   "subscapularis": [
@@ -170,6 +524,41 @@
    {
     "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
     "quote": "It is a powerful defense to the front of the shoulder-joint, preventing displacement of the head of the humerus."
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the subscapular fossa, on the costal surface of the scapula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "It attaches to the lesser tubercle of the humerus.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Upper and lower subscapular nerves.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+    "quote": "It is difficult to isolate the action of the subscapularis from other medial rotators of the shoulder joint",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+    "quote": "The Gerber Lift-off test is the established clinical test for examination of the subscapularis.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle",
+    "quote": "Positive bear-hug and belly press tests indicate significant tearing of subscapularis.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "teres-major": [
@@ -184,6 +573,58 @@
    {
     "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
     "quote": "This muscle is commonly confused as a rotator cuff muscle, but it is not"
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Originates from the posterior surface of the inferior angle of the scapula.",
+    "field": "origin",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "It attaches to the medial lip of the intertubercular groove of the humerus.",
+    "field": "insertion",
+    "item": 0
+   },
+   {
+    "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/",
+    "quote": "Innervation: Lower subscapular nerve.",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "Teres major is supplied primarily by the lower subscapular nerve",
+    "field": "nerve"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "Isolated teres major injuries are rare.",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "almost exclusively encountered in professional and high-level recreational athletes",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "baseball pitchers in particular",
+    "field": "tips.clinical",
+    "item": 0
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "These injuries can be debilitating, requiring lengthy rehabilitation periods and missed seasons of athletics.",
+    "field": "tips.clinical",
+    "item": 1
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Teres_major_muscle",
+    "quote": "No clear indications for surgical treatment exist.",
+    "field": "tips.clinical",
+    "item": 1
    }
   ],
   "trapezius": [

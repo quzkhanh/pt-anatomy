@@ -36,6 +36,18 @@ test('cơ ngực lớn: tab Bài tập mặc định, lọc Tạ đơn chỉ cò
   await expect(page.locator(SHEET)).toHaveAttribute('aria-hidden', 'false')
 })
 
+test('cơ ngực lớn: tab Giải phẫu có nguyên ủy, bám tận, thần kinh; tab Mẹo PT có nhóm mẹo', async ({ page }) => {
+  await ready(page)
+  await openMuscle(page, 'pectoralis-major')
+  await tabs(page).getByRole('button', { name: 'Giải phẫu' }).click()
+  for (const name of ['Nguyên ủy', 'Bám tận', 'Thần kinh chi phối']) {
+    await expect(page.locator(SHEET).getByRole('heading', { name })).toBeVisible()
+  }
+  await expect(page.locator(`${SHEET} strong`, { hasText: 'Xương cánh tay' })).toBeVisible()
+  await tabs(page).getByRole('button', { name: 'Mẹo PT' }).click()
+  await expect(page.locator(SHEET).getByRole('heading', { name: 'Tập luyện' })).toBeVisible()
+})
+
 test('đổi sang cơ khác thì bộ lọc về Tất cả', async ({ page }) => {
   await ready(page)
   await openMuscle(page, 'pectoralis-major')

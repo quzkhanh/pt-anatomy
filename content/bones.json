@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "humerus",
+    "vi": "Xương cánh tay",
+    "en": "Humerus",
+    "objects": [
+      "Humerus"
+    ]
+  },
+  {
+    "id": "scapula",
+    "vi": "Xương vai",
+    "en": "Scapula",
+    "objects": [
+      "Scapula"
+    ]
+  },
+  {
+    "id": "clavicle",
+    "vi": "Xương đòn",
+    "en": "Clavicle",
+    "objects": [
+      "Clavicle"
+    ]
+  },
+  {
+    "id": "sternum",
+    "vi": "Xương ức",
+    "en": "Sternum",
+    "objects": [
+      "Manubrium of sternum",
+      "Body of sternum",
+      "Xiphoid process"
+    ]
+  },
+  {
+    "id": "costal-cartilages-1-6",
+    "vi": "Sụn sườn 1–6",
+    "en": "Costal cartilages 1–6",
+    "objects": [
+      "Costal cartilage of first rib",
+      "Costal cartilage of second rib",
+      "Costal cartilage of third rib",
+      "Costal cartilage of fourth rib",
+      "Costal cartilage of fifth rib",
+      "Costal cartilage of sixth rib"
+    ]
+  },
+  {
+    "id": "ribs-3-5",
+    "vi": "Xương sườn 3–5",
+    "en": "Ribs 3–5",
+    "objects": [
+      "Third rib",
+      "Fourth rib",
+      "Fifth rib"
+    ]
+  },
+  {
+    "id": "ribs-1-8",
+    "vi": "Xương sườn 1–8",
+    "en": "Ribs 1–8",
+    "objects": [
+      "First rib",
+      "Second rib",
+      "Third rib",
+      "Fourth rib",
+      "Fifth rib",
+      "Sixth rib",
+      "Seventh rib",
+      "Eighth rib"
+    ]
+  }
+]

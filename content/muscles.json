@@ -4,21 +4,44 @@
       {"id": "clavicular", "vi": "bó đòn", "object": "Clavicular head of pectoralis major muscle"},
       {"id": "sternocostal", "vi": "bó ức sườn", "object": "Sternocostal head of pectoralis major muscle"} ],
     "function": "Khép và xoay trong cánh tay tại khớp vai. Bó đòn còn gấp cánh tay (đưa tay ra trước – lên trên) và khép ngang; bó ức sườn kéo cánh tay đang giơ xuống dưới – ra trước, góp phần duỗi cánh tay nhưng không quá tư thế đứng thẳng tay buông. Cơ hoạt động mạnh trong các bài đẩy ngực tạ đòn, tạ đơn và máy.",
+    "origin": [{"bones": ["clavicle"], "vi": "Mặt trước phần trong xương đòn (bó đòn)"}, {"bones": ["sternum", "costal-cartilages-1-6"], "vi": "Mặt trước xương ức và 6 sụn sườn trên, cùng cân cơ chéo bụng ngoài (bó ức sườn)"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Mép ngoài rãnh gian củ (rãnh nhị đầu) xương cánh tay; cả hai bó cùng bám vào đây"}],
+    "nerve": "Thần kinh ngực ngoài và thần kinh ngực trong",
+    "tips": {
+      "training": ["Bài có khép ngang và duỗi khuỷu như bench press tạ đòn, tạ đơn, máy kích hoạt mạnh phần ức sườn.", "Cả bài đa khớp (đẩy ngực) lẫn bài đơn khớp (ép ngực, fly) đều làm phì đại cơ ngực lớn."],
+      "clinical": ["Rách cơ ngực lớn thường ở chỗ nối cơ–gân, do co cơ ly tâm (eccentric) mạnh, điển hình khi đẩy ngực (bench press).", "Rách bán phần mức độ nặng hoặc rách toàn bộ bề dày thường được ưu tiên phẫu thuật khâu nếu cần giữ chức năng, nhất là ở vận động viên.", "Rách cơ ngực lớn gây đau nhói đột ngột ở thành ngực và vai, bầm tím và mất lực."]
+    },
     "sources": [
       {"title": "TeachMeAnatomy: The Pectoral Region", "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/"},
       {"title": "Wikipedia: Pectoralis major", "url": "https://en.wikipedia.org/wiki/Pectoralis_major"} ] },
   {"id": "pectoralis-minor", "vi": "Cơ ngực bé", "en": "Pectoralis minor", "region": "chest", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Pectoralis minor muscle"} ],
     "function": "Kéo xương vai xuống dưới và ra trước, giữ xương vai áp chặt vào thành ngực. Khi xương vai được cố định, cơ nâng các xương sườn và hỗ trợ hít vào.",
+    "origin": [{"bones": ["ribs-3-5"], "vi": "Mặt ngoài và bờ trên xương sườn 3–5, gần sụn sườn"}],
+    "insertion": [{"bones": ["scapula"], "vi": "Mỏm quạ xương vai (bờ trong và mặt trên)"}],
+    "nerve": "Thần kinh ngực trong",
+    "tips": {
+      "breathing": ["Cơ ngực bé là cơ hỗ trợ hít vào: nâng các xương sườn."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Pectoralis minor", "url": "https://en.wikipedia.org/wiki/Pectoralis_minor"} ] },
+      {"title": "Wikipedia: Pectoralis minor", "url": "https://en.wikipedia.org/wiki/Pectoralis_minor"},
+      {"title": "TeachMeAnatomy: The Pectoral Region", "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/"} ] },
   {"id": "serratus-anterior", "vi": "Cơ răng trước", "en": "Serratus anterior", "region": "chest", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Serratus anterior muscle"} ],
     "function": "Kéo xương vai ra trước, ôm quanh lồng ngực (như động tác đấm) và giữ xương vai áp vào lồng ngực; phần dưới xoay xương vai lên, phối hợp với cơ thang để giơ tay qua đầu. Tổn thương dây thần kinh chi phối cơ này là nguyên nhân thường gặp nhất gây xương vai nhô (winged scapula).",
+    "origin": [{"bones": ["ribs-1-8"], "vi": "Mặt ngoài phần bên các xương sườn 1–8 (có khi tới 9), thành nhiều dải răng cưa"}],
+    "insertion": [{"bones": ["scapula"], "vi": "Mặt sườn (mặt hướng vào lồng ngực) của bờ trong xương vai"}],
+    "nerve": "Thần kinh ngực dài",
+    "tips": {
+      "training": ["Cùng phần trên và dưới cơ thang duy trì xoay lên của xương vai, giúp nâng vật qua đầu."],
+      "clinical": ["Liệt cơ răng trước do tổn thương thần kinh ngực dài làm xương vai không còn áp vào lồng ngực mà nhô ra sau lưng (xương vai nhô, winged scapula).", "Thần kinh ngực dài dễ tổn thương trong một số phẫu thuật, ví dụ nạo hạch nách trong ung thư vú.", "Liệt thần kinh ngực dài được cho là thường do chấn thương kéo giãn, khi chi trên bị kéo căng mạnh."],
+      "breathing": ["Khi đai vai được cố định, cơ nâng các xương sườn và hỗ trợ hô hấp."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Serratus anterior muscle", "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle"} ] },
+      {"title": "Wikipedia: Serratus anterior muscle", "url": "https://en.wikipedia.org/wiki/Serratus_anterior_muscle"},
+      {"title": "TeachMeAnatomy: The Pectoral Region", "url": "https://teachmeanatomy.info/upper-limb/muscles/pectoral-region/"} ] },
 
   {"id": "deltoid", "vi": "Cơ delta", "en": "Deltoid", "region": "shoulders", "superficial": true, "status": "draft",
     "parts": [
@@ -26,39 +49,83 @@
       {"id": "middle", "vi": "bó giữa", "object": "Acromial part of deltoid muscle"},
       {"id": "posterior", "vi": "bó sau", "object": "Scapular spinal part of deltoid muscle"} ],
     "function": "Cơ dạng chính của cánh tay tại khớp vai. Bó trước gấp và xoay trong cánh tay, bó giữa dạng tay sang bên, bó sau duỗi và xoay ngoài cánh tay. Khi giơ tay, các cơ chóp xoay (chủ yếu cơ dưới gai và cơ dưới vai) co cùng lúc để giữ chỏm xương cánh tay không bị đẩy lên.",
+    "origin": [{"bones": ["clavicle"], "vi": "1/3 ngoài xương đòn"}, {"bones": ["scapula"], "vi": "Mỏm cùng vai và gai vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Lồi củ delta ở mặt ngoài xương cánh tay"}],
+    "nerve": "Thần kinh nách",
+    "tips": {
+      "training": ["Ở động tác kéo với khuỷu mở sang bên, vai xoay trong (duỗi ngang thuần, như kiểu chèo khuỷu mở), bó sau cơ delta làm việc còn bó giữa ít tham gia.", "Cơ delta giúp giữ chỏm xương cánh tay khỏi trật khi mang vật nặng."],
+      "clinical": ["Rách cơ delta hiếm gặp, thường liên quan đến trật khớp vai do chấn thương hoặc rách lớn chóp xoay."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Deltoid muscle", "url": "https://en.wikipedia.org/wiki/Deltoid_muscle"} ] },
+      {"title": "Wikipedia: Deltoid muscle", "url": "https://en.wikipedia.org/wiki/Deltoid_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
   {"id": "supraspinatus", "vi": "Cơ trên gai", "en": "Supraspinatus", "region": "shoulders", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Supraspinatus muscle"} ],
     "function": "Dạng cánh tay tại khớp vai cùng với cơ delta và kéo chỏm xương cánh tay áp vào ổ chảo, giúp giữ vững khớp. Thuộc nhóm cơ chóp xoay và là phần hay bị tổn thương nhất của nhóm (rách gân, chèn ép dưới mỏm cùng vai).",
+    "origin": [{"bones": ["scapula"], "vi": "Hố trên gai xương vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Củ lớn xương cánh tay"}],
+    "nerve": "Thần kinh trên vai (C5–C6)",
+    "tips": {
+      "training": ["Khi dạng tay (vd. nâng tạ sang bên), cơ trên gai và cơ delta cùng làm việc ngay từ đầu; qua khoảng 15°, cơ delta ngày càng hiệu quả hơn và thành cơ dạng chính."],
+      "clinical": ["Trong viêm gân chóp xoay, cơ trên gai là cơ hay bị nhất; khi dạng tay gân cọ vào vòm cùng vai–quạ.", "Viêm gân chóp xoay điều trị bảo tồn gồm nghỉ ngơi, giảm đau và vật lý trị liệu."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Supraspinatus muscle", "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle"} ] },
+      {"title": "Wikipedia: Supraspinatus muscle", "url": "https://en.wikipedia.org/wiki/Supraspinatus_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
   {"id": "infraspinatus", "vi": "Cơ dưới gai", "en": "Infraspinatus", "region": "shoulders", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Infraspinatus muscle"} ],
     "function": "Cơ xoay ngoài chính của cánh tay tại khớp vai, phối hợp với cơ tròn bé và bó sau cơ delta; đồng thời giữ vững khớp vai như một cơ chóp xoay. Cơ còn hỗ trợ đưa cánh tay ra sau.",
+    "origin": [{"bones": ["scapula"], "vi": "Hố dưới gai xương vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Củ lớn xương cánh tay"}],
+    "nerve": "Thần kinh trên vai",
+    "tips": {
+      "clinical": ["Diện bám của cơ dưới gai vào củ lớn rộng hơn nhiều so với cơ trên gai, vì vậy cơ dưới gai bị tổn thương trong rách chóp xoay với tần suất gần ngang cơ trên gai."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Infraspinatus muscle", "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle"} ] },
+      {"title": "Wikipedia: Infraspinatus muscle", "url": "https://en.wikipedia.org/wiki/Infraspinatus_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
   {"id": "teres-minor", "vi": "Cơ tròn bé", "en": "Teres minor", "region": "shoulders", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Teres minor muscle"} ],
     "function": "Xoay ngoài cánh tay tại khớp vai cùng với cơ dưới gai và hỗ trợ duỗi cánh tay. Là một cơ chóp xoay, giúp giữ chỏm xương cánh tay không trượt lên khi dạng tay.",
+    "origin": [{"bones": ["scapula"], "vi": "Mặt sau xương vai, sát bờ ngoài"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Diện dưới của củ lớn xương cánh tay (thấp nhất trong ba diện của củ lớn)"}],
+    "nerve": "Thần kinh nách",
+    "tips": {
+      "clinical": ["Hội chứng lỗ tứ giác (tứ giác Velpeau): chèn ép thần kinh nách và động mạch mũ cánh tay sau đi qua lỗ này, có thể kèm teo chọn lọc cơ tròn bé."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Teres minor muscle", "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle"} ] },
+      {"title": "Wikipedia: Teres minor muscle", "url": "https://en.wikipedia.org/wiki/Teres_minor_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
   {"id": "subscapularis", "vi": "Cơ dưới vai", "en": "Subscapularis", "region": "shoulders", "superficial": false, "status": "draft",
     "parts": [ {"id": "main", "object": "Subscapularis muscle"} ],
     "function": "Cơ chính xoay trong cánh tay tại khớp vai, đồng thời khép cánh tay. Là cơ chóp xoay nằm ở mặt trước xương vai, che chắn mặt trước khớp vai và ngăn chỏm xương cánh tay bị lệch khỏi ổ chảo.",
+    "origin": [{"bones": ["scapula"], "vi": "Hố dưới vai, ở mặt sườn (mặt hướng vào lồng ngực) của xương vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Củ bé xương cánh tay"}],
+    "nerve": "Thần kinh dưới vai trên và dưới",
+    "tips": {
+      "clinical": ["Khó tách riêng cơ dưới vai khỏi các cơ xoay trong khác khi khám; test Gerber lift-off là test lâm sàng thường dùng cho cơ này.", "Bear-hug và belly press dương tính gợi ý rách đáng kể cơ dưới vai."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Subscapularis muscle", "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle"} ] },
+      {"title": "Wikipedia: Subscapularis muscle", "url": "https://en.wikipedia.org/wiki/Subscapularis_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
   {"id": "teres-major", "vi": "Cơ tròn lớn", "en": "Teres major", "region": "shoulders", "superficial": true, "status": "draft",
     "parts": [ {"id": "main", "object": "Teres major muscle"} ],
     "function": "Duỗi, khép và xoay trong cánh tay tại khớp vai; hỗ trợ cơ lưng rộng kéo cánh tay đang giơ xuống dưới và ra sau. Dù nằm cạnh cơ tròn bé, cơ tròn lớn không thuộc nhóm cơ chóp xoay.",
+    "origin": [{"bones": ["scapula"], "vi": "Mặt sau góc dưới xương vai"}],
+    "insertion": [{"bones": ["humerus"], "vi": "Mép trong rãnh gian củ xương cánh tay"}],
+    "nerve": "Thần kinh dưới vai dưới",
+    "tips": {
+      "clinical": ["Chấn thương cô lập cơ tròn lớn hiếm, hầu như chỉ gặp ở vận động viên chuyên nghiệp và người chơi thể thao trình độ cao, nhất là cầu thủ ném bóng chày.", "Chấn thương nặng có thể phải phục hồi lâu, bỏ lỡ mùa thi đấu; chưa có chỉ định phẫu thuật rõ ràng."]
+    },
     "sources": [
       {"title": "OpenStax Anatomy and Physiology 2e, 11.5 Muscles of the Pectoral Girdle and Upper Limbs", "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/11-5-muscles-of-the-pectoral-girdle-and-upper-limbs"},
-      {"title": "Wikipedia: Teres major muscle", "url": "https://en.wikipedia.org/wiki/Teres_major_muscle"} ] },
+      {"title": "Wikipedia: Teres major muscle", "url": "https://en.wikipedia.org/wiki/Teres_major_muscle"},
+      {"title": "TeachMeAnatomy: The Intrinsic Muscles of the Shoulder", "url": "https://teachmeanatomy.info/upper-limb/muscles/shoulder/intrinsic/"} ] },
 
   {"id": "trapezius", "vi": "Cơ thang", "en": "Trapezius", "region": "back", "superficial": true, "status": "draft",
     "parts": [

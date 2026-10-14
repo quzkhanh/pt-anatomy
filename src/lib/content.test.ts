@@ -31,6 +31,11 @@ describe('content', () => {
 })
 
 describe('boneNames', () => {
+  it('cơ ngực lớn: bám tận xương cánh tay', () => {
+    const pec = muscleById('pectoralis-major')!
+    expect(pec.insertion!.flatMap(boneNames)).toContain('Xương cánh tay')
+  })
+
   it('tra tên tiếng Việt theo thứ tự, id lạ thì giữ id', () => {
     expect(boneNames({ bones: ['không-có'], vi: 'x' })).toEqual(['không-có'])
   })
