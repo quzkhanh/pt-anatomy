@@ -2,6 +2,7 @@ import { readFileSync } from 'node:fs'
 import { collectQuotes, normalizeText } from './quotes.ts'
 
 const PARALLEL = 6
+const FETCH_TIMEOUT_MS = 30_000
 const HEADERS = { 'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36' }
 
 const prefixes = process.argv.slice(2)
@@ -14,7 +15,7 @@ for (let i = 0; i < urls.length; i += PARALLEL) {
   await Promise.all(
     urls.slice(i, i + PARALLEL).map(async (url) => {
       try {
-        const res = await fetch(url, { headers: HEADERS })
+        const res = await fetch(url, { headers: HEADERS, signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) })
         pages.set(url, res.ok ? normalizeText(await res.text()) : new Error(`HTTP ${res.status}`))
       } catch (error) {
         pages.set(url, error as Error)
@@ -23,6 +24,7 @@ for (let i = 0; i < urls.length; i += PARALLEL) {
   )
 }
 const failures = quotes.flatMap((q) => {
+  if (!normalizeText(q.quote)) return [`${q.owner}: câu trích rỗng (${q.url})`]
   const page = pages.get(q.url)!
   if (page instanceof Error) return [`${q.owner}: không tải được ${q.url} (${page.message})`]
   return page.includes(normalizeText(q.quote)) ? [] : [`${q.owner}: không thấy câu trích ở ${q.url}: "${q.quote}"`]

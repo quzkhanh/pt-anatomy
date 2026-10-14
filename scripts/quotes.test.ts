@@ -9,6 +9,15 @@ describe('normalizeText', () => {
   it('bỏ khoảng trắng quanh dấu câu và ngoặc', () => {
     expect(normalizeText('the <a>subscapularis</a>, and ( <b>x</b> )')).toBe('the subscapularis, and (x)')
   })
+  it('bỏ comment, noscript', () => {
+    expect(normalizeText('a<!-- hidden -->b<noscript>x</noscript>c')).toBe('a b c')
+  })
+  it('giữ entity số ngoài khoảng Unicode nguyên văn', () => {
+    expect(normalizeText('&#99999999;')).toBe('&#99999999;')
+  })
+  it('&lt;b&gt; thành văn bản <b>', () => {
+    expect(normalizeText('&lt;b&gt;')).toBe('<b>')
+  })
   it('giải entity số thập lục phân', () => {
     expect(normalizeText('a&#x2014;b')).toBe('a-b')
   })

@@ -3,12 +3,13 @@ const ENTITIES: Record<string, string> = { amp: '&', nbsp: ' ', quot: '"', apos:
 const decode = (s: string) =>
   s.replace(/&(#x[0-9a-f]+|#\d+|[a-z]+);/gi, (m, e: string) => {
     if (e[0] !== '#') return ENTITIES[e.toLowerCase()] ?? m
-    return String.fromCodePoint(e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10))
+    const code = e[1].toLowerCase() === 'x' ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10)
+    return code <= 0x10ffff ? String.fromCodePoint(code) : m
   })
 
 /** Page or quote text reduced to what a reader sees, so a verbatim quote survives markup and typography. */
 export const normalizeText = (html: string) =>
-  decode(html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' '))
+  decode(html.replace(/<!--[\s\S]*?-->/g, ' ').replace(/<(script|style|noscript|template)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' '))
     .replace(/[‘’′]/g, "'")
     .replace(/[“”″]/g, '"')
     .replace(/[‐-―−]/g, '-')
