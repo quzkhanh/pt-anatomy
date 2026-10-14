@@ -19,6 +19,30 @@ export interface MusclePart {
   superficial?: boolean
 }
 
+export interface Attachment {
+  bones: string[]
+  vi: string
+}
+
+export const TIP_KINDS = ['training', 'palpation', 'clinical', 'breathing'] as const
+export type TipKind = (typeof TIP_KINDS)[number]
+
+/** `objects`: Z-Anatomy object base names in "1: Skeletal system", without the `.l`/`.r` side suffix. */
+export interface Bone {
+  id: string
+  vi: string
+  en: string
+  objects: string[]
+}
+
+/** A verbatim sentence from a source; `field`/`item` say which claim it backs (none = `function`). */
+export interface Quote {
+  url: string
+  quote: string
+  field?: string
+  item?: number
+}
+
 export interface Muscle {
   id: string
   vi: string
@@ -27,6 +51,10 @@ export interface Muscle {
   superficial: boolean
   parts: MusclePart[]
   function?: string
+  origin?: Attachment[]
+  insertion?: Attachment[]
+  nerve?: string
+  tips?: Partial<Record<TipKind, string[]>>
   sources?: Source[]
   status: Status
 }

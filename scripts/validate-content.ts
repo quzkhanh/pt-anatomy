@@ -1,4 +1,4 @@
-import { EQUIPMENT, REGIONS, STATUSES, type Exercise, type Muscle, type Source } from '../src/lib/content-types.ts'
+import { EQUIPMENT, REGIONS, STATUSES, TIP_KINDS, type Bone, type Exercise, type Muscle, type Quote, type Source, type TipKind } from '../src/lib/content-types.ts'
 import { refsOverlap, splitRef } from '../src/lib/refs.ts'
 
 const GLB_MAGIC = 0x46546c67
@@ -75,6 +75,71 @@ export function validateExercises(exercises: Exercise[], muscles: Muscle[]): str
       }
     }
     errors.push(...validateSources(e.id, e.sources))
+  }
+  return errors
+}
+
+const ATTACHMENT_FIELDS = ['origin', 'insertion'] as const
+
+export function validateDetails(muscles: Muscle[], bones: Bone[]): string[] {
+  const errors: string[] = []
+  const boneIds = new Set<string>()
+  for (const b of bones) {
+    if (boneIds.has(b.id)) errors.push(`trùng id xương: ${b.id}`)
+    boneIds.add(b.id)
+    if (!b.vi || !b.en) errors.push(`xương ${b.id}: thiếu tên vi hoặc en`)
+    if (!b.objects.length) errors.push(`xương ${b.id}: objects rỗng`)
+  }
+  const used = new Set<string>()
+  for (const m of muscles) {
+    for (const field of ATTACHMENT_FIELDS) {
+      const list = m[field]
+      if (list && !list.length) errors.push(`${m.id}: ${field} rỗng`)
+      list?.forEach((a, i) => {
+        if (!a.vi.trim()) errors.push(`${m.id}: ${field}[${i}] thiếu mô tả`)
+        if (!a.bones.length) errors.push(`${m.id}: ${field}[${i}] thiếu xương`)
+        for (const b of a.bones) {
+          used.add(b)
+          if (!boneIds.has(b)) errors.push(`${m.id}: ${field} nhắc xương không có "${b}"`)
+        }
+      })
+    }
+    if (m.nerve !== undefined && !m.nerve.trim()) errors.push(`${m.id}: nerve rỗng`)
+    if (m.tips && !Object.keys(m.tips).length) errors.push(`${m.id}: tips rỗng`)
+    for (const [kind, tips] of Object.entries(m.tips ?? {})) {
+      if (!TIP_KINDS.includes(kind as TipKind)) errors.push(`${m.id}: nhóm mẹo không hợp lệ "${kind}"`)
+      else if (!tips?.length) errors.push(`${m.id}: tips.${kind} rỗng`)
+      else if (tips.some((t) => !t.trim())) errors.push(`${m.id}: tips.${kind} có ý rỗng`)
+    }
+  }
+  for (const id of boneIds) if (!used.has(id)) errors.push(`xương ${id} không được cơ nào nhắc`)
+  return errors
+}
+
+/** Every claim the muscle makes beyond `function`, as the `field`/`item` its quote must carry. */
+function claims(m: Muscle): { field: string; item?: number }[] {
+  const items = (field: string, list: unknown[] | undefined) => (list ?? []).map((_, item) => ({ field, item }))
+  return [
+    ...items('origin', m.origin),
+    ...items('insertion', m.insertion),
+    ...(m.nerve ? [{ field: 'nerve' }] : []),
+    ...TIP_KINDS.flatMap((kind) => items(`tips.${kind}`, m.tips?.[kind])),
+  ]
+}
+
+export function validateEvidence(muscles: Muscle[], evidence: Record<string, Quote[]>): string[] {
+  const errors: string[] = []
+  for (const m of muscles) {
+    const quotes = (evidence[m.id] ?? []).filter((q) => q.quote.trim())
+    for (const { field, item } of claims(m)) {
+      if (!quotes.some((q) => q.field === field && q.item === item)) {
+        errors.push(`${m.id}: ${field}${item === undefined ? '' : `[${item}]`} chưa có câu trích trong evidence.json`)
+      }
+    }
+    const urls = new Set((m.sources ?? []).map((s) => s.url))
+    for (const url of new Set(quotes.map((q) => q.url))) {
+      if (!urls.has(url)) errors.push(`${m.id}: câu trích dùng nguồn không có trong sources "${url}"`)
+    }
   }
   return errors
 }

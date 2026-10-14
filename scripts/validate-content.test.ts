@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { Exercise, Muscle } from '../src/lib/content-types.ts'
-import { glbMuscleObjects, validateExercises, validateMuscles } from './validate-content.ts'
+import type { Bone, Exercise, Muscle, Quote } from '../src/lib/content-types.ts'
+import { glbMuscleObjects, validateDetails, validateEvidence, validateExercises, validateMuscles } from './validate-content.ts'
 
 const muscle = (over: Partial<Muscle> = {}): Muscle => ({
   id: 'deltoid', vi: 'Cơ delta', en: 'Deltoid', region: 'shoulders', superficial: true, status: 'draft',
@@ -96,5 +96,79 @@ describe('glbMuscleObjects', () => {
       { name: 'Camera' },
     ] })
     expect(glbMuscleObjects(glb)).toEqual(new Set(['Soleus muscle']))
+  })
+})
+
+const humerus: Bone = { id: 'humerus', vi: 'Xương cánh tay', en: 'Humerus', objects: ['Humerus'] }
+const detailed = (over: Partial<Muscle> = {}) =>
+  muscle({
+    insertion: [{ bones: ['humerus'], vi: 'lồi củ delta' }],
+    nerve: 'Thần kinh nách',
+    tips: { training: ['Ý một.', 'Ý hai.'] },
+    ...over,
+  })
+
+describe('validateDetails', () => {
+  it('dữ liệu đúng thì không lỗi', () => {
+    expect(validateDetails([detailed()], [humerus])).toEqual([])
+  })
+  it('xương không có trong bones.json', () => {
+    expect(validateDetails([detailed({ insertion: [{ bones: ['femur'], vi: 'x' }] })], [humerus])).toEqual([
+      'deltoid: insertion nhắc xương không có "femur"',
+      'xương humerus không được cơ nào nhắc',
+    ])
+  })
+  it('điểm bám thiếu mô tả hoặc thiếu xương, mảng rỗng', () => {
+    expect(validateDetails([detailed({ origin: [], insertion: [{ bones: [], vi: '' }] })], [humerus])).toEqual([
+      'deltoid: origin rỗng',
+      'deltoid: insertion[0] thiếu mô tả',
+      'deltoid: insertion[0] thiếu xương',
+      'xương humerus không được cơ nào nhắc',
+    ])
+  })
+  it('nhóm mẹo lạ, nhóm rỗng, ý rỗng, nerve rỗng', () => {
+    const tips = { training: [], clinical: [' '], diet: ['x'] } as unknown as Muscle['tips']
+    expect(validateDetails([detailed({ tips, nerve: ' ' })], [humerus])).toEqual([
+      'deltoid: nerve rỗng',
+      'deltoid: tips.training rỗng',
+      'deltoid: tips.clinical có ý rỗng',
+      'deltoid: nhóm mẹo không hợp lệ "diet"',
+    ])
+  })
+  it('tips là object rỗng', () => {
+    expect(validateDetails([detailed({ tips: {} })], [humerus])).toEqual(['deltoid: tips rỗng'])
+  })
+  it('bones.json trùng id, thiếu tên, objects rỗng', () => {
+    const bad: Bone = { id: 'humerus', vi: '', en: 'Humerus', objects: [] }
+    expect(validateDetails([detailed()], [humerus, bad])).toEqual([
+      'trùng id xương: humerus',
+      'xương humerus: thiếu tên vi hoặc en',
+      'xương humerus: objects rỗng',
+    ])
+  })
+})
+
+describe('validateEvidence', () => {
+  const url = 'https://openstax.org/x'
+  const q = (field?: string, item?: number): Quote => ({ url, quote: 'câu', field, item })
+  const full = [q(), q('insertion', 0), q('nerve'), q('tips.training', 0), q('tips.training', 1)]
+
+  it('đủ câu trích thì không lỗi', () => {
+    expect(validateEvidence([detailed()], { deltoid: full })).toEqual([])
+  })
+  it('báo đúng ý thiếu câu trích', () => {
+    expect(validateEvidence([detailed()], { deltoid: full.slice(0, 4) })).toEqual([
+      'deltoid: tips.training[1] chưa có câu trích trong evidence.json',
+    ])
+  })
+  it('câu trích dùng url không có trong sources của cơ', () => {
+    expect(validateEvidence([detailed()], { deltoid: [...full, { url: 'https://khac.org', quote: 'c' }] })).toEqual([
+      'deltoid: câu trích dùng nguồn không có trong sources "https://khac.org"',
+    ])
+  })
+  it('câu trích rỗng không tính', () => {
+    expect(validateEvidence([detailed()], { deltoid: [...full.slice(0, 2), { url, quote: ' ', field: 'nerve' }, ...full.slice(3)] })).toEqual([
+      'deltoid: nerve chưa có câu trích trong evidence.json',
+    ])
   })
 })
