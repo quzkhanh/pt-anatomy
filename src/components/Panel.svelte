@@ -26,7 +26,7 @@
     inset: 0 0 var(--bottom-ui);
     z-index: var(--z-panel);
     overflow-y: auto;
-    padding: env(safe-area-inset-top) var(--space-4) var(--space-6);
+    padding: env(safe-area-inset-top) max(var(--space-4), (100% - var(--content-max)) / 2) var(--space-6);
     background: var(--color-bg);
   }
   .overlay {

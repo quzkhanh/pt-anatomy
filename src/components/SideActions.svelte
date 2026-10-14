@@ -3,15 +3,17 @@
     superficialHidden: boolean
     /** Height of the open sheet's top, so the buttons sit just above it. */
     lift: number
+    /** The wide-screen side panel is open: sit to its left. */
+    besidePanel: boolean
     onFlip: () => void
     onTurn: () => void
     onToggleLayer: () => void
   }
 
-  let { superficialHidden, lift, onFlip, onTurn, onToggleLayer }: Props = $props()
+  let { superficialHidden, lift, besidePanel, onFlip, onTurn, onToggleLayer }: Props = $props()
 </script>
 
-<div class="actions" style:--lift="{lift}px">
+<div class="actions" class:beside={besidePanel} style:--lift="{lift}px">
   <button onclick={onTurn}>Xoay 90°</button>
   <button onclick={onFlip}>Trước / Sau</button>
   <button onclick={onToggleLayer}>{superficialHidden ? 'Hiện lớp nông' : 'Ẩn lớp nông'}</button>
@@ -26,6 +28,9 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-2);
+  }
+  .beside {
+    right: calc(var(--panel-width) + var(--space-3));
   }
   button {
     min-height: var(--tap-min);

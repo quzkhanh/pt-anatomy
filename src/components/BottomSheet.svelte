@@ -1,5 +1,6 @@
 <script lang="ts">
   import { untrack, type Snippet } from 'svelte'
+  import { layout } from '../lib/layout.svelte'
   import { createSheetDrag, type Snap } from '../lib/sheet'
 
   interface Props {
@@ -32,6 +33,10 @@
     peek: Math.max(0, sheetHeight - topHeight),
   })
   const offset = $derived(open ? (dragOffset ?? offsets[snap]) : sheetHeight + HIDDEN_EXTRA_PX)
+  // Wide screens show the sheet as a fixed side panel: no snaps, it slides in from the right.
+  const transform = $derived(
+    layout.wide ? (open ? 'none' : 'translateX(100%)') : sheetHeight ? `translateY(${offset}px)` : 'translateY(100%)',
+  )
 
   $effect(() => {
     peekHeight = topHeight
@@ -54,7 +59,7 @@
 
   // Content scrolls natively at half and full height; at peek, dragging anywhere moves the sheet.
   function begin(e: PointerEvent, fromContent: boolean) {
-    if (fromContent && snap !== 'peek') return
+    if (layout.wide || (fromContent && snap !== 'peek')) return
     if ((e.target as Element).closest('[data-no-sheet-drag]')) return
     drag.begin(e)
   }
@@ -74,7 +79,7 @@
   aria-hidden={open ? 'false' : 'true'}
   inert={!open}
   bind:clientHeight={sheetHeight}
-  style:transform={sheetHeight ? `translateY(${offset}px)` : 'translateY(100%)'}
+  style:transform={transform}
 >
   <!-- Dragging is a pointer shortcut; keyboard and screen reader users have the grip button. -->
   <!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -129,6 +134,20 @@
   }
   .dragging {
     transition: none;
+  }
+  :global(.wide) .sheet {
+    top: 0;
+    left: auto;
+    width: var(--panel-width);
+    height: auto;
+    border-radius: 0;
+    box-shadow: var(--shadow-panel);
+  }
+  :global(.wide) .grip {
+    display: none;
+  }
+  :global(.wide) .header {
+    padding-top: calc(var(--space-3) + env(safe-area-inset-top));
   }
   .top {
     flex: none;

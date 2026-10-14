@@ -65,6 +65,9 @@ export function createMotionPlayer(canvas: HTMLCanvasElement, onPhase: (phase: s
   // No damping: with the loop paused nothing would call controls.update() to finish the glide.
   controls.enableDamping = false
   controls.enablePan = false
+  // OrbitControls claims every touch; inside the scrolling sheet a vertical swipe must scroll instead.
+  // Horizontal drags still turn the mannequin, and the view buttons cover the other angles.
+  canvas.style.touchAction = 'pan-y'
 
   let motion: Motion | null = null
   let time = 0

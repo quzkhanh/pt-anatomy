@@ -14,6 +14,7 @@
   import { app, openMuscle, type Selection } from '../lib/app-state.svelte'
   import type { PartRef } from '../lib/content'
   import { highlightOf, layerFor } from '../lib/highlight-of'
+  import { layout } from '../lib/layout.svelte'
   import type { Snap } from '../lib/sheet'
   import { load, save } from '../lib/storage'
   import { hasWebGL } from '../lib/webgl'
@@ -92,13 +93,18 @@
     if (!selection) return
     shown = selection
     // Always the low snap, so the highlighted muscles stay in view; the sheet expands on demand.
-    snap = 'peek'
+    // A wide screen's side panel covers no muscles, so it opens fully.
+    snap = layout.wide ? 'full' : 'peek'
     if (!selection.navigate) return
     const layer = layerFor(highlight.primary)
     if (layer) setLayer(layer === 'deep')
     // Face the most important primary muscle: a squat's quads are in front even though its glutes are behind.
     v?.focus(highlight.primary.slice(0, 1))
   }
+
+  $effect(() => {
+    if (layout.wide) snap = 'full'
+  })
 
   $effect(() => {
     const selection = app.selection
@@ -134,10 +140,11 @@
   <SearchBar />
 
   {#if viewer}
-    {#if app.selection === null || snap === 'peek'}
+    {#if app.selection === null || snap === 'peek' || layout.wide}
       <SideActions
         {superficialHidden}
-        lift={app.selection ? sheetTop : 0}
+        lift={app.selection && !layout.wide ? sheetTop : 0}
+        besidePanel={app.selection !== null && layout.wide}
         onFlip={() => viewer?.flip()}
         onTurn={() => viewer?.turn(-TURN_RADIANS)}
         onToggleLayer={() => setLayer(!superficialHidden)}

@@ -44,7 +44,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: var(--tabbar-height);
-    padding-bottom: env(safe-area-inset-bottom);
+    padding: 0 max(0px, (100% - var(--tabbar-max)) / 2) env(safe-area-inset-bottom);
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
   }

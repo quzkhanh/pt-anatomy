@@ -64,6 +64,10 @@
     right: var(--space-3);
     z-index: var(--z-search);
   }
+  :global(.wide) .search {
+    right: auto;
+    width: var(--panel-width);
+  }
   input {
     box-sizing: border-box;
     width: 100%;

@@ -86,8 +86,6 @@
 
 {#if build && !failed}
   <figure class="player">
-    <canvas bind:this={canvas} data-no-sheet-drag aria-label="Ma-nơ-canh 3D làm động tác {exercise.vi}. Kéo để xoay."></canvas>
-    {#if phase}<figcaption class="phase">{phase}</figcaption>{/if}
     <div class="controls">
       <button aria-label={playing ? 'Tạm dừng' : 'Phát'} onclick={togglePlay}>{playing ? '❚❚' : '▶'}</button>
       <button aria-label="Tốc độ {speed}×" onclick={cycleSpeed}>{speed}×</button>
@@ -97,6 +95,8 @@
         {/each}
       </span>
     </div>
+    <canvas bind:this={canvas} data-no-sheet-drag aria-label="Ma-nơ-canh 3D làm động tác {exercise.vi}. Kéo để xoay."></canvas>
+    {#if phase}<figcaption class="phase">{phase}</figcaption>{/if}
   </figure>
   {#if deep.length}
     <p class="deep">Cơ sâu, không vẽ trên ma-nơ-canh (xem trên mô hình): {deep.join(', ')}</p>
@@ -117,11 +117,12 @@
     display: block;
     width: 100%;
     aspect-ratio: 4 / 3;
-    touch-action: none;
+    touch-action: pan-y;
   }
+  /* Just below the controls row: one row of tap-height buttons plus its padding. */
   .phase {
     position: absolute;
-    top: var(--space-2);
+    top: calc(var(--tap-min) + 3 * var(--space-2));
     left: var(--space-2);
     padding: var(--space-1) var(--space-3);
     border-radius: var(--radius-pill);
@@ -130,10 +131,11 @@
     font-size: var(--font-sm);
     font-weight: 600;
   }
+  /* Above the canvas and on one row: below it they hid behind the tab bar at half height, and over it
+     they covered the mannequin. Compact padding keeps the row within a 360 px phone. */
   .controls {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
+    gap: var(--space-1);
     padding: var(--space-2);
   }
   .views {
@@ -144,7 +146,7 @@
   button {
     min-width: var(--tap-min);
     min-height: var(--tap-min);
-    padding: 0 var(--space-3);
+    padding: 0 var(--space-2);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-pill);
     background: var(--color-surface);
