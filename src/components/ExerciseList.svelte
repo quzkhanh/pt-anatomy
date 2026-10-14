@@ -20,8 +20,11 @@
 <style>
   ul {
     margin: 0;
-    padding: 0;
+    padding: 0 var(--space-2) 0 var(--space-4);
     list-style: none;
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-float);
   }
   .empty {
     margin: var(--space-6) 0;

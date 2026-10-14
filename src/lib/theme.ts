@@ -6,6 +6,12 @@ export interface ThemeColors {
   head: Color
   selected: Color
   secondary: Color
+  rim: Color
+  prop: Color
+  propHeavy: Color
+  pad: Color
+  band: Color
+  floor: Color
   sky: Color
   ground: Color
 }
@@ -20,12 +26,19 @@ export function readThemeColors(): ThemeColors {
     head: cssColor('--color-head'),
     selected: cssColor('--color-selected'),
     secondary: cssColor('--color-secondary'),
+    rim: cssColor('--color-rim'),
+    prop: cssColor('--color-prop'),
+    propHeavy: cssColor('--color-prop-heavy'),
+    pad: cssColor('--color-pad'),
+    band: cssColor('--color-band'),
+    floor: cssColor('--color-floor'),
     sky: cssColor('--color-light-sky'),
     ground: cssColor('--color-light-ground'),
   }
 }
 
 export const LIGHTING = {
-  hemisphere: 1.6,
-  sun: 1.4,
+  hemisphere: 1.0,
+  sun: 1.8,
+  rim: 0.25,
 } as const

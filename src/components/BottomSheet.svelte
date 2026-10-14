@@ -1,74 +1,68 @@
-<script lang="ts" module>
-  export type Snap = 'peek' | 'half' | 'full'
-</script>
-
 <script lang="ts">
-  import type { Snippet } from 'svelte'
+  import { untrack, type Snippet } from 'svelte'
+  import { createSheetDrag, type Snap } from '../lib/sheet'
 
   interface Props {
     open: boolean
     snap?: Snap
     label: string
+    /** Height of the always-visible top (grip + header), for placing things above the sheet. */
+    peekHeight?: number
+    /** Changing it scrolls the content back to the top (new muscle or exercise). */
+    contentKey: string
+    header: Snippet
     children: Snippet
+    onClose: () => void
   }
 
-  let { open, snap = $bindable('peek'), label, children }: Props = $props()
+  let { open, snap = $bindable('peek'), label, peekHeight = $bindable(0), contentKey, header, children, onClose }: Props = $props()
 
-  const HALF_FRACTION = 0.5
+  const HALF_FRACTION = 0.55
   const HIDDEN_EXTRA_PX = 24
-  const FLICK_PX_PER_MS = 0.5
-  const TAP_SLOP_PX = 6
-  const ORDER: Snap[] = ['peek', 'half', 'full']
 
   let sheetHeight = $state(0)
   let viewportHeight = $state(0)
+  let topHeight = $state(0)
   let dragOffset = $state<number | null>(null)
-  let drag = { startY: 0, startOffset: 0, lastY: 0, lastT: 0, velocity: 0, moved: false }
+  let content = $state<HTMLDivElement>()
 
-  const peekPx = $derived(
-    viewportHeight &&
-      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--sheet-peek')) *
-        parseFloat(getComputedStyle(document.documentElement).fontSize),
-  )
   const offsets = $derived<Record<Snap, number>>({
     full: 0,
     half: Math.max(0, sheetHeight - viewportHeight * HALF_FRACTION),
-    peek: Math.max(0, sheetHeight - peekPx),
+    peek: Math.max(0, sheetHeight - topHeight),
   })
   const offset = $derived(open ? (dragOffset ?? offsets[snap]) : sheetHeight + HIDDEN_EXTRA_PX)
 
-  const cycle = () => (snap = ORDER[(ORDER.indexOf(snap) + 1) % ORDER.length])
+  $effect(() => {
+    peekHeight = topHeight
+  })
 
-  function onpointerdown(e: PointerEvent) {
-    ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
-    drag = { startY: e.clientY, startOffset: offsets[snap], lastY: e.clientY, lastT: e.timeStamp, velocity: 0, moved: false }
-    dragOffset = drag.startOffset
+  $effect(() => {
+    void contentKey
+    untrack(() => content?.scrollTo(0, 0))
+  })
+
+  $effect(() => {
+    if (snap === 'peek') content?.scrollTo(0, 0)
+  })
+
+  const drag = createSheetDrag(
+    () => ({ snap, offsets }),
+    (o) => (dragOffset = o),
+    (next) => (snap = next),
+  )
+
+  // Content scrolls natively at half and full height; at peek, dragging anywhere moves the sheet.
+  function begin(e: PointerEvent, fromContent: boolean) {
+    if (fromContent && snap !== 'peek') return
+    if ((e.target as Element).closest('[data-no-sheet-drag]')) return
+    drag.begin(e)
   }
 
-  function onpointermove(e: PointerEvent) {
-    if (dragOffset === null) return
-    const dy = e.clientY - drag.startY
-    if (Math.abs(dy) > TAP_SLOP_PX) drag.moved = true
-    drag.velocity = (e.clientY - drag.lastY) / Math.max(1, e.timeStamp - drag.lastT)
-    drag.lastY = e.clientY
-    drag.lastT = e.timeStamp
-    dragOffset = Math.min(offsets.peek, Math.max(0, drag.startOffset + dy))
-  }
+  // Capturing only once the drag starts keeps taps on buttons and links inside working.
+  const move = (e: PointerEvent) => drag.move(e) && (e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
 
-  const onpointercancel = () => (dragOffset = null)
-
-  function onpointerup() {
-    if (dragOffset === null) return
-    const current = dragOffset
-    dragOffset = null
-    if (!drag.moved) return cycle()
-    if (Math.abs(drag.velocity) > FLICK_PX_PER_MS) {
-      const next = ORDER.indexOf(snap) + (drag.velocity < 0 ? 1 : -1)
-      snap = ORDER[Math.min(ORDER.length - 1, Math.max(0, next))]
-      return
-    }
-    snap = ORDER.reduce((best, s) => (Math.abs(offsets[s] - current) < Math.abs(offsets[best] - current) ? s : best))
-  }
+  const toggle = () => (snap = snap === 'peek' ? 'half' : 'peek')
 </script>
 
 <svelte:window bind:innerHeight={viewportHeight} />
@@ -80,20 +74,39 @@
   aria-hidden={open ? 'false' : 'true'}
   inert={!open}
   bind:clientHeight={sheetHeight}
-  style:transform="translateY({offset}px)"
+  style:transform={sheetHeight ? `translateY(${offset}px)` : 'translateY(100%)'}
 >
-  <button
-    class="grip"
-    aria-label="Kéo hoặc chạm để mở rộng, thu gọn"
-    {onpointerdown}
-    {onpointermove}
-    {onpointerup}
-    {onpointercancel}
-    onclick={(e) => e.detail === 0 && cycle()}
+  <!-- Dragging is a pointer shortcut; keyboard and screen reader users have the grip button. -->
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div
+    class="top"
+    bind:clientHeight={topHeight}
+    onpointerdown={(e) => begin(e, false)}
+    onpointermove={move}
+    onpointerup={drag.end}
+    onpointercancel={drag.cancel}
+    onlostpointercapture={drag.cancel}
   >
-    <span class="handle"></span>
-  </button>
-  <div class="content" class:scroll={snap === 'full'}>
+    <button class="grip" aria-label={snap === 'peek' ? 'Mở rộng' : 'Thu gọn'} aria-expanded={snap !== 'peek'} onclick={toggle}>
+      <span class="handle"></span>
+    </button>
+    <div class="header">
+      <div class="title">{@render header()}</div>
+      <button class="close" aria-label="Đóng" onclick={onClose}>✕</button>
+    </div>
+  </div>
+  <!-- svelte-ignore a11y_no_static_element_interactions -->
+  <div
+    class="content"
+    class:scroll={snap !== 'peek'}
+    bind:this={content}
+    style:padding-bottom={snap === 'half' ? `calc(var(--space-6) + ${offsets.half}px)` : null}
+    onpointerdown={(e) => begin(e, true)}
+    onpointermove={move}
+    onpointerup={drag.end}
+    onpointercancel={drag.cancel}
+    onlostpointercapture={drag.cancel}
+  >
     {@render children()}
   </div>
 </section>
@@ -104,7 +117,7 @@
     left: 0;
     right: 0;
     bottom: var(--bottom-ui);
-    height: calc(88dvh - var(--bottom-ui));
+    height: calc(92dvh - var(--bottom-ui));
     display: flex;
     flex-direction: column;
     background: var(--color-surface);
@@ -117,14 +130,17 @@
   .dragging {
     transition: none;
   }
-  .grip {
+  .top {
     flex: none;
-    min-height: var(--tap-min);
+    touch-action: none;
+  }
+  .grip {
     display: grid;
     place-items: center;
-    background: none;
+    width: 100%;
+    min-height: var(--tap-min);
     border: 0;
-    touch-action: none;
+    background: none;
     cursor: grab;
   }
   .handle {
@@ -133,12 +149,35 @@
     border-radius: var(--radius-pill);
     background: var(--color-handle);
   }
+  .header {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    padding: 0 var(--space-2) var(--space-3) var(--space-4);
+  }
+  .title {
+    flex: 1;
+    min-width: 0;
+  }
+  .close {
+    flex: none;
+    min-width: var(--tap-min);
+    min-height: var(--tap-min);
+    border: 0;
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-muted);
+    color: var(--color-text-muted);
+    font-size: var(--font-md);
+  }
   .content {
     flex: 1;
     overflow: hidden;
-    padding: 0 var(--space-4) var(--space-4);
+    padding: 0 var(--space-4) var(--space-6);
+    touch-action: none;
   }
   .scroll {
     overflow-y: auto;
+    touch-action: pan-y;
+    overscroll-behavior: contain;
   }
 </style>

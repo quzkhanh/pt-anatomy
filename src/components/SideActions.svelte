@@ -1,14 +1,18 @@
 <script lang="ts">
   interface Props {
     superficialHidden: boolean
+    /** Height of the open sheet's top, so the buttons sit just above it. */
+    lift: number
     onFlip: () => void
+    onTurn: () => void
     onToggleLayer: () => void
   }
 
-  let { superficialHidden, onFlip, onToggleLayer }: Props = $props()
+  let { superficialHidden, lift, onFlip, onTurn, onToggleLayer }: Props = $props()
 </script>
 
-<div class="actions">
+<div class="actions" style:--lift="{lift}px">
+  <button onclick={onTurn}>Xoay 90°</button>
   <button onclick={onFlip}>Trước / Sau</button>
   <button onclick={onToggleLayer}>{superficialHidden ? 'Hiện lớp nông' : 'Ẩn lớp nông'}</button>
 </div>
@@ -17,7 +21,7 @@
   .actions {
     position: fixed;
     right: var(--space-3);
-    bottom: calc(var(--sheet-peek) + var(--space-3) + var(--bottom-ui));
+    bottom: calc(var(--bottom-ui) + var(--lift) + var(--space-3));
     z-index: var(--z-actions);
     display: flex;
     flex-direction: column;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { openExercise } from '../lib/app-state.svelte'
-  import { EQUIPMENT_LABELS, refLabel, resolveRef } from '../lib/content'
+  import { EQUIPMENT_LABELS, exerciseRegion, REGION_LABELS, refLabel, resolveRef } from '../lib/content'
   import type { Exercise } from '../lib/content-types'
   import FavoriteButton from './FavoriteButton.svelte'
 
@@ -12,7 +12,7 @@
 <li>
   <button class="open" onclick={() => openExercise(exercise)}>
     <span class="name">{exercise.vi}</span>
-    <span class="meta">{EQUIPMENT_LABELS[exercise.equipment]} · {primary}</span>
+    <span class="meta"><span class="tag">{REGION_LABELS[exerciseRegion(exercise)]}</span>{EQUIPMENT_LABELS[exercise.equipment]} · {primary}</span>
   </button>
   <FavoriteButton id={exercise.id} name={exercise.vi} />
 </li>
@@ -21,7 +21,9 @@
   li {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-border);
+  }
+  li:not(:first-child) {
+    border-top: 1px solid var(--color-border);
   }
   .open {
     flex: 1;
@@ -35,6 +37,15 @@
   }
   .name {
     font-size: var(--font-md);
+    font-weight: 600;
+  }
+  .tag {
+    margin-right: var(--space-2);
+    padding: 0 var(--space-2);
+    border-radius: var(--radius-pill);
+    background: var(--color-surface-muted);
+    font-size: var(--font-xs);
+    color: var(--color-text-muted);
   }
   .meta {
     font-size: var(--font-sm);

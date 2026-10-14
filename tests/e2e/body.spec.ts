@@ -29,6 +29,22 @@ test('chạm vùng trống thì đóng sheet', async ({ page }) => {
   await expect(page.locator(SHEET)).toHaveAttribute('aria-hidden', 'true')
 })
 
+test('nút ✕ đóng sheet và bỏ chọn', async ({ page }) => {
+  await ready(page)
+  await tapMuscle(page, 'pectoralis-major')
+  await page.locator(SHEET).getByRole('button', { name: 'Đóng' }).click()
+  await expect(page.locator(SHEET)).toHaveAttribute('aria-hidden', 'true')
+})
+
+test('nút Xoay 90° đổi góc nhìn', async ({ page }) => {
+  await ready(page)
+  const before = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
+  await page.getByRole('button', { name: 'Xoay 90°' }).click()
+  await page.waitForTimeout(800)
+  const after = await page.evaluate(() => window.__ptDebug!.screenPoint('pectoralis-major'))
+  expect(Math.abs(after!.x - before!.x)).toBeGreaterThan(20)
+})
+
 test('nút Trước / Sau lật model', async ({ page }) => {
   await ready(page)
   await page.getByRole('button', { name: 'Trước / Sau' }).click()
@@ -39,7 +55,7 @@ test('nút Trước / Sau lật model', async ({ page }) => {
 
 test('gợi ý lần đầu biến mất sau lần chạm đầu tiên và không hiện lại', async ({ page }) => {
   await ready(page)
-  const hint = page.getByText('Chạm vào cơ để xem tên và bài tập')
+  const hint = page.getByText('Chạm vào cơ để xem · Kéo để xoay · Chụm 2 ngón để phóng to')
   await expect(hint).toBeVisible()
   await tapMuscle(page, 'pectoralis-major')
   await expect(hint).toBeHidden()
@@ -125,4 +141,18 @@ test('ẩn lớp nông rồi chạm chọn cơ sâu', async ({ page }) => {
   await expect(page.locator(SHEET).getByText('Cơ ngực bé')).toBeVisible()
   await page.touchscreen.tap(point!.x, point!.y)
   await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeHidden()
+})
+
+test('mất WebGL context thì báo và Thử lại mở lại được mô hình', async ({ page }) => {
+  await ready(page)
+  await page.evaluate(() => {
+    delete window.__ptDebug
+    const gl = (document.querySelector('canvas') as HTMLCanvasElement).getContext('webgl2')
+    gl?.getExtension('WEBGL_lose_context')?.loseContext()
+  })
+  await expect(page.getByText('Máy tạm dừng hiển thị 3D. Bấm Thử lại để mở lại mô hình.')).toBeVisible()
+  await page.getByRole('button', { name: 'Thử lại' }).click()
+  await page.waitForFunction(() => window.__ptDebug !== undefined)
+  await tapMuscle(page, 'pectoralis-major')
+  await expect(page.locator(SHEET).getByText('Cơ ngực lớn')).toBeVisible()
 })

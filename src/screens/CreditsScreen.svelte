@@ -24,6 +24,11 @@
     <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>. Giấy phép này
     chỉ áp dụng cho mô hình, không áp dụng cho mã nguồn và nội dung chữ của app.
   </p>
+  <h2>Phông chữ</h2>
+  <p>
+    <a href="https://github.com/bettergui/BeVietnamPro" target="_blank" rel="noopener">Be Vietnam Pro</a>, giấy phép
+    <a href="https://openfontlicense.org" target="_blank" rel="noopener">SIL Open Font License 1.1</a>.
+  </p>
   <h2>Nội dung</h2>
   <p>
     Chức năng cơ và bài tập do app tự soạn, viết lại bằng lời của mình dựa trên các nguồn dưới đây. Mục có nhãn “nháp” chưa

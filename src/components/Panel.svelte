@@ -43,7 +43,8 @@
   }
   h1 {
     margin: 0;
-    font-size: var(--font-lg);
+    font-size: var(--font-xl);
+    letter-spacing: -0.01em;
   }
   button {
     min-height: var(--tap-min);

@@ -1,13 +1,11 @@
 <script lang="ts">
   import { openExercise } from '../lib/app-state.svelte'
-  import { exercisesFor, REGION_LABELS } from '../lib/content'
-  import type { Exercise, Muscle, MusclePart } from '../lib/content-types'
-  import DraftBadge from './DraftBadge.svelte'
+  import { exercisesFor } from '../lib/content'
+  import type { Exercise, Muscle } from '../lib/content-types'
   import SourceList from './SourceList.svelte'
 
-  let { muscle, part }: { muscle: Muscle; part: MusclePart | null } = $props()
+  let { muscle }: { muscle: Muscle } = $props()
 
-  const partLabel = $derived(muscle.parts.length > 1 ? part?.vi : undefined)
   const related = $derived(exercisesFor(muscle.id))
 </script>
 
@@ -22,11 +20,6 @@
   {/if}
 {/snippet}
 
-<h2 class="name">{muscle.vi} — <i lang="en">{muscle.en}</i></h2>
-<p class="meta">
-  {REGION_LABELS[muscle.region]}{#if partLabel}{` · đang chạm: ${partLabel}`}{/if}
-  {#if muscle.status === 'draft'}<DraftBadge />{/if}
-</p>
 <p class="text">{muscle.function}</p>
 {@render links('Bài tập chính cho cơ này', related.primary)}
 {@render links('Cơ này hỗ trợ trong', related.secondary)}
@@ -36,20 +29,6 @@
 <SourceList sources={muscle.sources ?? []} />
 
 <style>
-  .name {
-    margin: 0;
-    font-size: var(--font-lg);
-    line-height: var(--line-tight);
-  }
-  .name i {
-    font-weight: 400;
-    color: var(--color-text-muted);
-  }
-  .meta {
-    margin: var(--space-1) 0 var(--space-3);
-    font-size: var(--font-sm);
-    color: var(--color-text-muted);
-  }
   .text {
     margin: 0;
     font-size: var(--font-md);

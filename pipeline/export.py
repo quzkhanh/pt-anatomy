@@ -145,7 +145,7 @@ def build_head():
 # straight through the trunk at the back muscles, so a highlighted erector spinae shows as a stripe
 # down the belly. A thin neutral fin on the midline, kept between the inner surface of the front wall
 # and the back muscles slice by slice, blocks that view without ever reaching the body surface.
-FILLER_FRONT = ("Rectus abdominis muscle", "Sternocostal head of pectoralis major muscle", "Sternocleidomastoid muscle")
+FILLER_FRONT = ("Rectus abdominis muscle", "Sternocostal head of pectoralis major muscle")
 FILLER_BACK = ("Longissimus thoracis muscle", "Spinalis thoracis muscle", "Multifidus lumborum muscle",
                "Iliocostalis lumborum muscle", "Splenius capitis muscle", "Descending part of trapezius muscle",
                "Transverse part of trapezius muscle", "Ascending part of trapezius muscle")

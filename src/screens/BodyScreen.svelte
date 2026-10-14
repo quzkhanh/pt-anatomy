@@ -1,9 +1,12 @@
 <script lang="ts">
-  import { onMount, untrack } from 'svelte'
-  import BottomSheet, { type Snap } from '../components/BottomSheet.svelte'
+  import { onMount, tick, untrack } from 'svelte'
+  import BottomSheet from '../components/BottomSheet.svelte'
   import DebugOverlay from '../components/DebugOverlay.svelte'
+  import ExerciseHeader from '../components/ExerciseHeader.svelte'
+  import GestureHint from '../components/GestureHint.svelte'
   import ExerciseInfo from '../components/ExerciseInfo.svelte'
   import LoadState from '../components/LoadState.svelte'
+  import MuscleHeader from '../components/MuscleHeader.svelte'
   import MuscleInfo from '../components/MuscleInfo.svelte'
   import MuscleList from '../components/MuscleList.svelte'
   import SearchBar from '../components/SearchBar.svelte'
@@ -11,10 +14,13 @@
   import { app, openMuscle, type Selection } from '../lib/app-state.svelte'
   import type { PartRef } from '../lib/content'
   import { highlightOf, layerFor } from '../lib/highlight-of'
+  import type { Snap } from '../lib/sheet'
   import { load, save } from '../lib/storage'
+  import { hasWebGL } from '../lib/webgl'
   import { createViewer, type Viewer } from '../lib/viewer/viewer'
 
   const HINT_KEY = 'pt-anatomy:hint-seen:v1'
+  const TURN_RADIANS = Math.PI / 2
   const debug = new URLSearchParams(location.search).has('debug')
 
   let { hidden, showHint }: { hidden: boolean; showHint: boolean } = $props()
@@ -23,27 +29,28 @@
   let viewer = $state<Viewer | null>(null)
   let shown = $state<Selection | null>(null)
   let snap = $state<Snap>('peek')
+  let sheetTop = $state(0)
   let superficialHidden = $state(false)
   let hintSeen = $state(load(HINT_KEY, false))
 
-  const webgl = (() => {
-    try {
-      const gl = document.createElement('canvas').getContext('webgl2')
-      gl?.getExtension('WEBGL_lose_context')?.loseContext()
-      return gl !== null
-    } catch {
-      return false
-    }
-  })()
+  const webgl = hasWebGL()
 
   let phase = $state<'loading' | 'ready' | 'error'>('loading')
   let progress = $state<number | null>(null)
+  let contextLost = $state(false)
+  let canvasKey = $state(0)
 
   async function start() {
+    if (contextLost) {
+      // A lost context cannot be reused: mount a fresh canvas.
+      contextLost = false
+      canvasKey++
+      await tick()
+    }
     phase = 'loading'
     progress = null
     try {
-      const v = await createViewer(canvas!, { onPick, onProgress: (p) => (progress = p) })
+      const v = await createViewer(canvas!, { onPick, onProgress: (p) => (progress = p), onContextLost, onGesture: dismissHint })
       v.setSuperficialHidden(superficialHidden)
       viewer = v
       phase = 'ready'
@@ -54,12 +61,23 @@
     }
   }
 
+  function onContextLost() {
+    viewer?.dispose()
+    viewer = null
+    contextLost = true
+    phase = 'error'
+  }
+
   function onPick(ref: PartRef | null) {
     app.selection = ref && { kind: 'muscle', muscle: ref.muscle, part: ref.part, navigate: false }
-    if (ref && !hintSeen) {
-      hintSeen = true
-      save(HINT_KEY, true)
-    }
+    if (ref) dismissHint()
+  }
+
+  // The hint teaches both gestures, so the first tap on a muscle or the first rotation retires it.
+  function dismissHint() {
+    if (hintSeen) return
+    hintSeen = true
+    save(HINT_KEY, true)
   }
 
   function setLayer(hidden: boolean) {
@@ -98,13 +116,16 @@
 
 <div class="screen" style:visibility={hidden ? 'hidden' : null} inert={hidden}>
   {#if webgl}
-    <canvas
-      bind:this={canvas}
-      aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin."
-      onpointerdown={blurActive}
-    ></canvas>
+    {#key canvasKey}
+      <canvas bind:this={canvas} aria-label="Mô hình 3D cơ thể. Chạm vào cơ để xem thông tin." onpointerdown={blurActive}></canvas>
+    {/key}
     {#if phase !== 'ready'}
-      <LoadState {phase} {progress} onRetry={start} />
+      <LoadState
+        {phase}
+        {progress}
+        message={contextLost ? 'Máy tạm dừng hiển thị 3D. Bấm Thử lại để mở lại mô hình.' : undefined}
+        onRetry={start}
+      />
     {/if}
   {:else}
     <MuscleList onSelect={openMuscle} />
@@ -114,10 +135,16 @@
 
   {#if viewer}
     {#if app.selection === null || snap === 'peek'}
-      <SideActions {superficialHidden} onFlip={() => viewer?.flip()} onToggleLayer={() => setLayer(!superficialHidden)} />
+      <SideActions
+        {superficialHidden}
+        lift={app.selection ? sheetTop : 0}
+        onFlip={() => viewer?.flip()}
+        onTurn={() => viewer?.turn(-TURN_RADIANS)}
+        onToggleLayer={() => setLayer(!superficialHidden)}
+      />
     {/if}
     {#if showHint && !hintSeen && app.selection === null}
-      <p class="hint" role="status">Chạm vào cơ để xem tên và bài tập</p>
+      <GestureHint />
     {/if}
   {/if}
 
@@ -128,12 +155,22 @@
   <BottomSheet
     open={app.selection !== null}
     bind:snap
+    bind:peekHeight={sheetTop}
     label={shown?.kind === 'exercise' ? 'Thông tin bài tập' : 'Thông tin cơ'}
+    contentKey={shown?.kind === 'exercise' ? `e:${shown.exercise.id}` : shown ? `m:${shown.muscle.id}` : ''}
+    onClose={() => (app.selection = null)}
   >
+    {#snippet header()}
+      {#if shown?.kind === 'muscle'}
+        <MuscleHeader muscle={shown.muscle} part={shown.part} />
+      {:else if shown?.kind === 'exercise'}
+        <ExerciseHeader exercise={shown.exercise} onShowMotion={snap === 'peek' ? () => (snap = 'half') : undefined} />
+      {/if}
+    {/snippet}
     {#if shown?.kind === 'muscle'}
-      <MuscleInfo muscle={shown.muscle} part={shown.part} />
+      <MuscleInfo muscle={shown.muscle} />
     {:else if shown?.kind === 'exercise'}
-      <ExerciseInfo exercise={shown.exercise} />
+      <ExerciseInfo exercise={shown.exercise} motionActive={!hidden && app.selection !== null && snap !== 'peek'} />
     {/if}
   </BottomSheet>
 </div>
@@ -145,21 +182,5 @@
     width: 100%;
     height: 100%;
     touch-action: none;
-  }
-  .hint {
-    position: fixed;
-    left: 50%;
-    bottom: calc(var(--bottom-ui) + var(--space-6));
-    transform: translateX(-50%);
-    margin: 0;
-    padding: var(--space-2) var(--space-4);
-    border-radius: var(--radius-pill);
-    background: var(--color-text);
-    color: var(--color-surface);
-    font-size: var(--font-sm);
-    max-width: calc(100% - 2 * var(--space-4));
-    white-space: normal;
-    text-align: center;
-    pointer-events: none;
   }
 </style>

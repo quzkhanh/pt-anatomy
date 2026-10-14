@@ -2,10 +2,11 @@
   interface Props {
     phase: 'loading' | 'error'
     progress: number | null
+    message?: string
     onRetry: () => void
   }
 
-  let { phase, progress, onRetry }: Props = $props()
+  let { phase, progress, message = 'Không tải được mô hình. Kiểm tra kết nối rồi thử lại.', onRetry }: Props = $props()
 </script>
 
 <div class="state" role="status" aria-live="polite">
@@ -15,7 +16,7 @@
       <span style:width={progress === null ? null : `${Math.round(progress * 100)}%`}></span>
     </div>
   {:else}
-    <p>Không tải được mô hình. Kiểm tra kết nối rồi thử lại.</p>
+    <p>{message}</p>
     <button onclick={onRetry}>Thử lại</button>
   {/if}
 </div>

@@ -11,7 +11,7 @@ import { QUALITY, QualityGovernor } from './quality'
 const MODEL_URL = `${import.meta.env.BASE_URL}models/body.glb`
 const TAP_SLOP_PX = 6
 const CAMERA = { fov: 35, near: 0.01, far: 20, distance: 2.1, minDistance: 0.25, maxDistance: 2.5 }
-const SUN_POSITION = new Vector3(1, 2, 3)
+const SUN_POSITION = new Vector3(2, 3, 1.5)
 
 export interface ViewerStats {
   fps: number
@@ -24,6 +24,7 @@ export interface Viewer {
   highlight(highlight: Highlight): void
   setSuperficialHidden(hidden: boolean): void
   flip(): void
+  turn(radians: number): void
   focus(refs: string[]): void
   screenPoint(ref: string): { x: number; y: number } | null
   stats(): ViewerStats
@@ -33,6 +34,10 @@ export interface Viewer {
 interface ViewerOptions {
   onPick: (ref: PartRef | null) => void
   onProgress: (fraction: number | null) => void
+  /** The browser dropped the WebGL context (too many contexts, GPU reset): the viewer is dead. */
+  onContextLost: () => void
+  /** The user started rotating or zooming. */
+  onGesture: () => void
 }
 
 declare global {
@@ -41,7 +46,7 @@ declare global {
   }
 }
 
-export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgress }: ViewerOptions): Promise<Viewer> {
+export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgress, onContextLost, onGesture }: ViewerOptions): Promise<Viewer> {
   const body = await loadBody(MODEL_URL, onProgress)
   const colors = readThemeColors()
   const renderer = new WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' })
@@ -79,6 +84,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
   controls.addEventListener('change', requestRender)
   const rig = createCameraRig(camera, controls, requestRender)
   controls.addEventListener('start', rig.cancel)
+  controls.addEventListener('start', onGesture)
   const update = () => {
     applyHighlight(body, materials, state)
     requestRender()
@@ -110,6 +116,12 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     pickMs = performance.now() - started
     onPick(hit?.ref ?? null)
   }
+  const onLost = (e: Event) => {
+    e.preventDefault()
+    renderer.setAnimationLoop(null)
+    onContextLost()
+  }
+  canvas.addEventListener('webglcontextlost', onLost)
   canvas.addEventListener('pointerdown', onPointerDown)
   canvas.addEventListener('pointerup', onPointerUp)
   canvas.addEventListener('pointercancel', onPointerCancel)
@@ -171,6 +183,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
       update()
     },
     flip: rig.flip,
+    turn: rig.turn,
     focus(refs) {
       const point = centerOf(refs, true)
       if (point) rig.faceTowards(point)
@@ -185,6 +198,7 @@ export async function createViewer(canvas: HTMLCanvasElement, { onPick, onProgre
     dispose() {
       renderer.setAnimationLoop(null)
       observer.disconnect()
+      canvas.removeEventListener('webglcontextlost', onLost)
       canvas.removeEventListener('pointerdown', onPointerDown)
       canvas.removeEventListener('pointerup', onPointerUp)
       canvas.removeEventListener('pointercancel', onPointerCancel)

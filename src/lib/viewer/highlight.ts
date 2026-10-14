@@ -1,10 +1,9 @@
-import { MeshStandardMaterial, type Color } from 'three'
+import type { Color } from 'three'
 import { isSuperficial, type PartRef } from '../content'
 import { refCovers } from '../refs'
-import type { ThemeColors } from '../theme'
+import { LIGHTING, type ThemeColors } from '../theme'
 import type { Body } from './model'
-
-const ROUGHNESS = 0.85
+import { rimMaterial } from './material'
 
 export interface Highlight {
   primary: string[]
@@ -20,7 +19,7 @@ export const NO_HIGHLIGHT: Highlight = { primary: [], secondary: [] }
 export type Materials = ReturnType<typeof createMaterials>
 
 export function createMaterials(colors: ThemeColors) {
-  const matte = (color: Color) => new MeshStandardMaterial({ color, roughness: ROUGHNESS })
+  const matte = (color: Color) => rimMaterial(color, colors.rim, LIGHTING.rim)
   return {
     muscle: matte(colors.muscle),
     primary: matte(colors.selected),
