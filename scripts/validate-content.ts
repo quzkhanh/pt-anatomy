@@ -150,6 +150,9 @@ export function validateBreathing(g: BreathingGuide, quotes: Quote[]): string[] 
     ...g.points.flatMap((p, i) => (has('points', i) && p.trim() ? [] : [`breathing: points[${i}] chưa có câu trích`])),
     ...(has('phases') ? [] : ['breathing: quy tắc pha (phases) chưa có câu trích']),
     ...validateSources('breathing', g.sources),
+    ...[...new Set(quotes.map((q) => q.url))]
+      .filter((url) => !g.sources.some((s) => s.url === url))
+      .map((url) => `breathing: câu trích dùng nguồn không có trong sources "${url}"`),
     ...(STATUSES.includes(g.status) ? [] : [`breathing: status không hợp lệ "${g.status}"`]),
   ]
 }

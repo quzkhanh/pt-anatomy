@@ -17,6 +17,17 @@ const named = (vi: string) => new RegExp(`^${escape(vi)}( |$)`)
 
 const tab = (page: Page, name: string) => page.getByRole('navigation', { name: 'Chuyển màn' }).getByRole('button', { name })
 
+async function openBench(page: Page) {
+  await ready(page)
+  await tab(page, 'Bài tập').click()
+  await page.getByRole('searchbox', { name: 'Tìm bài tập' }).fill(bench.en)
+  await page.getByRole('button', { name: named(bench.vi) }).click()
+  await page.locator(SHEET).getByRole('button', { name: 'Mở rộng' }).click()
+}
+
+// Bench press loops in 3.4 s (library/press.ts); three cycles cover the "Nghỉ" phase, which has no breath cue.
+const CYCLE_TIMEOUT_MS = 10_000
+
 test('tab Bài tập: lọc theo vùng, mở bài thì về Cơ thể và hiện cơ chính/phụ', async ({ page }) => {
   await ready(page)
   await tab(page, 'Bài tập').click()
@@ -31,12 +42,8 @@ test('tab Bài tập: lọc theo vùng, mở bài thì về Cơ thể và hiện
 })
 
 test('bài ngực: nhãn pha có hơi thở, có mục Cách thở', async ({ page }) => {
-  await ready(page)
-  await tab(page, 'Bài tập').click()
-  await page.getByRole('searchbox', { name: 'Tìm bài tập' }).fill(bench.en)
-  await page.getByRole('button', { name: named(bench.vi) }).click()
-  await page.locator(SHEET).getByRole('button', { name: 'Mở rộng' }).click()
-  await expect(page.locator(SHEET).locator('figcaption.phase')).toHaveText(/· (thở ra|hít vào)$/, { timeout: 5000 })
+  await openBench(page)
+  await expect(page.locator(SHEET).locator('figcaption.phase')).toHaveText(/· (thở ra|hít vào)$/, { timeout: CYCLE_TIMEOUT_MS })
   await expect(page.locator(SHEET).getByRole('heading', { name: 'Cách thở' })).toBeVisible()
 })
 

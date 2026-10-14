@@ -185,5 +185,9 @@ describe('validateBreathing', () => {
       'breathing: points[1] chưa có câu trích',
       'breathing: quy tắc pha (phases) chưa có câu trích',
     ]))
+  it('câu trích dùng nguồn không có trong sources', () =>
+    expect(validateBreathing(guide, [...quotes, { url: 'https://other.com/y', quote: 'q', field: 'points', item: 0 }])).toEqual([
+      'breathing: câu trích dùng nguồn không có trong sources "https://other.com/y"',
+    ]))
   it('points rỗng', () => expect(validateBreathing({ ...guide, points: [] }, quotes)).toContain('breathing: points rỗng'))
 })

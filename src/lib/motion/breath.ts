@@ -1,9 +1,9 @@
 export type Breath = 'out' | 'in'
 
 /**
- * Every phase label the motion library uses, classified by the general rule (breathe out through the
- * exertion, in on the return; source in content/evidence.json "breathing"). `null`: no exertion
- * (holds, rests, steps) or a label whose effort differs between exercises.
+ * Every phase label the motion library uses, classified by the general rule (breathe out in the concentric
+ * phase, in during the eccentric phase; source in content/evidence.json "breathing"). A label means one effort
+ * direction in every exercise that uses it. `null`: holds, rests, steps, or phases the rule does not cover.
  */
 export const PHASE_BREATH: Record<string, Breath | null> = {
   'Bước chân phải sang phải': null,
@@ -11,7 +11,7 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Bước lên': null,
   'Bước lùi': null,
   'Bước tới': null,
-  'Bước xuống': null,
+  'Bước xuống': 'in',
   'Chân phải bước theo': null,
   'Chân trái bước theo': null,
   'Chùng gối': null,
@@ -23,7 +23,7 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Duỗi gối': 'out',
   'Duỗi lên': 'out',
   'Duỗi tay phải, chân trái': null,
-  'Duỗi tay ra': null,
+  'Duỗi tay ra': 'in',
   'Duỗi tay trái, chân phải': null,
   'Duỗi tay': 'out',
   'Giãn': null,
@@ -35,12 +35,12 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Gập xuống': 'in',
   'Hạ bả vai': null,
   'Hạ chân chậm': 'in',
-  'Hạ chân phải': null,
+  'Hạ chân phải': 'in',
   'Hạ chân': 'in',
   'Hạ gót': 'in',
   'Hạ gối': 'in',
-  'Hạ hông': null,
-  'Hạ người': null,
+  'Hạ hông': 'in',
+  'Hạ người': 'in',
   'Hạ tay phải, chân trái': null,
   'Hạ tay trái, chân phải': null,
   'Hạ thanh đòn': 'in',
@@ -58,7 +58,7 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Kéo về': 'out',
   'Kéo xuống': 'out',
   'Kẹp vào': 'out',
-  'Lăn ra': null,
+  'Lăn ra': 'in',
   'Mở gối': 'out',
   'Mở ra chậm': 'in',
   'Mở ra': 'in',
@@ -94,19 +94,24 @@ export const PHASE_BREATH: Record<string, Breath | null> = {
   'Đá chân ra sau': 'out',
   'Đưa chân về': null,
   'Đưa ra sau đầu': 'in',
-  'Đưa về': null,
+  'Đưa về': 'in',
   'Đạp lên': 'out',
   'Đạp ra': 'out',
   'Đẩy hông lên': 'out',
   'Đẩy hông ra sau': 'in',
-  'Đẩy hông tới': null,
+  'Đẩy hông tới': 'out',
   'Đẩy lên': 'out',
-  'Đẩy ra': null,
+  'Đẩy ra': 'out',
   'Đẩy xuống': 'out',
   'Đặt xuống': null,
   'Đứng lên': 'out',
   'Đứng thẳng': null,
   'Ưỡn lên': 'out',
+  'Ngả người xuống': null,
+  'Kéo tạ ra sau': null,
+  'Thả hông': null,
+  'Đẩy tay ra': null,
+  'Đưa tay chân về': null,
 }
 
 const SUFFIX: Record<Breath, string> = { out: 'thở ra', in: 'hít vào' }

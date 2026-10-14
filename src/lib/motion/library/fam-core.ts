@@ -111,9 +111,9 @@ function deadBug(): Motion {
   return {
     keys: [
       key(0, start, 'Hạ tay phải, chân trái'),
-      key(0.3, reach('r'), 'Đưa về'),
+      key(0.3, reach('r'), 'Đưa tay chân về'),
       key(0.5, start, 'Hạ tay trái, chân phải'),
-      key(0.8, reach('l'), 'Đưa về'),
+      key(0.8, reach('l'), 'Đưa tay chân về'),
     ],
     props: [mat([0, 0])],
     seconds: 6.4,
@@ -279,10 +279,10 @@ function birdDog(): Motion {
     keys: [
       key(0, quad, 'Duỗi tay phải, chân trái'),
       key(0.17, reach('r'), 'Giữ'),
-      key(0.27, reach('r'), 'Hạ về chậm'),
+      key(0.27, reach('r'), 'Đưa tay chân về'),
       key(0.5, quad, 'Duỗi tay trái, chân phải'),
       key(0.67, reach('l'), 'Giữ'),
-      key(0.77, reach('l'), 'Hạ về chậm'),
+      key(0.77, reach('l'), 'Đưa tay chân về'),
     ],
     props: [mat([0, 0.1])],
     seconds: 7,
@@ -513,7 +513,7 @@ function copenhagenPlank(): Motion {
     }),
   )
   return {
-    keys: [key(0, top, 'Hạ hông'), key(0.5, bottom, 'Nâng hông'), key(0.88, top, 'Giữ')],
+    keys: [key(0, top, 'Thả hông'), key(0.5, bottom, 'Nâng hông'), key(0.88, top, 'Giữ')],
     props: [
       mat([ankle.x * 0.5, 0.1], true),
       { kind: 'block', center: [benchX, benchTop - BENCH.pad / 2, ankle.z], size: [BENCH.length, BENCH.pad, BENCH.width] },
@@ -540,7 +540,7 @@ function pallofPress(): Motion {
   palmsIn(gripBar(pressed, [0, handY, pressZ], HALF_GRIP, [0.4, -1, 0]))
   const PULLEY: Vec = [-0.9, handY, pressZ]
   return {
-    keys: [key(0, chest, 'Đẩy ra'), key(0.2, pressed, 'Giữ'), key(0.65, pressed, 'Thu về'), key(0.92, chest, 'Nghỉ')],
+    keys: [key(0, chest, 'Đẩy tay ra'), key(0.2, pressed, 'Giữ'), key(0.65, pressed, 'Thu về'), key(0.92, chest, 'Nghỉ')],
     props: [
       { kind: 'rod', from: [PULLEY[0], 0, PULLEY[2]], to: [PULLEY[0], 2.1, PULLEY[2]], radius: 0.03 },
       { kind: 'cable', from: PULLEY, to: 'grips' },

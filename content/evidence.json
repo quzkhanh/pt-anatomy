@@ -6871,33 +6871,51 @@
   },
   {
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
-   "quote": "subjects can be instructed to exhale and inhale during the concentric and eccentric phases, respectively",
+   "quote": "To prevent the occurrence of the Valsalva maneuver, subjects can be instructed to exhale and inhale during the concentric and eccentric phases, respectively, execute slow movements, and ensure a sufficient warm-up is performed.",
    "field": "points",
    "item": 0
-  },
-  {
-   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5046965/",
-   "quote": "participants were instructed to maintain a neutral position of the spine and pelvis, and to breathe normally during testing",
-   "field": "points",
-   "item": 1
   },
   {
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12801646/",
    "quote": "The Valsalva technique increases intra-thoracic pressure, providing core stabilization but potentially influencing cardiovascular responses.",
    "field": "points",
-   "item": 2
+   "item": 1
   },
   {
    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
    "quote": "Valsalva maneuver during RT can lead to an elevation in intra-thoracic pressure and subsequently affect BP.",
    "field": "points",
-   "item": 2
+   "item": 1
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
+   "quote": "A study found that during knee extension exercise at a 100% intensity of one-repetition maximum (1-RM), BP reached 311/284 mmHg. However, when it is performed at the same intensity but with slow expiration, the increase in BP was limited to 198/175 mmHg.",
+   "field": "points",
+   "item": 1
   },
   {
    "url": "https://en.wikipedia.org/wiki/Valsalva_maneuver",
-   "quote": "caution is necessary for patients with preexisting coronary artery disease, valvular heart disease, or congenital heart defects",
+   "quote": "There are also reports of syncope, chest pain, and arrhythmias due to the performance of the maneuver, so caution is necessary for patients with preexisting coronary artery disease, valvular heart disease, or congenital heart defects",
+   "field": "points",
+   "item": 2
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13068723/",
+   "quote": "Due to the substantial increases in BP resulting from resistance exercise and Valsalva maneuvers, resistance training was historically discouraged especially for patients with hypertension.",
    "field": "points",
    "item": 3
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13068723/",
+   "quote": "The accumulating evidence indicates that the benefit of resistance training outweighs the risks in patients with hypertension.",
+   "field": "points",
+   "item": 3
+  },
+  {
+   "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10959113/",
+   "quote": "To prevent adverse events when prescribing exercise, several measures can be taken, including appropriate exercise preparation, prevention of the Valsalva maneuver, adequate exercise supervision, and consideration of functional capacity or muscle strength.",
+   "field": "points",
+   "item": 4
   }
  ]
 }

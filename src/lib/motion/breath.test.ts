@@ -13,14 +13,10 @@ describe('PHASE_BREATH', () => {
     const labels = new Set(motions.flatMap(([, m]) => m.keys.map((k) => k.phase)))
     expect(Object.keys(PHASE_BREATH).filter((l) => !labels.has(l))).toEqual([])
   })
-  it('hai pha liền kề cùng có hơi thở thì ngược nhau', () => {
+  it('động tác có gợi ý hơi thở thì có cả pha thở ra và hít vào', () => {
     const bad = motions.flatMap(([id, m]) => {
-      const phases = m.keys.map((k) => k.phase).filter((p, i, a) => p !== a[i - 1])
-      return phases.flatMap((p, i) => {
-        const next = phases[(i + 1) % phases.length]
-        const a = PHASE_BREATH[p], b = PHASE_BREATH[next]
-        return phases.length > 1 && a && b && a === b ? [`${id}: ${p} → ${next}`] : []
-      })
+      const breaths = new Set(m.keys.map((k) => PHASE_BREATH[k.phase]).filter(Boolean))
+      return breaths.size === 1 ? [id] : []
     })
     expect(bad).toEqual([])
   })
