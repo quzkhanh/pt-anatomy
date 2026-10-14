@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "check:content": "node scripts/check-content.ts",
+    "check:quotes": "node scripts/check-quotes.ts",
     "prebuild": "npm run check:content",
     "build": "vite build",
     "preview": "vite preview",
