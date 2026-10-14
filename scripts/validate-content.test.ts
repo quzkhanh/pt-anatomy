@@ -118,13 +118,15 @@ describe('validateDetails', () => {
       'xương humerus không được cơ nào nhắc',
     ])
   })
-  it('điểm bám thiếu mô tả hoặc thiếu xương, mảng rỗng', () => {
+  it('điểm bám thiếu mô tả, mảng rỗng; bám mô mềm (bones rỗng) hợp lệ', () => {
     expect(validateDetails([detailed({ origin: [], insertion: [{ bones: [], vi: '' }] })], [humerus])).toEqual([
       'deltoid: origin rỗng',
       'deltoid: insertion[0] thiếu mô tả',
-      'deltoid: insertion[0] thiếu xương',
       'xương humerus không được cơ nào nhắc',
     ])
+  })
+  it('bám mô mềm với mô tả thì hợp lệ', () => {
+    expect(validateDetails([detailed({ origin: [{ bones: [], vi: 'cân gan tay' }] })], [humerus])).toEqual([])
   })
   it('nhóm mẹo lạ, nhóm rỗng, ý rỗng, nerve rỗng', () => {
     const tips = { training: [], clinical: [' '], diet: ['x'] } as unknown as Muscle['tips']

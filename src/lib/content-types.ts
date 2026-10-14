@@ -19,6 +19,7 @@ export interface MusclePart {
   superficial?: boolean
 }
 
+/** `bones` is empty when the attachment is soft tissue only (an aponeurosis, a tendon). */
 export interface Attachment {
   bones: string[]
   vi: string

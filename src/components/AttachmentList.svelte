@@ -9,7 +9,7 @@
 <ul>
   {#each attachments as a, i (i)}
     <li>
-      {#each boneNames(a) as name, j (j)}{#if j}, {/if}<strong>{name}</strong>{/each} — {a.vi}
+      {#each boneNames(a) as name, j (j)}{#if j}, {/if}<strong>{name}</strong>{/each}{#if a.bones.length} — {/if}{a.vi}
     </li>
   {/each}
 </ul>

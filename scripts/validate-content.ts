@@ -97,7 +97,6 @@ export function validateDetails(muscles: Muscle[], bones: Bone[]): string[] {
       if (list && !list.length) errors.push(`${m.id}: ${field} rỗng`)
       list?.forEach((a, i) => {
         if (!a.vi.trim()) errors.push(`${m.id}: ${field}[${i}] thiếu mô tả`)
-        if (!a.bones.length) errors.push(`${m.id}: ${field}[${i}] thiếu xương`)
         for (const b of a.bones) {
           used.add(b)
           if (!boneIds.has(b)) errors.push(`${m.id}: ${field} nhắc xương không có "${b}"`)
